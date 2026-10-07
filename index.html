@@ -2,7 +2,7 @@
 <html lang="de" class="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>DeutschMeister A1 — Vollständiges Lern- & Spielsystem</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -34,6 +34,7 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #080c14;
       color: #f1f5f9;
+      overflow-x: hidden;
     }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
     .glass-panel {
@@ -63,11 +64,10 @@
 </head>
 <body class="min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
 
-  <!-- TOP HEADER: Mobile Responsive Fix -->
+  <!-- TOP HEADER -->
   <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
       
-      <!-- Row 1 on Mobile: Logo & Audio -->
       <div class="flex items-center justify-between w-full sm:w-auto">
         <div class="flex items-center space-x-3 min-w-0">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30 shrink-0">
@@ -85,7 +85,6 @@
         </button>
       </div>
 
-      <!-- Row 2 on Mobile: Stats Bar -->
       <div class="flex items-center justify-between w-full sm:w-auto gap-3">
         <div class="flex items-center justify-center w-full sm:w-auto space-x-3 bg-slate-900/90 px-4 py-2 rounded-xl border border-slate-800 text-xs sm:text-sm">
           <div class="flex items-center space-x-1.5 text-amber-400">
@@ -137,15 +136,15 @@
     </div>
   </nav>
 
-  <!-- MODULE DIAGNOSTIC BANNER: Mobile Responsive Fix -->
+  <!-- MODULE DIAGNOSTIC BANNER -->
   <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-[11px] font-mono text-slate-400 overflow-x-auto whitespace-nowrap custom-scrollbar flex items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
-      <span id="status-atlas" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
-      <span id="status-drills" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
-      <span id="status-vocab" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
-      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
-      <span id="status-exam" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
+    <div class="flex items-center gap-3 shrink-0">
+      <span class="text-slate-500 uppercase font-bold tracking-wider">Datenmodule:</span>
+      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
+      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
+      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
+      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
+      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
     </div>
     <div id="status-summary" class="text-amber-400 font-sans shrink-0">Initialisiere Daten-Engine...</div>
   </div>
@@ -885,8 +884,8 @@
           ${isTextInput ? `
             <div class="space-y-3">
               <div class="flex gap-2">
-                <input type="text" id="arena-typing-input" placeholder="Antwort eintippen..." class="flex-1 bg-slate-900 border border-slate-700 text-white px-4 py-3 rounded-xl text-center text-lg font-bold focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitTypingAnswer('${q.answer}', '${q.explanation}')">
-                <button onclick="submitTypingAnswer('${q.answer}', '${q.explanation}')" class="px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-sm">Prüfen</button>
+                <input type="text" id="arena-typing-input" placeholder="Antwort eintippen..." class="flex-1 bg-slate-900 border border-slate-700 text-white px-4 py-3 rounded-xl text-center text-lg font-bold focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitTypingAnswer()">
+                <button onclick="submitTypingAnswer()" class="px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-sm">Prüfen</button>
               </div>
               <div class="flex justify-center gap-1.5 pt-1">
                 <button type="button" onclick="insertUmlaut('ä')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ä</button>
@@ -897,8 +896,8 @@
             </div>
           ` : `
             <div class="grid grid-cols-1 sm:grid-cols-${Math.min(q.options.length, 3)} gap-3">
-              ${q.options.map(opt => `
-                <button onclick="submitMCAnswer('${opt}', '${q.answer}', '${q.explanation}')" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">
+              ${q.options.map((opt, idx) => `
+                <button onclick="submitMCAnswer(${idx})" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">
                   ${opt}
                 </button>
               `).join('')}
@@ -920,7 +919,13 @@
       }
     }
 
-    function submitMCAnswer(chosen, correct, exp) {
+    function submitMCAnswer(optIndex) {
+      const cat = window.DM_DRILLS[currentDrillCategory];
+      const q = cat.questions[currentDrillIndex % cat.questions.length];
+      const chosen = q.options[optIndex];
+      const correct = q.answer;
+      const exp = q.explanation;
+
       const fb = document.getElementById('arena-drill-feedback');
       if (chosen.trim().toLowerCase() === correct.trim().toLowerCase()) {
         soundSuccess();
@@ -936,7 +941,12 @@
       }
     }
 
-    function submitTypingAnswer(correct, exp) {
+    function submitTypingAnswer() {
+      const cat = window.DM_DRILLS[currentDrillCategory];
+      const q = cat.questions[currentDrillIndex % cat.questions.length];
+      const correct = q.answer;
+      const exp = q.explanation;
+
       const inp = document.getElementById('arena-typing-input');
       const val = inp ? inp.value.trim().toLowerCase() : '';
       const target = correct.trim().toLowerCase();
