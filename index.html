@@ -65,39 +65,40 @@
 
   <!-- TOP HEADER -->
   <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30">
-          <i data-lucide="compass" class="w-6 h-6 text-white"></i>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      <div class="flex items-center space-x-2 sm:space-x-3 min-w-0">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30 shrink-0">
+          <i data-lucide="compass" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
         </div>
-        <div>
-          <h1 class="text-lg font-bold text-white tracking-tight flex items-center gap-2">
-            DeutschMeister <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30">A1 COMPLETE</span>
+        <div class="min-w-0">
+          <h1 class="text-sm sm:text-lg font-bold text-white tracking-tight flex items-center gap-1.5 sm:gap-2 truncate">
+            <span class="truncate">DeutschMeister</span>
+            <span class="text-[9px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30 shrink-0">A1 COMPLETE</span>
           </h1>
           <p class="text-[11px] text-slate-400 hidden sm:block">18 Module • 4 Tabellen • 250+ Drills • 770+ Vokabeln • 16 Quests • Goethe A1 Vollprüfung</p>
         </div>
       </div>
 
       <!-- Stats Bar & Controls -->
-      <div class="flex items-center space-x-4">
-        <div class="flex items-center space-x-3 bg-slate-900/90 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs">
-          <div class="flex items-center space-x-1.5 text-amber-400">
-            <i data-lucide="zap" class="w-4 h-4 fill-amber-400"></i>
-            <span id="stat-streak" class="font-bold">1</span> Streak
+      <div class="flex items-center space-x-2 sm:space-x-4 shrink-0">
+        <div class="flex items-center space-x-1.5 sm:space-x-3 bg-slate-900/90 px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-xl border border-slate-800 text-[10px] sm:text-xs">
+          <div class="flex items-center space-x-1 text-amber-400">
+            <i data-lucide="zap" class="w-3 h-3 sm:w-4 sm:h-4 fill-amber-400"></i>
+            <span id="stat-streak" class="font-bold">1</span><span class="hidden sm:inline"> Streak</span>
           </div>
-          <div class="h-4 w-px bg-slate-700"></div>
-          <div class="flex items-center space-x-1.5 text-indigo-400">
-            <i data-lucide="award" class="w-4 h-4"></i>
-            <span id="stat-xp" class="font-bold font-mono">0</span> XP
+          <div class="h-3 sm:h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center space-x-1 text-indigo-400">
+            <i data-lucide="award" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+            <span id="stat-xp" class="font-bold font-mono">0</span><span class="hidden sm:inline"> XP</span>
           </div>
-          <div class="h-4 w-px bg-slate-700"></div>
-          <div class="flex items-center space-x-1">
+          <div class="hidden sm:block h-4 w-px bg-slate-700"></div>
+          <div class="hidden sm:flex items-center space-x-1">
             <span id="stat-rank" class="px-2 py-0.5 rounded font-semibold text-[11px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">A1 Lernender</span>
           </div>
         </div>
 
-        <button id="audio-toggle-btn" onclick="toggleAudio()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition" title="Sound umschalten">
-          <i data-lucide="volume-2" id="audio-icon" class="w-5 h-5"></i>
+        <button id="audio-toggle-btn" onclick="toggleAudio()" class="p-1.5 sm:p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition shrink-0" title="Sound umschalten">
+          <i data-lucide="volume-2" id="audio-icon" class="w-4 h-4 sm:w-5 sm:h-5"></i>
         </button>
       </div>
     </div>
@@ -131,16 +132,16 @@
   </nav>
 
   <!-- MODULE DIAGNOSTIC BANNER -->
-  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
-    <div class="flex items-center gap-3">
-      <span class="text-slate-500 uppercase font-bold tracking-wider">Datenmodule:</span>
-      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
-      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
-      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
-      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
-      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
+  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-2 sm:px-4 py-2 text-[10px] sm:text-[11px] font-mono text-slate-400 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
+      <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
+      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Atlas</span>
+      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Drills</span>
+      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Wortschatz</span>
+      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> 16 Quests</span>
+      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Prüfung</span>
     </div>
-    <div id="status-summary" class="text-amber-400 font-sans">Initialisiere Daten-Engine...</div>
+    <div id="status-summary" class="text-amber-400 font-sans text-xs sm:text-sm">Initialisiere...</div>
   </div>
 
   <!-- MAIN VIEWPORT -->
@@ -605,10 +606,10 @@
       const allLoaded = atlasLoaded && drillsLoaded && vocabLoaded && scenariosLoaded && examLoaded;
       const summary = document.getElementById('status-summary');
       if (allLoaded) {
-        summary.className = 'text-emerald-400 font-sans font-bold';
+        summary.className = 'text-emerald-400 font-sans font-bold text-xs sm:text-sm';
         summary.innerText = 'Alle 5 Datenmodule erfolgreich geladen (100% Bereit)';
       } else {
-        summary.className = 'text-amber-400 font-sans';
+        summary.className = 'text-amber-400 font-sans text-xs sm:text-sm';
         summary.innerText = 'Warte auf Einbindung der externen JS-Dateien in /js/...';
       }
 
@@ -619,10 +620,10 @@
       const el = document.getElementById(elId);
       if (isLoaded) {
         el.className = 'flex items-center gap-1 text-emerald-400 font-bold';
-        el.innerHTML = `<i data-lucide="check-circle-2" class="w-3 h-3"></i> ${label}`;
+        el.innerHTML = `<i data-lucide="check-circle-2" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> ${label}`;
       } else {
         el.className = 'flex items-center gap-1 text-rose-400';
-        el.innerHTML = `<i data-lucide="circle" class="w-3 h-3"></i> ${label}`;
+        el.innerHTML = `<i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> ${label}`;
       }
     }
 
@@ -671,9 +672,9 @@
             <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-1 transition"></i>
           </h3>
           <p class="text-xs text-slate-300 leading-relaxed line-clamp-2"><strong class="text-brand-300">Regel:</strong> ${m.rule}</p>
-          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex items-center justify-between">
-            <span class="truncate pr-2">${m.example}</span>
-            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
+          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <span class="break-words w-full leading-relaxed">${m.example}</span>
+            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="self-end sm:self-auto p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
               <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
             </button>
           </div>
