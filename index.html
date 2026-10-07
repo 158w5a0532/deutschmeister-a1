@@ -63,7 +63,7 @@
 </head>
 <body class="min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
 
-  <!-- TOP HEADER (Redesigned for Mobile Stacking) -->
+  <!-- TOP HEADER: Mobile Responsive Fix -->
   <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
       
@@ -111,42 +111,43 @@
   </header>
 
   <!-- NAVIGATION TABS -->
-  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-[100px] sm:top-16 z-40">
+  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-[108px] sm:top-[76px] z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1.5 overflow-x-auto custom-scrollbar py-2">
-      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab active px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
+      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
         <i data-lucide="book-open" class="w-4 h-4"></i> Grammatik-Atlas (18 Module)
       </button>
-      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="table" class="w-4 h-4"></i> 4 Fundament-Tabellen
       </button>
-      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="swords" class="w-4 h-4"></i> Grammatik-Arena (250+ Drills)
       </button>
-      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="binary" class="w-4 h-4"></i> Satzbau-Architekt
       </button>
-      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="gamepad-2" class="w-4 h-4"></i> Reallife-Simulator (16 Quests)
       </button>
-      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="sparkles" class="w-4 h-4"></i> Wortschatz (770+ Wörter)
       </button>
-      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="graduation-cap" class="w-4 h-4"></i> Goethe Start Deutsch 1
       </button>
     </div>
   </nav>
 
-  <!-- MODULE DIAGNOSTIC BANNER (Fixed Wrap Issue) -->
-  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-xs font-mono text-slate-400 overflow-x-auto whitespace-nowrap custom-scrollbar flex items-center gap-4">
-    <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
-    <span id="status-atlas" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
-    <span id="status-drills" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
-    <span id="status-vocab" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
-    <span id="status-scenarios" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> 16 Quests</span>
-    <span id="status-exam" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
-    <div class="h-4 w-px bg-slate-700 mx-2 shrink-0"></div>
-    <span id="status-summary" class="text-amber-400 font-sans font-bold shrink-0">Initialisiere...</span>
+  <!-- MODULE DIAGNOSTIC BANNER: Mobile Responsive Fix -->
+  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-[11px] font-mono text-slate-400 overflow-x-auto whitespace-nowrap custom-scrollbar flex items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
+      <span id="status-atlas" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
+      <span id="status-drills" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
+      <span id="status-vocab" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
+      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
+      <span id="status-exam" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
+    </div>
+    <div id="status-summary" class="text-amber-400 font-sans shrink-0">Initialisiere Daten-Engine...</div>
   </div>
 
   <!-- MAIN VIEWPORT -->
@@ -162,8 +163,8 @@
           <h2 class="text-2xl font-bold text-white">Der 18-Module Grammatik-Atlas</h2>
           <p class="text-slate-400 text-sm mt-1">Klicke auf ein Modul, um die vollständige Lektion mit Tabellen, Prüfungstipps & Schnelltest zu öffnen.</p>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto">
-          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full md:w-64">
+        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
+          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
         </div>
       </div>
       <div id="atlas-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
@@ -191,9 +192,9 @@
           <h2 class="text-2xl font-bold text-white">Grammatik-Arena</h2>
           <p class="text-slate-400 text-sm mt-1">Trainiere alle 18 grammatikalischen Konstruktionen im Klick- oder Schreibmodus mit Umlauten.</p>
         </div>
-        <div class="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800">
-          <button id="arena-btn-mc" onclick="setArenaInputMode('mc')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition">Klick-Modus</button>
-          <button id="arena-btn-text" onclick="setArenaInputMode('text')" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">Schreib-Modus</button>
+        <div class="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800 w-full sm:w-auto">
+          <button id="arena-btn-mc" onclick="setArenaInputMode('mc')" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition">Klick-Modus</button>
+          <button id="arena-btn-text" onclick="setArenaInputMode('text')" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">Schreib-Modus</button>
         </div>
       </div>
 
@@ -232,13 +233,13 @@
 
         <div id="builder-pool" class="flex flex-wrap gap-2 pt-2"></div>
 
-        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-          <button onclick="resetBuilder()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm flex items-center gap-2">
+        <div class="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-slate-800 gap-3">
+          <button onclick="resetBuilder()" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm flex items-center justify-center gap-2">
             <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Neu anordnen
           </button>
-          <div class="flex gap-2">
-            <button onclick="checkBuilder()" id="builder-btn-check" class="px-6 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-brand-600/30">Überprüfen</button>
-            <button onclick="nextBuilder()" id="builder-btn-next" class="hidden px-6 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm">Nächster Satz →</button>
+          <div class="flex gap-2 w-full sm:w-auto">
+            <button onclick="checkBuilder()" id="builder-btn-check" class="w-full sm:w-auto px-6 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-brand-600/30">Überprüfen</button>
+            <button onclick="nextBuilder()" id="builder-btn-next" class="hidden w-full sm:w-auto px-6 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm">Nächster Satz →</button>
           </div>
         </div>
 
@@ -317,8 +318,8 @@
           <h2 class="text-2xl font-bold text-white">Wortschatz- & Phonetik-Labor (770+ Wörter)</h2>
           <p class="text-slate-400 text-sm mt-1">Alle Kernvokabeln inklusive Artikel-Farbkodierung, Pluralformen und de-DE Sprachausgabe.</p>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto">
-          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full md:w-64">
+        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
+          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
         </div>
       </div>
 
@@ -366,7 +367,7 @@
           <h2 class="text-2xl font-bold text-white">Goethe Start Deutsch 1 Vollprüfung</h2>
           <p class="text-slate-400 text-sm mt-1">Teil 1 & 2: Leseverstehen & Sprachbausteine • Teil 3: Formular ausfüllen • Teil 4: E-Mail verfassen.</p>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto">
+        <div class="flex items-center gap-3">
           <div class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-xl font-mono text-amber-400 text-sm flex items-center gap-2">
             <i data-lucide="clock" class="w-4 h-4"></i> <span id="exam-timer-display">25:00</span>
           </div>
@@ -509,43 +510,53 @@
   <script>
     /* ---------------- 1. AUDIO SYNTHESIS & SPEECH ENGINE ---------------- */
     let audioEnabled = true;
-    let audioCtx;
-    let audioInitialized = false;
+    let audioCtx = null;
+    let ttsVoice = null;
 
-    // Mobile browsers heavily restrict Audio Context. We must forcefully resume it on global interactions.
-    function initAudioEngine() {
+    // Fix for Audio Race Condition: Provide context synchronously on demand
+    function getAudioContext() {
       if (!audioCtx) {
         audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       }
       if (audioCtx.state === 'suspended') {
         audioCtx.resume();
       }
-      if (!audioInitialized && 'speechSynthesis' in window) {
-        const wakeUtterance = new SpeechSynthesisUtterance('');
-        wakeUtterance.volume = 0;
-        window.speechSynthesis.speak(wakeUtterance);
-      }
-      audioInitialized = true;
+      return audioCtx;
     }
 
-    // Attach to ALL clicks/touches globally to bypass Safari's strict suspension rules
-    document.addEventListener('click', initAudioEngine);
-    document.addEventListener('touchstart', initAudioEngine, { passive: true });
+    // Attach passive listener to unlock audio on first interaction
+    document.addEventListener('click', () => { getAudioContext(); }, { capture: true, passive: true });
+    document.addEventListener('touchstart', () => { getAudioContext(); }, { capture: true, passive: true });
+
+    // Fix for TTS Robot Voice: Scan for premium voices
+    function loadVoices() {
+      if (!('speechSynthesis' in window)) return;
+      const voices = window.speechSynthesis.getVoices();
+      const germanVoices = voices.filter(v => v.lang.includes('de'));
+      if (germanVoices.length > 0) {
+        ttsVoice = germanVoices.find(v => v.name.includes('Premium') || v.name.includes('Siri') || v.name.includes('Google') || v.name.includes('Enhanced')) || germanVoices[0];
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+    }
 
     function playTone(freq, type = 'sine', duration = 0.15) {
-      if (!audioEnabled || !audioCtx) return;
+      if (!audioEnabled) return;
+      const ctx = getAudioContext(); // Ensures context exists at exact moment of click
       try {
-        if (audioCtx.state === 'suspended') audioCtx.resume();
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
         osc.type = type;
-        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-        gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        gain.gain.setValueAtTime(0.12, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
         osc.connect(gain);
-        gain.connect(audioCtx.destination);
+        gain.connect(ctx.destination);
         osc.start();
-        osc.stop(audioCtx.currentTime + duration);
+        osc.stop(ctx.currentTime + duration);
       } catch (e) {}
     }
 
@@ -565,28 +576,15 @@
     }
 
     function speakGerman(text) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel(); // Clear queue
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'de-DE';
-        u.rate = 0.82; // Slower rate to fix robotic/fast issue for A1 learners
-        u.pitch = 1.0;
-
-        // Hunt for high quality premium voices instead of the robotic default
-        const voices = window.speechSynthesis.getVoices();
-        const germanVoices = voices.filter(v => v.lang.includes('de'));
-        if (germanVoices.length > 0) {
-          const bestVoice = germanVoices.find(v => v.name.includes('Premium') || v.name.includes('Google') || v.name.includes('Enhanced')) || germanVoices[0];
-          u.voice = bestVoice;
-        }
-
-        window.speechSynthesis.speak(u);
-      }
-    }
-
-    // Attempt to load voices early
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+      if (!audioEnabled || !('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE';
+      u.rate = 0.80; // Slowed down from 0.93 to prevent fast robotic output
+      u.pitch = 1.0;
+      if (!ttsVoice) loadVoices();
+      if (ttsVoice) u.voice = ttsVoice;
+      window.speechSynthesis.speak(u);
     }
 
     function toggleAudio() {
@@ -630,10 +628,10 @@
       const summary = document.getElementById('status-summary');
       if (allLoaded) {
         summary.className = 'text-emerald-400 font-sans font-bold';
-        summary.innerText = 'Alle 5 Datenmodule geladen';
+        summary.innerText = 'Alle 5 Datenmodule erfolgreich geladen (100% Bereit)';
       } else {
         summary.className = 'text-amber-400 font-sans';
-        summary.innerText = 'Warte auf /js/...';
+        summary.innerText = 'Warte auf Einbindung der externen JS-Dateien in /js/...';
       }
 
       return { atlasLoaded, drillsLoaded, vocabLoaded, scenariosLoaded, examLoaded };
@@ -695,9 +693,9 @@
             <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-1 transition"></i>
           </h3>
           <p class="text-xs text-slate-300 leading-relaxed line-clamp-2"><strong class="text-brand-300">Regel:</strong> ${m.rule}</p>
-          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-            <span class="break-words w-full leading-relaxed">${m.example}</span>
-            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="self-end sm:self-auto p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
+          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex items-center justify-between">
+            <span class="truncate pr-2">${m.example}</span>
+            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
               <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
             </button>
           </div>
