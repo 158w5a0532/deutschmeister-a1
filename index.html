@@ -63,85 +63,90 @@
 </head>
 <body class="min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
 
-  <!-- TOP HEADER -->
+  <!-- TOP HEADER (Redesigned for Mobile Stacking) -->
   <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
-      <div class="flex items-center space-x-2 sm:space-x-3 min-w-0">
-        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30 shrink-0">
-          <i data-lucide="compass" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      
+      <!-- Row 1 on Mobile: Logo & Audio -->
+      <div class="flex items-center justify-between w-full sm:w-auto">
+        <div class="flex items-center space-x-3 min-w-0">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30 shrink-0">
+            <i data-lucide="compass" class="w-6 h-6 text-white"></i>
+          </div>
+          <div class="min-w-0">
+            <h1 class="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
+              DeutschMeister <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30 shrink-0">A1 COMPLETE</span>
+            </h1>
+            <p class="text-[11px] text-slate-400 hidden sm:block">18 Module • 4 Tabellen • 250+ Drills • 770+ Vokabeln • 16 Quests</p>
+          </div>
         </div>
-        <div class="min-w-0">
-          <h1 class="text-sm sm:text-lg font-bold text-white tracking-tight flex items-center gap-1.5 sm:gap-2 truncate">
-            <span class="truncate">DeutschMeister</span>
-            <span class="text-[9px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30 shrink-0">A1 COMPLETE</span>
-          </h1>
-          <p class="text-[11px] text-slate-400 hidden sm:block">18 Module • 4 Tabellen • 250+ Drills • 770+ Vokabeln • 16 Quests • Goethe A1 Vollprüfung</p>
-        </div>
+        <button onclick="toggleAudio()" class="sm:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition shrink-0">
+          <i data-lucide="volume-2" id="audio-icon-mobile" class="w-5 h-5"></i>
+        </button>
       </div>
 
-      <!-- Stats Bar & Controls -->
-      <div class="flex items-center space-x-2 sm:space-x-4 shrink-0">
-        <div class="flex items-center space-x-1.5 sm:space-x-3 bg-slate-900/90 px-2 sm:px-3.5 py-1 sm:py-1.5 rounded-xl border border-slate-800 text-[10px] sm:text-xs">
-          <div class="flex items-center space-x-1 text-amber-400">
-            <i data-lucide="zap" class="w-3 h-3 sm:w-4 sm:h-4 fill-amber-400"></i>
-            <span id="stat-streak" class="font-bold">1</span><span class="hidden sm:inline"> Streak</span>
+      <!-- Row 2 on Mobile: Stats Bar -->
+      <div class="flex items-center justify-between w-full sm:w-auto gap-3">
+        <div class="flex items-center justify-center w-full sm:w-auto space-x-3 bg-slate-900/90 px-4 py-2 rounded-xl border border-slate-800 text-xs sm:text-sm">
+          <div class="flex items-center space-x-1.5 text-amber-400">
+            <i data-lucide="zap" class="w-4 h-4 fill-amber-400"></i>
+            <span id="stat-streak" class="font-bold">1</span><span>Streak</span>
           </div>
-          <div class="h-3 sm:h-4 w-px bg-slate-700"></div>
-          <div class="flex items-center space-x-1 text-indigo-400">
-            <i data-lucide="award" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-            <span id="stat-xp" class="font-bold font-mono">0</span><span class="hidden sm:inline"> XP</span>
+          <div class="h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center space-x-1.5 text-indigo-400">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span id="stat-xp" class="font-bold font-mono">0</span><span>XP</span>
           </div>
           <div class="hidden sm:block h-4 w-px bg-slate-700"></div>
           <div class="hidden sm:flex items-center space-x-1">
             <span id="stat-rank" class="px-2 py-0.5 rounded font-semibold text-[11px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">A1 Lernender</span>
           </div>
         </div>
-
-        <button id="audio-toggle-btn" onclick="toggleAudio()" class="p-1.5 sm:p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition shrink-0" title="Sound umschalten">
-          <i data-lucide="volume-2" id="audio-icon" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        <button onclick="toggleAudio()" class="hidden sm:block p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition shrink-0" title="Sound umschalten">
+          <i data-lucide="volume-2" id="audio-icon-desktop" class="w-5 h-5"></i>
         </button>
       </div>
+      
     </div>
   </header>
 
   <!-- NAVIGATION TABS -->
-  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-16 z-40">
+  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-[100px] sm:top-16 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1.5 overflow-x-auto custom-scrollbar py-2">
-      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
+      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab active px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
         <i data-lucide="book-open" class="w-4 h-4"></i> Grammatik-Atlas (18 Module)
       </button>
-      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="table" class="w-4 h-4"></i> 4 Fundament-Tabellen
       </button>
-      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="swords" class="w-4 h-4"></i> Grammatik-Arena (250+ Drills)
       </button>
-      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="binary" class="w-4 h-4"></i> Satzbau-Architekt
       </button>
-      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="gamepad-2" class="w-4 h-4"></i> Reallife-Simulator (16 Quests)
       </button>
-      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="sparkles" class="w-4 h-4"></i> Wortschatz (770+ Wörter)
       </button>
-      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
         <i data-lucide="graduation-cap" class="w-4 h-4"></i> Goethe Start Deutsch 1
       </button>
     </div>
   </nav>
 
-  <!-- MODULE DIAGNOSTIC BANNER -->
-  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-2 sm:px-4 py-2 text-[10px] sm:text-[11px] font-mono text-slate-400 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-    <div class="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
-      <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
-      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Atlas</span>
-      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Drills</span>
-      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Wortschatz</span>
-      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> 16 Quests</span>
-      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Prüfung</span>
-    </div>
-    <div id="status-summary" class="text-amber-400 font-sans text-xs sm:text-sm">Initialisiere...</div>
+  <!-- MODULE DIAGNOSTIC BANNER (Fixed Wrap Issue) -->
+  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-xs font-mono text-slate-400 overflow-x-auto whitespace-nowrap custom-scrollbar flex items-center gap-4">
+    <span class="text-slate-500 uppercase font-bold tracking-wider shrink-0">Datenmodule:</span>
+    <span id="status-atlas" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
+    <span id="status-drills" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
+    <span id="status-vocab" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
+    <span id="status-scenarios" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> 16 Quests</span>
+    <span id="status-exam" class="flex items-center gap-1 text-rose-400 shrink-0"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
+    <div class="h-4 w-px bg-slate-700 mx-2 shrink-0"></div>
+    <span id="status-summary" class="text-amber-400 font-sans font-bold shrink-0">Initialisiere...</span>
   </div>
 
   <!-- MAIN VIEWPORT -->
@@ -157,8 +162,8 @@
           <h2 class="text-2xl font-bold text-white">Der 18-Module Grammatik-Atlas</h2>
           <p class="text-slate-400 text-sm mt-1">Klicke auf ein Modul, um die vollständige Lektion mit Tabellen, Prüfungstipps & Schnelltest zu öffnen.</p>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full md:w-64">
         </div>
       </div>
       <div id="atlas-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
@@ -312,8 +317,8 @@
           <h2 class="text-2xl font-bold text-white">Wortschatz- & Phonetik-Labor (770+ Wörter)</h2>
           <p class="text-slate-400 text-sm mt-1">Alle Kernvokabeln inklusive Artikel-Farbkodierung, Pluralformen und de-DE Sprachausgabe.</p>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
+        <div class="flex items-center gap-3 w-full md:w-auto">
+          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full md:w-64">
         </div>
       </div>
 
@@ -361,7 +366,7 @@
           <h2 class="text-2xl font-bold text-white">Goethe Start Deutsch 1 Vollprüfung</h2>
           <p class="text-slate-400 text-sm mt-1">Teil 1 & 2: Leseverstehen & Sprachbausteine • Teil 3: Formular ausfüllen • Teil 4: E-Mail verfassen.</p>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-full md:w-auto">
           <div class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-xl font-mono text-amber-400 text-sm flex items-center gap-2">
             <i data-lucide="clock" class="w-4 h-4"></i> <span id="exam-timer-display">25:00</span>
           </div>
@@ -418,7 +423,7 @@
       <!-- SUBMIT BAR -->
       <div class="glass-panel p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <span id="exam-progress-counter" class="text-xs sm:text-sm text-slate-400 font-mono">Bereit zur Auswertung aller 4 Prüfungsteile</span>
-        <button onclick="submitExam()" class="px-8 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition">
+        <button onclick="submitExam()" class="px-8 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition w-full sm:w-auto">
           Gesamte Prüfung jetzt abgeben & Zertifikat ermitteln →
         </button>
       </div>
@@ -507,14 +512,15 @@
     let audioCtx;
     let audioInitialized = false;
 
-    // Mobile browsers require user interaction to unlock audio and TTS engines
+    // Mobile browsers heavily restrict Audio Context. We must forcefully resume it on global interactions.
     function initAudioEngine() {
-      if (audioInitialized) return;
-      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
       if (audioCtx.state === 'suspended') {
         audioCtx.resume();
       }
-      if ('speechSynthesis' in window) {
+      if (!audioInitialized && 'speechSynthesis' in window) {
         const wakeUtterance = new SpeechSynthesisUtterance('');
         wakeUtterance.volume = 0;
         window.speechSynthesis.speak(wakeUtterance);
@@ -522,9 +528,9 @@
       audioInitialized = true;
     }
 
-    // Attach to first interaction to unlock audio
-    document.addEventListener('click', initAudioEngine, { once: true });
-    document.addEventListener('touchstart', initAudioEngine, { once: true });
+    // Attach to ALL clicks/touches globally to bypass Safari's strict suspension rules
+    document.addEventListener('click', initAudioEngine);
+    document.addEventListener('touchstart', initAudioEngine, { passive: true });
 
     function playTone(freq, type = 'sine', duration = 0.15) {
       if (!audioEnabled || !audioCtx) return;
@@ -560,18 +566,35 @@
 
     function speakGerman(text) {
       if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
+        window.speechSynthesis.cancel(); // Clear queue
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'de-DE';
-        u.rate = 0.93;
+        u.rate = 0.82; // Slower rate to fix robotic/fast issue for A1 learners
+        u.pitch = 1.0;
+
+        // Hunt for high quality premium voices instead of the robotic default
+        const voices = window.speechSynthesis.getVoices();
+        const germanVoices = voices.filter(v => v.lang.includes('de'));
+        if (germanVoices.length > 0) {
+          const bestVoice = germanVoices.find(v => v.name.includes('Premium') || v.name.includes('Google') || v.name.includes('Enhanced')) || germanVoices[0];
+          u.voice = bestVoice;
+        }
+
         window.speechSynthesis.speak(u);
       }
     }
 
+    // Attempt to load voices early
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+
     function toggleAudio() {
       audioEnabled = !audioEnabled;
-      const icon = document.getElementById('audio-icon');
-      icon.setAttribute('data-lucide', audioEnabled ? 'volume-2' : 'volume-x');
+      const icons = [document.getElementById('audio-icon-mobile'), document.getElementById('audio-icon-desktop')];
+      icons.forEach(icon => {
+        if (icon) icon.setAttribute('data-lucide', audioEnabled ? 'volume-2' : 'volume-x');
+      });
       lucide.createIcons();
     }
 
@@ -606,11 +629,11 @@
       const allLoaded = atlasLoaded && drillsLoaded && vocabLoaded && scenariosLoaded && examLoaded;
       const summary = document.getElementById('status-summary');
       if (allLoaded) {
-        summary.className = 'text-emerald-400 font-sans font-bold text-xs sm:text-sm';
-        summary.innerText = 'Alle 5 Datenmodule erfolgreich geladen (100% Bereit)';
+        summary.className = 'text-emerald-400 font-sans font-bold';
+        summary.innerText = 'Alle 5 Datenmodule geladen';
       } else {
-        summary.className = 'text-amber-400 font-sans text-xs sm:text-sm';
-        summary.innerText = 'Warte auf Einbindung der externen JS-Dateien in /js/...';
+        summary.className = 'text-amber-400 font-sans';
+        summary.innerText = 'Warte auf /js/...';
       }
 
       return { atlasLoaded, drillsLoaded, vocabLoaded, scenariosLoaded, examLoaded };
@@ -619,11 +642,11 @@
     function updateModuleStatusIndicator(elId, isLoaded, label) {
       const el = document.getElementById(elId);
       if (isLoaded) {
-        el.className = 'flex items-center gap-1 text-emerald-400 font-bold';
-        el.innerHTML = `<i data-lucide="check-circle-2" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> ${label}`;
+        el.className = 'flex items-center gap-1 text-emerald-400 font-bold shrink-0';
+        el.innerHTML = `<i data-lucide="check-circle-2" class="w-3 h-3"></i> ${label}`;
       } else {
-        el.className = 'flex items-center gap-1 text-rose-400';
-        el.innerHTML = `<i data-lucide="circle" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> ${label}`;
+        el.className = 'flex items-center gap-1 text-rose-400 shrink-0';
+        el.innerHTML = `<i data-lucide="circle" class="w-3 h-3"></i> ${label}`;
       }
     }
 
