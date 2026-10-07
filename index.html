@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeutschMeister A1 — Vollständiges Lern- & Spielsystem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b',
+            },
+            der: '#3b82f6',
+            die: '#ef4444',
+            das: '#10b981',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #080c14;
+      color: #f1f5f9;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(99, 102, 241, 0.5);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);
+    }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(99, 102, 241, 0.4); border-radius: 9999px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(99, 102, 241, 0.8); }
+    .badge-der { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.35); }
+    .badge-die { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35); }
+    .badge-das { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30">
+          <i data-lucide="compass" class="w-6 h-6 text-white"></i>
+        </div>
+        <div>
+          <h1 class="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+            DeutschMeister <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30">A1 COMPLETE</span>
+          </h1>
+          <p class="text-[11px] text-slate-400 hidden sm:block">18 Module • 4 Tabellen • 250+ Drills • 770+ Vokabeln • 16 Quests • Goethe A1 Vollprüfung</p>
+        </div>
+      </div>
+
+      <!-- Stats Bar & Controls -->
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-3 bg-slate-900/90 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs">
+          <div class="flex items-center space-x-1.5 text-amber-400">
+            <i data-lucide="zap" class="w-4 h-4 fill-amber-400"></i>
+            <span id="stat-streak" class="font-bold">1</span> Streak
+          </div>
+          <div class="h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center space-x-1.5 text-indigo-400">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span id="stat-xp" class="font-bold font-mono">0</span> XP
+          </div>
+          <div class="h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center space-x-1">
+            <span id="stat-rank" class="px-2 py-0.5 rounded font-semibold text-[11px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">A1 Lernender</span>
+          </div>
+        </div>
+
+        <button id="audio-toggle-btn" onclick="toggleAudio()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition" title="Sound umschalten">
+          <i data-lucide="volume-2" id="audio-icon" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1.5 overflow-x-auto custom-scrollbar py-2">
+      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
+        <i data-lucide="book-open" class="w-4 h-4"></i> Grammatik-Atlas (18 Module)
+      </button>
+      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="table" class="w-4 h-4"></i> 4 Fundament-Tabellen
+      </button>
+      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="swords" class="w-4 h-4"></i> Grammatik-Arena (250+ Drills)
+      </button>
+      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="binary" class="w-4 h-4"></i> Satzbau-Architekt
+      </button>
+      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="gamepad-2" class="w-4 h-4"></i> Reallife-Simulator (16 Quests)
+      </button>
+      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="sparkles" class="w-4 h-4"></i> Wortschatz (770+ Wörter)
+      </button>
+      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Goethe Start Deutsch 1
+      </button>
+    </div>
+  </nav>
+
+  <!-- MODULE DIAGNOSTIC BANNER -->
+  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex items-center gap-3">
+      <span class="text-slate-500 uppercase font-bold tracking-wider">Datenmodule:</span>
+      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
+      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
+      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
+      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
+      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
+    </div>
+    <div id="status-summary" class="text-amber-400 font-sans">Initialisiere Daten-Engine...</div>
+  </div>
+
+  <!-- MAIN VIEWPORT -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: GRAMMATIK-ATLAS (18 MODULES)                                      -->
+    <!-- ========================================================================= -->
+    <section id="view-atlas" class="view-panel space-y-6">
+      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider mb-1 block">Offizielles A1 Referenz-Kompendium</span>
+          <h2 class="text-2xl font-bold text-white">Der 18-Module Grammatik-Atlas</h2>
+          <p class="text-slate-400 text-sm mt-1">Klicke auf ein Modul, um die vollständige Lektion mit Tabellen, Prüfungstipps & Schnelltest zu öffnen.</p>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
+          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
+        </div>
+      </div>
+      <div id="atlas-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: DIE 4 FUNDAMENT-TABELLEN                                          -->
+    <!-- ========================================================================= -->
+    <section id="view-tables" class="view-panel hidden space-y-6">
+      <div class="glass-panel p-5 rounded-2xl">
+        <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Grammatikalische Koordinaten</span>
+        <h2 class="text-2xl font-bold text-white">Die 4 Unverzichtbaren Fundament-Tabellen</h2>
+        <p class="text-slate-400 text-sm mt-1">Die Kernmatrix für Personalpronomen, Artikel im Akkusativ, Pluralregeln und Kalenderdaten.</p>
+      </div>
+      <div id="tables-container" class="space-y-6"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: GRAMMATIK-ARENA (INTERACTIVE DRILLS + TYPING MODE)                -->
+    <!-- ========================================================================= -->
+    <section id="view-arena" class="view-panel hidden space-y-6">
+      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1 block">Interaktives Workout (250+ Aufgaben)</span>
+          <h2 class="text-2xl font-bold text-white">Grammatik-Arena</h2>
+          <p class="text-slate-400 text-sm mt-1">Trainiere alle 18 grammatikalischen Konstruktionen im Klick- oder Schreibmodus mit Umlauten.</p>
+        </div>
+        <div class="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800">
+          <button id="arena-btn-mc" onclick="setArenaInputMode('mc')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition">Klick-Modus</button>
+          <button id="arena-btn-text" onclick="setArenaInputMode('text')" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">Schreib-Modus</button>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 overflow-x-auto custom-scrollbar pb-1" id="arena-category-pills"></div>
+
+      <div id="arena-stage" class="glass-panel p-6 sm:p-8 rounded-2xl min-h-[380px] flex flex-col justify-center items-center relative"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: SATZBAU-ARCHITEKT                                                 -->
+    <!-- ========================================================================= -->
+    <section id="view-builder" class="view-panel hidden space-y-6">
+      <div class="glass-panel p-5 rounded-2xl">
+        <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Wortstellungs-Schmiede</span>
+        <h2 class="text-2xl font-bold text-white">Satzbau-Architekt (16 Puzzles)</h2>
+        <p class="text-slate-400 text-sm mt-1">Setze Sätze fehlerfrei zusammen: V2-Regel, Satzklammer, Zeitangabe-Inversion und Fragesatzstrukturen.</p>
+      </div>
+
+      <div class="glass-panel p-6 rounded-2xl space-y-6 max-w-4xl mx-auto">
+        <div class="flex items-center justify-between">
+          <span id="builder-rule-badge" class="text-xs px-3 py-1 rounded-full font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">V2-Regel</span>
+          <span id="builder-progress" class="text-xs text-slate-400 font-mono">1 / 16</span>
+        </div>
+
+        <div class="p-4 bg-slate-900/90 rounded-xl border border-slate-800">
+          <span class="text-xs text-slate-500 block mb-1">Aufgabe / Bedeutung:</span>
+          <p id="builder-meaning" class="text-lg font-semibold text-white"></p>
+        </div>
+
+        <div>
+          <span class="text-xs text-slate-400 block mb-2">Dein Satzbau (in richtiger Reihenfolge anklicken):</span>
+          <div id="builder-dropzone" class="min-h-[64px] p-3 rounded-xl bg-slate-950 border-2 border-dashed border-slate-700 flex flex-wrap gap-2 items-center">
+            <span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>
+          </div>
+        </div>
+
+        <div id="builder-pool" class="flex flex-wrap gap-2 pt-2"></div>
+
+        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+          <button onclick="resetBuilder()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm flex items-center gap-2">
+            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Neu anordnen
+          </button>
+          <div class="flex gap-2">
+            <button onclick="checkBuilder()" id="builder-btn-check" class="px-6 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-brand-600/30">Überprüfen</button>
+            <button onclick="nextBuilder()" id="builder-btn-next" class="hidden px-6 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm">Nächster Satz →</button>
+          </div>
+        </div>
+
+        <div id="builder-feedback" class="hidden p-4 rounded-xl text-sm"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 5: REALLIFE-SIMULATOR (16 EXTENDED RPG QUESTS)                       -->
+    <!-- ========================================================================= -->
+    <section id="view-rpg" class="view-panel hidden space-y-6">
+      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider mb-1 block">Authentische Lebensentscheidungen</span>
+          <h2 class="text-2xl font-bold text-white">Reallife-Simulator: 16 Alltags-Quests</h2>
+          <p class="text-slate-400 text-sm mt-1">Erlebe mehrstufige Dialoge, meistere Formulardokumente und reagiere im korrekten Register.</p>
+        </div>
+        <div class="text-xs text-slate-400 font-mono">
+          Fortschritt: <span id="rpg-done-counter" class="text-emerald-400 font-bold">0</span> / 16 abgeschlossen
+        </div>
+      </div>
+
+      <div id="rpg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+      <!-- RPG QUEST MODAL -->
+      <div id="rpg-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+        <div class="bg-slate-900 border border-slate-700 w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+          <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
+            <div class="flex items-center space-x-3">
+              <span id="modal-quest-icon" class="text-2xl">🥐</span>
+              <div>
+                <h3 id="modal-quest-title" class="font-bold text-white text-base">Szenario</h3>
+                <p id="modal-quest-role" class="text-xs text-slate-400">Rolle</p>
+              </div>
+            </div>
+            <button onclick="closeRPGModal()" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-700">
+              <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+          <div class="p-5 sm:p-6 overflow-y-auto space-y-5 custom-scrollbar flex-1">
+            <div class="bg-slate-800/90 border border-slate-700 p-4 rounded-xl space-y-2">
+              <div class="flex items-center justify-between">
+                <span id="modal-npc-name" class="text-xs font-bold text-brand-300">Gesprächspartner</span>
+                <button onclick="speakGerman(document.getElementById('modal-npc-text').innerText)" class="text-xs flex items-center gap-1 text-slate-400 hover:text-cyan-300 transition">
+                  <i data-lucide="volume-2" class="w-3.5 h-3.5"></i> Vorlesen
+                </button>
+              </div>
+              <p id="modal-npc-text" class="text-slate-100 text-sm sm:text-base leading-relaxed"></p>
+            </div>
+
+            <div class="p-3 bg-brand-950/40 border border-brand-800/40 rounded-xl text-xs text-brand-200 flex items-center gap-2">
+              <i data-lucide="info" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span id="modal-quest-clue">Tipp</span>
+            </div>
+
+            <div id="modal-interactive-area" class="space-y-3"></div>
+            <div id="modal-feedback-box" class="hidden p-4 rounded-xl border text-sm"></div>
+          </div>
+
+          <div class="p-4 border-t border-slate-800 bg-slate-900 flex justify-between items-center">
+            <span id="modal-step-counter" class="text-xs text-slate-400 font-mono">Schritt 1</span>
+            <button id="modal-btn-next" onclick="nextRPGStep()" class="hidden px-5 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm">Weiter →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 6: WORTSCHATZ & PHONETIK-LABOR (770+ WORDS)                         -->
+    <!-- ========================================================================= -->
+    <section id="view-vocab" class="view-panel hidden space-y-6">
+      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Vollständiges Goethe A1 Vokabular</span>
+          <h2 class="text-2xl font-bold text-white">Wortschatz- & Phonetik-Labor (770+ Wörter)</h2>
+          <p class="text-slate-400 text-sm mt-1">Alle Kernvokabeln inklusive Artikel-Farbkodierung, Pluralformen und de-DE Sprachausgabe.</p>
+        </div>
+        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
+          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
+        </div>
+      </div>
+
+      <div class="glass-panel p-5 rounded-2xl space-y-3">
+        <h3 class="text-sm font-bold text-white uppercase tracking-wider text-slate-400">Phonetik-Trainer: Besondere deutsche Laute</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2.5 text-xs font-mono">
+          <button onclick="speakGerman('ä. Äpfel, spät, März')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-brand-300 block text-base font-sans">Ä / ä</span> [ɛː] Äpfel
+          </button>
+          <button onclick="speakGerman('ö. Öl, schön, hören')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-brand-300 block text-base font-sans">Ö / ö</span> [øː] schön
+          </button>
+          <button onclick="speakGerman('ü. über, Küche, fünf')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-brand-300 block text-base font-sans">Ü / ü</span> [yː] über
+          </button>
+          <button onclick="speakGerman('ß. heiß, Straße, weiß')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-amber-300 block text-base font-sans">ß</span> [s] Straße
+          </button>
+          <button onclick="speakGerman('ei. mein, dein, kein, Eis')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-cyan-300 block text-base font-sans">EI</span> [aɪ] = "ai"
+          </button>
+          <button onclick="speakGerman('ie. wie, sie, Bier, liegen')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-cyan-300 block text-base font-sans">IE</span> [iː] langes i
+          </button>
+          <button onclick="speakGerman('eu. Euro, heute, Deutsch')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-purple-300 block text-base font-sans">EU</span> [ɔɪ] = "oi"
+          </button>
+          <button onclick="speakGerman('ch. ich, Milch, nicht')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition">
+            <span class="font-bold text-emerald-300 block text-base font-sans">CH</span> [ç] ich-Laut
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 overflow-x-auto custom-scrollbar" id="vocab-category-pills"></div>
+      <div id="vocab-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 7: GOETHE START DEUTSCH 1 EXAM (LESEN + SCHREIBEN TEIL 1 & 2)        -->
+    <!-- ========================================================================= -->
+    <section id="view-exam" class="view-panel hidden space-y-8">
+      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Offizieller Prüfungsumfang</span>
+          <h2 class="text-2xl font-bold text-white">Goethe Start Deutsch 1 Vollprüfung</h2>
+          <p class="text-slate-400 text-sm mt-1">Teil 1 & 2: Leseverstehen & Sprachbausteine • Teil 3: Formular ausfüllen • Teil 4: E-Mail verfassen.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-xl font-mono text-amber-400 text-sm flex items-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4"></i> <span id="exam-timer-display">25:00</span>
+          </div>
+          <button onclick="resetExam()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold">Neu starten</button>
+        </div>
+      </div>
+
+      <!-- TEIL 1 & 2: LESEN & SPRACHBAUSTEINE (20 QUESTIONS) -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
+          <span class="px-2.5 py-0.5 rounded bg-brand-500/20 text-brand-300 font-mono text-xs">Teil 1 & 2</span>
+          Leseverstehen & Sprachbausteine (20 Aufgaben)
+        </h3>
+        <div id="exam-questions-list" class="space-y-4"></div>
+      </div>
+
+      <!-- TEIL 3: SCHREIBEN TEIL 1 (FORMULAR AUSFÜLLEN) -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
+          <span class="px-2.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-mono text-xs">Schreiben Teil 1</span>
+          Formular ausfüllen (Informationen entnehmen)
+        </h3>
+        <div class="glass-panel p-6 rounded-2xl space-y-5">
+          <div class="p-4 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-slate-200 leading-relaxed" id="exam-teil1-text">
+            Text wird geladen...
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="exam-teil1-fields">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- TEIL 4: SCHREIBEN TEIL 2 (E-MAIL SCHREIBEN) -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
+          <span class="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs">Schreiben Teil 2</span>
+          E-Mail schreiben (ca. 30 Wörter zu 3 Leitpunkten)
+        </h3>
+        <div class="glass-panel p-6 rounded-2xl space-y-5">
+          <div class="p-4 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-slate-200 space-y-2">
+            <p id="exam-teil2-prompt" class="font-semibold text-white"></p>
+            <ul id="exam-teil2-leitpunkte" class="list-disc list-inside text-xs text-slate-300 space-y-1"></ul>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2 font-mono">
+              <span>Deine E-Mail:</span>
+              <span>Wörter: <strong id="exam-word-count" class="text-amber-400">0</strong> / ca. 30</span>
+            </div>
+            <textarea id="exam-email-input" oninput="updateWordCount()" rows="6" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-4 text-white text-sm focus:outline-none focus:border-emerald-500 font-sans leading-relaxed" placeholder="Sehr geehrte Frau Berg,..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBMIT BAR -->
+      <div class="glass-panel p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <span id="exam-progress-counter" class="text-xs sm:text-sm text-slate-400 font-mono">Bereit zur Auswertung aller 4 Prüfungsteile</span>
+        <button onclick="submitExam()" class="px-8 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition">
+          Gesamte Prüfung jetzt abgeben & Zertifikat ermitteln →
+        </button>
+      </div>
+
+      <div id="exam-result-banner" class="hidden glass-panel p-8 rounded-2xl text-center space-y-4"></div>
+    </section>
+
+  </main>
+
+  <!-- MODUL-LEKTIONS-STUDIO MODAL -->
+  <div id="module-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
+    <div class="bg-slate-900 border border-slate-700 w-full max-w-3xl rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+      <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
+        <div class="flex items-center space-x-3">
+          <span id="mod-modal-badge" class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-brand-500/20 text-brand-300 border border-brand-500/40">Modul 1</span>
+          <div>
+            <h3 id="mod-modal-title" class="font-bold text-white text-base sm:text-lg">Titel</h3>
+            <p id="mod-modal-category" class="text-xs text-slate-400 font-mono">Kategorie</p>
+          </div>
+        </div>
+        <button onclick="closeModuleModal()" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-700 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-6 custom-scrollbar flex-1">
+        <div class="space-y-2">
+          <span class="text-xs font-bold text-brand-300 uppercase tracking-wider flex items-center gap-1.5">
+            <i data-lucide="book-open" class="w-4 h-4"></i> Grammatikalische Kernregel
+          </span>
+          <div class="p-4 rounded-2xl bg-slate-800/80 border border-slate-700/80 text-sm text-slate-200 leading-relaxed" id="mod-modal-rule"></div>
+        </div>
+
+        <div class="space-y-2">
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+            <i data-lucide="volume-2" class="w-4 h-4"></i> Hörbeispiel & Aussprache
+          </span>
+          <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <p class="font-mono text-amber-300 text-sm" id="mod-modal-example"></p>
+            <button id="mod-modal-audio-btn" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold flex items-center gap-2 flex-shrink-0 transition">
+              <i data-lucide="play" class="w-3.5 h-3.5 text-amber-400"></i> Anhören
+            </button>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-amber-950/30 border border-amber-600/30 space-y-1">
+          <span class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+            <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-400"></i> Goethe A1 Prüfungstipp / Typische Fehlerfalle
+          </span>
+          <p class="text-xs text-amber-200 leading-relaxed" id="mod-modal-notes"></p>
+        </div>
+
+        <div id="mod-modal-quickcheck" class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4"></i> Modul-Schnelltest: Teste dein Wissen
+            </span>
+            <span class="text-[11px] text-slate-400">+20 XP</span>
+          </div>
+          <p class="text-sm font-semibold text-white" id="mod-quick-prompt"></p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="mod-quick-options"></div>
+          <div id="mod-quick-feedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-slate-800 bg-slate-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <span class="text-xs text-slate-400">Möchtest du dieses Thema intensiv trainieren?</span>
+        <button id="mod-modal-jump-arena" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-brand-600/30">
+          <i data-lucide="swords" class="w-4 h-4"></i> In der Grammatik-Arena üben →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/data-atlas.js"></script>
+  <script src="js/data-drills.js"></script>
+  <script src="js/data-vocab.js"></script>
+  <script src="js/data-scenarios.js"></script>
+  <script src="js/data-exam.js"></script>
+
+  <!-- CORE RUNTIME ENGINE -->
+  <script>
+    /* ---------------- 1. AUDIO SYNTHESIS & SPEECH ENGINE ---------------- */
+    let audioEnabled = true;
+    let audioCtx;
+    let audioInitialized = false;
+
+    // Mobile browsers require user interaction to unlock audio and TTS engines
+    function initAudioEngine() {
+      if (audioInitialized) return;
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      if ('speechSynthesis' in window) {
+        const wakeUtterance = new SpeechSynthesisUtterance('');
+        wakeUtterance.volume = 0;
+        window.speechSynthesis.speak(wakeUtterance);
+      }
+      audioInitialized = true;
+    }
+
+    // Attach to first interaction to unlock audio
+    document.addEventListener('click', initAudioEngine, { once: true });
+    document.addEventListener('touchstart', initAudioEngine, { once: true });
+
+    function playTone(freq, type = 'sine', duration = 0.15) {
+      if (!audioEnabled || !audioCtx) return;
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function soundSuccess() {
+      playTone(523.25, 'triangle', 0.1);
+      setTimeout(() => playTone(659.25, 'triangle', 0.1), 90);
+      setTimeout(() => playTone(783.99, 'triangle', 0.22), 180);
+    }
+
+    function soundError() {
+      playTone(220, 'sawtooth', 0.2);
+      setTimeout(() => playTone(185, 'sawtooth', 0.25), 140);
+    }
+
+    function soundFanfare() {
+      [523, 659, 784, 1046].forEach((f, i) => setTimeout(() => playTone(f, 'sine', 0.25), i * 110));
+    }
+
+    function speakGerman(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'de-DE';
+        u.rate = 0.93;
+        window.speechSynthesis.speak(u);
+      }
+    }
+
+    function toggleAudio() {
+      audioEnabled = !audioEnabled;
+      const icon = document.getElementById('audio-icon');
+      icon.setAttribute('data-lucide', audioEnabled ? 'volume-2' : 'volume-x');
+      lucide.createIcons();
+    }
+
+    /* ---------------- 2. USER PROGRESS & PERSISTENCE ---------------- */
+    const player = {
+      xp: parseInt(localStorage.getItem('dm_a1_xp') || '0'),
+      streak: parseInt(localStorage.getItem('dm_a1_streak') || '1'),
+      completedQuests: JSON.parse(localStorage.getItem('dm_a1_quests') || '[]'),
+      arenaMode: 'mc'
+    };
+
+    function addXP(amount) {
+      player.xp += amount;
+      localStorage.setItem('dm_a1_xp', player.xp);
+      document.getElementById('stat-xp').innerText = player.xp;
+    }
+
+    /* ---------------- 3. DATA MODULES DIAGNOSTIC CHECKER ---------------- */
+    function checkLoadedModules() {
+      const atlasLoaded = window.DM_ATLAS && Array.isArray(window.DM_ATLAS.modules);
+      const drillsLoaded = window.DM_DRILLS && typeof window.DM_DRILLS === 'object';
+      const vocabLoaded = window.DM_VOCAB && Array.isArray(window.DM_VOCAB);
+      const scenariosLoaded = window.DM_SCENARIOS && Array.isArray(window.DM_SCENARIOS);
+      const examLoaded = window.DM_EXAM && Array.isArray(window.DM_EXAM);
+
+      updateModuleStatusIndicator('status-atlas', atlasLoaded, 'Atlas');
+      updateModuleStatusIndicator('status-drills', drillsLoaded, 'Drills');
+      updateModuleStatusIndicator('status-vocab', vocabLoaded, 'Wortschatz');
+      updateModuleStatusIndicator('status-scenarios', scenariosLoaded, '16 Quests');
+      updateModuleStatusIndicator('status-exam', examLoaded, 'Prüfung');
+
+      const allLoaded = atlasLoaded && drillsLoaded && vocabLoaded && scenariosLoaded && examLoaded;
+      const summary = document.getElementById('status-summary');
+      if (allLoaded) {
+        summary.className = 'text-emerald-400 font-sans font-bold';
+        summary.innerText = 'Alle 5 Datenmodule erfolgreich geladen (100% Bereit)';
+      } else {
+        summary.className = 'text-amber-400 font-sans';
+        summary.innerText = 'Warte auf Einbindung der externen JS-Dateien in /js/...';
+      }
+
+      return { atlasLoaded, drillsLoaded, vocabLoaded, scenariosLoaded, examLoaded };
+    }
+
+    function updateModuleStatusIndicator(elId, isLoaded, label) {
+      const el = document.getElementById(elId);
+      if (isLoaded) {
+        el.className = 'flex items-center gap-1 text-emerald-400 font-bold';
+        el.innerHTML = `<i data-lucide="check-circle-2" class="w-3 h-3"></i> ${label}`;
+      } else {
+        el.className = 'flex items-center gap-1 text-rose-400';
+        el.innerHTML = `<i data-lucide="circle" class="w-3 h-3"></i> ${label}`;
+      }
+    }
+
+    /* ---------------- 4. NAVIGATION ROUTER ---------------- */
+    function navigate(tabId) {
+      document.querySelectorAll('.view-panel').forEach(v => v.classList.add('hidden'));
+      document.querySelectorAll('.nav-tab').forEach(b => {
+        b.classList.remove('bg-brand-600', 'text-white', 'shadow-md');
+        b.classList.add('text-slate-400');
+      });
+
+      const targetView = document.getElementById(`view-${tabId}`);
+      if (targetView) targetView.classList.remove('hidden');
+
+      const targetBtn = document.getElementById(`tab-${tabId}`);
+      if (targetBtn) {
+        targetBtn.classList.remove('text-slate-400');
+        targetBtn.classList.add('bg-brand-600', 'text-white', 'shadow-md');
+      }
+
+      playTone(440, 'sine', 0.08);
+      lucide.createIcons();
+    }
+
+    /* ---------------- 5. ATLAS & MODAL STUDIO ---------------- */
+    function initAtlasView() {
+      if (!window.DM_ATLAS || !window.DM_ATLAS.modules) return;
+      const container = document.getElementById('atlas-container');
+      container.innerHTML = '';
+
+      window.DM_ATLAS.modules.forEach(m => {
+        const card = document.createElement('div');
+        card.className = 'glass-card p-5 rounded-2xl space-y-3 cursor-pointer group';
+        card.onclick = (e) => {
+          if (e.target.closest('button')) return;
+          openModuleDetail(m.id);
+        };
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs px-2.5 py-0.5 rounded-full font-mono font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30">Modul ${m.id}</span>
+            <span class="text-xs text-slate-400 font-mono">${m.category}</span>
+          </div>
+          <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition flex items-center justify-between">
+            <span>${m.title}</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-1 transition"></i>
+          </h3>
+          <p class="text-xs text-slate-300 leading-relaxed line-clamp-2"><strong class="text-brand-300">Regel:</strong> ${m.rule}</p>
+          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex items-center justify-between">
+            <span class="truncate pr-2">${m.example}</span>
+            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
+              <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+          <div class="flex items-center justify-between pt-1 border-t border-slate-800/80">
+            <span class="text-[11px] text-slate-400 italic truncate max-w-[220px]">${m.notes}</span>
+            <span class="text-[11px] font-bold text-brand-400 flex items-center gap-1 group-hover:underline">Lektion öffnen →</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    function filterAtlas() {
+      const q = document.getElementById('atlas-search').value.toLowerCase();
+      if (!window.DM_ATLAS) return;
+      const cards = document.querySelectorAll('#atlas-container > div');
+      window.DM_ATLAS.modules.forEach((m, idx) => {
+        const matches = m.title.toLowerCase().includes(q) || m.rule.toLowerCase().includes(q) || m.example.toLowerCase().includes(q) || m.category.toLowerCase().includes(q);
+        if (cards[idx]) cards[idx].style.display = matches ? 'block' : 'none';
+      });
+    }
+
+    const moduleQuizzes = {
+      1: { q: 'Wie konjugiert man das regelmäßige Verb "lernen" für "du"?', opts: ['du lernst', 'du lernt', 'du lerne'], a: 'du lernst', exp: 'Regelmäßige Verben enden bei "du" auf -st (lernen → du lernst).' },
+      2: { q: 'Wie lautet die 3. Person Singular für das Verb "arbeiten"?', opts: ['er arbeitet', 'er arbeitst', 'er arbeite'], a: 'er arbeitet', exp: 'Stämme auf -t/-d fügen ein -e- ein: er arbeit-e-t.' },
+      3: { q: 'Was passiert mit dem Verb "sprechen" bei "er"?', opts: ['er spricht', 'er sprecht', 'er spreche'], a: 'er spricht', exp: 'Vokalwechsel e → i in der 2./3. Person Singular: du sprichst, er spricht.' },
+      4: { q: 'Welche Form ist das Präteritum von "haben" für "ich"?', opts: ['ich hatte', 'ich war', 'ich habe gehabt'], a: 'ich hatte', exp: 'Präteritum von haben: ich hatte, du hattest, er hatte.' },
+      5: { q: 'Welcher Artikel gehört zum Wort "Zeitung"?', opts: ['die Zeitung', 'der Zeitung', 'das Zeitung'], a: 'die Zeitung', exp: 'Alle Nomen mit der Endung -ung sind zu 100% feminin (die).' },
+      6: { q: 'Welcher Artikel bestimmt das Kompositum "der Apfel + der Saft"?', opts: ['der Apfelsaft', 'die Apfelsaft', 'das Apfelsaft'], a: 'der Apfelsaft', exp: 'Das letzte Nomen (der Saft) bestimmt immer Genus und Plural!' },
+      7: { q: 'Welcher Artikel ändert sich im Akkusativ?', opts: ['Nur Maskulin (der → den)', 'Alle Artikel ändern sich', 'Nur Neutrum (das → den)'], a: 'Nur Maskulin (der → den)', exp: 'Im Akkusativ wechselt AUSSCHLIESSLICH das Maskulinum (den / einen / keinen / meinen).' },
+      8: { q: 'Wie antwortet man auf: "Kommst du heute nicht mit?" (wenn man doch mitkommt)?', opts: ['Doch!', 'Ja!', 'Nein!'], a: 'Doch!', exp: 'Auf eine verneinte Frage bejaht man auf Deutsch ausnahmslos mit "Doch!".' },
+      9: { q: 'Wo steht das zweite Verb in einem Satz mit Modalverb?', opts: ['Am Satzende im Infinitiv', 'Direkt hinter dem Modalverb', 'Auf Position 1'], a: 'Am Satzende im Infinitiv', exp: 'Satzklammer: Modalverb auf Position 2, Vollverb im reinen Infinitiv ganz am Ende.' },
+      10: { q: 'Wo steht die Vorsilbe bei trennbaren Verben im Hauptsatz?', opts: ['Ganz am Satzende', 'Direkt vor dem Verb', 'Auf Position 1'], a: 'Ganz am Satzende', exp: 'Die betonte Vorsilbe wandert an die letzte Position: Ich stehe um 6 Uhr auf.' },
+      11: { q: 'Welche Position hat das konjugierte Verb im Aussagesatz?', opts: ['Position 2', 'Position 1', 'Position 3'], a: 'Position 2', exp: 'Die eiserne V2-Regel: Das finite Verb steht im deutschen Hauptsatz immer auf Position 2.' },
+      12: { q: 'Was passiert mit dem Subjekt, wenn eine Zeitangabe auf Position 1 steht?', opts: ['Subjekt rückt auf Position 3 (Inversion)', 'Subjekt fällt weg', 'Subjekt bleibt vor dem Verb'], a: 'Subjekt rückt auf Position 3 (Inversion)', exp: 'Inversion: Am Montag (Pos 1) gehe (Pos 2) ich (Pos 3) zum Arzt.' },
+      13: { q: 'Wie lautet das Personalpronomen für "ich" im Dativ?', opts: ['mir', 'mich', 'mein'], a: 'mir', exp: 'Dativ von ich: mir ("Wie geht es mir? / Hilf mir!").' },
+      14: { q: 'Wie bildet man den Imperativ für "du" beim Verb "kommen"?', opts: ['Komm!', 'Kommst!', 'Kommen!'], a: 'Komm!', exp: 'Du-Imperativ: Stamm ohne -st und ohne das Wort "du": Komm!' },
+      15: { q: 'Wann bildet man das Perfekt mit "sein"?', opts: ['Bei Orts- oder Zustandswechsel', 'Bei allen Verben', 'Nur bei Hilfsverben'], a: 'Bei Orts- oder Zustandswechsel', exp: 'sein + Partizip II wird bei Bewegungsverben (gehen, fahren) und Zustandswechsel (aufstehen) verwendet.' },
+      16: { q: 'Welche Präposition nutzt man für Uhrzeiten ("___ 14:00 Uhr")?', opts: ['um', 'am', 'im'], a: 'um', exp: 'Uhrzeiten verlangen "um", Tage verlangen "am", Monate verlangen "im".' },
+      17: { q: 'Welche Position besetzt der Konnektor "denn"?', opts: ['Position 0', 'Position 1', 'Position 2'], a: 'Position 0', exp: '"denn" verbindet Sätze auf Position 0 und verändert die V2-Struktur nicht.' },
+      18: { q: 'Welchen Kasus regiert der Ausdruck "es gibt"?', opts: ['Akkusativ', 'Dativ', 'Nominativ'], a: 'Akkusativ', exp: '"es gibt" fordert immer den Akkusativ: Es gibt einen Supermarkt.' }
+    };
+
+    function openModuleDetail(modId) {
+      if (!window.DM_ATLAS) return;
+      const mod = window.DM_ATLAS.modules.find(m => m.id === modId);
+      if (!mod) return;
+
+      document.getElementById('mod-modal-badge').innerText = `Modul ${mod.id}`;
+      document.getElementById('mod-modal-title').innerText = mod.title;
+      document.getElementById('mod-modal-category').innerText = `Kategorie: ${mod.category}`;
+      document.getElementById('mod-modal-rule').innerText = mod.rule;
+      document.getElementById('mod-modal-example').innerText = mod.example;
+      document.getElementById('mod-modal-notes').innerText = mod.notes;
+
+      document.getElementById('mod-modal-audio-btn').onclick = () => {
+        speakGerman(mod.example.replace(/\|/g, ','));
+      };
+
+      const arenaMap = {
+        1: 'konjugation', 2: 'konjugation', 3: 'konjugation', 4: 'konjugation',
+        5: 'artikelKasus', 6: 'artikelKasus', 7: 'artikelKasus',
+        8: 'negationDoch', 9: 'modalverben', 10: 'trennbareVerben',
+        11: 'konjugation', 12: 'spezialFormen', 13: 'dativGrundlagen',
+        14: 'imperativ', 15: 'perfekt', 16: 'praepositionen',
+        17: 'negationDoch', 18: 'spezialFormen'
+      };
+
+      document.getElementById('mod-modal-jump-arena').onclick = () => {
+        closeModuleModal();
+        navigate('arena');
+        const catKey = arenaMap[mod.id] || 'konjugation';
+        currentDrillCategory = catKey;
+        currentDrillIndex = 0;
+        initArenaView();
+        renderCurrentDrillQuestion();
+      };
+
+      const quiz = moduleQuizzes[mod.id];
+      const qcBox = document.getElementById('mod-modal-quickcheck');
+      if (quiz) {
+        qcBox.classList.remove('hidden');
+        document.getElementById('mod-quick-prompt').innerText = quiz.q;
+        const optsContainer = document.getElementById('mod-quick-options');
+        optsContainer.innerHTML = '';
+        const fb = document.getElementById('mod-quick-feedback');
+        fb.className = 'hidden';
+
+        quiz.opts.forEach(opt => {
+          const btn = document.createElement('button');
+          btn.className = 'p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs sm:text-sm font-semibold hover:border-brand-500 transition text-left';
+          btn.innerText = opt;
+          btn.onclick = () => {
+            fb.classList.remove('hidden');
+            if (opt === quiz.a) {
+              soundSuccess();
+              addXP(20);
+              fb.className = 'p-3 rounded-xl text-xs font-semibold bg-emerald-950/60 border border-emerald-500/50 text-emerald-200';
+              fb.innerHTML = `<strong>Richtig! (+20 XP)</strong> ${quiz.exp}`;
+              btn.classList.add('border-emerald-500', 'bg-emerald-900/40');
+            } else {
+              soundError();
+              fb.className = 'p-3 rounded-xl text-xs font-semibold bg-rose-950/60 border border-rose-500/50 text-rose-200';
+              fb.innerHTML = `<strong>Falsch:</strong> ${quiz.exp}`;
+              btn.classList.add('border-rose-500', 'bg-rose-900/40');
+            }
+          };
+          optsContainer.appendChild(btn);
+        });
+      } else {
+        qcBox.classList.add('hidden');
+      }
+
+      document.getElementById('module-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeModuleModal() {
+      document.getElementById('module-modal').classList.add('hidden');
+      window.speechSynthesis && window.speechSynthesis.cancel();
+    }
+
+    function initTablesView() {
+      if (!window.DM_ATLAS || !window.DM_ATLAS.tables) return;
+      const container = document.getElementById('tables-container');
+      container.innerHTML = window.DM_ATLAS.tablesHtml || '';
+      lucide.createIcons();
+    }
+
+    /* ---------------- 6. ARENA DRILL ENGINE ---------------- */
+    let currentDrillCategory = 'konjugation';
+    let currentDrillIndex = 0;
+
+    function setArenaInputMode(mode) {
+      player.arenaMode = mode;
+      document.getElementById('arena-btn-mc').className = mode === 'mc' ? 'px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition' : 'px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
+      document.getElementById('arena-btn-text').className = mode === 'text' ? 'px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition' : 'px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
+      renderCurrentDrillQuestion();
+    }
+
+    function initArenaView() {
+      if (!window.DM_DRILLS) return;
+      const pillsContainer = document.getElementById('arena-category-pills');
+      pillsContainer.innerHTML = '';
+
+      Object.keys(window.DM_DRILLS).forEach(catKey => {
+        if (catKey === 'sentenceBuilder') return;
+        const cat = window.DM_DRILLS[catKey];
+        const btn = document.createElement('button');
+        btn.className = `px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${catKey === currentDrillCategory ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`;
+        btn.innerText = cat.name;
+        btn.onclick = () => {
+          currentDrillCategory = catKey;
+          currentDrillIndex = 0;
+          initArenaView();
+          renderCurrentDrillQuestion();
+        };
+        pillsContainer.appendChild(btn);
+      });
+      renderCurrentDrillQuestion();
+    }
+
+    function renderCurrentDrillQuestion() {
+      if (!window.DM_DRILLS) return;
+      const stage = document.getElementById('arena-stage');
+      const cat = window.DM_DRILLS[currentDrillCategory];
+      if (!cat || !cat.questions || cat.questions.length === 0) {
+        stage.innerHTML = '<div class="text-slate-500">Keine Aufgaben für diese Kategorie vorhanden.</div>';
+        return;
+      }
+
+      const q = cat.questions[currentDrillIndex % cat.questions.length];
+      const isTextInput = player.arenaMode === 'text';
+
+      stage.innerHTML = `
+        <div class="max-w-lg w-full text-center space-y-6">
+          <div class="flex items-center justify-between text-xs text-slate-400 font-mono">
+            <span>Kategorie: <strong class="text-brand-300 font-sans">${cat.name}</strong></span>
+            <span>Aufgabe ${(currentDrillIndex % cat.questions.length) + 1} / ${cat.questions.length}</span>
+          </div>
+          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800 shadow-inner">
+            <h3 class="text-2xl font-bold text-white leading-relaxed">${q.prompt}</h3>
+            ${q.subprompt ? `<p class="text-xs text-slate-400 mt-2">${q.subprompt}</p>` : ''}
+          </div>
+
+          ${isTextInput ? `
+            <div class="space-y-3">
+              <div class="flex gap-2">
+                <input type="text" id="arena-typing-input" placeholder="Antwort eintippen..." class="flex-1 bg-slate-900 border border-slate-700 text-white px-4 py-3 rounded-xl text-center text-lg font-bold focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitTypingAnswer('${q.answer}', '${q.explanation}')">
+                <button onclick="submitTypingAnswer('${q.answer}', '${q.explanation}')" class="px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-sm">Prüfen</button>
+              </div>
+              <div class="flex justify-center gap-1.5 pt-1">
+                <button type="button" onclick="insertUmlaut('ä')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ä</button>
+                <button type="button" onclick="insertUmlaut('ö')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ö</button>
+                <button type="button" onclick="insertUmlaut('ü')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ü</button>
+                <button type="button" onclick="insertUmlaut('ß')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ß</button>
+              </div>
+            </div>
+          ` : `
+            <div class="grid grid-cols-1 sm:grid-cols-${Math.min(q.options.length, 3)} gap-3">
+              ${q.options.map(opt => `
+                <button onclick="submitMCAnswer('${opt}', '${q.answer}', '${q.explanation}')" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">
+                  ${opt}
+                </button>
+              `).join('')}
+            </div>
+          `}
+          <div id="arena-drill-feedback" class="h-8 text-sm font-semibold flex items-center justify-center"></div>
+        </div>
+      `;
+      if (isTextInput) {
+        setTimeout(() => document.getElementById('arena-typing-input')?.focus(), 100);
+      }
+    }
+
+    function insertUmlaut(char) {
+      const inp = document.getElementById('arena-typing-input');
+      if (inp) {
+        inp.value += char;
+        inp.focus();
+      }
+    }
+
+    function submitMCAnswer(chosen, correct, exp) {
+      const fb = document.getElementById('arena-drill-feedback');
+      if (chosen.trim().toLowerCase() === correct.trim().toLowerCase()) {
+        soundSuccess();
+        addXP(15);
+        fb.innerHTML = `<span class="text-emerald-400 font-bold">Richtig! ${exp}</span>`;
+        setTimeout(() => {
+          currentDrillIndex++;
+          renderCurrentDrillQuestion();
+        }, 850);
+      } else {
+        soundError();
+        fb.innerHTML = `<span class="text-rose-400 font-bold">Falsch! ${exp}</span>`;
+      }
+    }
+
+    function submitTypingAnswer(correct, exp) {
+      const inp = document.getElementById('arena-typing-input');
+      const val = inp ? inp.value.trim().toLowerCase() : '';
+      const target = correct.trim().toLowerCase();
+      const fb = document.getElementById('arena-drill-feedback');
+
+      if (val === target) {
+        soundSuccess();
+        addXP(25);
+        fb.innerHTML = `<span class="text-emerald-400 font-bold">Exakt geschrieben! (+25 XP) — ${exp}</span>`;
+        setTimeout(() => {
+          currentDrillIndex++;
+          renderCurrentDrillQuestion();
+        }, 900);
+      } else {
+        soundError();
+        fb.innerHTML = `<span class="text-rose-400 font-bold">Nicht ganz richtig (Erwartet: "${correct}"). ${exp}</span>`;
+      }
+    }
+
+    /* ---------------- 7. SATZBAU-ARCHITEKT ENGINE ---------------- */
+    let currentBuilderIndex = 0;
+    let builderSelectedTokens = [];
+
+    function initBuilderView() {
+      if (!window.DM_DRILLS || !window.DM_DRILLS.sentenceBuilder) return;
+      const list = window.DM_DRILLS.sentenceBuilder;
+      const cur = list[currentBuilderIndex % list.length];
+      builderSelectedTokens = [];
+
+      document.getElementById('builder-rule-badge').innerText = cur.rule;
+      document.getElementById('builder-progress').innerText = `${(currentBuilderIndex % list.length) + 1} / ${list.length}`;
+      document.getElementById('builder-meaning').innerText = `"${cur.meaning}"`;
+
+      document.getElementById('builder-feedback').className = 'hidden';
+      document.getElementById('builder-btn-check').classList.remove('hidden');
+      document.getElementById('builder-btn-next').classList.add('hidden');
+
+      renderBuilderDropzone();
+
+      const pool = document.getElementById('builder-pool');
+      pool.innerHTML = '';
+      const shuffled = [...cur.tokens].sort(() => Math.random() - 0.5);
+      shuffled.forEach(tok => {
+        const btn = document.createElement('button');
+        btn.className = 'px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-sm transition';
+        btn.innerText = tok;
+        btn.onclick = () => {
+          builderSelectedTokens.push(tok);
+          btn.remove();
+          renderBuilderDropzone();
+        };
+        pool.appendChild(btn);
+      });
+    }
+
+    function renderBuilderDropzone() {
+      const dz = document.getElementById('builder-dropzone');
+      dz.innerHTML = '';
+      if (builderSelectedTokens.length === 0) {
+        dz.innerHTML = '<span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>';
+        return;
+      }
+      builderSelectedTokens.forEach((tok, i) => {
+        const chip = document.createElement('button');
+        chip.className = 'px-3 py-1.5 rounded-lg bg-cyan-600/30 border border-cyan-500/50 text-cyan-200 text-sm font-semibold flex items-center gap-1.5';
+        chip.innerHTML = `${tok} <i data-lucide="x" class="w-3 h-3 text-cyan-400"></i>`;
+        chip.onclick = () => {
+          builderSelectedTokens.splice(i, 1);
+          renderBuilderDropzone();
+          const btn = document.createElement('button');
+          btn.className = 'px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-sm transition';
+          btn.innerText = tok;
+          btn.onclick = () => {
+            builderSelectedTokens.push(tok);
+            btn.remove();
+            renderBuilderDropzone();
+          };
+          document.getElementById('builder-pool').appendChild(btn);
+          lucide.createIcons();
+        };
+        dz.appendChild(chip);
+      });
+      lucide.createIcons();
+    }
+
+    function resetBuilder() { initBuilderView(); }
+
+    function checkBuilder() {
+      const list = window.DM_DRILLS.sentenceBuilder;
+      const cur = list[currentBuilderIndex % list.length];
+      const fb = document.getElementById('builder-feedback');
+      fb.classList.remove('hidden');
+
+      const isCorrect = builderSelectedTokens.join(' ') === cur.solution.join(' ');
+      if (isCorrect) {
+        soundSuccess();
+        addXP(35);
+        fb.className = 'p-4 rounded-xl text-sm bg-emerald-950/60 border border-emerald-500/50 text-emerald-200';
+        fb.innerHTML = `<strong>Syntaktisch perfekt!</strong> Der Satz folgt exakt der Grammatikregel: <em>${cur.rule}</em>`;
+        document.getElementById('builder-btn-check').classList.add('hidden');
+        document.getElementById('builder-btn-next').classList.remove('hidden');
+      } else {
+        soundError();
+        fb.className = 'p-4 rounded-xl text-sm bg-rose-950/60 border border-rose-500/50 text-rose-200';
+        fb.innerHTML = `<strong>Wortstellungsfehler:</strong> Achte auf das Verb (Position 2 oder Satzende bei Klammern)!`;
+      }
+    }
+
+    function nextBuilder() {
+      currentBuilderIndex++;
+      initBuilderView();
+    }
+
+    /* ---------------- 8. REALLIFE RPG QUEST RUNNER ---------------- */
+    let activeQuest = null;
+    let activeQuestStepIdx = 0;
+
+    function initRPGView() {
+      if (!window.DM_SCENARIOS) return;
+      const grid = document.getElementById('rpg-grid');
+      grid.innerHTML = '';
+
+      window.DM_SCENARIOS.forEach(sc => {
+        const isDone = player.completedQuests.includes(sc.id);
+        const card = document.createElement('div');
+        card.className = 'glass-card p-4 rounded-2xl flex flex-col justify-between space-y-3';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-2xl">${sc.icon}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${isDone ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">${isDone ? 'MEISTER' : 'OFFEN'}</span>
+            </div>
+            <h4 class="font-bold text-white text-sm mb-1">${sc.title}</h4>
+            <p class="text-[11px] text-slate-400">Rolle: ${sc.npcRole}</p>
+          </div>
+          <button onclick="startRPGQuest('${sc.id}')" class="w-full py-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 ${isDone ? 'bg-emerald-600/20 text-emerald-300 border border-emerald-500/30' : 'bg-brand-600 hover:bg-brand-500 text-white'}">
+            ${isDone ? '<i data-lucide="check" class="w-3.5 h-3.5"></i> Wiederholen' : '<i data-lucide="play" class="w-3.5 h-3.5"></i> Starten'}
+          </button>
+        `;
+        grid.appendChild(card);
+      });
+      document.getElementById('rpg-done-counter').innerText = player.completedQuests.length;
+      lucide.createIcons();
+    }
+
+    function startRPGQuest(questId) {
+      activeQuest = window.DM_SCENARIOS.find(s => s.id === questId);
+      activeQuestStepIdx = 0;
+      if (!activeQuest) return;
+
+      document.getElementById('modal-quest-icon').innerText = activeQuest.icon;
+      document.getElementById('modal-quest-title').innerText = activeQuest.title;
+      document.getElementById('modal-quest-role').innerText = `Gesprächspartner: ${activeQuest.npcRole}`;
+      renderRPGStep();
+      document.getElementById('rpg-modal').classList.remove('hidden');
+    }
+
+    function renderRPGStep() {
+      const step = activeQuest.steps[activeQuestStepIdx];
+      document.getElementById('modal-npc-name').innerText = activeQuest.npcRole;
+      document.getElementById('modal-npc-text').innerText = step.npc;
+      document.getElementById('modal-quest-clue').innerText = step.clue;
+      document.getElementById('modal-step-counter').innerText = `Schritt ${activeQuestStepIdx + 1} von ${activeQuest.steps.length}`;
+
+      const fb = document.getElementById('modal-feedback-box');
+      fb.className = 'hidden';
+      document.getElementById('modal-btn-next').classList.add('hidden');
+
+      const area = document.getElementById('modal-interactive-area');
+      area.innerHTML = '';
+
+      if (step.type === 'form') {
+        area.innerHTML = `
+          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-3 text-xs">
+            <span class="text-brand-300 font-bold block uppercase tracking-wider">Offizielles Formular — Meldebestätigung / Kursanmeldung</span>
+            <div class="grid grid-cols-2 gap-2.5">
+              <div>
+                <label class="text-slate-400 block mb-1">Familienname / Name:</label>
+                <input type="text" id="form-name" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" placeholder="z.B. Nakka">
+              </div>
+              <div>
+                <label class="text-slate-400 block mb-1">Vorname:</label>
+                <input type="text" id="form-vorname" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" placeholder="z.B. Bhavani">
+              </div>
+              <div>
+                <label class="text-slate-400 block mb-1">Geburtsdatum:</label>
+                <input type="text" id="form-geb" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white" placeholder="TT.MM.JJJJ">
+              </div>
+              <div>
+                <label class="text-slate-400 block mb-1">Familienstand:</label>
+                <select id="form-stand" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white">
+                  <option value="ledig">ledig</option>
+                  <option value="verheiratet">verheiratet</option>
+                  <option value="geschieden">geschieden</option>
+                </select>
+              </div>
+            </div>
+            <button onclick="submitFormStep()" class="w-full py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold text-xs mt-2">Formular einreichen</button>
+          </div>
+        `;
+      } else if (step.type === 'typing') {
+        area.innerHTML = `
+          <div class="space-y-2">
+            <input type="text" id="rpg-free-input" placeholder="Schreibe deine deutsche Antwort hier..." class="w-full bg-slate-900 border border-slate-700 p-3 rounded-xl text-white text-sm focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitRPGTypingStep()">
+            <button onclick="submitRPGTypingStep()" class="w-full py-2.5 bg-brand-600 hover:bg-brand-500 text-white rounded-xl text-xs font-bold">Antwort absenden</button>
+          </div>
+        `;
+      } else {
+        step.options.forEach((opt, idx) => {
+          const btn = document.createElement('button');
+          btn.className = 'w-full text-left p-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs sm:text-sm transition flex items-start gap-3';
+          btn.innerHTML = `
+            <span class="w-6 h-6 rounded bg-slate-900 border border-slate-700 text-brand-400 font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">${String.fromCharCode(65 + idx)}</span>
+            <span class="flex-1">${opt.text}</span>
+          `;
+          btn.onclick = () => handleRPGChoice(opt, btn);
+          area.appendChild(btn);
+        });
+      }
+    }
+
+    function handleRPGChoice(opt, btnEl) {
+      const fb = document.getElementById('modal-feedback-box');
+      fb.classList.remove('hidden');
+      document.querySelectorAll('#modal-interactive-area button').forEach(b => b.disabled = true);
+
+      if (opt.correct) {
+        soundSuccess();
+        addXP(25);
+        btnEl.classList.add('border-emerald-500', 'bg-emerald-950/40');
+        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
+        fb.innerHTML = `<strong>Korrekt!</strong> ${opt.feedback}`;
+        document.getElementById('modal-btn-next').classList.remove('hidden');
+      } else {
+        soundError();
+        btnEl.classList.add('border-rose-500', 'bg-rose-950/40');
+        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
+        fb.innerHTML = `<strong>Nicht ideal:</strong> ${opt.feedback}`;
+        setTimeout(() => document.querySelectorAll('#modal-interactive-area button').forEach(b => b.disabled = false), 1200);
+      }
+    }
+
+    function submitFormStep() {
+      const name = document.getElementById('form-name')?.value.trim();
+      const vorname = document.getElementById('form-vorname')?.value.trim();
+      const geb = document.getElementById('form-geb')?.value.trim();
+      const fb = document.getElementById('modal-feedback-box');
+      fb.classList.remove('hidden');
+
+      if (name && vorname && geb) {
+        soundSuccess();
+        addXP(40);
+        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
+        fb.innerHTML = `<strong>Formular vollständig!</strong> Alle Pflichtfelder (Name, Vorname, Geburtsdatum, Familienstand) wurden korrekt ausgefüllt.`;
+        document.getElementById('modal-btn-next').classList.remove('hidden');
+      } else {
+        soundError();
+        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
+        fb.innerHTML = `Bitte fülle alle Pflichtfelder (Name, Vorname, Geburtsdatum) vollständig aus.`;
+      }
+    }
+
+    function submitRPGTypingStep() {
+      const step = activeQuest.steps[activeQuestStepIdx];
+      const val = document.getElementById('rpg-free-input')?.value.trim().toLowerCase();
+      const fb = document.getElementById('modal-feedback-box');
+      fb.classList.remove('hidden');
+
+      const matches = step.keywords.some(k => val.includes(k.toLowerCase()));
+      if (matches) {
+        soundSuccess();
+        addXP(30);
+        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
+        fb.innerHTML = `<strong>Hervorragend geantwortet!</strong> Deine Formulierung passt exakt zur Alltagssituation.`;
+        document.getElementById('modal-btn-next').classList.remove('hidden');
+      } else {
+        soundError();
+        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
+        fb.innerHTML = `<strong>Hinweis:</strong> Verwende die Kernwörter: ${step.keywords.join(', ')}`;
+      }
+    }
+
+    function nextRPGStep() {
+      activeQuestStepIdx++;
+      if (activeQuestStepIdx < activeQuest.steps.length) {
+        renderRPGStep();
+      } else {
+        soundFanfare();
+        if (!player.completedQuests.includes(activeQuest.id)) {
+          player.completedQuests.push(activeQuest.id);
+          localStorage.setItem('dm_a1_quests', JSON.stringify(player.completedQuests));
+        }
+        addXP(70);
+        closeRPGModal();
+        initRPGView();
+      }
+    }
+
+    function closeRPGModal() {
+      document.getElementById('rpg-modal').classList.add('hidden');
+      window.speechSynthesis && window.speechSynthesis.cancel();
+    }
+
+    /* ---------------- 9. WORTSCHATZ LAB ENGINE ---------------- */
+    let currentVocabCategory = 'alle';
+
+    function initVocabView() {
+      if (!window.DM_VOCAB) return;
+      const pillsContainer = document.getElementById('vocab-category-pills');
+      pillsContainer.innerHTML = '';
+
+      const categories = ['alle', ...new Set(window.DM_VOCAB.map(v => v.cat))];
+      categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = `px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${cat === currentVocabCategory ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`;
+        btn.innerText = cat.charAt(0).toUpperCase() + cat.slice(1);
+        btn.onclick = () => {
+          currentVocabCategory = cat;
+          initVocabView();
+        };
+        pillsContainer.appendChild(btn);
+      });
+
+      renderVocabCards();
+    }
+
+    function renderVocabCards() {
+      if (!window.DM_VOCAB) return;
+      const grid = document.getElementById('vocab-cards-grid');
+      const q = document.getElementById('vocab-search')?.value.toLowerCase() || '';
+      grid.innerHTML = '';
+
+      const filtered = window.DM_VOCAB.filter(v => {
+        const matchesCat = currentVocabCategory === 'alle' || v.cat === currentVocabCategory;
+        const matchesSearch = q === '' || v.de.toLowerCase().includes(q) || v.en.toLowerCase().includes(q);
+        return matchesCat && matchesSearch;
+      });
+
+      filtered.forEach(item => {
+        const badgeClass = item.gender === 'der' ? 'badge-der' : item.gender === 'die' ? 'badge-die' : item.gender === 'das' ? 'badge-das' : 'bg-slate-800 text-slate-300';
+        const card = document.createElement('div');
+        card.className = 'glass-card p-3.5 rounded-xl flex flex-col justify-between space-y-2';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-[10px] px-2 py-0.5 rounded font-bold ${badgeClass}">${item.article || item.gender || 'Wort'}</span>
+              <button onclick="speakGerman('${item.de}')" class="p-1 text-slate-400 hover:text-cyan-300">
+                <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+            <h4 class="font-bold text-white text-sm">${item.de}</h4>
+            <p class="text-[11px] text-slate-400">${item.en}</p>
+          </div>
+          ${item.plural ? `<div class="text-[10px] font-mono text-slate-500 pt-1 border-t border-slate-800/80">Plural: die ${item.plural}</div>` : ''}
+        `;
+        grid.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    function filterVocab() { renderVocabCards(); }
+
+    /* ---------------- 10. GOETHE EXAM ENGINE (FULL 4-PART SUITE) ---------------- */
+    let examUserAnswers = {};
+    let examTimer = 1500; // 25 minutes
+    let examInterval = null;
+
+    function initExamView() {
+      if (!window.DM_EXAM) return;
+      
+      // Render Teil 1 & 2 (20 Multiple Choice questions)
+      const container = document.getElementById('exam-questions-list');
+      container.innerHTML = '';
+
+      window.DM_EXAM.forEach((q, idx) => {
+        const card = document.createElement('div');
+        card.className = 'glass-panel p-5 rounded-2xl space-y-3';
+        card.innerHTML = `
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span class="font-bold text-emerald-400 font-mono">Aufgabe ${idx + 1} von ${window.DM_EXAM.length}</span>
+            <span class="font-mono text-slate-500">${q.type}</span>
+          </div>
+          <p class="text-sm sm:text-base font-semibold text-white leading-relaxed whitespace-pre-line">${q.question}</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            ${q.options.map((opt, oIdx) => `
+              <button onclick="selectExamAnswer(${q.id},${oIdx})" id="exam-opt-${q.id}-${oIdx}" class="text-left p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 text-xs sm:text-sm hover:border-emerald-500 transition">
+                <span class="font-bold text-emerald-400 mr-1.5">${String.fromCharCode(65 + oIdx)})</span>${opt}
+              </button>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      // Render Teil 3: Schreiben Teil 1 (Formular ausfüllen)
+      if (window.DM_EXAM_SCHREIBEN_TEIL1) {
+        document.getElementById('exam-teil1-text').innerText = window.DM_EXAM_SCHREIBEN_TEIL1.instruction;
+        const fContainer = document.getElementById('exam-teil1-fields');
+        fContainer.innerHTML = '';
+        window.DM_EXAM_SCHREIBEN_TEIL1.fields.forEach(f => {
+          const div = document.createElement('div');
+          div.className = 'space-y-1';
+          div.innerHTML = `
+            <label class="text-xs font-semibold text-slate-300 block">${f.label}</label>
+            <input type="text" id="exam-field-${f.id}" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white text-sm focus:outline-none focus:border-cyan-500" placeholder="${f.hint}">
+          `;
+          fContainer.appendChild(div);
+        });
+      }
+
+      // Render Teil 4: Schreiben Teil 2 (E-Mail)
+      if (window.DM_EXAM_SCHREIBEN_TEIL2) {
+        document.getElementById('exam-teil2-prompt').innerText = window.DM_EXAM_SCHREIBEN_TEIL2.prompt;
+        const lpList = document.getElementById('exam-teil2-leitpunkte');
+        lpList.innerHTML = '';
+        window.DM_EXAM_SCHREIBEN_TEIL2.leitpunkte.forEach(lp => {
+          const li = document.createElement('li');
+          li.innerText = lp.label;
+          lpList.appendChild(li);
+        });
+      }
+
+      startExamTimer();
+      updateExamProgress();
+    }
+
+    function updateWordCount() {
+      const text = document.getElementById('exam-email-input')?.value.trim() || '';
+      const words = text ? text.split(/\s+/).length : 0;
+      document.getElementById('exam-word-count').innerText = words;
+    }
+
+    function startExamTimer() {
+      clearInterval(examInterval);
+      examInterval = setInterval(() => {
+        examTimer--;
+        if (examTimer <= 0) {
+          clearInterval(examInterval);
+          submitExam();
+        }
+        const m = Math.floor(examTimer / 60).toString().padStart(2, '0');
+        const s = (examTimer % 60).toString().padStart(2, '0');
+        const el = document.getElementById('exam-timer-display');
+        if (el) el.innerText = `${m}:${s}`;
+      }, 1000);
+    }
+
+    function selectExamAnswer(qId, oIdx) {
+      examUserAnswers[qId] = oIdx;
+      document.querySelectorAll(`[id^="exam-opt-${qId}-"]`).forEach(b => {
+        b.className = 'text-left p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 text-xs sm:text-sm hover:border-emerald-500 transition';
+      });
+      const chosen = document.getElementById(`exam-opt-${qId}-${oIdx}`);
+      if (chosen) {
+        chosen.className = 'text-left p-3 rounded-xl bg-emerald-950/60 border border-emerald-500 text-white font-semibold text-xs sm:text-sm transition';
+      }
+      playTone(580, 'sine', 0.05);
+      updateExamProgress();
+    }
+
+    function updateExamProgress() {
+      const mcCount = Object.keys(examUserAnswers).length;
+      const totalMC = window.DM_EXAM ? window.DM_EXAM.length : 20;
+      document.getElementById('exam-progress-counter').innerText = `${mcCount} von ${totalMC} Multiple-Choice Aufgaben beantwortet`;
+    }
+
+    function submitExam() {
+      clearInterval(examInterval);
+      let mcScore = 0;
+      let teil1Score = 0;
+      let teil2Score = 0;
+
+      // 1. Evaluate Multiple Choice (Teil 1 & 2) — Max 20 points
+      window.DM_EXAM.forEach(q => {
+        if (examUserAnswers[q.id] === q.correct) mcScore++;
+      });
+
+      // 2. Evaluate Schreiben Teil 1 (Form Filling) — Max 5 points
+      if (window.DM_EXAM_SCHREIBEN_TEIL1) {
+        window.DM_EXAM_SCHREIBEN_TEIL1.fields.forEach(f => {
+          const val = document.getElementById(`exam-field-${f.id}`)?.value.trim().toLowerCase() || '';
+          if (f.expected.some(exp => val.includes(exp))) {
+            teil1Score++;
+          }
+        });
+      }
+
+      // 3. Evaluate Schreiben Teil 2 (E-Mail writing) — Max 5 points
+      const emailText = document.getElementById('exam-email-input')?.value.trim().toLowerCase() || '';
+      const wordCount = emailText ? emailText.split(/\s+/).length : 0;
+
+      // Criterion 1: Appropriate Salutation / Greeting
+      const hasGreeting = emailText.includes('liebe frau berg') || emailText.includes('sehr geehrte') || emailText.includes('hallo frau berg');
+      if (hasGreeting) teil2Score += 1;
+
+      // Criterion 2-4: The 3 Leitpunkte keywords
+      if (window.DM_EXAM_SCHREIBEN_TEIL2) {
+        window.DM_EXAM_SCHREIBEN_TEIL2.leitpunkte.forEach(lp => {
+          if (lp.keywords.some(k => emailText.includes(k))) teil2Score += 1;
+        });
+      }
+
+      // Criterion 5: Appropriate Closing / Sign-off
+      const hasClosing = emailText.includes('viele grüße') || emailText.includes('herzliche grüße') || emailText.includes('mit freundlichen grüßen') || emailText.includes('grüße');
+      if (hasClosing) teil2Score += 1;
+
+      // Total Exam Score: 30 Points total (20 MC + 5 Formular + 5 E-Mail)
+      const totalPoints = mcScore + teil1Score + teil2Score;
+      const maxPoints = 30;
+      const pct = Math.round((totalPoints / maxPoints) * 100);
+      const passed = pct >= 60;
+
+      if (passed) { soundFanfare(); addXP(200); } else { soundError(); }
+
+      const banner = document.getElementById('exam-result-banner');
+      banner.classList.remove('hidden');
+      banner.innerHTML = `
+        <div class="max-w-xl mx-auto space-y-4">
+          <div class="w-24 h-24 rounded-full mx-auto flex items-center justify-center ${passed ? 'bg-emerald-500/20 text-emerald-400 border-2 border-emerald-500' : 'bg-rose-500/20 text-rose-400 border-2 border-rose-500'} text-3xl font-extrabold font-mono">
+            ${pct}%
+          </div>
+          <h3 class="text-2xl font-bold text-white">${passed ? 'Goethe Start Deutsch 1 BESTANDEN! (A1 Zertifikat)' : 'Prüfung leider nicht bestanden (Unter 60%)'}</h3>
+          <div class="p-4 bg-slate-900 border border-slate-800 rounded-xl text-xs sm:text-sm text-slate-300 space-y-2 text-left font-mono">
+            <div class="flex justify-between border-b border-slate-800 pb-1">
+              <span>Teil 1 & 2 (Lesen & Sprachbausteine):</span>
+              <strong class="text-emerald-400">${mcScore} / 20 Punkte</strong>
+            </div>
+            <div class="flex justify-between border-b border-slate-800 pb-1">
+              <span>Schreiben Teil 1 (Formular ausfüllen):</span>
+              <strong class="text-cyan-400">${teil1Score} / 5 Punkte</strong>
+            </div>
+            <div class="flex justify-between border-b border-slate-800 pb-1">
+              <span>Schreiben Teil 2 (E-Mail verfassen):</span>
+              <strong class="text-purple-400">${teil2Score} / 5 Punkte (${wordCount} Wörter)</strong>
+            </div>
+            <div class="flex justify-between pt-1 font-bold text-white text-base">
+              <span>Gesamtergebnis:</span>
+              <span>${totalPoints} / ${maxPoints} Punkte (${pct}%)</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400">${passed ? 'Glückwunsch! Du hast das offizielle A1 Niveau in Lesen, Sprachbausteinen und Schreiben nachgewiesen.' : 'Tipp: Wiederhole die Grammatik-Module im Atlas und übe das E-Mail-Schreiben in der Reallife-Quest 12.'}</p>
+          <button onclick="resetExam()" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm">Prüfung wiederholen</button>
+        </div>
+      `;
+      banner.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetExam() {
+      examUserAnswers = {};
+      examTimer = 1500;
+      document.getElementById('exam-result-banner').classList.add('hidden');
+      initExamView();
+    }
+
+    /* ---------------- 11. BOOTSTRAPPER ---------------- */
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('stat-xp').innerText = player.xp;
+      document.getElementById('stat-streak').innerText = player.streak;
+
+      checkLoadedModules();
+
+      initAtlasView();
+      initTablesView();
+      initArenaView();
+      initBuilderView();
+      initRPGView();
+      initVocabView();
+      initExamView();
+
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
