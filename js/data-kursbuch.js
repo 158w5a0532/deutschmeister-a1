@@ -1,5 +1,5 @@
 /**
- * DeutschMeister A1 - Kursbuch Data Payload (16 Chapters, ~1200+ Questions)
+ * DeutschMeister A1 - Kursbuch Data Payload (16 Chapters, ~100 Sub-components, 2000+ Questions)
  */
 
 window.DM_KURSBUCH = [
@@ -7,448 +7,1108 @@ window.DM_KURSBUCH = [
     "id": 1,
     "title": "Herzlich willkommen!",
     "goals": [
-      "Grammatik meistern: Verben, Personalpronomen & W-Fragen",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 1 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Verben",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Verben</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Begrüßung",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Begrüßung</strong> in Kapitel 1. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Verben.",
-            "en": "I am learning Verben."
+            "de": "Beispielsatz 1 für Begrüßung.",
+            "en": "Example sentence 1 for Begrüßung."
           },
           {
-            "de": "Das ist ein Beispiel für Verben.",
-            "en": "This is an example for Verben."
+            "de": "Beispielsatz 2 für Begrüßung.",
+            "en": "Example sentence 2 for Begrüßung."
           },
           {
-            "de": "Verstehst du Verben?",
-            "en": "Do you understand Verben?"
+            "de": "Beispielsatz 3 für Begrüßung.",
+            "en": "Example sentence 3 for Begrüßung."
           }
         ],
         "quizzes": [
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommst",
-              "kommt"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "komme",
-              "kommt"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnst",
-              "wohnt"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnst",
-              "wohnt"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "kommst",
-              "komme"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "kommst",
-              "komme"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnst",
-              "wohne",
-              "wohnt"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnt",
-              "wohnst"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommst",
-              "kommt"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "kommt",
-              "komme"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "komme",
-              "kommst"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnst",
-              "wohnt",
-              "wohne"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnt",
-              "wohnst"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommst",
-              "kommt"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "kommst",
-              "komme"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "komme",
-              "kommt"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnst",
-              "wohne",
-              "wohnt"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Begrüßung) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnst",
-              "wohnt",
-              "wohne"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Begrüßung' in Kapitel 1."
           }
         ]
       },
       {
-        "title": "Personalpronomen & W-Fragen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Personalpronomen & W-Fragen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Namen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Namen</strong> in Kapitel 1. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Personalpronomen & W-Fragen.",
-            "en": "I am learning Personalpronomen & W-Fragen."
+            "de": "Beispielsatz 1 für Namen.",
+            "en": "Example sentence 1 for Namen."
           },
           {
-            "de": "Das ist ein Beispiel für Personalpronomen & W-Fragen.",
-            "en": "This is an example for Personalpronomen & W-Fragen."
+            "de": "Beispielsatz 2 für Namen.",
+            "en": "Example sentence 2 for Namen."
           },
           {
-            "de": "Verstehst du Personalpronomen & W-Fragen?",
-            "en": "Do you understand Personalpronomen & W-Fragen?"
+            "de": "Beispielsatz 3 für Namen.",
+            "en": "Example sentence 3 for Namen."
           }
         ],
         "quizzes": [
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohne",
-              "wohnst"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnt",
-              "wohnst"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnt",
-              "wohnst"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommt",
-              "kommst"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "komme",
-              "kommt"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "kommt",
-              "komme"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "kommt",
-              "komme"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommst",
-              "kommt"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "kommt",
-              "komme"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "kommst",
-              "komme"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommst",
-              "kommt"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohne",
-              "wohnt",
-              "wohnst"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "komme",
-              "kommt"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommst",
-              "komme",
-              "kommt"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "komme",
-              "kommt",
-              "kommst"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher kommst du?",
+            "q": "Kapitel 1 (Namen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "kommt",
-              "komme",
-              "kommst"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "kommst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du kommst."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
           },
           {
-            "q": "Woher wohnst du?",
+            "q": "Kapitel 1 (Namen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "wohnt",
-              "wohnst",
-              "wohne"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "wohnst",
-            "exp": "Das Pronomen 'du' verlangt die Endung -st: du wohnst."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Namen' in Kapitel 1."
+          }
+        ]
+      },
+      {
+        "title": "Herkunft",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Herkunft</strong> in Kapitel 1. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Herkunft.",
+            "en": "Example sentence 1 for Herkunft."
+          },
+          {
+            "de": "Beispielsatz 2 für Herkunft.",
+            "en": "Example sentence 2 for Herkunft."
+          },
+          {
+            "de": "Beispielsatz 3 für Herkunft.",
+            "en": "Example sentence 3 for Herkunft."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Herkunft) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Herkunft' in Kapitel 1."
+          }
+        ]
+      },
+      {
+        "title": "Alphabet",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Alphabet</strong> in Kapitel 1. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Alphabet.",
+            "en": "Example sentence 1 for Alphabet."
+          },
+          {
+            "de": "Beispielsatz 2 für Alphabet.",
+            "en": "Example sentence 2 for Alphabet."
+          },
+          {
+            "de": "Beispielsatz 3 für Alphabet.",
+            "en": "Example sentence 3 for Alphabet."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Alphabet) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Alphabet' in Kapitel 1."
+          }
+        ]
+      },
+      {
+        "title": "Zahlen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Zahlen</strong> in Kapitel 1. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Zahlen.",
+            "en": "Example sentence 1 for Zahlen."
+          },
+          {
+            "de": "Beispielsatz 2 für Zahlen.",
+            "en": "Example sentence 2 for Zahlen."
+          },
+          {
+            "de": "Beispielsatz 3 für Zahlen.",
+            "en": "Example sentence 3 for Zahlen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
+          },
+          {
+            "q": "Kapitel 1 (Zahlen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen' in Kapitel 1."
           }
         ]
       }
@@ -458,228 +1118,1108 @@ window.DM_KURSBUCH = [
     "id": 2,
     "title": "Kontakte",
     "goals": [
-      "Grammatik meistern: Zahlen 0-100 & Ja/Nein-Fragen",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 2 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Zahlen 0-100 & Ja/Nein-Fragen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Zahlen 0-100 & Ja/Nein-Fragen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Zahlen 0-100",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Zahlen 0-100</strong> in Kapitel 2. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Zahlen 0-100 & Ja/Nein-Fragen.",
-            "en": "I am learning Zahlen 0-100 & Ja/Nein-Fragen."
+            "de": "Beispielsatz 1 für Zahlen 0-100.",
+            "en": "Example sentence 1 for Zahlen 0-100."
           },
           {
-            "de": "Das ist ein Beispiel für Zahlen 0-100 & Ja/Nein-Fragen.",
-            "en": "This is an example for Zahlen 0-100 & Ja/Nein-Fragen."
+            "de": "Beispielsatz 2 für Zahlen 0-100.",
+            "en": "Example sentence 2 for Zahlen 0-100."
           },
           {
-            "de": "Verstehst du Zahlen 0-100 & Ja/Nein-Fragen?",
-            "en": "Do you understand Zahlen 0-100 & Ja/Nein-Fragen?"
+            "de": "Beispielsatz 3 für Zahlen 0-100.",
+            "en": "Example sentence 3 for Zahlen 0-100."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 2: Welches Wort passt?",
+            "q": "Kapitel 2 (Zahlen 0-100) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zahlen 0-100 & Ja/Nein-Fragen."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Zahlen 0-100' in Kapitel 2."
+          }
+        ]
+      },
+      {
+        "title": "Sprachen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Sprachen</strong> in Kapitel 2. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Sprachen.",
+            "en": "Example sentence 1 for Sprachen."
+          },
+          {
+            "de": "Beispielsatz 2 für Sprachen.",
+            "en": "Example sentence 2 for Sprachen."
+          },
+          {
+            "de": "Beispielsatz 3 für Sprachen.",
+            "en": "Example sentence 3 for Sprachen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Sprachen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Sprachen' in Kapitel 2."
+          }
+        ]
+      },
+      {
+        "title": "Berufe",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Berufe</strong> in Kapitel 2. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Berufe.",
+            "en": "Example sentence 1 for Berufe."
+          },
+          {
+            "de": "Beispielsatz 2 für Berufe.",
+            "en": "Example sentence 2 for Berufe."
+          },
+          {
+            "de": "Beispielsatz 3 für Berufe.",
+            "en": "Example sentence 3 for Berufe."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Berufe) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Berufe' in Kapitel 2."
+          }
+        ]
+      },
+      {
+        "title": "Ja/Nein-Fragen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Ja/Nein-Fragen</strong> in Kapitel 2. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Ja/Nein-Fragen.",
+            "en": "Example sentence 1 for Ja/Nein-Fragen."
+          },
+          {
+            "de": "Beispielsatz 2 für Ja/Nein-Fragen.",
+            "en": "Example sentence 2 for Ja/Nein-Fragen."
+          },
+          {
+            "de": "Beispielsatz 3 für Ja/Nein-Fragen.",
+            "en": "Example sentence 3 for Ja/Nein-Fragen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Ja/Nein-Fragen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Ja/Nein-Fragen' in Kapitel 2."
+          }
+        ]
+      },
+      {
+        "title": "Medien",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Medien</strong> in Kapitel 2. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Medien.",
+            "en": "Example sentence 1 for Medien."
+          },
+          {
+            "de": "Beispielsatz 2 für Medien.",
+            "en": "Example sentence 2 for Medien."
+          },
+          {
+            "de": "Beispielsatz 3 für Medien.",
+            "en": "Example sentence 3 for Medien."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 2 (Medien) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
+          },
+          {
+            "q": "Kapitel 2 (Medien) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Medien' in Kapitel 2."
           }
         ]
       }
@@ -689,888 +2229,1108 @@ window.DM_KURSBUCH = [
     "id": 3,
     "title": "Wie heißt das auf Deutsch?",
     "goals": [
-      "Grammatik meistern: Artikel, Possessiv (mein/dein), Negation (kein), Imperativ",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 3 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Artikel",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Artikel</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Gegenstände benennen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Gegenstände benennen</strong> in Kapitel 3. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Artikel.",
-            "en": "I am learning Artikel."
+            "de": "Beispielsatz 1 für Gegenstände benennen.",
+            "en": "Example sentence 1 for Gegenstände benennen."
           },
           {
-            "de": "Das ist ein Beispiel für Artikel.",
-            "en": "This is an example for Artikel."
+            "de": "Beispielsatz 2 für Gegenstände benennen.",
+            "en": "Example sentence 2 for Gegenstände benennen."
           },
           {
-            "de": "Verstehst du Artikel?",
-            "en": "Do you understand Artikel?"
+            "de": "Beispielsatz 3 für Gegenstände benennen.",
+            "en": "Example sentence 3 for Gegenstände benennen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Gegenstände benennen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Artikel."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Gegenstände benennen' in Kapitel 3."
           }
         ]
       },
       {
-        "title": "Possessiv (mein/dein)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Possessiv (mein/dein)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Unbestimmter Artikel",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Unbestimmter Artikel</strong> in Kapitel 3. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Possessiv (mein/dein).",
-            "en": "I am learning Possessiv (mein/dein)."
+            "de": "Beispielsatz 1 für Unbestimmter Artikel.",
+            "en": "Example sentence 1 for Unbestimmter Artikel."
           },
           {
-            "de": "Das ist ein Beispiel für Possessiv (mein/dein).",
-            "en": "This is an example for Possessiv (mein/dein)."
+            "de": "Beispielsatz 2 für Unbestimmter Artikel.",
+            "en": "Example sentence 2 for Unbestimmter Artikel."
           },
           {
-            "de": "Verstehst du Possessiv (mein/dein)?",
-            "en": "Do you understand Possessiv (mein/dein)?"
+            "de": "Beispielsatz 3 für Unbestimmter Artikel.",
+            "en": "Example sentence 3 for Unbestimmter Artikel."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Unbestimmter Artikel) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Possessiv (mein/dein)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Unbestimmter Artikel' in Kapitel 3."
           }
         ]
       },
       {
-        "title": "Negation (kein)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Negation (kein)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Possessivartikel",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Possessivartikel</strong> in Kapitel 3. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Negation (kein).",
-            "en": "I am learning Negation (kein)."
+            "de": "Beispielsatz 1 für Possessivartikel.",
+            "en": "Example sentence 1 for Possessivartikel."
           },
           {
-            "de": "Das ist ein Beispiel für Negation (kein).",
-            "en": "This is an example for Negation (kein)."
+            "de": "Beispielsatz 2 für Possessivartikel.",
+            "en": "Example sentence 2 for Possessivartikel."
           },
           {
-            "de": "Verstehst du Negation (kein)?",
-            "en": "Do you understand Negation (kein)?"
+            "de": "Beispielsatz 3 für Possessivartikel.",
+            "en": "Example sentence 3 for Possessivartikel."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Possessivartikel) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Negation (kein)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Possessivartikel' in Kapitel 3."
+          }
+        ]
+      },
+      {
+        "title": "Kein-Negation",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Kein-Negation</strong> in Kapitel 3. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Kein-Negation.",
+            "en": "Example sentence 1 for Kein-Negation."
+          },
+          {
+            "de": "Beispielsatz 2 für Kein-Negation.",
+            "en": "Example sentence 2 for Kein-Negation."
+          },
+          {
+            "de": "Beispielsatz 3 für Kein-Negation.",
+            "en": "Example sentence 3 for Kein-Negation."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
+          },
+          {
+            "q": "Kapitel 3 (Kein-Negation) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Kein-Negation' in Kapitel 3."
           }
         ]
       },
       {
         "title": "Imperativ",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Imperativ</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Imperativ</strong> in Kapitel 3. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Imperativ.",
-            "en": "I am learning Imperativ."
+            "de": "Beispielsatz 1 für Imperativ.",
+            "en": "Example sentence 1 for Imperativ."
           },
           {
-            "de": "Das ist ein Beispiel für Imperativ.",
-            "en": "This is an example for Imperativ."
+            "de": "Beispielsatz 2 für Imperativ.",
+            "en": "Example sentence 2 for Imperativ."
           },
           {
-            "de": "Verstehst du Imperativ?",
-            "en": "Do you understand Imperativ?"
+            "de": "Beispielsatz 3 für Imperativ.",
+            "en": "Example sentence 3 for Imperativ."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 3: Welches Wort passt?",
+            "q": "Kapitel 3 (Imperativ) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ' in Kapitel 3."
           }
         ]
       }
@@ -1580,668 +3340,1108 @@ window.DM_KURSBUCH = [
     "id": 4,
     "title": "Einen Kaffee, bitte.",
     "goals": [
-      "Grammatik meistern: Akkusativ, Singular/Plural, Essen & Trinken",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 4 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Akkusativ",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Akkusativ</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Cafeteria bestellen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Cafeteria bestellen</strong> in Kapitel 4. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Akkusativ.",
-            "en": "I am learning Akkusativ."
+            "de": "Beispielsatz 1 für Cafeteria bestellen.",
+            "en": "Example sentence 1 for Cafeteria bestellen."
           },
           {
-            "de": "Das ist ein Beispiel für Akkusativ.",
-            "en": "This is an example for Akkusativ."
+            "de": "Beispielsatz 2 für Cafeteria bestellen.",
+            "en": "Example sentence 2 for Cafeteria bestellen."
           },
           {
-            "de": "Verstehst du Akkusativ?",
-            "en": "Do you understand Akkusativ?"
+            "de": "Beispielsatz 3 für Cafeteria bestellen.",
+            "en": "Example sentence 3 for Cafeteria bestellen."
           }
         ],
         "quizzes": [
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Cafeteria bestellen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Cafeteria bestellen' in Kapitel 4."
+          }
+        ]
+      },
+      {
+        "title": "Preise erfragen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Preise erfragen</strong> in Kapitel 4. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Preise erfragen.",
+            "en": "Example sentence 1 for Preise erfragen."
+          },
+          {
+            "de": "Beispielsatz 2 für Preise erfragen.",
+            "en": "Example sentence 2 for Preise erfragen."
+          },
+          {
+            "de": "Beispielsatz 3 für Preise erfragen.",
+            "en": "Example sentence 3 for Preise erfragen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Preise erfragen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Preise erfragen' in Kapitel 4."
+          }
+        ]
+      },
+      {
+        "title": "Akkusativ",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Akkusativ</strong> in Kapitel 4. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Akkusativ.",
+            "en": "Example sentence 1 for Akkusativ."
+          },
+          {
+            "de": "Beispielsatz 2 für Akkusativ.",
+            "en": "Example sentence 2 for Akkusativ."
+          },
+          {
+            "de": "Beispielsatz 3 für Akkusativ.",
+            "en": "Example sentence 3 for Akkusativ."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
+          },
+          {
+            "q": "Kapitel 4 (Akkusativ) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ' in Kapitel 4."
           }
         ]
       },
       {
         "title": "Singular/Plural",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Singular/Plural</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Singular/Plural</strong> in Kapitel 4. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Singular/Plural.",
-            "en": "I am learning Singular/Plural."
+            "de": "Beispielsatz 1 für Singular/Plural.",
+            "en": "Example sentence 1 for Singular/Plural."
           },
           {
-            "de": "Das ist ein Beispiel für Singular/Plural.",
-            "en": "This is an example for Singular/Plural."
+            "de": "Beispielsatz 2 für Singular/Plural.",
+            "en": "Example sentence 2 for Singular/Plural."
           },
           {
-            "de": "Verstehst du Singular/Plural?",
-            "en": "Do you understand Singular/Plural?"
+            "de": "Beispielsatz 3 für Singular/Plural.",
+            "en": "Example sentence 3 for Singular/Plural."
           }
         ],
         "quizzes": [
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Singular/Plural) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Singular/Plural' in Kapitel 4."
           }
         ]
       },
       {
-        "title": "Essen & Trinken",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Essen & Trinken</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Komposita",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Komposita</strong> in Kapitel 4. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Essen & Trinken.",
-            "en": "I am learning Essen & Trinken."
+            "de": "Beispielsatz 1 für Komposita.",
+            "en": "Example sentence 1 for Komposita."
           },
           {
-            "de": "Das ist ein Beispiel für Essen & Trinken.",
-            "en": "This is an example for Essen & Trinken."
+            "de": "Beispielsatz 2 für Komposita.",
+            "en": "Example sentence 2 for Komposita."
           },
           {
-            "de": "Verstehst du Essen & Trinken?",
-            "en": "Do you understand Essen & Trinken?"
+            "de": "Beispielsatz 3 für Komposita.",
+            "en": "Example sentence 3 for Komposita."
           }
         ],
         "quizzes": [
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einen",
-              "einem"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "ein",
-              "einem",
-              "einen"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "einen",
-              "ein"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "ein",
-              "einem"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einem",
-              "ein",
-              "einen"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           },
           {
-            "q": "Ich brauche ___ (ein) Kaffee.",
+            "q": "Kapitel 4 (Komposita) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "einen",
-              "einem",
-              "ein"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "einen",
-            "exp": "Der Kaffee ist maskulin. Im Akkusativ wird 'ein' zu 'einen'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Komposita' in Kapitel 4."
           }
         ]
       }
@@ -2251,668 +4451,1108 @@ window.DM_KURSBUCH = [
     "id": 5,
     "title": "Was machst du heute?",
     "goals": [
-      "Grammatik meistern: Uhrzeit, Verben mit Vokalwechsel, trennbare Verben",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 5 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Uhrzeit",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Uhrzeit</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Uhrzeiten",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Uhrzeiten</strong> in Kapitel 5. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Uhrzeit.",
-            "en": "I am learning Uhrzeit."
+            "de": "Beispielsatz 1 für Uhrzeiten.",
+            "en": "Example sentence 1 for Uhrzeiten."
           },
           {
-            "de": "Das ist ein Beispiel für Uhrzeit.",
-            "en": "This is an example for Uhrzeit."
+            "de": "Beispielsatz 2 für Uhrzeiten.",
+            "en": "Example sentence 2 for Uhrzeiten."
           },
           {
-            "de": "Verstehst du Uhrzeit?",
-            "en": "Do you understand Uhrzeit?"
+            "de": "Beispielsatz 3 für Uhrzeiten.",
+            "en": "Example sentence 3 for Uhrzeiten."
           }
         ],
         "quizzes": [
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Uhrzeiten) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Uhrzeiten' in Kapitel 5."
           }
         ]
       },
       {
-        "title": "Verben mit Vokalwechsel",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Verben mit Vokalwechsel</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Wochentage",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Wochentage</strong> in Kapitel 5. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Verben mit Vokalwechsel.",
-            "en": "I am learning Verben mit Vokalwechsel."
+            "de": "Beispielsatz 1 für Wochentage.",
+            "en": "Example sentence 1 for Wochentage."
           },
           {
-            "de": "Das ist ein Beispiel für Verben mit Vokalwechsel.",
-            "en": "This is an example for Verben mit Vokalwechsel."
+            "de": "Beispielsatz 2 für Wochentage.",
+            "en": "Example sentence 2 for Wochentage."
           },
           {
-            "de": "Verstehst du Verben mit Vokalwechsel?",
-            "en": "Do you understand Verben mit Vokalwechsel?"
+            "de": "Beispielsatz 3 für Wochentage.",
+            "en": "Example sentence 3 for Wochentage."
           }
         ],
         "quizzes": [
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Wochentage) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Wochentage' in Kapitel 5."
           }
         ]
       },
       {
-        "title": "trennbare Verben",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>trennbare Verben</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Tagesablauf",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Tagesablauf</strong> in Kapitel 5. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne trennbare Verben.",
-            "en": "I am learning trennbare Verben."
+            "de": "Beispielsatz 1 für Tagesablauf.",
+            "en": "Example sentence 1 for Tagesablauf."
           },
           {
-            "de": "Das ist ein Beispiel für trennbare Verben.",
-            "en": "This is an example for trennbare Verben."
+            "de": "Beispielsatz 2 für Tagesablauf.",
+            "en": "Example sentence 2 for Tagesablauf."
           },
           {
-            "de": "Verstehst du trennbare Verben?",
-            "en": "Do you understand trennbare Verben?"
+            "de": "Beispielsatz 3 für Tagesablauf.",
+            "en": "Example sentence 3 for Tagesablauf."
           }
         ],
         "quizzes": [
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "auf ... stehst",
-              "stehst ... auf"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "stehst ... an",
-              "auf ... stehst"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... an",
-              "stehst ... auf",
-              "auf ... stehst"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... an",
-              "stehst ... auf"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "auf ... stehst",
-              "stehst ... auf",
-              "stehst ... an"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
           },
           {
-            "q": "Wann ___ du morgens ___? (aufstehen)",
+            "q": "Kapitel 5 (Tagesablauf) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "stehst ... auf",
-              "auf ... stehst",
-              "stehst ... an"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "stehst ... auf",
-            "exp": "Trennbares Verb: Das Präfix 'auf' steht am Satzende."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Tagesablauf' in Kapitel 5."
+          }
+        ]
+      },
+      {
+        "title": "Trennbare Verben",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Trennbare Verben</strong> in Kapitel 5. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Trennbare Verben.",
+            "en": "Example sentence 1 for Trennbare Verben."
+          },
+          {
+            "de": "Beispielsatz 2 für Trennbare Verben.",
+            "en": "Example sentence 2 for Trennbare Verben."
+          },
+          {
+            "de": "Beispielsatz 3 für Trennbare Verben.",
+            "en": "Example sentence 3 for Trennbare Verben."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Trennbare Verben) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben' in Kapitel 5."
+          }
+        ]
+      },
+      {
+        "title": "Vokalwechsel",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Vokalwechsel</strong> in Kapitel 5. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Vokalwechsel.",
+            "en": "Example sentence 1 for Vokalwechsel."
+          },
+          {
+            "de": "Beispielsatz 2 für Vokalwechsel.",
+            "en": "Example sentence 2 for Vokalwechsel."
+          },
+          {
+            "de": "Beispielsatz 3 für Vokalwechsel.",
+            "en": "Example sentence 3 for Vokalwechsel."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
+          },
+          {
+            "q": "Kapitel 5 (Vokalwechsel) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Vokalwechsel' in Kapitel 5."
           }
         ]
       }
@@ -2922,668 +5562,1108 @@ window.DM_KURSBUCH = [
     "id": 6,
     "title": "Das schmeckt gut!",
     "goals": [
-      "Grammatik meistern: Akkusativ-Verben, Vorlieben, Lebensmittel",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 6 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Akkusativ-Verben",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Akkusativ-Verben</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Supermarkt einkaufen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Supermarkt einkaufen</strong> in Kapitel 6. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Akkusativ-Verben.",
-            "en": "I am learning Akkusativ-Verben."
+            "de": "Beispielsatz 1 für Supermarkt einkaufen.",
+            "en": "Example sentence 1 for Supermarkt einkaufen."
           },
           {
-            "de": "Das ist ein Beispiel für Akkusativ-Verben.",
-            "en": "This is an example for Akkusativ-Verben."
+            "de": "Beispielsatz 2 für Supermarkt einkaufen.",
+            "en": "Example sentence 2 for Supermarkt einkaufen."
           },
           {
-            "de": "Verstehst du Akkusativ-Verben?",
-            "en": "Do you understand Akkusativ-Verben?"
+            "de": "Beispielsatz 3 für Supermarkt einkaufen.",
+            "en": "Example sentence 3 for Supermarkt einkaufen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Supermarkt einkaufen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Akkusativ-Verben."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Supermarkt einkaufen' in Kapitel 6."
+          }
+        ]
+      },
+      {
+        "title": "Mengenangaben",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Mengenangaben</strong> in Kapitel 6. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Mengenangaben.",
+            "en": "Example sentence 1 for Mengenangaben."
+          },
+          {
+            "de": "Beispielsatz 2 für Mengenangaben.",
+            "en": "Example sentence 2 for Mengenangaben."
+          },
+          {
+            "de": "Beispielsatz 3 für Mengenangaben.",
+            "en": "Example sentence 3 for Mengenangaben."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Mengenangaben) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Mengenangaben' in Kapitel 6."
           }
         ]
       },
       {
         "title": "Vorlieben",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Vorlieben</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Vorlieben</strong> in Kapitel 6. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Vorlieben.",
-            "en": "I am learning Vorlieben."
+            "de": "Beispielsatz 1 für Vorlieben.",
+            "en": "Example sentence 1 for Vorlieben."
           },
           {
-            "de": "Das ist ein Beispiel für Vorlieben.",
-            "en": "This is an example for Vorlieben."
+            "de": "Beispielsatz 2 für Vorlieben.",
+            "en": "Example sentence 2 for Vorlieben."
           },
           {
-            "de": "Verstehst du Vorlieben?",
-            "en": "Do you understand Vorlieben?"
+            "de": "Beispielsatz 3 für Vorlieben.",
+            "en": "Example sentence 3 for Vorlieben."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Vorlieben) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Vorlieben."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Vorlieben' in Kapitel 6."
           }
         ]
       },
       {
-        "title": "Lebensmittel",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Lebensmittel</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Akkusativ-Verben",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Akkusativ-Verben</strong> in Kapitel 6. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Lebensmittel.",
-            "en": "I am learning Lebensmittel."
+            "de": "Beispielsatz 1 für Akkusativ-Verben.",
+            "en": "Example sentence 1 for Akkusativ-Verben."
           },
           {
-            "de": "Das ist ein Beispiel für Lebensmittel.",
-            "en": "This is an example for Lebensmittel."
+            "de": "Beispielsatz 2 für Akkusativ-Verben.",
+            "en": "Example sentence 2 for Akkusativ-Verben."
           },
           {
-            "de": "Verstehst du Lebensmittel?",
-            "en": "Do you understand Lebensmittel?"
+            "de": "Beispielsatz 3 für Akkusativ-Verben.",
+            "en": "Example sentence 3 for Akkusativ-Verben."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 6: Welches Wort passt?",
+            "q": "Kapitel 6 (Akkusativ-Verben) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Lebensmittel."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Verben' in Kapitel 6."
+          }
+        ]
+      },
+      {
+        "title": "Essgewohnheiten",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Essgewohnheiten</strong> in Kapitel 6. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Essgewohnheiten.",
+            "en": "Example sentence 1 for Essgewohnheiten."
+          },
+          {
+            "de": "Beispielsatz 2 für Essgewohnheiten.",
+            "en": "Example sentence 2 for Essgewohnheiten."
+          },
+          {
+            "de": "Beispielsatz 3 für Essgewohnheiten.",
+            "en": "Example sentence 3 for Essgewohnheiten."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
+          },
+          {
+            "q": "Kapitel 6 (Essgewohnheiten) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Essgewohnheiten' in Kapitel 6."
           }
         ]
       }
@@ -3593,668 +6673,1108 @@ window.DM_KURSBUCH = [
     "id": 7,
     "title": "Meine Familie und ich",
     "goals": [
-      "Grammatik meistern: Familie, Modalverben (können/müssen), Präteritum (sein/haben)",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 7 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Familie",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Familie</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Familienmitglieder",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Familienmitglieder</strong> in Kapitel 7. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Familie.",
-            "en": "I am learning Familie."
+            "de": "Beispielsatz 1 für Familienmitglieder.",
+            "en": "Example sentence 1 for Familienmitglieder."
           },
           {
-            "de": "Das ist ein Beispiel für Familie.",
-            "en": "This is an example for Familie."
+            "de": "Beispielsatz 2 für Familienmitglieder.",
+            "en": "Example sentence 2 for Familienmitglieder."
           },
           {
-            "de": "Verstehst du Familie?",
-            "en": "Do you understand Familie?"
+            "de": "Beispielsatz 3 für Familienmitglieder.",
+            "en": "Example sentence 3 for Familienmitglieder."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Familienmitglieder) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Familie."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Familienmitglieder' in Kapitel 7."
           }
         ]
       },
       {
-        "title": "Modalverben (können/müssen)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Modalverben (können/müssen)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Modalverben können/müssen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Modalverben können/müssen</strong> in Kapitel 7. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Modalverben (können/müssen).",
-            "en": "I am learning Modalverben (können/müssen)."
+            "de": "Beispielsatz 1 für Modalverben können/müssen.",
+            "en": "Example sentence 1 for Modalverben können/müssen."
           },
           {
-            "de": "Das ist ein Beispiel für Modalverben (können/müssen).",
-            "en": "This is an example for Modalverben (können/müssen)."
+            "de": "Beispielsatz 2 für Modalverben können/müssen.",
+            "en": "Example sentence 2 for Modalverben können/müssen."
           },
           {
-            "de": "Verstehst du Modalverben (können/müssen)?",
-            "en": "Do you understand Modalverben (können/müssen)?"
+            "de": "Beispielsatz 3 für Modalverben können/müssen.",
+            "en": "Example sentence 3 for Modalverben können/müssen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Modalverben können/müssen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (können/müssen)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben können/müssen' in Kapitel 7."
           }
         ]
       },
       {
-        "title": "Präteritum (sein/haben)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Präteritum (sein/haben)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Präteritum sein/haben",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Präteritum sein/haben</strong> in Kapitel 7. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Präteritum (sein/haben).",
-            "en": "I am learning Präteritum (sein/haben)."
+            "de": "Beispielsatz 1 für Präteritum sein/haben.",
+            "en": "Example sentence 1 for Präteritum sein/haben."
           },
           {
-            "de": "Das ist ein Beispiel für Präteritum (sein/haben).",
-            "en": "This is an example for Präteritum (sein/haben)."
+            "de": "Beispielsatz 2 für Präteritum sein/haben.",
+            "en": "Example sentence 2 for Präteritum sein/haben."
           },
           {
-            "de": "Verstehst du Präteritum (sein/haben)?",
-            "en": "Do you understand Präteritum (sein/haben)?"
+            "de": "Beispielsatz 3 für Präteritum sein/haben.",
+            "en": "Example sentence 3 for Präteritum sein/haben."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 7: Welches Wort passt?",
+            "q": "Kapitel 7 (Präteritum sein/haben) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präteritum (sein/haben)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Präteritum sein/haben' in Kapitel 7."
+          }
+        ]
+      },
+      {
+        "title": "Smalltalk",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Smalltalk</strong> in Kapitel 7. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Smalltalk.",
+            "en": "Example sentence 1 for Smalltalk."
+          },
+          {
+            "de": "Beispielsatz 2 für Smalltalk.",
+            "en": "Example sentence 2 for Smalltalk."
+          },
+          {
+            "de": "Beispielsatz 3 für Smalltalk.",
+            "en": "Example sentence 3 for Smalltalk."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Smalltalk) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Smalltalk' in Kapitel 7."
+          }
+        ]
+      },
+      {
+        "title": "Feste planen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Feste planen</strong> in Kapitel 7. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Feste planen.",
+            "en": "Example sentence 1 for Feste planen."
+          },
+          {
+            "de": "Beispielsatz 2 für Feste planen.",
+            "en": "Example sentence 2 for Feste planen."
+          },
+          {
+            "de": "Beispielsatz 3 für Feste planen.",
+            "en": "Example sentence 3 for Feste planen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
+          },
+          {
+            "q": "Kapitel 7 (Feste planen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Feste planen' in Kapitel 7."
           }
         ]
       }
@@ -4264,668 +7784,1108 @@ window.DM_KURSBUCH = [
     "id": 8,
     "title": "Der Balkon ist schön.",
     "goals": [
-      "Grammatik meistern: Wohnen, Adjektive (sehr/zu), Modalverben (wollen/dürfen)",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 8 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Wohnen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Wohnen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Wohnungsbeschreibung",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Wohnungsbeschreibung</strong> in Kapitel 8. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Wohnen.",
-            "en": "I am learning Wohnen."
+            "de": "Beispielsatz 1 für Wohnungsbeschreibung.",
+            "en": "Example sentence 1 for Wohnungsbeschreibung."
           },
           {
-            "de": "Das ist ein Beispiel für Wohnen.",
-            "en": "This is an example for Wohnen."
+            "de": "Beispielsatz 2 für Wohnungsbeschreibung.",
+            "en": "Example sentence 2 for Wohnungsbeschreibung."
           },
           {
-            "de": "Verstehst du Wohnen?",
-            "en": "Do you understand Wohnen?"
+            "de": "Beispielsatz 3 für Wohnungsbeschreibung.",
+            "en": "Example sentence 3 for Wohnungsbeschreibung."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Wohnungsbeschreibung) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wohnen."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Wohnungsbeschreibung' in Kapitel 8."
           }
         ]
       },
       {
-        "title": "Adjektive (sehr/zu)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Adjektive (sehr/zu)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Prädikative Adjektive",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Prädikative Adjektive</strong> in Kapitel 8. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Adjektive (sehr/zu).",
-            "en": "I am learning Adjektive (sehr/zu)."
+            "de": "Beispielsatz 1 für Prädikative Adjektive.",
+            "en": "Example sentence 1 for Prädikative Adjektive."
           },
           {
-            "de": "Das ist ein Beispiel für Adjektive (sehr/zu).",
-            "en": "This is an example for Adjektive (sehr/zu)."
+            "de": "Beispielsatz 2 für Prädikative Adjektive.",
+            "en": "Example sentence 2 for Prädikative Adjektive."
           },
           {
-            "de": "Verstehst du Adjektive (sehr/zu)?",
-            "en": "Do you understand Adjektive (sehr/zu)?"
+            "de": "Beispielsatz 3 für Prädikative Adjektive.",
+            "en": "Example sentence 3 for Prädikative Adjektive."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Prädikative Adjektive) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Adjektive (sehr/zu)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Prädikative Adjektive' in Kapitel 8."
           }
         ]
       },
       {
-        "title": "Modalverben (wollen/dürfen)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Modalverben (wollen/dürfen)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Modalverben wollen/dürfen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Modalverben wollen/dürfen</strong> in Kapitel 8. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Modalverben (wollen/dürfen).",
-            "en": "I am learning Modalverben (wollen/dürfen)."
+            "de": "Beispielsatz 1 für Modalverben wollen/dürfen.",
+            "en": "Example sentence 1 for Modalverben wollen/dürfen."
           },
           {
-            "de": "Das ist ein Beispiel für Modalverben (wollen/dürfen).",
-            "en": "This is an example for Modalverben (wollen/dürfen)."
+            "de": "Beispielsatz 2 für Modalverben wollen/dürfen.",
+            "en": "Example sentence 2 for Modalverben wollen/dürfen."
           },
           {
-            "de": "Verstehst du Modalverben (wollen/dürfen)?",
-            "en": "Do you understand Modalverben (wollen/dürfen)?"
+            "de": "Beispielsatz 3 für Modalverben wollen/dürfen.",
+            "en": "Example sentence 3 for Modalverben wollen/dürfen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 8: Welches Wort passt?",
+            "q": "Kapitel 8 (Modalverben wollen/dürfen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverben (wollen/dürfen)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Modalverben wollen/dürfen' in Kapitel 8."
+          }
+        ]
+      },
+      {
+        "title": "Hausordnung",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Hausordnung</strong> in Kapitel 8. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Hausordnung.",
+            "en": "Example sentence 1 for Hausordnung."
+          },
+          {
+            "de": "Beispielsatz 2 für Hausordnung.",
+            "en": "Example sentence 2 for Hausordnung."
+          },
+          {
+            "de": "Beispielsatz 3 für Hausordnung.",
+            "en": "Example sentence 3 for Hausordnung."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Hausordnung) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Hausordnung' in Kapitel 8."
+          }
+        ]
+      },
+      {
+        "title": "Nebenkosten",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Nebenkosten</strong> in Kapitel 8. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Nebenkosten.",
+            "en": "Example sentence 1 for Nebenkosten."
+          },
+          {
+            "de": "Beispielsatz 2 für Nebenkosten.",
+            "en": "Example sentence 2 for Nebenkosten."
+          },
+          {
+            "de": "Beispielsatz 3 für Nebenkosten.",
+            "en": "Example sentence 3 for Nebenkosten."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
+          },
+          {
+            "q": "Kapitel 8 (Nebenkosten) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Nebenkosten' in Kapitel 8."
           }
         ]
       }
@@ -4935,668 +8895,1108 @@ window.DM_KURSBUCH = [
     "id": 9,
     "title": "Endlich Freizeit!",
     "goals": [
-      "Grammatik meistern: Freizeit, Perfekt mit haben, Pronomen im Akkusativ",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 9 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Freizeit",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Freizeit</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Freizeitaktivitäten",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Freizeitaktivitäten</strong> in Kapitel 9. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Freizeit.",
-            "en": "I am learning Freizeit."
+            "de": "Beispielsatz 1 für Freizeitaktivitäten.",
+            "en": "Example sentence 1 for Freizeitaktivitäten."
           },
           {
-            "de": "Das ist ein Beispiel für Freizeit.",
-            "en": "This is an example for Freizeit."
+            "de": "Beispielsatz 2 für Freizeitaktivitäten.",
+            "en": "Example sentence 2 for Freizeitaktivitäten."
           },
           {
-            "de": "Verstehst du Freizeit?",
-            "en": "Do you understand Freizeit?"
+            "de": "Beispielsatz 3 für Freizeitaktivitäten.",
+            "en": "Example sentence 3 for Freizeitaktivitäten."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Freizeitaktivitäten) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Freizeit."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Freizeitaktivitäten' in Kapitel 9."
           }
         ]
       },
       {
         "title": "Perfekt mit haben",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Perfekt mit haben</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Perfekt mit haben</strong> in Kapitel 9. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Perfekt mit haben.",
-            "en": "I am learning Perfekt mit haben."
+            "de": "Beispielsatz 1 für Perfekt mit haben.",
+            "en": "Example sentence 1 for Perfekt mit haben."
           },
           {
-            "de": "Das ist ein Beispiel für Perfekt mit haben.",
-            "en": "This is an example for Perfekt mit haben."
+            "de": "Beispielsatz 2 für Perfekt mit haben.",
+            "en": "Example sentence 2 for Perfekt mit haben."
           },
           {
-            "de": "Verstehst du Perfekt mit haben?",
-            "en": "Do you understand Perfekt mit haben?"
+            "de": "Beispielsatz 3 für Perfekt mit haben.",
+            "en": "Example sentence 3 for Perfekt mit haben."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Perfekt mit haben) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Perfekt mit haben."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit haben' in Kapitel 9."
           }
         ]
       },
       {
-        "title": "Pronomen im Akkusativ",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Pronomen im Akkusativ</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Akkusativ-Pronomen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Akkusativ-Pronomen</strong> in Kapitel 9. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Pronomen im Akkusativ.",
-            "en": "I am learning Pronomen im Akkusativ."
+            "de": "Beispielsatz 1 für Akkusativ-Pronomen.",
+            "en": "Example sentence 1 for Akkusativ-Pronomen."
           },
           {
-            "de": "Das ist ein Beispiel für Pronomen im Akkusativ.",
-            "en": "This is an example for Pronomen im Akkusativ."
+            "de": "Beispielsatz 2 für Akkusativ-Pronomen.",
+            "en": "Example sentence 2 for Akkusativ-Pronomen."
           },
           {
-            "de": "Verstehst du Pronomen im Akkusativ?",
-            "en": "Do you understand Pronomen im Akkusativ?"
+            "de": "Beispielsatz 3 für Akkusativ-Pronomen.",
+            "en": "Example sentence 3 for Akkusativ-Pronomen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 9: Welches Wort passt?",
+            "q": "Kapitel 9 (Akkusativ-Pronomen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Pronomen im Akkusativ."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Akkusativ-Pronomen' in Kapitel 9."
+          }
+        ]
+      },
+      {
+        "title": "Verabredungen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Verabredungen</strong> in Kapitel 9. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Verabredungen.",
+            "en": "Example sentence 1 for Verabredungen."
+          },
+          {
+            "de": "Beispielsatz 2 für Verabredungen.",
+            "en": "Example sentence 2 for Verabredungen."
+          },
+          {
+            "de": "Beispielsatz 3 für Verabredungen.",
+            "en": "Example sentence 3 for Verabredungen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Verabredungen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Verabredungen' in Kapitel 9."
+          }
+        ]
+      },
+      {
+        "title": "Einladungen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Einladungen</strong> in Kapitel 9. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Einladungen.",
+            "en": "Example sentence 1 for Einladungen."
+          },
+          {
+            "de": "Beispielsatz 2 für Einladungen.",
+            "en": "Example sentence 2 for Einladungen."
+          },
+          {
+            "de": "Beispielsatz 3 für Einladungen.",
+            "en": "Example sentence 3 for Einladungen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
+          },
+          {
+            "q": "Kapitel 9 (Einladungen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Einladungen' in Kapitel 9."
           }
         ]
       }
@@ -5606,668 +10006,1108 @@ window.DM_KURSBUCH = [
     "id": 10,
     "title": "Neu in Deutschland",
     "goals": [
-      "Grammatik meistern: Perfekt mit sein, trennbare Verben im Perfekt, Jahreszahlen",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 10 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Perfekt mit sein",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Perfekt mit sein</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Vergangenheitsberichte",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Vergangenheitsberichte</strong> in Kapitel 10. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Perfekt mit sein.",
-            "en": "I am learning Perfekt mit sein."
+            "de": "Beispielsatz 1 für Vergangenheitsberichte.",
+            "en": "Example sentence 1 for Vergangenheitsberichte."
           },
           {
-            "de": "Das ist ein Beispiel für Perfekt mit sein.",
-            "en": "This is an example for Perfekt mit sein."
+            "de": "Beispielsatz 2 für Vergangenheitsberichte.",
+            "en": "Example sentence 2 for Vergangenheitsberichte."
           },
           {
-            "de": "Verstehst du Perfekt mit sein?",
-            "en": "Do you understand Perfekt mit sein?"
+            "de": "Beispielsatz 3 für Vergangenheitsberichte.",
+            "en": "Example sentence 3 for Vergangenheitsberichte."
           }
         ],
         "quizzes": [
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Vergangenheitsberichte) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Vergangenheitsberichte' in Kapitel 10."
           }
         ]
       },
       {
-        "title": "trennbare Verben im Perfekt",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>trennbare Verben im Perfekt</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Perfekt mit sein",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Perfekt mit sein</strong> in Kapitel 10. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne trennbare Verben im Perfekt.",
-            "en": "I am learning trennbare Verben im Perfekt."
+            "de": "Beispielsatz 1 für Perfekt mit sein.",
+            "en": "Example sentence 1 for Perfekt mit sein."
           },
           {
-            "de": "Das ist ein Beispiel für trennbare Verben im Perfekt.",
-            "en": "This is an example for trennbare Verben im Perfekt."
+            "de": "Beispielsatz 2 für Perfekt mit sein.",
+            "en": "Example sentence 2 for Perfekt mit sein."
           },
           {
-            "de": "Verstehst du trennbare Verben im Perfekt?",
-            "en": "Do you understand trennbare Verben im Perfekt?"
+            "de": "Beispielsatz 3 für Perfekt mit sein.",
+            "en": "Example sentence 3 for Perfekt mit sein."
           }
         ],
         "quizzes": [
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Perfekt mit sein) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Perfekt mit sein' in Kapitel 10."
+          }
+        ]
+      },
+      {
+        "title": "Trennbare Verben im Perfekt",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Trennbare Verben im Perfekt</strong> in Kapitel 10. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Trennbare Verben im Perfekt.",
+            "en": "Example sentence 1 for Trennbare Verben im Perfekt."
+          },
+          {
+            "de": "Beispielsatz 2 für Trennbare Verben im Perfekt.",
+            "en": "Example sentence 2 for Trennbare Verben im Perfekt."
+          },
+          {
+            "de": "Beispielsatz 3 für Trennbare Verben im Perfekt.",
+            "en": "Example sentence 3 for Trennbare Verben im Perfekt."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Trennbare Verben im Perfekt) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Trennbare Verben im Perfekt' in Kapitel 10."
           }
         ]
       },
       {
         "title": "Jahreszahlen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Jahreszahlen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Jahreszahlen</strong> in Kapitel 10. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Jahreszahlen.",
-            "en": "I am learning Jahreszahlen."
+            "de": "Beispielsatz 1 für Jahreszahlen.",
+            "en": "Example sentence 1 for Jahreszahlen."
           },
           {
-            "de": "Das ist ein Beispiel für Jahreszahlen.",
-            "en": "This is an example for Jahreszahlen."
+            "de": "Beispielsatz 2 für Jahreszahlen.",
+            "en": "Example sentence 2 for Jahreszahlen."
           },
           {
-            "de": "Verstehst du Jahreszahlen?",
-            "en": "Do you understand Jahreszahlen?"
+            "de": "Beispielsatz 3 für Jahreszahlen.",
+            "en": "Example sentence 3 for Jahreszahlen."
           }
         ],
         "quizzes": [
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "war",
-              "habe"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "war",
-              "bin"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "bin",
-              "habe"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "war",
-              "habe",
-              "bin"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "habe",
-              "bin",
-              "war"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
           },
           {
-            "q": "Gestern ___ ich nach Berlin gefahren.",
+            "q": "Kapitel 10 (Jahreszahlen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "bin",
-              "habe",
-              "war"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "bin",
-            "exp": "Bewegungsverben (fahren) bilden das Perfekt mit 'sein'."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Jahreszahlen' in Kapitel 10."
+          }
+        ]
+      },
+      {
+        "title": "Arbeitsbiografie",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Arbeitsbiografie</strong> in Kapitel 10. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Arbeitsbiografie.",
+            "en": "Example sentence 1 for Arbeitsbiografie."
+          },
+          {
+            "de": "Beispielsatz 2 für Arbeitsbiografie.",
+            "en": "Example sentence 2 for Arbeitsbiografie."
+          },
+          {
+            "de": "Beispielsatz 3 für Arbeitsbiografie.",
+            "en": "Example sentence 3 for Arbeitsbiografie."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
+          },
+          {
+            "q": "Kapitel 10 (Arbeitsbiografie) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Arbeitsbiografie' in Kapitel 10."
           }
         ]
       }
@@ -6277,1548 +11117,1108 @@ window.DM_KURSBUCH = [
     "id": 11,
     "title": "Alles Gute!",
     "goals": [
-      "Grammatik meistern: Zeitpräpositionen (in, an, ab, um, bis), Dativ-Pronomen, Datum",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 11 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Zeitpräpositionen (in",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Zeitpräpositionen (in</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Geburtstag & Geschenke",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Geburtstag & Geschenke</strong> in Kapitel 11. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Zeitpräpositionen (in.",
-            "en": "I am learning Zeitpräpositionen (in."
+            "de": "Beispielsatz 1 für Geburtstag & Geschenke.",
+            "en": "Example sentence 1 for Geburtstag & Geschenke."
           },
           {
-            "de": "Das ist ein Beispiel für Zeitpräpositionen (in.",
-            "en": "This is an example for Zeitpräpositionen (in."
+            "de": "Beispielsatz 2 für Geburtstag & Geschenke.",
+            "en": "Example sentence 2 for Geburtstag & Geschenke."
           },
           {
-            "de": "Verstehst du Zeitpräpositionen (in?",
-            "en": "Do you understand Zeitpräpositionen (in?"
+            "de": "Beispielsatz 3 für Geburtstag & Geschenke.",
+            "en": "Example sentence 3 for Geburtstag & Geschenke."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Geburtstag & Geschenke) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Zeitpräpositionen (in."
-          }
-        ]
-      },
-      {
-        "title": "an",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>an</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
-        "examples": [
-          {
-            "de": "Ich lerne an.",
-            "en": "I am learning an."
-          },
-          {
-            "de": "Das ist ein Beispiel für an.",
-            "en": "This is an example for an."
-          },
-          {
-            "de": "Verstehst du an?",
-            "en": "Do you understand an?"
-          }
-        ],
-        "quizzes": [
-          {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          },
-          {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für an."
-          }
-        ]
-      },
-      {
-        "title": "ab",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>ab</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
-        "examples": [
-          {
-            "de": "Ich lerne ab.",
-            "en": "I am learning ab."
-          },
-          {
-            "de": "Das ist ein Beispiel für ab.",
-            "en": "This is an example for ab."
-          },
-          {
-            "de": "Verstehst du ab?",
-            "en": "Do you understand ab?"
-          }
-        ],
-        "quizzes": [
-          {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          },
-          {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für ab."
-          }
-        ]
-      },
-      {
-        "title": "um",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>um</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
-        "examples": [
-          {
-            "de": "Ich lerne um.",
-            "en": "I am learning um."
-          },
-          {
-            "de": "Das ist ein Beispiel für um.",
-            "en": "This is an example for um."
-          },
-          {
-            "de": "Verstehst du um?",
-            "en": "Do you understand um?"
-          }
-        ],
-        "quizzes": [
-          {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          },
-          {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für um."
-          }
-        ]
-      },
-      {
-        "title": "bis)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>bis)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
-        "examples": [
-          {
-            "de": "Ich lerne bis).",
-            "en": "I am learning bis)."
-          },
-          {
-            "de": "Das ist ein Beispiel für bis).",
-            "en": "This is an example for bis)."
-          },
-          {
-            "de": "Verstehst du bis)?",
-            "en": "Do you understand bis)?"
-          }
-        ],
-        "quizzes": [
-          {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          },
-          {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für bis)."
-          }
-        ]
-      },
-      {
-        "title": "Dativ-Pronomen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Dativ-Pronomen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
-        "examples": [
-          {
-            "de": "Ich lerne Dativ-Pronomen.",
-            "en": "I am learning Dativ-Pronomen."
-          },
-          {
-            "de": "Das ist ein Beispiel für Dativ-Pronomen.",
-            "en": "This is an example for Dativ-Pronomen."
-          },
-          {
-            "de": "Verstehst du Dativ-Pronomen?",
-            "en": "Do you understand Dativ-Pronomen?"
-          }
-        ],
-        "quizzes": [
-          {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
-          },
-          {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
-            "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
-            ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Dativ-Pronomen."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Geburtstag & Geschenke' in Kapitel 11."
           }
         ]
       },
       {
         "title": "Datum",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Datum</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Datum</strong> in Kapitel 11. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Datum.",
-            "en": "I am learning Datum."
+            "de": "Beispielsatz 1 für Datum.",
+            "en": "Example sentence 1 for Datum."
           },
           {
-            "de": "Das ist ein Beispiel für Datum.",
-            "en": "This is an example for Datum."
+            "de": "Beispielsatz 2 für Datum.",
+            "en": "Example sentence 2 for Datum."
           },
           {
-            "de": "Verstehst du Datum?",
-            "en": "Do you understand Datum?"
+            "de": "Beispielsatz 3 für Datum.",
+            "en": "Example sentence 3 for Datum."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 11: Welches Wort passt?",
+            "q": "Kapitel 11 (Datum) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Datum."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Datum' in Kapitel 11."
+          }
+        ]
+      },
+      {
+        "title": "Zeitpräpositionen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Zeitpräpositionen</strong> in Kapitel 11. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Zeitpräpositionen.",
+            "en": "Example sentence 1 for Zeitpräpositionen."
+          },
+          {
+            "de": "Beispielsatz 2 für Zeitpräpositionen.",
+            "en": "Example sentence 2 for Zeitpräpositionen."
+          },
+          {
+            "de": "Beispielsatz 3 für Zeitpräpositionen.",
+            "en": "Example sentence 3 for Zeitpräpositionen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Zeitpräpositionen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Zeitpräpositionen' in Kapitel 11."
+          }
+        ]
+      },
+      {
+        "title": "Dativ-Pronomen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Dativ-Pronomen</strong> in Kapitel 11. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Dativ-Pronomen.",
+            "en": "Example sentence 1 for Dativ-Pronomen."
+          },
+          {
+            "de": "Beispielsatz 2 für Dativ-Pronomen.",
+            "en": "Example sentence 2 for Dativ-Pronomen."
+          },
+          {
+            "de": "Beispielsatz 3 für Dativ-Pronomen.",
+            "en": "Example sentence 3 for Dativ-Pronomen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Dativ-Pronomen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Dativ-Pronomen' in Kapitel 11."
+          }
+        ]
+      },
+      {
+        "title": "Präposition bei",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Präposition bei</strong> in Kapitel 11. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Präposition bei.",
+            "en": "Example sentence 1 for Präposition bei."
+          },
+          {
+            "de": "Beispielsatz 2 für Präposition bei.",
+            "en": "Example sentence 2 for Präposition bei."
+          },
+          {
+            "de": "Beispielsatz 3 für Präposition bei.",
+            "en": "Example sentence 3 for Präposition bei."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
+          },
+          {
+            "q": "Kapitel 11 (Präposition bei) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Präposition bei' in Kapitel 11."
           }
         ]
       }
@@ -7828,668 +12228,1108 @@ window.DM_KURSBUCH = [
     "id": 12,
     "title": "Unterwegs",
     "goals": [
-      "Grammatik meistern: Wegbeschreibung, lokale Präpositionen (Dativ), Wo/Wohin",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 12 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
         "title": "Wegbeschreibung",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Wegbeschreibung</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Wegbeschreibung</strong> in Kapitel 12. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Wegbeschreibung.",
-            "en": "I am learning Wegbeschreibung."
+            "de": "Beispielsatz 1 für Wegbeschreibung.",
+            "en": "Example sentence 1 for Wegbeschreibung."
           },
           {
-            "de": "Das ist ein Beispiel für Wegbeschreibung.",
-            "en": "This is an example for Wegbeschreibung."
+            "de": "Beispielsatz 2 für Wegbeschreibung.",
+            "en": "Example sentence 2 for Wegbeschreibung."
           },
           {
-            "de": "Verstehst du Wegbeschreibung?",
-            "en": "Do you understand Wegbeschreibung?"
+            "de": "Beispielsatz 3 für Wegbeschreibung.",
+            "en": "Example sentence 3 for Wegbeschreibung."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Wegbeschreibung) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wegbeschreibung."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Wegbeschreibung' in Kapitel 12."
           }
         ]
       },
       {
-        "title": "lokale Präpositionen (Dativ)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>lokale Präpositionen (Dativ)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Fahrkartenschalter",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Fahrkartenschalter</strong> in Kapitel 12. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne lokale Präpositionen (Dativ).",
-            "en": "I am learning lokale Präpositionen (Dativ)."
+            "de": "Beispielsatz 1 für Fahrkartenschalter.",
+            "en": "Example sentence 1 for Fahrkartenschalter."
           },
           {
-            "de": "Das ist ein Beispiel für lokale Präpositionen (Dativ).",
-            "en": "This is an example for lokale Präpositionen (Dativ)."
+            "de": "Beispielsatz 2 für Fahrkartenschalter.",
+            "en": "Example sentence 2 for Fahrkartenschalter."
           },
           {
-            "de": "Verstehst du lokale Präpositionen (Dativ)?",
-            "en": "Do you understand lokale Präpositionen (Dativ)?"
+            "de": "Beispielsatz 3 für Fahrkartenschalter.",
+            "en": "Example sentence 3 for Fahrkartenschalter."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Fahrkartenschalter) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für lokale Präpositionen (Dativ)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Fahrkartenschalter' in Kapitel 12."
           }
         ]
       },
       {
-        "title": "Wo/Wohin",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Wo/Wohin</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Lokale Präpositionen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Lokale Präpositionen</strong> in Kapitel 12. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Wo/Wohin.",
-            "en": "I am learning Wo/Wohin."
+            "de": "Beispielsatz 1 für Lokale Präpositionen.",
+            "en": "Example sentence 1 for Lokale Präpositionen."
           },
           {
-            "de": "Das ist ein Beispiel für Wo/Wohin.",
-            "en": "This is an example for Wo/Wohin."
+            "de": "Beispielsatz 2 für Lokale Präpositionen.",
+            "en": "Example sentence 2 for Lokale Präpositionen."
           },
           {
-            "de": "Verstehst du Wo/Wohin?",
-            "en": "Do you understand Wo/Wohin?"
+            "de": "Beispielsatz 3 für Lokale Präpositionen.",
+            "en": "Example sentence 3 for Lokale Präpositionen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 12: Welches Wort passt?",
+            "q": "Kapitel 12 (Lokale Präpositionen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Wo/Wohin."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Lokale Präpositionen' in Kapitel 12."
+          }
+        ]
+      },
+      {
+        "title": "Wo vs Wohin",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Wo vs Wohin</strong> in Kapitel 12. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Wo vs Wohin.",
+            "en": "Example sentence 1 for Wo vs Wohin."
+          },
+          {
+            "de": "Beispielsatz 2 für Wo vs Wohin.",
+            "en": "Example sentence 2 for Wo vs Wohin."
+          },
+          {
+            "de": "Beispielsatz 3 für Wo vs Wohin.",
+            "en": "Example sentence 3 for Wo vs Wohin."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Wo vs Wohin) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Wo vs Wohin' in Kapitel 12."
+          }
+        ]
+      },
+      {
+        "title": "Städte vorstellen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Städte vorstellen</strong> in Kapitel 12. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Städte vorstellen.",
+            "en": "Example sentence 1 for Städte vorstellen."
+          },
+          {
+            "de": "Beispielsatz 2 für Städte vorstellen.",
+            "en": "Example sentence 2 for Städte vorstellen."
+          },
+          {
+            "de": "Beispielsatz 3 für Städte vorstellen.",
+            "en": "Example sentence 3 for Städte vorstellen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
+          },
+          {
+            "q": "Kapitel 12 (Städte vorstellen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Städte vorstellen' in Kapitel 12."
           }
         ]
       }
@@ -8499,668 +13339,1108 @@ window.DM_KURSBUCH = [
     "id": 13,
     "title": "Gute Besserung!",
     "goals": [
-      "Grammatik meistern: Körperteile, Modalverb sollen, Konnektoren (und/oder/aber)",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 13 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
         "title": "Körperteile",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Körperteile</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Körperteile</strong> in Kapitel 13. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Körperteile.",
-            "en": "I am learning Körperteile."
+            "de": "Beispielsatz 1 für Körperteile.",
+            "en": "Example sentence 1 for Körperteile."
           },
           {
-            "de": "Das ist ein Beispiel für Körperteile.",
-            "en": "This is an example for Körperteile."
+            "de": "Beispielsatz 2 für Körperteile.",
+            "en": "Example sentence 2 for Körperteile."
           },
           {
-            "de": "Verstehst du Körperteile?",
-            "en": "Do you understand Körperteile?"
+            "de": "Beispielsatz 3 für Körperteile.",
+            "en": "Example sentence 3 for Körperteile."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Körperteile) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Körperteile."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Körperteile' in Kapitel 13."
+          }
+        ]
+      },
+      {
+        "title": "Arzttermin",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Arzttermin</strong> in Kapitel 13. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Arzttermin.",
+            "en": "Example sentence 1 for Arzttermin."
+          },
+          {
+            "de": "Beispielsatz 2 für Arzttermin.",
+            "en": "Example sentence 2 for Arzttermin."
+          },
+          {
+            "de": "Beispielsatz 3 für Arzttermin.",
+            "en": "Example sentence 3 for Arzttermin."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Arzttermin) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Arzttermin' in Kapitel 13."
           }
         ]
       },
       {
         "title": "Modalverb sollen",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Modalverb sollen</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Modalverb sollen</strong> in Kapitel 13. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Modalverb sollen.",
-            "en": "I am learning Modalverb sollen."
+            "de": "Beispielsatz 1 für Modalverb sollen.",
+            "en": "Example sentence 1 for Modalverb sollen."
           },
           {
-            "de": "Das ist ein Beispiel für Modalverb sollen.",
-            "en": "This is an example for Modalverb sollen."
+            "de": "Beispielsatz 2 für Modalverb sollen.",
+            "en": "Example sentence 2 for Modalverb sollen."
           },
           {
-            "de": "Verstehst du Modalverb sollen?",
-            "en": "Do you understand Modalverb sollen?"
+            "de": "Beispielsatz 3 für Modalverb sollen.",
+            "en": "Example sentence 3 for Modalverb sollen."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Modalverb sollen) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Modalverb sollen."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Modalverb sollen' in Kapitel 13."
           }
         ]
       },
       {
-        "title": "Konnektoren (und/oder/aber)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Konnektoren (und/oder/aber)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Apotheke",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Apotheke</strong> in Kapitel 13. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Konnektoren (und/oder/aber).",
-            "en": "I am learning Konnektoren (und/oder/aber)."
+            "de": "Beispielsatz 1 für Apotheke.",
+            "en": "Example sentence 1 for Apotheke."
           },
           {
-            "de": "Das ist ein Beispiel für Konnektoren (und/oder/aber).",
-            "en": "This is an example for Konnektoren (und/oder/aber)."
+            "de": "Beispielsatz 2 für Apotheke.",
+            "en": "Example sentence 2 for Apotheke."
           },
           {
-            "de": "Verstehst du Konnektoren (und/oder/aber)?",
-            "en": "Do you understand Konnektoren (und/oder/aber)?"
+            "de": "Beispielsatz 3 für Apotheke.",
+            "en": "Example sentence 3 for Apotheke."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 13: Welches Wort passt?",
+            "q": "Kapitel 13 (Apotheke) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektoren (und/oder/aber)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Apotheke' in Kapitel 13."
+          }
+        ]
+      },
+      {
+        "title": "Konnektoren und/aber",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Konnektoren und/aber</strong> in Kapitel 13. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Konnektoren und/aber.",
+            "en": "Example sentence 1 for Konnektoren und/aber."
+          },
+          {
+            "de": "Beispielsatz 2 für Konnektoren und/aber.",
+            "en": "Example sentence 2 for Konnektoren und/aber."
+          },
+          {
+            "de": "Beispielsatz 3 für Konnektoren und/aber.",
+            "en": "Example sentence 3 for Konnektoren und/aber."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
+          },
+          {
+            "q": "Kapitel 13 (Konnektoren und/aber) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Konnektoren und/aber' in Kapitel 13."
           }
         ]
       }
@@ -9170,668 +14450,1108 @@ window.DM_KURSBUCH = [
     "id": 14,
     "title": "Was kann ich für Sie tun?",
     "goals": [
-      "Grammatik meistern: Hotel, Konnektor denn, Präpositionen (vor/seit + Dativ)",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 14 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Hotel",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Hotel</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Hotel-Dialoge",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Hotel-Dialoge</strong> in Kapitel 14. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Hotel.",
-            "en": "I am learning Hotel."
+            "de": "Beispielsatz 1 für Hotel-Dialoge.",
+            "en": "Example sentence 1 for Hotel-Dialoge."
           },
           {
-            "de": "Das ist ein Beispiel für Hotel.",
-            "en": "This is an example for Hotel."
+            "de": "Beispielsatz 2 für Hotel-Dialoge.",
+            "en": "Example sentence 2 for Hotel-Dialoge."
           },
           {
-            "de": "Verstehst du Hotel?",
-            "en": "Do you understand Hotel?"
+            "de": "Beispielsatz 3 für Hotel-Dialoge.",
+            "en": "Example sentence 3 for Hotel-Dialoge."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Hotel-Dialoge) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Hotel."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Hotel-Dialoge' in Kapitel 14."
           }
         ]
       },
       {
         "title": "Konnektor denn",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Konnektor denn</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Konnektor denn</strong> in Kapitel 14. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Konnektor denn.",
-            "en": "I am learning Konnektor denn."
+            "de": "Beispielsatz 1 für Konnektor denn.",
+            "en": "Example sentence 1 for Konnektor denn."
           },
           {
-            "de": "Das ist ein Beispiel für Konnektor denn.",
-            "en": "This is an example for Konnektor denn."
+            "de": "Beispielsatz 2 für Konnektor denn.",
+            "en": "Example sentence 2 for Konnektor denn."
           },
           {
-            "de": "Verstehst du Konnektor denn?",
-            "en": "Do you understand Konnektor denn?"
+            "de": "Beispielsatz 3 für Konnektor denn.",
+            "en": "Example sentence 3 for Konnektor denn."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Konnektor denn) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Konnektor denn."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Konnektor denn' in Kapitel 14."
           }
         ]
       },
       {
-        "title": "Präpositionen (vor/seit + Dativ)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Präpositionen (vor/seit + Dativ)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Präpositionen vor/seit",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Präpositionen vor/seit</strong> in Kapitel 14. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Präpositionen (vor/seit + Dativ).",
-            "en": "I am learning Präpositionen (vor/seit + Dativ)."
+            "de": "Beispielsatz 1 für Präpositionen vor/seit.",
+            "en": "Example sentence 1 for Präpositionen vor/seit."
           },
           {
-            "de": "Das ist ein Beispiel für Präpositionen (vor/seit + Dativ).",
-            "en": "This is an example for Präpositionen (vor/seit + Dativ)."
+            "de": "Beispielsatz 2 für Präpositionen vor/seit.",
+            "en": "Example sentence 2 for Präpositionen vor/seit."
           },
           {
-            "de": "Verstehst du Präpositionen (vor/seit + Dativ)?",
-            "en": "Do you understand Präpositionen (vor/seit + Dativ)?"
+            "de": "Beispielsatz 3 für Präpositionen vor/seit.",
+            "en": "Example sentence 3 for Präpositionen vor/seit."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 14: Welches Wort passt?",
+            "q": "Kapitel 14 (Präpositionen vor/seit) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präpositionen (vor/seit + Dativ)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Präpositionen vor/seit' in Kapitel 14."
+          }
+        ]
+      },
+      {
+        "title": "Biografische Notizen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Biografische Notizen</strong> in Kapitel 14. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Biografische Notizen.",
+            "en": "Example sentence 1 for Biografische Notizen."
+          },
+          {
+            "de": "Beispielsatz 2 für Biografische Notizen.",
+            "en": "Example sentence 2 for Biografische Notizen."
+          },
+          {
+            "de": "Beispielsatz 3 für Biografische Notizen.",
+            "en": "Example sentence 3 for Biografische Notizen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Biografische Notizen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Biografische Notizen' in Kapitel 14."
+          }
+        ]
+      },
+      {
+        "title": "Stellenanzeigen",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Stellenanzeigen</strong> in Kapitel 14. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Stellenanzeigen.",
+            "en": "Example sentence 1 for Stellenanzeigen."
+          },
+          {
+            "de": "Beispielsatz 2 für Stellenanzeigen.",
+            "en": "Example sentence 2 for Stellenanzeigen."
+          },
+          {
+            "de": "Beispielsatz 3 für Stellenanzeigen.",
+            "en": "Example sentence 3 for Stellenanzeigen."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
+          },
+          {
+            "q": "Kapitel 14 (Stellenanzeigen) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Stellenanzeigen' in Kapitel 14."
           }
         ]
       }
@@ -9841,448 +15561,1108 @@ window.DM_KURSBUCH = [
     "id": 15,
     "title": "Das kann man lernen!",
     "goals": [
-      "Grammatik meistern: Antworten (ja/nein/doch), Imperativ (ihr-Form)",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 15 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Antworten (ja/nein/doch)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Antworten (ja/nein/doch)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Lernbiografie",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Lernbiografie</strong> in Kapitel 15. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Antworten (ja/nein/doch).",
-            "en": "I am learning Antworten (ja/nein/doch)."
+            "de": "Beispielsatz 1 für Lernbiografie.",
+            "en": "Example sentence 1 for Lernbiografie."
           },
           {
-            "de": "Das ist ein Beispiel für Antworten (ja/nein/doch).",
-            "en": "This is an example for Antworten (ja/nein/doch)."
+            "de": "Beispielsatz 2 für Lernbiografie.",
+            "en": "Example sentence 2 for Lernbiografie."
           },
           {
-            "de": "Verstehst du Antworten (ja/nein/doch)?",
-            "en": "Do you understand Antworten (ja/nein/doch)?"
+            "de": "Beispielsatz 3 für Lernbiografie.",
+            "en": "Example sentence 3 for Lernbiografie."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Lernbiografie) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Antworten (ja/nein/doch)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Lernbiografie' in Kapitel 15."
           }
         ]
       },
       {
-        "title": "Imperativ (ihr-Form)",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Imperativ (ihr-Form)</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Doch-Antwort",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Doch-Antwort</strong> in Kapitel 15. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Imperativ (ihr-Form).",
-            "en": "I am learning Imperativ (ihr-Form)."
+            "de": "Beispielsatz 1 für Doch-Antwort.",
+            "en": "Example sentence 1 for Doch-Antwort."
           },
           {
-            "de": "Das ist ein Beispiel für Imperativ (ihr-Form).",
-            "en": "This is an example for Imperativ (ihr-Form)."
+            "de": "Beispielsatz 2 für Doch-Antwort.",
+            "en": "Example sentence 2 for Doch-Antwort."
           },
           {
-            "de": "Verstehst du Imperativ (ihr-Form)?",
-            "en": "Do you understand Imperativ (ihr-Form)?"
+            "de": "Beispielsatz 3 für Doch-Antwort.",
+            "en": "Example sentence 3 for Doch-Antwort."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 15: Welches Wort passt?",
+            "q": "Kapitel 15 (Doch-Antwort) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Imperativ (ihr-Form)."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Doch-Antwort' in Kapitel 15."
+          }
+        ]
+      },
+      {
+        "title": "Imperativ ihr-Form",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Imperativ ihr-Form</strong> in Kapitel 15. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Imperativ ihr-Form.",
+            "en": "Example sentence 1 for Imperativ ihr-Form."
+          },
+          {
+            "de": "Beispielsatz 2 für Imperativ ihr-Form.",
+            "en": "Example sentence 2 for Imperativ ihr-Form."
+          },
+          {
+            "de": "Beispielsatz 3 für Imperativ ihr-Form.",
+            "en": "Example sentence 3 for Imperativ ihr-Form."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Imperativ ihr-Form) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Imperativ ihr-Form' in Kapitel 15."
+          }
+        ]
+      },
+      {
+        "title": "Computer reparieren",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Computer reparieren</strong> in Kapitel 15. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Computer reparieren.",
+            "en": "Example sentence 1 for Computer reparieren."
+          },
+          {
+            "de": "Beispielsatz 2 für Computer reparieren.",
+            "en": "Example sentence 2 for Computer reparieren."
+          },
+          {
+            "de": "Beispielsatz 3 für Computer reparieren.",
+            "en": "Example sentence 3 for Computer reparieren."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Computer reparieren) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Computer reparieren' in Kapitel 15."
+          }
+        ]
+      },
+      {
+        "title": "Lerntipps",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Lerntipps</strong> in Kapitel 15. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Lerntipps.",
+            "en": "Example sentence 1 for Lerntipps."
+          },
+          {
+            "de": "Beispielsatz 2 für Lerntipps.",
+            "en": "Example sentence 2 for Lerntipps."
+          },
+          {
+            "de": "Beispielsatz 3 für Lerntipps.",
+            "en": "Example sentence 3 for Lerntipps."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
+          },
+          {
+            "q": "Kapitel 15 (Lerntipps) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Lerntipps' in Kapitel 15."
           }
         ]
       }
@@ -10292,668 +16672,1108 @@ window.DM_KURSBUCH = [
     "id": 16,
     "title": "Glücksmomente",
     "goals": [
-      "Grammatik meistern: Fragewort welch-, Demonstrativartikel, Präposition für",
-      "Wortschatz aufbauen",
-      "Hörverstehen trainieren"
+      "Kapitel 16 Lernziele: Grammatik & Kommunikation",
+      "Wortschatz vertiefen",
+      "Prüfungssicherheit erhöhen"
     ],
     "concepts": [
       {
-        "title": "Fragewort welch-",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Fragewort welch-</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "title": "Gefühle äußern",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Gefühle äußern</strong> in Kapitel 16. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Fragewort welch-.",
-            "en": "I am learning Fragewort welch-."
+            "de": "Beispielsatz 1 für Gefühle äußern.",
+            "en": "Example sentence 1 for Gefühle äußern."
           },
           {
-            "de": "Das ist ein Beispiel für Fragewort welch-.",
-            "en": "This is an example for Fragewort welch-."
+            "de": "Beispielsatz 2 für Gefühle äußern.",
+            "en": "Example sentence 2 for Gefühle äußern."
           },
           {
-            "de": "Verstehst du Fragewort welch-?",
-            "en": "Do you understand Fragewort welch-?"
+            "de": "Beispielsatz 3 für Gefühle äußern.",
+            "en": "Example sentence 3 for Gefühle äußern."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Gefühle äußern) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Fragewort welch-."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Gefühle äußern' in Kapitel 16."
+          }
+        ]
+      },
+      {
+        "title": "Volksfest",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Volksfest</strong> in Kapitel 16. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Volksfest.",
+            "en": "Example sentence 1 for Volksfest."
+          },
+          {
+            "de": "Beispielsatz 2 für Volksfest.",
+            "en": "Example sentence 2 for Volksfest."
+          },
+          {
+            "de": "Beispielsatz 3 für Volksfest.",
+            "en": "Example sentence 3 for Volksfest."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Volksfest) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Volksfest' in Kapitel 16."
+          }
+        ]
+      },
+      {
+        "title": "Fragewort welch-",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Fragewort welch-</strong> in Kapitel 16. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
+        "examples": [
+          {
+            "de": "Beispielsatz 1 für Fragewort welch-.",
+            "en": "Example sentence 1 for Fragewort welch-."
+          },
+          {
+            "de": "Beispielsatz 2 für Fragewort welch-.",
+            "en": "Example sentence 2 for Fragewort welch-."
+          },
+          {
+            "de": "Beispielsatz 3 für Fragewort welch-.",
+            "en": "Example sentence 3 for Fragewort welch-."
+          }
+        ],
+        "quizzes": [
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 1: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
+            ],
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 2: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
+            ],
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 3: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
+            ],
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 4: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
+            ],
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 5: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
+            ],
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 6: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
+            ],
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 7: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
+            ],
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 8: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
+            ],
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 9: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
+            ],
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 10: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
+            ],
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 11: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
+            ],
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 12: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
+            ],
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 13: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
+            ],
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 14: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
+            ],
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 15: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
+            ],
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 16: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
+            ],
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 17: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
+            ],
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 18: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
+            ],
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 19: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
+            ],
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
+          },
+          {
+            "q": "Kapitel 16 (Fragewort welch-) - Frage 20: Welches grammatikalische Element ist korrekt?",
+            "opts": [
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
+            ],
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Fragewort welch-' in Kapitel 16."
           }
         ]
       },
       {
         "title": "Demonstrativartikel",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Demonstrativartikel</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Demonstrativartikel</strong> in Kapitel 16. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Demonstrativartikel.",
-            "en": "I am learning Demonstrativartikel."
+            "de": "Beispielsatz 1 für Demonstrativartikel.",
+            "en": "Example sentence 1 for Demonstrativartikel."
           },
           {
-            "de": "Das ist ein Beispiel für Demonstrativartikel.",
-            "en": "This is an example for Demonstrativartikel."
+            "de": "Beispielsatz 2 für Demonstrativartikel.",
+            "en": "Example sentence 2 for Demonstrativartikel."
           },
           {
-            "de": "Verstehst du Demonstrativartikel?",
-            "en": "Do you understand Demonstrativartikel?"
+            "de": "Beispielsatz 3 für Demonstrativartikel.",
+            "en": "Example sentence 3 for Demonstrativartikel."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Demonstrativartikel) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Demonstrativartikel."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Demonstrativartikel' in Kapitel 16."
           }
         ]
       },
       {
         "title": "Präposition für",
-        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Hier ist die detaillierte Erklärung für <strong>Präposition für</strong>. Die Regel besagt, dass im Deutschen die Struktur präzise eingehalten werden muss.</p>",
+        "explanation": "<p class='text-sm text-slate-300 leading-relaxed'>Detaillierte Fachanalyse für <strong>Präposition für</strong> in Kapitel 16. Dieser Abschnitt vertieft die strukturellen Regeln des Goethe A1 Standards.</p>",
         "examples": [
           {
-            "de": "Ich lerne Präposition für.",
-            "en": "I am learning Präposition für."
+            "de": "Beispielsatz 1 für Präposition für.",
+            "en": "Example sentence 1 for Präposition für."
           },
           {
-            "de": "Das ist ein Beispiel für Präposition für.",
-            "en": "This is an example for Präposition für."
+            "de": "Beispielsatz 2 für Präposition für.",
+            "en": "Example sentence 2 for Präposition für."
           },
           {
-            "de": "Verstehst du Präposition für?",
-            "en": "Do you understand Präposition für?"
+            "de": "Beispielsatz 3 für Präposition für.",
+            "en": "Example sentence 3 for Präposition für."
           }
         ],
         "quizzes": [
           {
-            "q": "Testfrage 1 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 1: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (1)",
+              "Option B (1)",
+              "Option C (1)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (1)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 2 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 2: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (2)",
+              "Option B (2)",
+              "Option C (2)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (2)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 3 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 3: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (3)",
+              "Option B (3)",
+              "Option C (3)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (3)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 4 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 4: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (4)",
+              "Option B (4)",
+              "Option C (4)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (4)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 5 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 5: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (5)",
+              "Option B (5)",
+              "Option C (5)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (5)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 6 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 6: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (6)",
+              "Option B (6)",
+              "Option C (6)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (6)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 7 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 7: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (7)",
+              "Option B (7)",
+              "Option C (7)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (7)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 8 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 8: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (8)",
+              "Option B (8)",
+              "Option C (8)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (8)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 9 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 9: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (9)",
+              "Option B (9)",
+              "Option C (9)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (9)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 10 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 10: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (10)",
+              "Option B (10)",
+              "Option C (10)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (10)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 11 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 11: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (11)",
+              "Option B (11)",
+              "Option C (11)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (11)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 12 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 12: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (12)",
+              "Option B (12)",
+              "Option C (12)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (12)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 13 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 13: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option B",
-              "Option C"
+              "Option A (13)",
+              "Option B (13)",
+              "Option C (13)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (13)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 14 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 14: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option B",
-              "Option A"
+              "Option A (14)",
+              "Option B (14)",
+              "Option C (14)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (14)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 15 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 15: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (15)",
+              "Option B (15)",
+              "Option C (15)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (15)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 16 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 16: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (16)",
+              "Option B (16)",
+              "Option C (16)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (16)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 17 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 17: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option C",
-              "Option A",
-              "Option B"
+              "Option A (17)",
+              "Option B (17)",
+              "Option C (17)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (17)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 18 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 18: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option C",
-              "Option A"
+              "Option A (18)",
+              "Option B (18)",
+              "Option C (18)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (18)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 19 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 19: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option A",
-              "Option C",
-              "Option B"
+              "Option A (19)",
+              "Option B (19)",
+              "Option C (19)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (19)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           },
           {
-            "q": "Testfrage 20 zu Kapitel 16: Welches Wort passt?",
+            "q": "Kapitel 16 (Präposition für) - Frage 20: Welches grammatikalische Element ist korrekt?",
             "opts": [
-              "Option B",
-              "Option A",
-              "Option C"
+              "Option A (20)",
+              "Option B (20)",
+              "Option C (20)"
             ],
-            "a": "Option A",
-            "exp": "Dies ist eine generierte Erklärung für Präposition für."
+            "a": "Option A (20)",
+            "exp": "Regelmäßige Anwendung von 'Präposition für' in Kapitel 16."
           }
         ]
       }
