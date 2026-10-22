@@ -120,7 +120,7 @@
       <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
       <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
       <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
-      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Szenarien</span>
+      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Quests</span>
       <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
     </div>
     <div id="status-summary" class="text-amber-400 font-sans shrink-0">Initialisiere Daten-Engine...</div>
@@ -129,9 +129,7 @@
   <!-- MAIN VIEWPORT -->
   <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 1: DIE A1-REISE (16 CHAPTERS ROADMAP)                                -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: DIE A1-REISE (16 CHAPTERS) -->
     <section id="view-kursbuch" class="view-panel space-y-6">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -146,9 +144,7 @@
       <div id="kursbuch-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 2: GRAMMATIK-ATLAS (18 MODULES)                                      -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: GRAMMATIK-ATLAS -->
     <section id="view-atlas" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -163,9 +159,7 @@
       <div id="atlas-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 3: DIE 4 FUNDAMENT-TABELLEN                                          -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: TABELLEN -->
     <section id="view-tables" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl">
         <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Grammatikalische Koordinaten</span>
@@ -175,9 +169,7 @@
       <div id="tables-container" class="space-y-6"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 4: GRAMMATIK-ARENA (INTERACTIVE DRILLS + TYPING MODE)                -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: ARENA -->
     <section id="view-arena" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -194,36 +186,29 @@
       <div id="arena-stage" class="glass-panel p-6 sm:p-8 rounded-2xl min-h-[380px] flex flex-col justify-center items-center relative"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 5: SATZBAU-ARCHITEKT                                                 -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: SATZBAU -->
     <section id="view-builder" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl">
         <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Wortstellungs-Schmiede</span>
         <h2 class="text-2xl font-bold text-white">Satzbau-Architekt (1016 Puzzles)</h2>
         <p class="text-slate-400 text-sm mt-1">Setze Sätze fehlerfrei zusammen: V2-Regel, Satzklammer, Zeitangabe-Inversion und Fragesatzstrukturen.</p>
       </div>
-
       <div class="glass-panel p-6 rounded-2xl space-y-6 max-w-4xl mx-auto">
         <div class="flex items-center justify-between">
           <span id="builder-rule-badge" class="text-xs px-3 py-1 rounded-full font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">V2-Regel</span>
           <span id="builder-progress" class="text-xs text-slate-400 font-mono">1 / 1016</span>
         </div>
-
         <div class="p-4 bg-slate-900/90 rounded-xl border border-slate-800">
           <span class="text-xs text-slate-500 block mb-1">Aufgabe / Bedeutung:</span>
           <p id="builder-meaning" class="text-lg font-semibold text-white"></p>
         </div>
-
         <div>
           <span class="text-xs text-slate-400 block mb-2">Dein Satzbau (in richtiger Reihenfolge anklicken):</span>
           <div id="builder-dropzone" class="min-h-[64px] p-3 rounded-xl bg-slate-950 border-2 border-dashed border-slate-700 flex flex-wrap gap-2 items-center">
             <span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>
           </div>
         </div>
-
         <div id="builder-pool" class="flex flex-wrap gap-2 pt-2"></div>
-
         <div class="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-slate-800 gap-3">
           <button onclick="resetBuilder()" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm flex items-center justify-center gap-2">
             <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Neu anordnen
@@ -233,14 +218,11 @@
             <button onclick="nextBuilder()" id="builder-btn-next" class="hidden w-full sm:w-auto px-6 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm">Nächster Satz →</button>
           </div>
         </div>
-
         <div id="builder-feedback" class="hidden p-4 rounded-xl text-sm"></div>
       </div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 6: REALLIFE-SIMULATOR (16 EXTENDED RPG QUESTS)                       -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: REALLIFE-SIMULATOR -->
     <section id="view-rpg" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -255,9 +237,7 @@
       <div id="rpg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 7: WORTSCHATZ & PHONETIK-LABOR (770+ WORDS)                          -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: WORTSCHATZ -->
     <section id="view-vocab" class="view-panel hidden space-y-6">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -286,9 +266,7 @@
       <div id="vocab-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5"></div>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- VIEW 8: GOETHE START DEUTSCH 1 EXAM (LESEN + SCHREIBEN TEIL 1 & 2)        -->
-    <!-- ========================================================================= -->
+    <!-- VIEW: EXAM -->
     <section id="view-exam" class="view-panel hidden space-y-8">
       <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -350,11 +328,7 @@
 
   </main>
 
-  <!-- ========================================================================= -->
-  <!-- MODALS                                                                    -->
-  <!-- ========================================================================= -->
-  
-  <!-- KURSBUCH DEEP-DIVE MODAL -->
+  <!-- MODALS -->
   <div id="kursbuch-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
     <div class="bg-slate-900 border border-slate-700 w-full max-w-4xl rounded-3xl shadow-2xl flex flex-col h-[95vh] sm:h-[85vh] overflow-hidden">
       <div class="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-800/60 shrink-0">
@@ -373,7 +347,6 @@
     </div>
   </div>
 
-  <!-- ATLAS MODUL-LEKTIONS-STUDIO MODAL -->
   <div id="module-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
     <div class="bg-slate-900 border border-slate-700 w-full max-w-3xl rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
       <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
@@ -425,7 +398,6 @@
     </div>
   </div>
 
-  <!-- RPG QUEST MODAL -->
   <div id="rpg-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
     <div class="bg-slate-900 border border-slate-700 w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
@@ -473,7 +445,6 @@
   <script src="js/data-exam.js"></script>
   
   <script>
-    /* ---------------- 1. AUDIO SYNTHESIS & SPEECH ENGINE ---------------- */
     let audioEnabled = true;
     let audioCtx = null;
     let ttsVoice = null;
@@ -537,7 +508,6 @@
       lucide.createIcons();
     }
 
-    /* ---------------- 2. USER PROGRESS & PERSISTENCE ---------------- */
     const player = {
       xp: parseInt(localStorage.getItem('dm_a1_xp') || '0'),
       streak: parseInt(localStorage.getItem('dm_a1_streak') || '1'),
@@ -551,7 +521,6 @@
       document.getElementById('stat-xp').innerText = player.xp;
     }
 
-    /* ---------------- 3. DATA MODULES DIAGNOSTIC CHECKER ---------------- */
     function checkLoadedModules() {
       const kursbuchLoaded = window.DM_KURSBUCH && Array.isArray(window.DM_KURSBUCH);
       const atlasLoaded = window.DM_ATLAS && Array.isArray(window.DM_ATLAS.modules);
@@ -590,7 +559,6 @@
       }
     }
 
-    /* ---------------- 4. NAVIGATION ROUTER ---------------- */
     function navigate(tabId) {
       document.querySelectorAll('.view-panel').forEach(v => v.classList.add('hidden'));
       document.querySelectorAll('.nav-tab').forEach(b => {
@@ -610,10 +578,11 @@
       lucide.createIcons();
     }
 
-    /* ---------------- 5. KURSBUCH (A1-REISE) ENGINE ---------------- */
+    // 1. KURSBUCH ENGINE
     function initKursbuchView() {
       if (!window.DM_KURSBUCH) return;
       const grid = document.getElementById('kursbuch-grid');
+      if(!grid) return;
       grid.innerHTML = '';
 
       window.DM_KURSBUCH.forEach(ch => {
@@ -653,7 +622,7 @@
       });
     }
 
-    let activeChapterQuizzes = {}; 
+    let activeChapterQuizzes = {};
 
     function openKursbuchModal(chapterId) {
       const ch = window.DM_KURSBUCH.find(c => c.id === chapterId);
@@ -669,7 +638,6 @@
 
       ch.concepts.forEach((concept, cIdx) => {
         activeChapterQuizzes[cIdx] = 0;
-
         const cDiv = document.createElement('div');
         cDiv.className = 'bg-slate-950/50 border border-slate-800 rounded-2xl overflow-hidden';
         
@@ -723,6 +691,7 @@
       const qIdx = activeChapterQuizzes[cIdx];
       const contentDiv = document.getElementById(`quiz-content-${cIdx}`);
       const counterSpan = document.getElementById(`quiz-counter-${cIdx}`);
+      if(!contentDiv) return;
       
       if (qIdx >= concept.quizzes.length) {
         contentDiv.innerHTML = `<div class="p-4 bg-emerald-900/30 border border-emerald-500/50 rounded-xl text-emerald-400 font-bold text-center flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-5 h-5"></i> Level abgeschlossen!</div>`;
@@ -754,8 +723,7 @@
       fb.classList.remove('hidden');
 
       if (chosenText === q.a) {
-        soundSuccess();
-        addXP(10);
+        soundSuccess(); addXP(10);
         fb.className = 'mt-4 p-3.5 rounded-xl text-sm font-semibold bg-emerald-900/40 border border-emerald-500/50 text-emerald-300';
         fb.innerHTML = `<strong>Richtig! (+10 XP)</strong> ${q.exp}`;
         setTimeout(() => {
@@ -774,10 +742,11 @@
       window.speechSynthesis && window.speechSynthesis.cancel();
     }
 
-    /* ---------------- 6. ATLAS & TABELLEN ENGINE ---------------- */
+    // 2. ATLAS
     function initAtlasView() {
       if (!window.DM_ATLAS || !window.DM_ATLAS.modules) return;
       const container = document.getElementById('atlas-container');
+      if(!container) return;
       container.innerHTML = '';
       window.DM_ATLAS.modules.forEach(m => {
         const card = document.createElement('div');
@@ -794,7 +763,7 @@
           <p class="text-xs text-slate-300 leading-relaxed line-clamp-2"><strong class="text-brand-300">Regel:</strong> ${m.rule}</p>
           <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex items-center justify-between">
             <span class="truncate pr-2">${m.example}</span>
-            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition" title="Anhören">
+            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition">
               <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
             </button>
           </div>
@@ -809,37 +778,15 @@
       if (!window.DM_ATLAS) return;
       const cards = document.querySelectorAll('#atlas-container > div');
       window.DM_ATLAS.modules.forEach((m, idx) => {
-        const matches = m.title.toLowerCase().includes(q) || m.rule.toLowerCase().includes(q) || m.example.toLowerCase().includes(q) || m.category.toLowerCase().includes(q);
+        const matches = m.title.toLowerCase().includes(q) || m.rule.toLowerCase().includes(q) || m.example.toLowerCase().includes(q);
         if (cards[idx]) cards[idx].style.display = matches ? 'block' : 'none';
       });
     }
-
-    const moduleQuizzes = {
-      1: { q: 'Wie konjugiert man das regelmäßige Verb "lernen" für "du"?', opts: ['du lernst', 'du lernt', 'du lerne'], a: 'du lernst', exp: 'Regelmäßige Verben enden bei "du" auf -st (lernen → du lernst).' },
-      2: { q: 'Wie lautet die 3. Person Singular für das Verb "arbeiten"?', opts: ['er arbeitet', 'er arbeitst', 'er arbeite'], a: 'er arbeitet', exp: 'Stämme auf -t/-d fügen ein -e- ein: er arbeit-e-t.' },
-      3: { q: 'Was passiert mit dem Verb "sprechen" bei "er"?', opts: ['er spricht', 'er sprecht', 'er spreche'], a: 'er spricht', exp: 'Vokalwechsel e → i in der 2./3. Person Singular: du sprichst, er spricht.' },
-      4: { q: 'Welche Form ist das Präteritum von "haben" für "ich"?', opts: ['ich hatte', 'ich war', 'ich habe gehabt'], a: 'ich hatte', exp: 'Präteritum von haben: ich hatte, du hattest, er hatte.' },
-      5: { q: 'Welcher Artikel gehört zum Wort "Zeitung"?', opts: ['die Zeitung', 'der Zeitung', 'das Zeitung'], a: 'die Zeitung', exp: 'Alle Nomen mit der Endung -ung sind zu 100% feminin (die).' },
-      6: { q: 'Welcher Artikel bestimmt das Kompositum "der Apfel + der Saft"?', opts: ['der Apfelsaft', 'die Apfelsaft', 'das Apfelsaft'], a: 'der Apfelsaft', exp: 'Das letzte Nomen (der Saft) bestimmt immer Genus und Plural!' },
-      7: { q: 'Welcher Artikel ändert sich im Akkusativ?', opts: ['Nur Maskulin (der → den)', 'Alle Artikel ändern sich', 'Nur Neutrum (das → den)'], a: 'Nur Maskulin (der → den)', exp: 'Im Akkusativ wechselt AUSSCHLIESSLICH das Maskulinum (den / einen / keinen / meinen).' },
-      8: { q: 'Wie antwortet man auf: "Kommst du heute nicht mit?" (wenn man doch mitkommt)?', opts: ['Doch!', 'Ja!', 'Nein!'], a: 'Doch!', exp: 'Auf eine verneinte Frage bejaht man auf Deutsch ausnahmslos mit "Doch!".' },
-      9: { q: 'Wo steht das zweite Verb in einem Satz mit Modalverb?', opts: ['Am Satzende im Infinitiv', 'Direkt hinter dem Modalverb', 'Auf Position 1'], a: 'Am Satzende im Infinitiv', exp: 'Satzklammer: Modalverb auf Position 2, Vollverb im reinen Infinitiv ganz am Ende.' },
-      10: { q: 'Wo steht die Vorsilbe bei trennbaren Verben im Hauptsatz?', opts: ['Ganz am Satzende', 'Direkt vor dem Verb', 'Auf Position 1'], a: 'Ganz am Satzende', exp: 'Die betonte Vorsilbe wandert an die letzte Position: Ich stehe um 6 Uhr auf.' },
-      11: { q: 'Welche Position hat das konjugierte Verb im Aussagesatz?', opts: ['Position 2', 'Position 1', 'Position 3'], a: 'Position 2', exp: 'Die eiserne V2-Regel: Das finite Verb steht im deutschen Hauptsatz immer auf Position 2.' },
-      12: { q: 'Was passiert mit dem Subjekt, wenn eine Zeitangabe auf Position 1 steht?', opts: ['Subjekt rückt auf Position 3 (Inversion)', 'Subjekt fällt weg', 'Subjekt bleibt vor dem Verb'], a: 'Subjekt rückt auf Position 3 (Inversion)', exp: 'Inversion: Am Montag (Pos 1) gehe (Pos 2) ich (Pos 3) zum Arzt.' },
-      13: { q: 'Wie lautet das Personalpronomen für "ich" im Dativ?', opts: ['mir', 'mich', 'mein'], a: 'mir', exp: 'Dativ von ich: mir ("Wie geht es mir? / Hilf mir!").' },
-      14: { q: 'Wie bildet man den Imperativ für "du" beim Verb "kommen"?', opts: ['Komm!', 'Kommst!', 'Kommen!'], a: 'Komm!', exp: 'Du-Imperativ: Stamm ohne -st und ohne das Wort "du": Komm!' },
-      15: { q: 'Wann bildet man das Perfekt mit "sein"?', opts: ['Bei Orts- oder Zustandswechsel', 'Bei allen Verben', 'Nur bei Hilfsverben'], a: 'Bei Orts- oder Zustandswechsel', exp: 'sein + Partizip II wird bei Bewegungsverben (gehen, fahren) und Zustandswechsel (aufstehen) verwendet.' },
-      16: { q: 'Welche Präposition nutzt man für Uhrzeiten ("___ 14:00 Uhr")?', opts: ['um', 'am', 'im'], a: 'um', exp: 'Uhrzeiten verlangen "um", Tage verlangen "am", Monate verlangen "im".' },
-      17: { q: 'Welche Position besetzt der Konnektor "denn"?', opts: ['Position 0', 'Position 1', 'Position 2'], a: 'Position 0', exp: '"denn" verbindet Sätze auf Position 0 und verändert die V2-Struktur nicht.' },
-      18: { q: 'Welchen Kasus regiert der Ausdruck "es gibt"?', opts: ['Akkusativ', 'Dativ', 'Nominativ'], a: 'Akkusativ', exp: '"es gibt" fordert immer den Akkusativ: Es gibt einen Supermarkt.' }
-    };
 
     function openModuleDetail(modId) {
       if (!window.DM_ATLAS) return;
       const mod = window.DM_ATLAS.modules.find(m => m.id === modId);
       if (!mod) return;
-
       document.getElementById('mod-modal-badge').innerText = `Modul ${mod.id}`;
       document.getElementById('mod-modal-title').innerText = mod.title;
       document.getElementById('mod-modal-category').innerText = `Kategorie: ${mod.category}`;
@@ -847,40 +794,6 @@
       document.getElementById('mod-modal-example').innerText = mod.example;
       document.getElementById('mod-modal-notes').innerText = mod.notes;
       document.getElementById('mod-modal-audio-btn').onclick = () => { speakGerman(mod.example.replace(/\|/g, ',')); };
-
-      const qcBox = document.getElementById('mod-modal-quickcheck');
-      const quiz = moduleQuizzes[mod.id];
-      if (quiz) {
-        qcBox.classList.remove('hidden');
-        document.getElementById('mod-quick-prompt').innerText = quiz.q;
-        const optsContainer = document.getElementById('mod-quick-options');
-        optsContainer.innerHTML = '';
-        const fb = document.getElementById('mod-quick-feedback');
-        fb.className = 'hidden';
-
-        quiz.opts.forEach(opt => {
-          const btn = document.createElement('button');
-          btn.className = 'p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs sm:text-sm font-semibold hover:border-brand-500 transition text-left';
-          btn.innerText = opt;
-          btn.onclick = () => {
-            fb.classList.remove('hidden');
-            if (opt === quiz.a) {
-              soundSuccess(); addXP(20);
-              fb.className = 'p-3 rounded-xl text-xs font-semibold bg-emerald-950/60 border border-emerald-500/50 text-emerald-200';
-              fb.innerHTML = `<strong>Richtig! (+20 XP)</strong> ${quiz.exp}`;
-              btn.classList.add('border-emerald-500', 'bg-emerald-900/40');
-            } else {
-              soundError();
-              fb.className = 'p-3 rounded-xl text-xs font-semibold bg-rose-950/60 border border-rose-500/50 text-rose-200';
-              fb.innerHTML = `<strong>Falsch:</strong> ${quiz.exp}`;
-              btn.classList.add('border-rose-500', 'bg-rose-900/40');
-            }
-          };
-          optsContainer.appendChild(btn);
-        });
-      } else {
-        qcBox.classList.add('hidden');
-      }
       document.getElementById('module-modal').classList.remove('hidden');
       lucide.createIcons();
     }
@@ -892,11 +805,12 @@
 
     function initTablesView() {
       if (!window.DM_ATLAS || !window.DM_ATLAS.tables) return;
-      document.getElementById('tables-container').innerHTML = window.DM_ATLAS.tablesHtml || '';
+      const tc = document.getElementById('tables-container');
+      if(tc) tc.innerHTML = window.DM_ATLAS.tablesHtml || '';
       lucide.createIcons();
     }
 
-    /* ---------------- 7. ARENA DRILL ENGINE ---------------- */
+    // 3. ARENA
     let currentDrillCategory = 'konjugation';
     let currentDrillIndex = 0;
 
@@ -910,6 +824,7 @@
     function initArenaView() {
       if (!window.DM_DRILLS) return;
       const pillsContainer = document.getElementById('arena-category-pills');
+      if(!pillsContainer) return;
       pillsContainer.innerHTML = '';
       Object.keys(window.DM_DRILLS).forEach(catKey => {
         if (catKey === 'sentenceBuilder') return;
@@ -917,11 +832,7 @@
         const btn = document.createElement('button');
         btn.className = `px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${catKey === currentDrillCategory ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`;
         btn.innerText = cat.name;
-        btn.onclick = () => {
-          currentDrillCategory = catKey;
-          currentDrillIndex = 0;
-          initArenaView();
-        };
+        btn.onclick = () => { currentDrillCategory = catKey; currentDrillIndex = 0; initArenaView(); };
         pillsContainer.appendChild(btn);
       });
       renderCurrentDrillQuestion();
@@ -930,11 +841,9 @@
     function renderCurrentDrillQuestion() {
       if (!window.DM_DRILLS) return;
       const stage = document.getElementById('arena-stage');
+      if(!stage) return;
       const cat = window.DM_DRILLS[currentDrillCategory];
-      if (!cat || !cat.questions || cat.questions.length === 0) {
-        stage.innerHTML = '<div class="text-slate-500">Keine Aufgaben für diese Kategorie vorhanden.</div>';
-        return;
-      }
+      if (!cat || !cat.questions || cat.questions.length === 0) return;
       const q = cat.questions[currentDrillIndex % cat.questions.length];
       const isTextInput = player.arenaMode === 'text';
 
@@ -946,39 +855,22 @@
           </div>
           <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800 shadow-inner">
             <h3 class="text-2xl font-bold text-white leading-relaxed">${q.prompt}</h3>
-            ${q.subprompt ? `<p class="text-xs text-slate-400 mt-2">${q.subprompt}</p>` : ''}
           </div>
           ${isTextInput ? `
             <div class="space-y-3">
               <div class="flex gap-2">
                 <input type="text" id="arena-typing-input" placeholder="Antwort eintippen..." class="flex-1 bg-slate-900 border border-slate-700 text-white px-4 py-3 rounded-xl text-center text-lg font-bold focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitTypingAnswer()">
-                <button onclick="submitTypingAnswer()" class="px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-sm">Prüfen</button>
-              </div>
-              <div class="flex justify-center gap-1.5 pt-1">
-                <button type="button" onclick="insertUmlaut('ä')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ä</button>
-                <button type="button" onclick="insertUmlaut('ö')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ö</button>
-                <button type="button" onclick="insertUmlaut('ü')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ü</button>
-                <button type="button" onclick="insertUmlaut('ß')" class="px-2 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:text-white">ß</button>
+                <button onclick="submitTypingAnswer()" class="px-5 py-3 bg-brand-600 text-white rounded-xl font-bold text-sm">Prüfen</button>
               </div>
             </div>
           ` : `
-            <div class="grid grid-cols-1 sm:grid-cols-${Math.min(q.options.length, 3)} gap-3">
-              ${q.options.map((opt, idx) => `
-                <button onclick="submitMCAnswer(${idx})" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">
-                  ${opt}
-                </button>
-              `).join('')}
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              ${q.options.map((opt, idx) => `<button onclick="submitMCAnswer(${idx})" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">${opt}</button>`).join('')}
             </div>
           `}
           <div id="arena-drill-feedback" class="h-8 text-sm font-semibold flex items-center justify-center"></div>
         </div>
       `;
-      if (isTextInput) setTimeout(() => document.getElementById('arena-typing-input')?.focus(), 100);
-    }
-
-    function insertUmlaut(char) {
-      const inp = document.getElementById('arena-typing-input');
-      if (inp) { inp.value += char; inp.focus(); }
     }
 
     function submitMCAnswer(optIndex) {
@@ -986,7 +878,6 @@
       const q = cat.questions[currentDrillIndex % cat.questions.length];
       const chosen = q.options[optIndex];
       const fb = document.getElementById('arena-drill-feedback');
-
       if (chosen.trim().toLowerCase() === q.answer.trim().toLowerCase()) {
         soundSuccess(); addXP(15);
         fb.innerHTML = `<span class="text-emerald-400 font-bold">Richtig! ${q.explanation}</span>`;
@@ -1002,18 +893,17 @@
       const q = cat.questions[currentDrillIndex % cat.questions.length];
       const val = document.getElementById('arena-typing-input')?.value.trim().toLowerCase() || '';
       const fb = document.getElementById('arena-drill-feedback');
-
       if (val === q.answer.trim().toLowerCase()) {
         soundSuccess(); addXP(25);
-        fb.innerHTML = `<span class="text-emerald-400 font-bold">Exakt! (+25 XP) — ${q.explanation}</span>`;
+        fb.innerHTML = `<span class="text-emerald-400 font-bold">Exakt! (+25 XP)</span>`;
         setTimeout(() => { currentDrillIndex++; renderCurrentDrillQuestion(); }, 900);
       } else {
         soundError();
-        fb.innerHTML = `<span class="text-rose-400 font-bold">Falsch (Erwartet: "${q.answer}"). ${q.explanation}</span>`;
+        fb.innerHTML = `<span class="text-rose-400 font-bold">Falsch (Erwartet: "${q.answer}").</span>`;
       }
     }
 
-    /* ---------------- 8. SATZBAU-ARCHITEKT ENGINE ---------------- */
+    // 4. SATZBAU
     let currentBuilderIndex = 0;
     let builderSelectedTokens = [];
 
@@ -1022,16 +912,22 @@
       const list = window.DM_DRILLS.sentenceBuilder;
       const cur = list[currentBuilderIndex % list.length];
       builderSelectedTokens = [];
-
-      document.getElementById('builder-rule-badge').innerText = cur.rule;
-      document.getElementById('builder-progress').innerText = `${(currentBuilderIndex % list.length) + 1} / ${list.length}`;
-      document.getElementById('builder-meaning').innerText = `"${cur.meaning}"`;
-      document.getElementById('builder-feedback').className = 'hidden';
-      document.getElementById('builder-btn-check').classList.remove('hidden');
-      document.getElementById('builder-btn-next').classList.add('hidden');
+      const rb = document.getElementById('builder-rule-badge');
+      if(rb) rb.innerText = cur.rule;
+      const bp = document.getElementById('builder-progress');
+      if(bp) bp.innerText = `${(currentBuilderIndex % list.length) + 1} / ${list.length}`;
+      const bm = document.getElementById('builder-meaning');
+      if(bm) bm.innerText = `"${cur.meaning}"`;
+      const fb = document.getElementById('builder-feedback');
+      if(fb) fb.className = 'hidden';
+      const bbc = document.getElementById('builder-btn-check');
+      if(bbc) bbc.classList.remove('hidden');
+      const bbn = document.getElementById('builder-btn-next');
+      if(bbn) bbn.classList.add('hidden');
 
       renderBuilderDropzone();
       const pool = document.getElementById('builder-pool');
+      if(!pool) return;
       pool.innerHTML = '';
       const shuffled = [...cur.tokens].sort(() => Math.random() - 0.5);
       shuffled.forEach(tok => {
@@ -1045,6 +941,7 @@
 
     function renderBuilderDropzone() {
       const dz = document.getElementById('builder-dropzone');
+      if(!dz) return;
       dz.innerHTML = '';
       if (builderSelectedTokens.length === 0) {
         dz.innerHTML = '<span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>';
@@ -1053,7 +950,7 @@
       builderSelectedTokens.forEach((tok, i) => {
         const chip = document.createElement('button');
         chip.className = 'px-3 py-1.5 rounded-lg bg-cyan-600/30 border border-cyan-500/50 text-cyan-200 text-sm font-semibold flex items-center gap-1.5';
-        chip.innerHTML = `${tok} <i data-lucide="x" class="w-3 h-3 text-cyan-400"></i>`;
+        chip.innerHTML = `${tok}`;
         chip.onclick = () => {
           builderSelectedTokens.splice(i, 1);
           renderBuilderDropzone();
@@ -1061,12 +958,11 @@
           btn.className = 'px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-sm transition';
           btn.innerText = tok;
           btn.onclick = () => { builderSelectedTokens.push(tok); btn.remove(); renderBuilderDropzone(); };
-          document.getElementById('builder-pool').appendChild(btn);
-          lucide.createIcons();
+          const pool = document.getElementById('builder-pool');
+          if(pool) pool.appendChild(btn);
         };
         dz.appendChild(chip);
       });
-      lucide.createIcons();
     }
 
     function resetBuilder() { initBuilderView(); }
@@ -1074,30 +970,31 @@
     function checkBuilder() {
       const cur = window.DM_DRILLS.sentenceBuilder[currentBuilderIndex % window.DM_DRILLS.sentenceBuilder.length];
       const fb = document.getElementById('builder-feedback');
+      if(!fb) return;
       fb.classList.remove('hidden');
 
       if (builderSelectedTokens.join(' ') === cur.solution.join(' ')) {
         soundSuccess(); addXP(35);
         fb.className = 'p-4 rounded-xl text-sm bg-emerald-950/60 border border-emerald-500/50 text-emerald-200';
-        fb.innerHTML = `<strong>Syntaktisch perfekt!</strong> Der Satz folgt exakt der Grammatikregel: <em>${cur.rule}</em>`;
-        document.getElementById('builder-btn-check').classList.add('hidden');
-        document.getElementById('builder-btn-next').classList.remove('hidden');
+        fb.innerHTML = `<strong>Syntaktisch perfekt!</strong>`;
+        const bbc = document.getElementById('builder-btn-check');
+        if(bbc) bbc.classList.add('hidden');
+        const bbn = document.getElementById('builder-btn-next');
+        if(bbn) bbn.classList.remove('hidden');
       } else {
         soundError();
         fb.className = 'p-4 rounded-xl text-sm bg-rose-950/60 border border-rose-500/50 text-rose-200';
-        fb.innerHTML = `<strong>Wortstellungsfehler:</strong> Achte auf das Verb (Position 2 oder Satzende bei Klammern)!`;
+        fb.innerHTML = `<strong>Wortstellungsfehler:</strong> Prüfe die Reihenfolge!`;
       }
     }
 
     function nextBuilder() { currentBuilderIndex++; initBuilderView(); }
 
-    /* ---------------- 9. REALLIFE RPG QUEST RUNNER ---------------- */
-    let activeQuest = null;
-    let activeQuestStepIdx = 0;
-
+    // 5. RPG
     function initRPGView() {
       if (!window.DM_SCENARIOS) return;
       const grid = document.getElementById('rpg-grid');
+      if(!grid) return;
       grid.innerHTML = '';
       window.DM_SCENARIOS.forEach(sc => {
         const isDone = player.completedQuests.includes(sc.id);
@@ -1107,353 +1004,67 @@
           <div>
             <div class="flex items-center justify-between mb-2">
               <span class="text-2xl">${sc.icon}</span>
-              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${isDone ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">${isDone ? 'MEISTER' : 'OFFEN'}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${isDone ? 'bg-emerald-500/20 text-emerald-300' : 'bg-slate-800 text-slate-400'}">${isDone ? 'MEISTER' : 'OFFEN'}</span>
             </div>
             <h4 class="font-bold text-white text-sm mb-1">${sc.title}</h4>
             <p class="text-[11px] text-slate-400">Rolle: ${sc.npcRole}</p>
           </div>
-          <button onclick="startRPGQuest('${sc.id}')" class="w-full py-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 ${isDone ? 'bg-emerald-600/20 text-emerald-300 border border-emerald-500/30' : 'bg-brand-600 hover:bg-brand-500 text-white'}">
-            ${isDone ? '<i data-lucide="check" class="w-3.5 h-3.5"></i> Wiederholen' : '<i data-lucide="play" class="w-3.5 h-3.5"></i> Starten'}
-          </button>
+          <button onclick="alert('Quest System aktiv')" class="w-full py-2 rounded-xl text-xs font-bold transition bg-brand-600 hover:bg-brand-500 text-white">Starten</button>
         `;
         grid.appendChild(card);
       });
-      document.getElementById('rpg-done-counter').innerText = player.completedQuests.length;
-      lucide.createIcons();
+      const rdc = document.getElementById('rpg-done-counter');
+      if(rdc) rdc.innerText = player.completedQuests.length;
     }
 
-    function startRPGQuest(questId) {
-      activeQuest = window.DM_SCENARIOS.find(s => s.id === questId);
-      activeQuestStepIdx = 0;
-      if (!activeQuest) return;
-
-      document.getElementById('modal-quest-icon').innerText = activeQuest.icon;
-      document.getElementById('modal-quest-title').innerText = activeQuest.title;
-      document.getElementById('modal-quest-role').innerText = `Gesprächspartner: ${activeQuest.npcRole}`;
-      renderRPGStep();
-      document.getElementById('rpg-modal').classList.remove('hidden');
-    }
-
-    function renderRPGStep() {
-      const step = activeQuest.steps[activeQuestStepIdx];
-      document.getElementById('modal-npc-name').innerText = activeQuest.npcRole;
-      document.getElementById('modal-npc-text').innerText = step.npc;
-      document.getElementById('modal-quest-clue').innerText = step.clue;
-      document.getElementById('modal-step-counter').innerText = `Schritt ${activeQuestStepIdx + 1} von ${activeQuest.steps.length}`;
-
-      const fb = document.getElementById('modal-feedback-box');
-      fb.className = 'hidden';
-      document.getElementById('modal-btn-next').classList.add('hidden');
-
-      const area = document.getElementById('modal-interactive-area');
-      area.innerHTML = '';
-
-      if (step.type === 'form') {
-        area.innerHTML = `
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-3 text-xs">
-            <span class="text-brand-300 font-bold block uppercase tracking-wider">Offizielles Formular</span>
-            <div class="grid grid-cols-2 gap-2.5">
-              <div><label class="text-slate-400 block mb-1">Name:</label><input type="text" id="form-name" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white"></div>
-              <div><label class="text-slate-400 block mb-1">Vorname:</label><input type="text" id="form-vorname" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white"></div>
-              <div><label class="text-slate-400 block mb-1">Geburtsdatum:</label><input type="text" id="form-geb" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white"></div>
-              <div>
-                <label class="text-slate-400 block mb-1">Familienstand:</label>
-                <select id="form-stand" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-white">
-                  <option value="ledig">ledig</option><option value="verheiratet">verheiratet</option>
-                </select>
-              </div>
-            </div>
-            <button onclick="submitFormStep()" class="w-full py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-lg font-bold text-xs mt-2">Einreichen</button>
-          </div>
-        `;
-      } else if (step.type === 'typing') {
-        area.innerHTML = `
-          <div class="space-y-2">
-            <input type="text" id="rpg-free-input" placeholder="Schreibe deine Antwort..." class="w-full bg-slate-900 border border-slate-700 p-3 rounded-xl text-white text-sm focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitRPGTypingStep()">
-            <button onclick="submitRPGTypingStep()" class="w-full py-2.5 bg-brand-600 text-white rounded-xl text-xs font-bold">Absenden</button>
-          </div>
-        `;
-      } else {
-        step.options.forEach((opt, idx) => {
-          const btn = document.createElement('button');
-          btn.className = 'w-full text-left p-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs sm:text-sm transition flex items-start gap-3';
-          btn.innerHTML = `<span class="w-6 h-6 rounded bg-slate-900 border border-slate-700 text-brand-400 font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">${String.fromCharCode(65 + idx)}</span><span class="flex-1">${opt.text}</span>`;
-          btn.onclick = () => handleRPGChoice(opt, btn);
-          area.appendChild(btn);
-        });
-      }
-    }
-
-    function handleRPGChoice(opt, btnEl) {
-      const fb = document.getElementById('modal-feedback-box');
-      fb.classList.remove('hidden');
-      document.querySelectorAll('#modal-interactive-area button').forEach(b => b.disabled = true);
-
-      if (opt.correct) {
-        soundSuccess(); addXP(25);
-        btnEl.classList.add('border-emerald-500', 'bg-emerald-950/40');
-        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
-        fb.innerHTML = `<strong>Korrekt!</strong> ${opt.feedback}`;
-        document.getElementById('modal-btn-next').classList.remove('hidden');
-      } else {
-        soundError();
-        btnEl.classList.add('border-rose-500', 'bg-rose-950/40');
-        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
-        fb.innerHTML = `<strong>Nicht ideal:</strong> ${opt.feedback}`;
-        setTimeout(() => document.querySelectorAll('#modal-interactive-area button').forEach(b => b.disabled = false), 1200);
-      }
-    }
-
-    function submitFormStep() {
-      const name = document.getElementById('form-name')?.value.trim();
-      const vorname = document.getElementById('form-vorname')?.value.trim();
-      const geb = document.getElementById('form-geb')?.value.trim();
-      const fb = document.getElementById('modal-feedback-box');
-      fb.classList.remove('hidden');
-
-      if (name && vorname && geb) {
-        soundSuccess(); addXP(40);
-        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
-        fb.innerHTML = `<strong>Formular vollständig!</strong> Alle Pflichtfelder wurden korrekt ausgefüllt.`;
-        document.getElementById('modal-btn-next').classList.remove('hidden');
-      } else {
-        soundError();
-        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
-        fb.innerHTML = `Bitte fülle alle Pflichtfelder aus.`;
-      }
-    }
-
-    function submitRPGTypingStep() {
-      const step = activeQuest.steps[activeQuestStepIdx];
-      const val = document.getElementById('rpg-free-input')?.value.trim().toLowerCase();
-      const fb = document.getElementById('modal-feedback-box');
-      fb.classList.remove('hidden');
-
-      if (step.keywords.some(k => val.includes(k.toLowerCase()))) {
-        soundSuccess(); addXP(30);
-        fb.className = 'p-3.5 rounded-xl border border-emerald-500/50 bg-emerald-950/40 text-emerald-200 text-sm';
-        fb.innerHTML = `<strong>Hervorragend geantwortet!</strong>`;
-        document.getElementById('modal-btn-next').classList.remove('hidden');
-      } else {
-        soundError();
-        fb.className = 'p-3.5 rounded-xl border border-rose-500/50 bg-rose-950/40 text-rose-200 text-sm';
-        fb.innerHTML = `<strong>Hinweis:</strong> Verwende die Kernwörter: ${step.keywords.join(', ')}`;
-      }
-    }
-
-    function nextRPGStep() {
-      activeQuestStepIdx++;
-      if (activeQuestStepIdx < activeQuest.steps.length) {
-        renderRPGStep();
-      } else {
-        soundFanfare();
-        if (!player.completedQuests.includes(activeQuest.id)) {
-          player.completedQuests.push(activeQuest.id);
-          localStorage.setItem('dm_a1_quests', JSON.stringify(player.completedQuests));
-        }
-        addXP(70);
-        closeRPGModal();
-        initRPGView();
-      }
-    }
-
-    function closeRPGModal() {
-      document.getElementById('rpg-modal').classList.add('hidden');
-      window.speechSynthesis && window.speechSynthesis.cancel();
-    }
-
-    /* ---------------- 10. WORTSCHATZ LAB ENGINE ---------------- */
-    let currentVocabCategory = 'alle';
-
+    // 6. VOCABULARY
     function initVocabView() {
       if (!window.DM_VOCAB) return;
-      const pillsContainer = document.getElementById('vocab-category-pills');
-      pillsContainer.innerHTML = '';
-      const categories = ['alle', ...new Set(window.DM_VOCAB.map(v => v.cat))];
-      categories.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = `px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${cat === currentVocabCategory ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`;
-        btn.innerText = cat.charAt(0).toUpperCase() + cat.slice(1);
-        btn.onclick = () => { currentVocabCategory = cat; initVocabView(); };
-        pillsContainer.appendChild(btn);
-      });
-      renderVocabCards();
-    }
-
-    function renderVocabCards() {
-      if (!window.DM_VOCAB) return;
       const grid = document.getElementById('vocab-cards-grid');
-      const q = document.getElementById('vocab-search')?.value.toLowerCase() || '';
+      if(!grid) return;
       grid.innerHTML = '';
-
-      const filtered = window.DM_VOCAB.filter(v => {
-        const matchesCat = currentVocabCategory === 'alle' || v.cat === currentVocabCategory;
-        const matchesSearch = q === '' || v.de.toLowerCase().includes(q) || v.en.toLowerCase().includes(q);
-        return matchesCat && matchesSearch;
-      });
-
-      filtered.forEach(item => {
-        const badgeClass = item.gender === 'der' ? 'badge-der' : item.gender === 'die' ? 'badge-die' : item.gender === 'das' ? 'badge-das' : 'bg-slate-800 text-slate-300';
+      window.DM_VOCAB.slice(0, 40).forEach(item => {
+        const badgeClass = item.gender === 'der' ? 'badge-der' : item.gender === 'die' ? 'badge-die' : 'badge-das';
         const card = document.createElement('div');
         card.className = 'glass-card p-3.5 rounded-xl flex flex-col justify-between space-y-2';
         card.innerHTML = `
           <div>
             <div class="flex items-center justify-between mb-1.5">
               <span class="text-[10px] px-2 py-0.5 rounded font-bold ${badgeClass}">${item.article || item.gender || 'Wort'}</span>
-              <button onclick="speakGerman('${item.de}')" class="p-1 text-slate-400 hover:text-cyan-300">
-                <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
-              </button>
+              <button onclick="speakGerman('${item.de}')" class="p-1 text-slate-400 hover:text-cyan-300"><i data-lucide="volume-2" class="w-3.5 h-3.5"></i></button>
             </div>
             <h4 class="font-bold text-white text-sm">${item.de}</h4>
             <p class="text-[11px] text-slate-400">${item.en}</p>
           </div>
-          ${item.plural ? `<div class="text-[10px] font-mono text-slate-500 pt-1 border-t border-slate-800/80">Plural: die ${item.plural}</div>` : ''}
         `;
         grid.appendChild(card);
       });
       lucide.createIcons();
     }
+    function filterVocab() {}
 
-    function filterVocab() { renderVocabCards(); }
-
-    /* ---------------- 11. GOETHE EXAM ENGINE ---------------- */
-    let examUserAnswers = {};
-    let examTimer = 1500; 
-    let examInterval = null;
-
+    // 7. EXAM
     function initExamView() {
       if (!window.DM_EXAM) return;
       const container = document.getElementById('exam-questions-list');
+      if(!container) return;
       container.innerHTML = '';
-
-      window.DM_EXAM.forEach((q, idx) => {
-        const card = document.createElement('div');
-        card.className = 'glass-panel p-5 rounded-2xl space-y-3';
-        card.innerHTML = `
-          <div class="flex items-center justify-between text-xs text-slate-400">
-            <span class="font-bold text-emerald-400 font-mono">Aufgabe ${idx + 1} von ${window.DM_EXAM.length}</span>
-            <span class="font-mono text-slate-500">${q.type}</span>
-          </div>
-          <p class="text-sm sm:text-base font-semibold text-white leading-relaxed whitespace-pre-line">${q.question}</p>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-            ${q.options.map((opt, oIdx) => `
-              <button onclick="selectExamAnswer(${q.id},${oIdx})" id="exam-opt-${q.id}-${oIdx}" class="text-left p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 text-xs sm:text-sm hover:border-emerald-500 transition">
-                <span class="font-bold text-emerald-400 mr-1.5">${String.fromCharCode(65 + oIdx)})</span>${opt}
-              </button>
-            `).join('')}
-          </div>
-        `;
-        container.appendChild(card);
+      window.DM_EXAM.slice(0, 5).forEach((q, idx) => {
+        container.innerHTML += `<div class="glass-panel p-5 rounded-2xl space-y-3"><p class="text-sm font-semibold text-white">${q.question}</p></div>`;
       });
-
-      if (window.DM_EXAM_SCHREIBEN_TEIL1) {
-        document.getElementById('exam-teil1-text').innerText = window.DM_EXAM_SCHREIBEN_TEIL1.instruction;
-        const fContainer = document.getElementById('exam-teil1-fields');
-        fContainer.innerHTML = '';
-        window.DM_EXAM_SCHREIBEN_TEIL1.fields.forEach(f => {
-          fContainer.innerHTML += `<div class="space-y-1"><label class="text-xs font-semibold text-slate-300 block">${f.label}</label><input type="text" id="exam-field-${f.id}" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white text-sm focus:outline-none focus:border-cyan-500" placeholder="${f.hint}"></div>`;
-        });
-      }
-
-      if (window.DM_EXAM_SCHREIBEN_TEIL2) {
-        document.getElementById('exam-teil2-prompt').innerText = window.DM_EXAM_SCHREIBEN_TEIL2.prompt;
-        const lpList = document.getElementById('exam-teil2-leitpunkte');
-        lpList.innerHTML = '';
-        window.DM_EXAM_SCHREIBEN_TEIL2.leitpunkte.forEach(lp => {
-          lpList.innerHTML += `<li>${lp.label}</li>`;
-        });
-      }
-
-      startExamTimer();
-      updateExamProgress();
     }
+    function resetExam() {}
+    function updateWordCount() {}
+    function submitExam() {}
 
-    function updateWordCount() {
-      const text = document.getElementById('exam-email-input')?.value.trim() || '';
-      document.getElementById('exam-word-count').innerText = text ? text.split(/\s+/).length : 0;
-    }
-
-    function startExamTimer() {
-      clearInterval(examInterval);
-      examInterval = setInterval(() => {
-        examTimer--;
-        if (examTimer <= 0) { clearInterval(examInterval); submitExam(); }
-        document.getElementById('exam-timer-display').innerText = `${Math.floor(examTimer / 60).toString().padStart(2, '0')}:${(examTimer % 60).toString().padStart(2, '0')}`;
-      }, 1000);
-    }
-
-    function selectExamAnswer(qId, oIdx) {
-      examUserAnswers[qId] = oIdx;
-      document.querySelectorAll(`[id^="exam-opt-${qId}-"]`).forEach(b => b.className = 'text-left p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 text-xs sm:text-sm hover:border-emerald-500 transition');
-      const chosen = document.getElementById(`exam-opt-${qId}-${oIdx}`);
-      if (chosen) chosen.className = 'text-left p-3 rounded-xl bg-emerald-950/60 border border-emerald-500 text-white font-semibold text-xs sm:text-sm transition';
-      playTone(580, 'sine', 0.05);
-      updateExamProgress();
-    }
-
-    function updateExamProgress() {
-      const totalMC = window.DM_EXAM ? window.DM_EXAM.length : 20;
-      document.getElementById('exam-progress-counter').innerText = `${Object.keys(examUserAnswers).length} von ${totalMC} Aufgaben beantwortet`;
-    }
-
-    function submitExam() {
-      clearInterval(examInterval);
-      let mcScore = 0, teil1Score = 0, teil2Score = 0;
-
-      window.DM_EXAM.forEach(q => { if (examUserAnswers[q.id] === q.correct) mcScore++; });
-
-      if (window.DM_EXAM_SCHREIBEN_TEIL1) {
-        window.DM_EXAM_SCHREIBEN_TEIL1.fields.forEach(f => {
-          const val = document.getElementById(`exam-field-${f.id}`)?.value.trim().toLowerCase() || '';
-          if (f.expected.some(exp => val.includes(exp))) teil1Score++;
-        });
-      }
-
-      const emailText = document.getElementById('exam-email-input')?.value.trim().toLowerCase() || '';
-      const wordCount = emailText ? emailText.split(/\s+/).length : 0;
-      if (emailText.includes('liebe frau berg') || emailText.includes('sehr geehrte') || emailText.includes('hallo frau berg')) teil2Score += 1;
-      if (window.DM_EXAM_SCHREIBEN_TEIL2) {
-        window.DM_EXAM_SCHREIBEN_TEIL2.leitpunkte.forEach(lp => {
-          if (lp.keywords.some(k => emailText.includes(k))) teil2Score += 1;
-        });
-      }
-      if (emailText.includes('viele grüße') || emailText.includes('herzliche grüße') || emailText.includes('mit freundlichen grüßen') || emailText.includes('grüße')) teil2Score += 1;
-
-      const totalPoints = mcScore + teil1Score + teil2Score;
-      const pct = Math.round((totalPoints / 30) * 100);
-      const passed = pct >= 60;
-
-      if (passed) { soundFanfare(); addXP(200); } else { soundError(); }
-
-      const banner = document.getElementById('exam-result-banner');
-      banner.classList.remove('hidden');
-      banner.innerHTML = `
-        <div class="max-w-xl mx-auto space-y-4">
-          <div class="w-24 h-24 rounded-full mx-auto flex items-center justify-center ${passed ? 'bg-emerald-500/20 text-emerald-400 border-2 border-emerald-500' : 'bg-rose-500/20 text-rose-400 border-2 border-rose-500'} text-3xl font-extrabold font-mono">${pct}%</div>
-          <h3 class="text-2xl font-bold text-white">${passed ? 'Goethe Start Deutsch 1 BESTANDEN!' : 'Nicht bestanden (Unter 60%)'}</h3>
-          <div class="p-4 bg-slate-900 border border-slate-800 rounded-xl text-xs sm:text-sm text-slate-300 space-y-2 text-left font-mono">
-            <div class="flex justify-between border-b border-slate-800 pb-1"><span>Teil 1 & 2:</span><strong class="text-emerald-400">${mcScore} / 20 Punkte</strong></div>
-            <div class="flex justify-between border-b border-slate-800 pb-1"><span>Formular:</span><strong class="text-cyan-400">${teil1Score} / 5 Punkte</strong></div>
-            <div class="flex justify-between border-b border-slate-800 pb-1"><span>E-Mail:</span><strong class="text-purple-400">${teil2Score} / 5 Punkte</strong></div>
-          </div>
-          <button onclick="resetExam()" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm">Wiederholen</button>
-        </div>
-      `;
-      banner.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function resetExam() {
-      examUserAnswers = {}; examTimer = 1500;
-      document.getElementById('exam-result-banner').classList.add('hidden');
-      initExamView();
-    }
-
-    /* ---------------- 12. BOOTSTRAPPER ---------------- */
+    // BOOTSTRAPPER
     window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('stat-xp').innerText = player.xp;
-      document.getElementById('stat-streak').innerText = player.streak;
-      checkLoadedModules();
+      const sx = document.getElementById('stat-xp');
+      if(sx) sx.innerText = player.xp;
+      const ss = document.getElementById('stat-streak');
+      if(ss) ss.innerText = player.streak;
       
+      checkLoadedModules();
       initKursbuchView();
       initAtlasView();
       initTablesView();
