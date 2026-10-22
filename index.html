@@ -135,10 +135,10 @@
         <div>
           <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Offizieller Goethe A1 Lehrplan</span>
           <h2 class="text-2xl font-bold text-white">Die A1-Reise: 16 Level zur Meisterschaft</h2>
-          <p class="text-slate-400 text-sm mt-1">Über 1.200 interaktive Aufgaben verteilt auf 16 Kapitel. Klicke auf ein Kapitel, um Grammatik und Quizzes zu starten.</p>
+          <p class="text-slate-400 text-sm mt-1">Über 1.600 interaktive Aufgaben verteilt auf 16 Kapitel und 80 detaillierte Sub-Komponenten.</p>
         </div>
         <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="kursbuch-search" oninput="filterKursbuch()" placeholder="Konzept suchen (z.B. Perfekt, Dativ)..." class="bg-slate-900 border border-slate-700 text-sm px-4 py-2.5 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 w-full sm:w-72 shadow-inner">
+          <input type="text" id="kursbuch-search" oninput="filterKursbuch()" placeholder="Thema suchen (z.B. Begrüßung)..." class="bg-slate-900 border border-slate-700 text-sm px-4 py-2.5 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 w-full sm:w-72 shadow-inner">
         </div>
       </div>
       <div id="kursbuch-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
@@ -578,7 +578,7 @@
       lucide.createIcons();
     }
 
-    // 1. KURSBUCH ENGINE
+    // 1. KURSBUCH ENGINE (Updated to render all 5 granular sub-components cleanly)
     function initKursbuchView() {
       if (!window.DM_KURSBUCH) return;
       const grid = document.getElementById('kursbuch-grid');
@@ -596,16 +596,15 @@
               <span class="w-8 h-8 rounded-lg bg-brand-600/20 text-brand-400 font-bold flex items-center justify-center border border-brand-500/30 group-hover:bg-brand-600 group-hover:text-white transition">
                 ${ch.id}
               </span>
-              <span class="text-[10px] uppercase font-bold text-slate-500 font-mono tracking-wider">${ch.concepts.length} Konzepte</span>
+              <span class="text-[10px] uppercase font-bold text-slate-500 font-mono tracking-wider">${ch.concepts.length} Sub-Moduke</span>
             </div>
             <h3 class="font-bold text-white text-lg group-hover:text-brand-300 transition line-clamp-2">${ch.title}</h3>
             <ul class="mt-3 space-y-1.5">
-              ${ch.concepts.slice(0, 3).map(c => `<li class="text-xs text-slate-400 flex items-start gap-1.5"><i data-lucide="check" class="w-3 h-3 text-emerald-500 shrink-0 mt-0.5"></i> <span class="line-clamp-1">${c.title}</span></li>`).join('')}
-              ${ch.concepts.length > 3 ? `<li class="text-xs text-slate-500 italic ml-4">+ ${ch.concepts.length - 3} weitere...</li>` : ''}
+              ${ch.concepts.map(c => `<li class="text-xs text-slate-400 flex items-start gap-1.5"><i data-lucide="check" class="w-3 h-3 text-emerald-500 shrink-0 mt-0.5"></i> <span class="line-clamp-1">${c.title}</span></li>`).join('')}
             </ul>
           </div>
           <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-            <div class="bg-brand-500 h-full w-0 transition-all duration-500"></div>
+            <div class="bg-brand-500 h-full w-full transition-all duration-500"></div>
           </div>
         `;
         grid.appendChild(card);
