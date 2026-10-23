@@ -1,1079 +1,1436 @@
 <!DOCTYPE html>
-<html lang="de" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>DeutschMeister A1 — Vollständiges Lern- & Spielsystem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>201 Pool Indian Rummy with Friends</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: { 50: '#eef2ff', 100: '#e0e7ff', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca', 900: '#1e1b4b', },
-            der: '#3b82f6', die: '#ef4444', das: '#10b981',
-          }
-        }
+  <style>
+    /* Mobile & iPad fluid height setup */
+    :root {
+      --app-height: 100dvh;
+    }
+    html, body {
+      height: 100%;
+      height: var(--app-height);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #020617;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    /* Custom Felt Gradient & Border */
+    .table-felt {
+      background: radial-gradient(circle at 50% 45%, #065f46 0%, #064e3b 55%, #022c22 90%, #011c16 100%);
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.7), inset 0 0 10px rgba(251, 191, 36, 0.2);
+    }
+
+    /* Card styling */
+    .rummy-card {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      touch-action: manipulation;
+    }
+    .rummy-card:active {
+      transform: scale(0.96);
+    }
+    .rummy-card.selected {
+      transform: translateY(-14px) !important;
+      box-shadow: 0 0 0 3px #f59e0b, 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Overlapping card row inside groups */
+    .card-cluster {
+      display: flex;
+      align-items: flex-end;
+    }
+    .card-cluster .rummy-card:not(:first-child) {
+      margin-left: -28px;
+    }
+    @media (min-width: 640px) {
+      .card-cluster .rummy-card:not(:first-child) {
+        margin-left: -32px;
       }
     }
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #080c14; color: #f1f5f9; overflow-x: hidden; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .glass-panel { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.08); }
-    .glass-card { background: rgba(30, 41, 59, 0.65); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.06); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
-    .glass-card:hover { border-color: rgba(99, 102, 241, 0.5); transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2); }
-    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
-    .custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(99, 102, 241, 0.4); border-radius: 9999px; }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(99, 102, 241, 0.8); }
-    .badge-der { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.35); }
-    .badge-die { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35); }
-    .badge-das { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+
+    /* Hide scrollbars cleanly */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Toast animation */
+    @keyframes toastSlide {
+      0% { transform: translate(-50%, -100%); opacity: 0; }
+      15% { transform: translate(-50%, 0); opacity: 1; }
+      85% { transform: translate(-50%, 0); opacity: 1; }
+      100% { transform: translate(-50%, -100%); opacity: 0; }
+    }
+    .toast-animate {
+      animation: toastSlide 2.6s ease forwards;
+    }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+<body class="text-slate-100 flex flex-col h-full w-full">
 
-  <!-- TOP HEADER -->
-  <header class="glass-panel sticky top-0 z-50 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-      
-      <div class="flex items-center justify-between w-full sm:w-auto">
-        <div class="flex items-center space-x-3 min-w-0">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-indigo-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/30 shrink-0">
-            <i data-lucide="compass" class="w-6 h-6 text-white"></i>
-          </div>
-          <div class="min-w-0">
-            <h1 class="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
-              DeutschMeister <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono border border-emerald-500/30 shrink-0">A1 COMPLETE</span>
-            </h1>
-            <p class="text-[11px] text-slate-400 hidden sm:block">16 Kapitel • 4 Tabellen • 250+ Drills • 770+ Vokabeln • 16 Quests</p>
-          </div>
-        </div>
-        <button onclick="toggleAudio()" class="sm:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition shrink-0">
-          <i data-lucide="volume-2" id="audio-icon-mobile" class="w-5 h-5"></i>
-        </button>
+  <!-- ================= TOP HEADER BAR ================= -->
+  <header class="h-11 sm:h-12 bg-slate-950/95 border-b border-amber-500/20 px-3 flex items-center justify-between z-30 shrink-0">
+    <div class="flex items-center space-x-2">
+      <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-600 via-yellow-500 to-amber-300 flex items-center justify-center text-slate-950 font-black text-sm shadow">
+        ♠
+      </div>
+      <div>
+        <h1 class="text-xs sm:text-sm font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-500">
+          201 POOL RUMMY
+        </h1>
+        <p class="text-[9px] text-amber-400/70 font-semibold uppercase tracking-wider leading-none">
+          Friends Tournament
+        </p>
+      </div>
+    </div>
+
+    <!-- Top Controls -->
+    <div class="flex items-center space-x-1.5 sm:space-x-2">
+      <!-- Round Badge -->
+      <div id="round-badge" class="px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/30 text-[10px] sm:text-xs font-bold text-amber-300">
+        Round 1
       </div>
 
-      <div class="flex items-center justify-between w-full sm:w-auto gap-3">
-        <div class="flex items-center justify-center w-full sm:w-auto space-x-3 bg-slate-900/90 px-4 py-2 rounded-xl border border-slate-800 text-xs sm:text-sm">
-          <div class="flex items-center space-x-1.5 text-amber-400">
-            <i data-lucide="zap" class="w-4 h-4 fill-amber-400"></i>
-            <span id="stat-streak" class="font-bold">1</span><span>Streak</span>
-          </div>
-          <div class="h-4 w-px bg-slate-700"></div>
-          <div class="flex items-center space-x-1.5 text-indigo-400">
-            <i data-lucide="award" class="w-4 h-4"></i>
-            <span id="stat-xp" class="font-bold font-mono">0</span><span>XP</span>
-          </div>
-          <div class="hidden sm:block h-4 w-px bg-slate-700"></div>
-          <div class="hidden sm:flex items-center space-x-1">
-            <span id="stat-rank" class="px-2 py-0.5 rounded font-semibold text-[11px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">A1 Lernender</span>
-          </div>
-        </div>
-        <button onclick="toggleAudio()" class="hidden sm:block p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition shrink-0" title="Sound umschalten">
-          <i data-lucide="volume-2" id="audio-icon-desktop" class="w-5 h-5"></i>
-        </button>
-      </div>
-      
+      <!-- Hide Cards Toggle (Pass-and-Play Side Peek Protection) -->
+      <button onclick="toggleCardPrivacy()" id="privacy-btn" class="px-2 py-1 rounded-md bg-slate-900 border border-slate-700 hover:border-slate-500 text-[11px] font-bold text-slate-300 flex items-center space-x-1" title="Hide/Show Cards on Screen">
+        <span id="privacy-icon">👁️</span>
+        <span class="hidden md:inline" id="privacy-label">Hide Cards</span>
+      </button>
+
+      <!-- Scores Leaderboard Button -->
+      <button onclick="openScoreModal()" class="px-2.5 py-1 rounded-md bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 flex items-center space-x-1 shadow">
+        <span>🏆</span>
+        <span>Scores</span>
+      </button>
+
+      <!-- Rules Help Button -->
+      <button onclick="openRulesModal()" class="px-2 py-1 rounded-md bg-slate-900 border border-slate-700 hover:border-slate-500 text-[11px] font-semibold text-slate-400 flex items-center space-x-1">
+        <span>📖</span>
+      </button>
     </div>
   </header>
 
-  <!-- NAVIGATION TABS -->
-  <nav class="bg-slate-900/95 border-b border-slate-800 sticky top-[108px] sm:top-[76px] z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1.5 overflow-x-auto custom-scrollbar py-2">
-      <button onclick="navigate('kursbuch')" id="tab-kursbuch" class="nav-tab active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap bg-brand-600 text-white shadow-md shadow-brand-600/30">
-        <i data-lucide="map" class="w-4 h-4"></i> Die A1-Reise (16 Kapitel)
-      </button>
-      <button onclick="navigate('atlas')" id="tab-atlas" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="book-open" class="w-4 h-4"></i> Grammatik-Atlas
-      </button>
-      <button onclick="navigate('tables')" id="tab-tables" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="table" class="w-4 h-4"></i> 4 Fundament-Tabellen
-      </button>
-      <button onclick="navigate('arena')" id="tab-arena" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="swords" class="w-4 h-4"></i> Grammatik-Arena
-      </button>
-      <button onclick="navigate('builder')" id="tab-builder" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="binary" class="w-4 h-4"></i> Satzbau-Architekt
-      </button>
-      <button onclick="navigate('rpg')" id="tab-rpg" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="gamepad-2" class="w-4 h-4"></i> Reallife-Simulator
-      </button>
-      <button onclick="navigate('vocab')" id="tab-vocab" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="sparkles" class="w-4 h-4"></i> Wortschatz
-      </button>
-      <button onclick="navigate('exam')" id="tab-exam" class="nav-tab px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800">
-        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Start Deutsch 1
-      </button>
+  <!-- ================= NOTIFICATION TOAST ================= -->
+  <div id="toast-container" class="fixed top-12 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none hidden">
+    <div id="toast-box" class="px-4 py-2 rounded-xl shadow-2xl border text-xs sm:text-sm font-bold flex items-center space-x-2 backdrop-blur-md bg-slate-900/95 border-amber-500/60 text-amber-200">
+      <span id="toast-icon">👉</span>
+      <span id="toast-text">Turn changed</span>
     </div>
-  </nav>
-
-  <!-- MODULE DIAGNOSTIC BANNER -->
-  <div id="data-status-bar" class="bg-slate-900 border-b border-slate-800/80 px-4 py-2 text-[11px] font-mono text-slate-400 overflow-x-auto whitespace-nowrap custom-scrollbar flex items-center justify-between gap-4">
-    <div class="flex items-center gap-3 shrink-0">
-      <span class="text-slate-500 uppercase font-bold tracking-wider">Datenmodule:</span>
-      <span id="status-kursbuch" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Kapitel</span>
-      <span id="status-atlas" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Atlas</span>
-      <span id="status-drills" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Drills</span>
-      <span id="status-vocab" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Wortschatz</span>
-      <span id="status-scenarios" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> 16 Quests</span>
-      <span id="status-exam" class="flex items-center gap-1 text-rose-400"><i data-lucide="circle" class="w-3 h-3"></i> Prüfung</span>
-    </div>
-    <div id="status-summary" class="text-amber-400 font-sans shrink-0">Initialisiere Daten-Engine...</div>
   </div>
 
-  <!-- MAIN VIEWPORT -->
-  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <!-- ================= SCREEN 1: GAME SETUP LOBBY ================= -->
+  <section id="lobby-screen" class="flex-1 flex flex-col items-center justify-center p-4 overflow-y-auto z-20">
+    <div class="w-full max-w-md bg-slate-900/95 border border-amber-500/30 rounded-2xl p-5 sm:p-6 shadow-2xl backdrop-blur-md space-y-4">
+      <div class="text-center">
+        <div class="inline-flex space-x-2 p-2 bg-amber-500/10 border border-amber-500/20 rounded-2xl mb-2 text-2xl">
+          <span class="text-rose-500">♥</span>
+          <span class="text-slate-100">♠</span>
+          <span class="text-emerald-400">♣</span>
+          <span class="text-amber-400">♦</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-400">
+          201 POOL INDIAN RUMMY
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          First Drop 20 • Middle Drop 40 • Pure Life Joker Vault
+        </p>
+      </div>
 
-    <!-- VIEW: DIE A1-REISE (16 CHAPTERS) -->
-    <section id="view-kursbuch" class="view-panel space-y-6">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <!-- Player Count Selector (2 to 7) -->
+      <div>
+        <label class="block text-xs font-bold text-amber-300 uppercase tracking-wider mb-2">
+          Number of Friends Playing (2 - 7)
+        </label>
+        <div class="grid grid-cols-6 gap-1.5">
+          <button onclick="setPlayerCount(2)" class="p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs" data-c="2">2</button>
+          <button onclick="setPlayerCount(3)" class="p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs" data-c="3">3</button>
+          <button onclick="setPlayerCount(4)" class="p-count-btn py-2 rounded-xl border border-amber-500 bg-amber-500/20 text-amber-300 font-bold text-xs" data-c="4">4</button>
+          <button onclick="setPlayerCount(5)" class="p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs" data-c="5">5</button>
+          <button onclick="setPlayerCount(6)" class="p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs" data-c="6">6</button>
+          <button onclick="setPlayerCount(7)" class="p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs" data-c="7">7</button>
+        </div>
+      </div>
+
+      <!-- Player Name Inputs -->
+      <div>
+        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">
+          Enter Friends' Names
+        </label>
+        <div id="player-names-container" class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Tournament Rules Quick Pill Bar -->
+      <div class="grid grid-cols-3 gap-2 text-center text-[10px] bg-slate-950 p-2.5 rounded-xl border border-slate-800">
         <div>
-          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Offizieller Goethe A1 Lehrplan</span>
-          <h2 class="text-2xl font-bold text-white">Die A1-Reise: 16 Level zur Meisterschaft</h2>
-          <p class="text-slate-400 text-sm mt-1">Über 1.600 interaktive Aufgaben verteilt auf 16 Kapitel und 80 detaillierte Sub-Komponenten.</p>
-        </div>
-        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="kursbuch-search" oninput="filterKursbuch()" placeholder="Thema suchen (z.B. Begrüßung)..." class="bg-slate-900 border border-slate-700 text-sm px-4 py-2.5 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 w-full sm:w-72 shadow-inner">
-        </div>
-      </div>
-      <div id="kursbuch-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
-    </section>
-
-    <!-- VIEW: GRAMMATIK-ATLAS -->
-    <section id="view-atlas" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider mb-1 block">Offizielles A1 Referenz-Kompendium</span>
-          <h2 class="text-2xl font-bold text-white">Der 18-Module Grammatik-Atlas</h2>
-          <p class="text-slate-400 text-sm mt-1">Klicke auf ein Modul, um die vollständige Lektion mit Tabellen, Prüfungstipps & Schnelltest zu öffnen.</p>
-        </div>
-        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="atlas-search" oninput="filterAtlas()" placeholder="Thema durchsuchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
-        </div>
-      </div>
-      <div id="atlas-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-    </section>
-
-    <!-- VIEW: TABELLEN -->
-    <section id="view-tables" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl">
-        <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Grammatikalische Koordinaten</span>
-        <h2 class="text-2xl font-bold text-white">Die 4 Unverzichtbaren Fundament-Tabellen</h2>
-        <p class="text-slate-400 text-sm mt-1">Die Kernmatrix für Personalpronomen, Artikel im Akkusativ, Pluralregeln und Kalenderdaten.</p>
-      </div>
-      <div id="tables-container" class="space-y-6"></div>
-    </section>
-
-    <!-- VIEW: ARENA -->
-    <section id="view-arena" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1 block">Interaktives Workout (250+ Aufgaben)</span>
-          <h2 class="text-2xl font-bold text-white">Grammatik-Arena</h2>
-          <p class="text-slate-400 text-sm mt-1">Trainiere alle 18 grammatikalischen Konstruktionen im Klick- oder Schreibmodus mit Umlauten.</p>
-        </div>
-        <div class="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800 w-full sm:w-auto">
-          <button id="arena-btn-mc" onclick="setArenaInputMode('mc')" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition">Klick-Modus</button>
-          <button id="arena-btn-text" onclick="setArenaInputMode('text')" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">Schreib-Modus</button>
-        </div>
-      </div>
-      <div class="flex flex-wrap gap-2 overflow-x-auto custom-scrollbar pb-1" id="arena-category-pills"></div>
-      <div id="arena-stage" class="glass-panel p-6 sm:p-8 rounded-2xl min-h-[380px] flex flex-col justify-center items-center relative"></div>
-    </section>
-
-    <!-- VIEW: SATZBAU -->
-    <section id="view-builder" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl">
-        <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1 block">Wortstellungs-Schmiede</span>
-        <h2 class="text-2xl font-bold text-white">Satzbau-Architekt (1016 Puzzles)</h2>
-        <p class="text-slate-400 text-sm mt-1">Setze Sätze fehlerfrei zusammen: V2-Regel, Satzklammer, Zeitangabe-Inversion und Fragesatzstrukturen.</p>
-      </div>
-      <div class="glass-panel p-6 rounded-2xl space-y-6 max-w-4xl mx-auto">
-        <div class="flex items-center justify-between">
-          <span id="builder-rule-badge" class="text-xs px-3 py-1 rounded-full font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">V2-Regel</span>
-          <span id="builder-progress" class="text-xs text-slate-400 font-mono">1 / 1016</span>
-        </div>
-        <div class="p-4 bg-slate-900/90 rounded-xl border border-slate-800">
-          <span class="text-xs text-slate-500 block mb-1">Aufgabe / Bedeutung:</span>
-          <p id="builder-meaning" class="text-lg font-semibold text-white"></p>
+          <span class="block text-slate-500 uppercase font-semibold">1st Drop</span>
+          <span class="font-bold text-amber-400">20 Pts</span>
         </div>
         <div>
-          <span class="text-xs text-slate-400 block mb-2">Dein Satzbau (in richtiger Reihenfolge anklicken):</span>
-          <div id="builder-dropzone" class="min-h-[64px] p-3 rounded-xl bg-slate-950 border-2 border-dashed border-slate-700 flex flex-wrap gap-2 items-center">
-            <span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>
-          </div>
+          <span class="block text-slate-500 uppercase font-semibold">Mid Drop</span>
+          <span class="font-bold text-amber-400">40 Pts</span>
         </div>
-        <div id="builder-pool" class="flex flex-wrap gap-2 pt-2"></div>
-        <div class="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-slate-800 gap-3">
-          <button onclick="resetBuilder()" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm flex items-center justify-center gap-2">
-            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Neu anordnen
-          </button>
-          <div class="flex gap-2 w-full sm:w-auto">
-            <button onclick="checkBuilder()" id="builder-btn-check" class="w-full sm:w-auto px-6 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-brand-600/30">Überprüfen</button>
-            <button onclick="nextBuilder()" id="builder-btn-next" class="hidden w-full sm:w-auto px-6 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm">Nächster Satz →</button>
-          </div>
-        </div>
-        <div id="builder-feedback" class="hidden p-4 rounded-xl text-sm"></div>
-      </div>
-    </section>
-
-    <!-- VIEW: REALLIFE-SIMULATOR -->
-    <section id="view-rpg" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider mb-1 block">Authentische Lebensentscheidungen</span>
-          <h2 class="text-2xl font-bold text-white">Reallife-Simulator: 16 Alltags-Quests</h2>
-          <p class="text-slate-400 text-sm mt-1">Erlebe mehrstufige Dialoge, meistere Formulardokumente und reagiere im korrekten Register.</p>
-        </div>
-        <div class="text-xs text-slate-400 font-mono">
-          Fortschritt: <span id="rpg-done-counter" class="text-emerald-400 font-bold">0</span> / 16 abgeschlossen
+          <span class="block text-slate-500 uppercase font-semibold">Elimination</span>
+          <span class="font-bold text-rose-400">201 Pts</span>
         </div>
       </div>
-      <div id="rpg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
-    </section>
 
-    <!-- VIEW: WORTSCHATZ -->
-    <section id="view-vocab" class="view-panel hidden space-y-6">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Vollständiges Goethe A1 Vokabular</span>
-          <h2 class="text-2xl font-bold text-white">Wortschatz- & Phonetik-Labor (770+ Wörter)</h2>
-          <p class="text-slate-400 text-sm mt-1">Alle Kernvokabeln inklusive Artikel-Farbkodierung, Pluralformen und de-DE Sprachausgabe.</p>
-        </div>
-        <div class="flex items-center gap-3 w-full md:w-auto mt-4 md:mt-0">
-          <input type="text" id="vocab-search" oninput="filterVocab()" placeholder="Wort oder Übersetzung suchen..." class="bg-slate-900 border border-slate-700 text-sm px-3.5 py-2 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 w-full sm:w-64">
-        </div>
-      </div>
-      <div class="glass-panel p-5 rounded-2xl space-y-3">
-        <h3 class="text-sm font-bold text-white uppercase tracking-wider text-slate-400">Phonetik-Trainer: Besondere deutsche Laute</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2.5 text-xs font-mono">
-          <button onclick="speakGerman('ä. Äpfel, spät, März')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-brand-300 block text-base font-sans">Ä / ä</span> [ɛː] Äpfel</button>
-          <button onclick="speakGerman('ö. Öl, schön, hören')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-brand-300 block text-base font-sans">Ö / ö</span> [øː] schön</button>
-          <button onclick="speakGerman('ü. über, Küche, fünf')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-brand-300 block text-base font-sans">Ü / ü</span> [yː] über</button>
-          <button onclick="speakGerman('ß. heiß, Straße, weiß')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-amber-300 block text-base font-sans">ß</span> [s] Straße</button>
-          <button onclick="speakGerman('ei. mein, dein, kein, Eis')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-cyan-300 block text-base font-sans">EI</span> [aɪ] = "ai"</button>
-          <button onclick="speakGerman('ie. wie, sie, Bier, liegen')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-cyan-300 block text-base font-sans">IE</span> [iː] langes i</button>
-          <button onclick="speakGerman('eu. Euro, heute, Deutsch')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-purple-300 block text-base font-sans">EU</span> [ɔɪ] = "oi"</button>
-          <button onclick="speakGerman('ch. ich, Milch, nicht')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-center transition"><span class="font-bold text-emerald-300 block text-base font-sans">CH</span> [ç] ich-Laut</button>
-        </div>
-      </div>
-      <div class="flex flex-wrap gap-2 overflow-x-auto custom-scrollbar" id="vocab-category-pills"></div>
-      <div id="vocab-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5"></div>
-    </section>
+      <button onclick="startTournament()" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-black rounded-xl shadow-lg shadow-amber-500/20 flex items-center justify-center space-x-2 transition transform active:scale-95 text-sm sm:text-base">
+        <span>Deal 13 Cards & Start</span>
+        <span>→</span>
+      </button>
+    </div>
+  </section>
 
-    <!-- VIEW: EXAM -->
-    <section id="view-exam" class="view-panel hidden space-y-8">
-      <div class="glass-panel p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 block">Offizieller Prüfungsumfang</span>
-          <h2 class="text-2xl font-bold text-white">Goethe Start Deutsch 1 Vollprüfung</h2>
-          <p class="text-slate-400 text-sm mt-1">Teil 1 & 2: Leseverstehen & Sprachbausteine • Teil 3: Formular ausfüllen • Teil 4: E-Mail verfassen.</p>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-xl font-mono text-amber-400 text-sm flex items-center gap-2">
-            <i data-lucide="clock" class="w-4 h-4"></i> <span id="exam-timer-display">25:00</span>
-          </div>
-          <button onclick="resetExam()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold">Neu starten</button>
-        </div>
+  <!-- ================= SCREEN 2: MAIN GAME TABLE ================= -->
+  <section id="game-screen" class="flex-1 flex flex-col h-full w-full relative hidden overflow-hidden">
+    
+    <!-- FELT BOARD CONTAINER -->
+    <div class="flex-1 flex flex-col justify-between m-1.5 sm:m-2.5 rounded-2xl table-felt border-4 sm:border-[6px] border-[#3e1e0d] relative overflow-hidden shadow-2xl p-2 sm:p-3">
+      
+      <!-- TOP: ALL PLAYERS AVATAR ROSTER & ACTIVE TURN INDICATOR -->
+      <div id="players-roster" class="flex items-center justify-center space-x-1.5 sm:space-x-3 overflow-x-auto no-scrollbar py-1 shrink-0 z-10">
+        <!-- Rendered via JS -->
       </div>
-      <div class="space-y-4">
-        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
-          <span class="px-2.5 py-0.5 rounded bg-brand-500/20 text-brand-300 font-mono text-xs">Teil 1 & 2</span>
-          Leseverstehen & Sprachbausteine (20 Aufgaben)
-        </h3>
-        <div id="exam-questions-list" class="space-y-4"></div>
-      </div>
-      <div class="space-y-4">
-        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
-          <span class="px-2.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-mono text-xs">Schreiben Teil 1</span>
-          Formular ausfüllen (Informationen entnehmen)
-        </h3>
-        <div class="glass-panel p-6 rounded-2xl space-y-5">
-          <div class="p-4 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-slate-200 leading-relaxed" id="exam-teil1-text">Text wird geladen...</div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="exam-teil1-fields"></div>
+
+      <!-- CENTER: DECKS, CLOSED WILD JOKER VAULT & FINISH DECK -->
+      <div class="flex flex-col items-center justify-center my-auto z-10">
+        
+        <!-- Live Action Status Banner -->
+        <div id="table-status-banner" class="mb-2 px-3 py-1 rounded-full bg-slate-950/80 border border-amber-500/30 text-[11px] sm:text-xs font-semibold text-amber-200 text-center max-w-sm backdrop-blur truncate shadow">
+          Welcome to Round 1!
         </div>
-      </div>
-      <div class="space-y-4">
-        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-2">
-          <span class="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs">Schreiben Teil 2</span>
-          E-Mail schreiben (ca. 30 Wörter zu 3 Leitpunkten)
-        </h3>
-        <div class="glass-panel p-6 rounded-2xl space-y-5">
-          <div class="p-4 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-slate-200 space-y-2">
-            <p id="exam-teil2-prompt" class="font-semibold text-white"></p>
-            <ul id="exam-teil2-leitpunkte" class="list-disc list-inside text-xs text-slate-300 space-y-1"></ul>
-          </div>
-          <div>
-            <div class="flex items-center justify-between text-xs text-slate-400 mb-2 font-mono">
-              <span>Deine E-Mail:</span>
-              <span>Wörter: <strong id="exam-word-count" class="text-amber-400">0</strong> / ca. 30</span>
+
+        <div class="flex items-center justify-center space-x-3 sm:space-x-6">
+          
+          <!-- 1. CLOSED DRAW PILE -->
+          <div class="flex flex-col items-center">
+            <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Closed Deck</span>
+            <div onclick="handleDrawCard('closed')" class="rummy-card cursor-pointer w-13 w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 border-amber-400/50 bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-900 shadow-xl flex flex-col items-center justify-center relative hover:scale-105">
+              <span class="text-lg">✨</span>
+              <span class="text-[9px] font-black uppercase text-amber-300 mt-1">DRAW</span>
+              <span id="closed-count" class="absolute -top-1.5 -right-1.5 bg-amber-500 text-slate-950 font-black text-[9px] px-1.5 py-0.2 rounded-full shadow">
+                48
+              </span>
             </div>
-            <textarea id="exam-email-input" oninput="updateWordCount()" rows="6" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-4 text-white text-sm focus:outline-none focus:border-emerald-500 font-sans leading-relaxed" placeholder="Sehr geehrte Frau Berg,..."></textarea>
           </div>
-        </div>
-      </div>
-      <div class="glass-panel p-5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <span id="exam-progress-counter" class="text-xs sm:text-sm text-slate-400 font-mono">Bereit zur Auswertung aller 4 Prüfungsteile</span>
-        <button onclick="submitExam()" class="px-8 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition w-full sm:w-auto">
-          Gesamte Prüfung jetzt abgeben & Zertifikat ermitteln →
-        </button>
-      </div>
-      <div id="exam-result-banner" class="hidden glass-panel p-8 rounded-2xl text-center space-y-4"></div>
-    </section>
 
-  </main>
-
-  <!-- MODALS -->
-  <div id="kursbuch-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
-    <div class="bg-slate-900 border border-slate-700 w-full max-w-4xl rounded-3xl shadow-2xl flex flex-col h-[95vh] sm:h-[85vh] overflow-hidden">
-      <div class="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-800/60 shrink-0">
-        <div class="flex items-center space-x-3 sm:space-x-4">
-          <span id="kb-modal-ch" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-600 flex items-center justify-center text-lg sm:text-xl font-bold text-white shadow-lg shadow-brand-600/30 shrink-0">1</span>
-          <div>
-            <h3 id="kb-modal-title" class="font-bold text-white text-base sm:text-xl leading-tight">Kapitel Titel</h3>
-            <p id="kb-modal-goals" class="text-xs sm:text-sm text-brand-300 mt-1 line-clamp-1"></p>
+          <!-- 2. CLOSED JOKER VAULT (Strictly unlocks ONLY when player achieves Pure Life) -->
+          <div class="flex flex-col items-center">
+            <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Wild Joker</span>
+            <div id="joker-vault-card" class="w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 flex flex-col items-center justify-center shadow-xl relative transition-all">
+              <!-- Rendered via JS based on First Life unlocked state -->
+            </div>
           </div>
-        </div>
-        <button onclick="closeKursbuchModal()" class="p-2 sm:p-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-xl transition shrink-0">
-          <i data-lucide="x" class="w-5 h-5 sm:w-6 sm:h-6"></i>
-        </button>
-      </div>
-      <div class="p-4 sm:p-6 overflow-y-auto space-y-8 custom-scrollbar flex-1" id="kb-modal-body"></div>
-    </div>
-  </div>
 
-  <div id="module-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
-    <div class="bg-slate-900 border border-slate-700 w-full max-w-3xl rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
-      <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
-        <div class="flex items-center space-x-3">
-          <span id="mod-modal-badge" class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-brand-500/20 text-brand-300 border border-brand-500/40">Modul 1</span>
-          <div>
-            <h3 id="mod-modal-title" class="font-bold text-white text-base sm:text-lg">Titel</h3>
-            <p id="mod-modal-category" class="text-xs text-slate-400 font-mono">Kategorie</p>
+          <!-- 3. OPEN DISCARD PILE -->
+          <div class="flex flex-col items-center">
+            <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Open Discard</span>
+            <div id="open-discard-card" onclick="handleDrawCard('discard')" class="w-14 sm:w-16 h-20 sm:h-22 rounded-lg cursor-pointer hover:scale-105 transition-transform flex items-center justify-center">
+              <!-- Rendered via JS -->
+            </div>
           </div>
+
+          <!-- 4. FINISH / DECLARE SLOT -->
+          <div class="flex flex-col items-center">
+            <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Finish Slot</span>
+            <div onclick="handleFinishSlotClick()" class="w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 border-dashed border-amber-400/70 bg-amber-950/40 hover:bg-amber-950/70 transition cursor-pointer flex flex-col items-center justify-center p-1 text-center shadow-lg group">
+              <span class="text-amber-400 text-base group-hover:scale-110 transition-transform">⭐</span>
+              <span class="text-[9px] font-black uppercase text-amber-300 mt-0.5 leading-tight">FINISH / SHOW</span>
+            </div>
+          </div>
+
         </div>
-        <button onclick="closeModuleModal()" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-700 transition">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
+
+        <!-- Dynamic Turn Action Prompt Pill -->
+        <div id="turn-action-prompt" class="mt-2 text-[11px] sm:text-xs font-bold px-3 py-0.5 rounded-full bg-amber-500 text-slate-950 shadow-md">
+          Draw 1 card from Closed Deck or Open Discard
+        </div>
       </div>
-      <div class="p-6 overflow-y-auto space-y-6 custom-scrollbar flex-1">
-        <div class="space-y-2">
-          <span class="text-xs font-bold text-brand-300 uppercase tracking-wider flex items-center gap-1.5"><i data-lucide="book-open" class="w-4 h-4"></i> Grammatikalische Kernregel</span>
-          <div class="p-4 rounded-2xl bg-slate-800/80 border border-slate-700/80 text-sm text-slate-200 leading-relaxed" id="mod-modal-rule"></div>
-        </div>
-        <div class="space-y-2">
-          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5"><i data-lucide="volume-2" class="w-4 h-4"></i> Hörbeispiel & Aussprache</span>
-          <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <p class="font-mono text-amber-300 text-sm" id="mod-modal-example"></p>
-            <button id="mod-modal-audio-btn" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold flex items-center gap-2 flex-shrink-0 transition">
-              <i data-lucide="play" class="w-3.5 h-3.5 text-amber-400"></i> Anhören
+
+      <!-- BOTTOM: PLAYER HAND RACK & CONTROLS CONTAINER -->
+      <div class="z-20 w-full flex flex-col bg-slate-950/95 border border-amber-500/30 rounded-xl p-2 sm:p-2.5 backdrop-blur-md shadow-2xl shrink-0">
+        
+        <!-- Live Hand Status & Requirements Bar -->
+        <div class="flex items-center justify-between pb-1.5 mb-1.5 border-b border-slate-800 text-[10px] sm:text-xs">
+          
+          <!-- Pure Life & 2nd Sequence status badges -->
+          <div class="flex items-center space-x-1.5 sm:space-x-2">
+            <div id="first-life-badge" class="px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-rose-950 text-rose-300 border border-rose-700/50">
+              <span id="first-life-icon">✕</span>
+              <span>1st Life (Pure)</span>
+            </div>
+            <div id="second-life-badge" class="px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-slate-900 text-slate-400 border border-slate-800">
+              <span id="second-life-icon">✕</span>
+              <span>2nd Sequence</span>
+            </div>
+          </div>
+
+          <!-- Deadwood points & Actions -->
+          <div class="flex items-center space-x-1 sm:space-x-2">
+            <div class="text-[10px] sm:text-xs font-bold text-slate-300">
+              Penalty: <span id="hand-points-count" class="text-amber-400 font-black">80</span> pts
+            </div>
+
+            <!-- Group Selected Cards Button -->
+            <button onclick="groupSelectedCards()" class="px-2 py-1 rounded bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-[10px] sm:text-[11px] shadow transition">
+              Group Selected (<span id="selected-count">0</span>)
+            </button>
+
+            <!-- Auto Sort by Suit Button -->
+            <button onclick="autoSortHand()" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 font-bold text-[10px] sm:text-[11px] shadow transition">
+              Auto Sort
+            </button>
+
+            <!-- Drop Turn Button (First 20 / Mid 40) -->
+            <button id="drop-turn-btn" onclick="handlePlayerDrop()" class="px-2 py-1 rounded bg-rose-900/60 hover:bg-rose-800 text-rose-200 border border-rose-500/40 font-bold text-[10px] sm:text-[11px] shadow transition">
+              Drop (20)
             </button>
           </div>
         </div>
-        <div class="p-4 rounded-2xl bg-amber-950/30 border border-amber-600/30 space-y-1">
-          <span class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center gap-1.5"><i data-lucide="alert-triangle" class="w-4 h-4 text-amber-400"></i> Goethe A1 Prüfungstipp / Typische Fehlerfalle</span>
-          <p class="text-xs text-amber-200 leading-relaxed" id="mod-modal-notes"></p>
-        </div>
-        <div id="mod-modal-quickcheck" class="p-5 rounded-2xl bg-slate-800/60 border border-slate-700 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Modul-Schnelltest: Teste dein Wissen</span>
-            <span class="text-[11px] text-slate-400">+20 XP</span>
-          </div>
-          <p class="text-sm font-semibold text-white" id="mod-quick-prompt"></p>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="mod-quick-options"></div>
-          <div id="mod-quick-feedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
-        </div>
-      </div>
-      <div class="p-4 border-t border-slate-800 bg-slate-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <span class="text-xs text-slate-400">Möchtest du dieses Thema intensiv trainieren?</span>
-        <button id="mod-modal-jump-arena" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-brand-600/30">
-          <i data-lucide="swords" class="w-4 h-4"></i> In der Grammatik-Arena üben →
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div id="rpg-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
-    <div class="bg-slate-900 border border-slate-700 w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
-      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-800/60">
-        <div class="flex items-center space-x-3">
-          <span id="modal-quest-icon" class="text-2xl">🥐</span>
+        <!-- PLAYER'S CARDS TRAY (Horizontal fluid scrollable rack) -->
+        <div id="hand-groups-tray" class="flex items-start space-x-2 sm:space-x-3 overflow-x-auto no-scrollbar py-1 min-h-[92px] sm:min-h-[104px]">
+          <!-- Card group columns rendered via JS -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MODAL: LEADERBOARD & 201 POOL SCORES ================= -->
+  <div id="score-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 hidden">
+    <div class="w-full max-w-lg bg-slate-900 border border-amber-500/40 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center space-x-2">
+          <span class="text-xl">🏆</span>
           <div>
-            <h3 id="modal-quest-title" class="font-bold text-white text-base">Szenario</h3>
-            <p id="modal-quest-role" class="text-xs text-slate-400">Rolle</p>
+            <h3 class="text-base sm:text-lg font-black text-amber-300">201 POOL LEADERBOARD</h3>
+            <p class="text-[10px] text-slate-400">Elimination at 201 Points</p>
           </div>
         </div>
-        <button onclick="closeRPGModal()" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-700">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
+        <button onclick="closeScoreModal()" class="text-slate-400 hover:text-white text-lg font-bold p-1">✕</button>
       </div>
-      <div class="p-5 sm:p-6 overflow-y-auto space-y-5 custom-scrollbar flex-1">
-        <div class="bg-slate-800/90 border border-slate-700 p-4 rounded-xl space-y-2">
-          <div class="flex items-center justify-between">
-            <span id="modal-npc-name" class="text-xs font-bold text-brand-300">Gesprächspartner</span>
-            <button onclick="speakGerman(document.getElementById('modal-npc-text').innerText)" class="text-xs flex items-center gap-1 text-slate-400 hover:text-cyan-300 transition">
-              <i data-lucide="volume-2" class="w-3.5 h-3.5"></i> Vorlesen
-            </button>
-          </div>
-          <p id="modal-npc-text" class="text-slate-100 text-sm sm:text-base leading-relaxed"></p>
-        </div>
-        <div class="p-3 bg-brand-950/40 border border-brand-800/40 rounded-xl text-xs text-brand-200 flex items-center gap-2">
-          <i data-lucide="info" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
-          <span id="modal-quest-clue">Tipp</span>
-        </div>
-        <div id="modal-interactive-area" class="space-y-3"></div>
-        <div id="modal-feedback-box" class="hidden p-4 rounded-xl border text-sm"></div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 uppercase text-[10px]">
+              <th class="py-1.5 px-2">Player</th>
+              <th class="py-1.5 px-2 text-center">Rounds Played</th>
+              <th class="py-1.5 px-2 text-center">Last Round</th>
+              <th class="py-1.5 px-2 text-right">Total Score</th>
+              <th class="py-1.5 px-2 text-right">Status</th>
+            </tr>
+          </thead>
+          <tbody id="scores-table-body">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
       </div>
-      <div class="p-4 border-t border-slate-800 bg-slate-900 flex justify-between items-center">
-        <span id="modal-step-counter" class="text-xs text-slate-400 font-mono">Schritt 1</span>
-        <button id="modal-btn-next" onclick="nextRPGStep()" class="hidden px-5 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm">Weiter →</button>
-      </div>
+
+      <button onclick="closeScoreModal()" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-amber-300 font-bold rounded-xl text-xs">
+        Return to Table
+      </button>
     </div>
   </div>
 
-  <!-- SCRIPTS -->
-  <script src="js/data-kursbuch.js"></script> 
-  <script src="js/data-atlas.js"></script>
-  <script src="js/data-drills.js"></script>
-  <script src="js/data-vocab.js"></script>
-  <script src="js/data-scenarios.js"></script>
-  <script src="js/data-exam.js"></script>
-  
+  <!-- ================= MODAL: ROUND COMPLETED / WINNER ================= -->
+  <div id="round-result-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 hidden">
+    <div class="w-full max-w-md bg-slate-900 border-2 border-amber-500 rounded-2xl p-5 shadow-2xl space-y-4 text-center">
+      <div class="text-3xl">🎉</div>
+      <h3 id="result-title" class="text-xl font-black text-amber-300">Round Won!</h3>
+      <p id="result-desc" class="text-xs text-slate-300">
+        Tim declared with a valid Rummy Show!
+      </p>
+
+      <div class="bg-slate-950 rounded-xl p-3 border border-slate-800 text-left text-xs max-h-48 overflow-y-auto space-y-2" id="round-score-breakdown">
+        <!-- Rendered via JS -->
+      </div>
+
+      <button onclick="proceedToNextRound()" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-black rounded-xl text-sm shadow-lg">
+        Deal Next Round →
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: GRAND CHAMPION ================= -->
+  <div id="champion-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="w-full max-w-md bg-gradient-to-b from-amber-950/80 to-slate-950 border-2 border-amber-400 rounded-3xl p-6 text-center space-y-4 shadow-2xl">
+      <div class="text-5xl animate-bounce">👑</div>
+      <h2 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-400">
+        GRAND TOURNAMENT CHAMPION!
+      </h2>
+      <p id="champion-name" class="text-xl font-black text-white">Tim</p>
+      <p class="text-xs text-slate-300">
+        All other players reached or passed the 201 point threshold!
+      </p>
+
+      <button onclick="resetTournament()" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-xl">
+        Start New 201 Tournament
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: OFFICIAL RULES ================= -->
+  <div id="rules-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 hidden">
+    <div class="w-full max-w-md bg-slate-900 border border-slate-700 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-3 text-xs">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+        <h3 class="font-bold text-amber-400 text-sm">Official 201 Pool Rummy Rules</h3>
+        <button onclick="closeRulesModal()" class="text-slate-400 hover:text-white font-bold p-1">✕</button>
+      </div>
+      <div class="space-y-2 text-slate-300 max-h-72 overflow-y-auto pr-1">
+        <p><b class="text-amber-300">1. Objective:</b> Arrange 13 cards into valid sequences and sets, keeping unmelded deadwood penalty low.</p>
+        <p><b class="text-amber-300">2. First Life (Pure Sequence):</b> At least one sequence of 3 or more consecutive cards of the exact same suit with <b>NO Jokers</b>. This is mandatory!</p>
+        <p><b class="text-amber-300">3. Closed Wild Joker Vault:</b> The cut Wild Joker remains locked inside the Vault until you form your Pure Life (First Life). Once unlocked, you can see the card and all identical ranks act as Jokers.</p>
+        <p><b class="text-amber-300">4. Second Sequence:</b> A second sequence of 3 or more cards, pure or impure (using Jokers).</p>
+        <p><b class="text-amber-300">5. Drop Points:</b> First Drop = <b>20 points</b> (before drawing on turn 1). Middle Drop = <b>40 points</b> (subsequent turns). Wrong Declaration = <b>80 points</b>.</p>
+        <p><b class="text-amber-300">6. Elimination:</b> Any player reaching or exceeding <b>201 points</b> is eliminated from the tournament.</p>
+      </div>
+      <button onclick="closeRulesModal()" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-lg text-xs">
+        Understood
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT GAME ENGINE ================= -->
   <script>
-    let audioEnabled = true;
-    let audioCtx = null;
-    let ttsVoice = null;
+    // --- SUITS & CONSTANTS ---
+    const SUITS = [
+      { id: 'S', symbol: '♠', color: 'text-slate-900', isRed: false },
+      { id: 'H', symbol: '♥', color: 'text-red-600', isRed: true },
+      { id: 'C', symbol: '♣', color: 'text-emerald-900', isRed: false },
+      { id: 'D', symbol: '♦', color: 'text-rose-500', isRed: true }
+    ];
+    const RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    const RANK_VALUES = { 'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 11, 'Q': 12, 'K': 13 };
+    const RUMMY_CARD_POINTS = { 'A': 10, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10, 'JOKER': 0 };
+    const AVATARS = ['🦊', '🐯', '🦅', '🦁', '🐼', '🦄', '🐬'];
+    const DEFAULT_NAMES = ['Tim', 'Alex', 'Rahul', 'Sam', 'Priya', 'Leo', 'Maya'];
 
-    function getAudioContext() {
-      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      if (audioCtx.state === 'suspended') audioCtx.resume();
-      return audioCtx;
+    // Web Audio Synthesizer (Zero external assets needed)
+    class SoundEngine {
+      constructor() {
+        this.ctx = null;
+      }
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) this.ctx = new AudioContext();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+      playCard() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(400, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(120, this.ctx.currentTime + 0.08);
+          gain.gain.setValueAtTime(0.15, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.08);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.08);
+        } catch (e) {}
+      }
+      playVictory() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          [329.63, 440, 554.37, 659.25].forEach((freq, i) => {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.frequency.setValueAtTime(freq, this.ctx.currentTime + i * 0.12);
+            gain.gain.setValueAtTime(0.2, this.ctx.currentTime + i * 0.12);
+            gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + i * 0.12 + 0.4);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(this.ctx.currentTime + i * 0.12);
+            osc.stop(this.ctx.currentTime + i * 0.12 + 0.4);
+          });
+        } catch (e) {}
+      }
+      playUnlock() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(587.33, this.ctx.currentTime);
+          osc.frequency.setValueAtTime(880, this.ctx.currentTime + 0.12);
+          gain.gain.setValueAtTime(0.2, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.3);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.3);
+        } catch (e) {}
+      }
     }
+    const sounds = new SoundEngine();
 
-    document.addEventListener('click', () => { getAudioContext(); }, { capture: true, passive: true });
-    document.addEventListener('touchstart', () => { getAudioContext(); }, { capture: true, passive: true });
-
-    function loadVoices() {
-      if (!('speechSynthesis' in window)) return;
-      const voices = window.speechSynthesis.getVoices();
-      const germanVoices = voices.filter(v => v.lang.includes('de'));
-      if (germanVoices.length > 0) ttsVoice = germanVoices.find(v => v.name.includes('Premium') || v.name.includes('Siri') || v.name.includes('Google') || v.name.includes('Enhanced')) || germanVoices[0];
-    }
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.onvoiceschanged = loadVoices;
-      loadVoices();
-    }
-
-    function playTone(freq, type = 'sine', duration = 0.15) {
-      if (!audioEnabled) return;
-      const ctx = getAudioContext();
-      try {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.type = type;
-        osc.frequency.setValueAtTime(freq, ctx.currentTime);
-        gain.gain.setValueAtTime(0.12, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-        osc.start();
-        osc.stop(ctx.currentTime + duration);
-      } catch (e) {}
-    }
-
-    function soundSuccess() { playTone(523.25, 'triangle', 0.1); setTimeout(() => playTone(659.25, 'triangle', 0.1), 90); setTimeout(() => playTone(783.99, 'triangle', 0.22), 180); }
-    function soundError() { playTone(220, 'sawtooth', 0.2); setTimeout(() => playTone(185, 'sawtooth', 0.25), 140); }
-    function soundFanfare() { [523, 659, 784, 1046].forEach((f, i) => setTimeout(() => playTone(f, 'sine', 0.25), i * 110)); }
-
-    function speakGerman(text) {
-      if (!audioEnabled || !('speechSynthesis' in window)) return;
-      window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'de-DE';
-      u.rate = 0.80;
-      if (!ttsVoice) loadVoices();
-      if (ttsVoice) u.voice = ttsVoice;
-      window.speechSynthesis.speak(u);
-    }
-
-    function toggleAudio() {
-      audioEnabled = !audioEnabled;
-      const icons = [document.getElementById('audio-icon-mobile'), document.getElementById('audio-icon-desktop')];
-      icons.forEach(icon => { if (icon) icon.setAttribute('data-lucide', audioEnabled ? 'volume-2' : 'volume-x'); });
-      lucide.createIcons();
-    }
-
-    const player = {
-      xp: parseInt(localStorage.getItem('dm_a1_xp') || '0'),
-      streak: parseInt(localStorage.getItem('dm_a1_streak') || '1'),
-      completedQuests: JSON.parse(localStorage.getItem('dm_a1_quests') || '[]'),
-      arenaMode: 'mc'
+    // --- GAME STATE ---
+    let state = {
+      playerCount: 4,
+      players: [],
+      activePlayerIndex: 0,
+      turnPhase: 'draw', // 'draw' or 'discard'
+      hasDrawnThisTurn: false,
+      cardsHidden: false,
+      wildJokerCard: null,
+      closedDeck: [],
+      openDeck: [],
+      selectedCardIds: new Set(),
+      roundNumber: 1
     };
 
-    function addXP(amount) {
-      player.xp += amount;
-      localStorage.setItem('dm_a1_xp', player.xp);
-      document.getElementById('stat-xp').innerText = player.xp;
-    }
+    // --- INITIALIZATION ---
+    window.addEventListener('DOMContentLoaded', () => {
+      renderPlayerInputs(4);
+    });
 
-    function checkLoadedModules() {
-      const kursbuchLoaded = window.DM_KURSBUCH && Array.isArray(window.DM_KURSBUCH);
-      const atlasLoaded = window.DM_ATLAS && Array.isArray(window.DM_ATLAS.modules);
-      const drillsLoaded = window.DM_DRILLS && typeof window.DM_DRILLS === 'object';
-      const vocabLoaded = window.DM_VOCAB && Array.isArray(window.DM_VOCAB);
-      const scenariosLoaded = window.DM_SCENARIOS && Array.isArray(window.DM_SCENARIOS);
-      const examLoaded = window.DM_EXAM && Array.isArray(window.DM_EXAM);
-
-      updateModuleStatusIndicator('status-kursbuch', kursbuchLoaded, '16 Kapitel');
-      updateModuleStatusIndicator('status-atlas', atlasLoaded, 'Atlas');
-      updateModuleStatusIndicator('status-drills', drillsLoaded, 'Drills');
-      updateModuleStatusIndicator('status-vocab', vocabLoaded, 'Wortschatz');
-      updateModuleStatusIndicator('status-scenarios', scenariosLoaded, '16 Quests');
-      updateModuleStatusIndicator('status-exam', examLoaded, 'Prüfung');
-
-      const allLoaded = kursbuchLoaded && atlasLoaded && drillsLoaded && vocabLoaded && scenariosLoaded && examLoaded;
-      const summary = document.getElementById('status-summary');
-      if (allLoaded) {
-        summary.className = 'text-emerald-400 font-sans font-bold';
-        summary.innerText = 'Alle 6 Datenmodule erfolgreich geladen (100% Bereit)';
-      } else {
-        summary.className = 'text-amber-400 font-sans';
-        summary.innerText = 'Warte auf Einbindung der externen JS-Dateien in /js/...';
-      }
-    }
-
-    function updateModuleStatusIndicator(elId, isLoaded, label) {
-      const el = document.getElementById(elId);
-      if(!el) return;
-      if (isLoaded) {
-        el.className = 'flex items-center gap-1 text-emerald-400 font-bold shrink-0';
-        el.innerHTML = `<i data-lucide="check-circle-2" class="w-3 h-3"></i> ${label}`;
-      } else {
-        el.className = 'flex items-center gap-1 text-rose-400 shrink-0';
-        el.innerHTML = `<i data-lucide="circle" class="w-3 h-3"></i> ${label}`;
-      }
-    }
-
-    function navigate(tabId) {
-      document.querySelectorAll('.view-panel').forEach(v => v.classList.add('hidden'));
-      document.querySelectorAll('.nav-tab').forEach(b => {
-        b.classList.remove('bg-brand-600', 'text-white', 'shadow-md');
-        b.classList.add('text-slate-400');
+    function setPlayerCount(count) {
+      state.playerCount = count;
+      document.querySelectorAll('.p-count-btn').forEach(btn => {
+        const c = parseInt(btn.getAttribute('data-c'), 10);
+        if (c === count) {
+          btn.className = "p-count-btn py-2 rounded-xl border border-amber-500 bg-amber-500/20 text-amber-300 font-bold text-xs";
+        } else {
+          btn.className = "p-count-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs";
+        }
       });
-
-      const targetView = document.getElementById(`view-${tabId}`);
-      if (targetView) targetView.classList.remove('hidden');
-
-      const targetBtn = document.getElementById(`tab-${tabId}`);
-      if (targetBtn) {
-        targetBtn.classList.remove('text-slate-400');
-        targetBtn.classList.add('bg-brand-600', 'text-white', 'shadow-md');
-      }
-      playTone(440, 'sine', 0.08);
-      lucide.createIcons();
+      renderPlayerInputs(count);
     }
 
-    // 1. KURSBUCH ENGINE (Updated to render all 5 granular sub-components cleanly)
-    function initKursbuchView() {
-      if (!window.DM_KURSBUCH) return;
-      const grid = document.getElementById('kursbuch-grid');
-      if(!grid) return;
-      grid.innerHTML = '';
-
-      window.DM_KURSBUCH.forEach(ch => {
-        const card = document.createElement('div');
-        card.className = 'glass-card p-5 rounded-2xl flex flex-col justify-between space-y-4 cursor-pointer group';
-        card.onclick = () => openKursbuchModal(ch.id);
-
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="w-8 h-8 rounded-lg bg-brand-600/20 text-brand-400 font-bold flex items-center justify-center border border-brand-500/30 group-hover:bg-brand-600 group-hover:text-white transition">
-                ${ch.id}
-              </span>
-              <span class="text-[10px] uppercase font-bold text-slate-500 font-mono tracking-wider">${ch.concepts.length} Sub-Moduke</span>
-            </div>
-            <h3 class="font-bold text-white text-lg group-hover:text-brand-300 transition line-clamp-2">${ch.title}</h3>
-            <ul class="mt-3 space-y-1.5">
-              ${ch.concepts.map(c => `<li class="text-xs text-slate-400 flex items-start gap-1.5"><i data-lucide="check" class="w-3 h-3 text-emerald-500 shrink-0 mt-0.5"></i> <span class="line-clamp-1">${c.title}</span></li>`).join('')}
-            </ul>
-          </div>
-          <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-            <div class="bg-brand-500 h-full w-full transition-all duration-500"></div>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-      lucide.createIcons();
-    }
-
-    function filterKursbuch() {
-      const q = document.getElementById('kursbuch-search').value.toLowerCase();
-      const cards = document.querySelectorAll('#kursbuch-grid > div');
-      window.DM_KURSBUCH.forEach((ch, idx) => {
-        const textToSearch = ch.title.toLowerCase() + " " + ch.concepts.map(c => c.title.toLowerCase()).join(" ");
-        if(cards[idx]) cards[idx].style.display = textToSearch.includes(q) ? 'flex' : 'none';
-      });
-    }
-
-    let activeChapterQuizzes = {};
-
-    function openKursbuchModal(chapterId) {
-      const ch = window.DM_KURSBUCH.find(c => c.id === chapterId);
-      if (!ch) return;
-
-      document.getElementById('kb-modal-ch').innerText = ch.id;
-      document.getElementById('kb-modal-title').innerText = ch.title;
-      document.getElementById('kb-modal-goals').innerText = ch.goals.join(' • ');
-
-      const body = document.getElementById('kb-modal-body');
-      body.innerHTML = '';
-      activeChapterQuizzes = {};
-
-      ch.concepts.forEach((concept, cIdx) => {
-        activeChapterQuizzes[cIdx] = 0;
-        const cDiv = document.createElement('div');
-        cDiv.className = 'bg-slate-950/50 border border-slate-800 rounded-2xl overflow-hidden';
-        
-        let html = `
-          <div class="p-5 sm:p-6 bg-slate-800/40 border-b border-slate-800">
-            <h4 class="text-lg sm:text-xl font-bold text-emerald-400 mb-3 flex items-center gap-2">
-              <i data-lucide="book-open" class="w-5 h-5"></i> ${concept.title}
-            </h4>
-            ${concept.explanation}
-          </div>
-        `;
-
-        html += `<div class="p-5 sm:p-6 border-b border-slate-800 bg-slate-900/50">
-                  <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-3">Lernbeispiele</span>
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">`;
-        concept.examples.forEach(ex => {
-          html += `
-            <div class="bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-700 flex flex-col justify-between gap-3 group">
-              <div>
-                <p class="font-bold text-white text-sm sm:text-base">${ex.de}</p>
-                <p class="text-xs text-slate-400 mt-1">${ex.en}</p>
-              </div>
-              <button onclick="speakGerman('${ex.de}')" class="self-start px-3 py-1.5 bg-slate-700 group-hover:bg-brand-600 text-slate-300 group-hover:text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 transition">
-                <i data-lucide="volume-2" class="w-3.5 h-3.5"></i> Anhören
-              </button>
-            </div>
-          `;
-        });
-        html += `</div></div>`;
-
-        html += `
-          <div class="p-5 sm:p-6" id="quiz-container-${cIdx}">
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5"><i data-lucide="swords" class="w-4 h-4"></i> Mini-Boss Drill</span>
-              <span class="text-xs text-slate-500 font-mono" id="quiz-counter-${cIdx}">1 / ${concept.quizzes.length}</span>
-            </div>
-            <div id="quiz-content-${cIdx}" class="space-y-4"></div>
-          </div>
-        `;
-        
-        cDiv.innerHTML = html;
-        body.appendChild(cDiv);
-        renderQuizQuestion(cIdx, concept);
-      });
-
-      document.getElementById('kursbuch-modal').classList.remove('hidden');
-      lucide.createIcons();
-    }
-
-    function renderQuizQuestion(cIdx, concept) {
-      const qIdx = activeChapterQuizzes[cIdx];
-      const contentDiv = document.getElementById(`quiz-content-${cIdx}`);
-      const counterSpan = document.getElementById(`quiz-counter-${cIdx}`);
-      if(!contentDiv) return;
-      
-      if (qIdx >= concept.quizzes.length) {
-        contentDiv.innerHTML = `<div class="p-4 bg-emerald-900/30 border border-emerald-500/50 rounded-xl text-emerald-400 font-bold text-center flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-5 h-5"></i> Level abgeschlossen!</div>`;
-        counterSpan.innerText = `${concept.quizzes.length} / ${concept.quizzes.length}`;
-        lucide.createIcons();
-        return;
-      }
-
-      const q = concept.quizzes[qIdx];
-      counterSpan.innerText = `${qIdx + 1} / ${concept.quizzes.length}`;
-
-      let html = `<p class="text-base sm:text-lg font-bold text-white mb-4">${q.q}</p>`;
-      html += `<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">`;
-      q.opts.forEach((opt, oIdx) => {
-        html += `<button onclick="handleQuizAnswer(${cIdx}, ${oIdx})" id="btn-${cIdx}-${oIdx}" class="p-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl text-slate-200 text-sm font-semibold transition text-left">${opt}</button>`;
-      });
-      html += `</div><div id="quiz-feedback-${cIdx}" class="hidden mt-4 p-3.5 rounded-xl text-sm font-semibold"></div>`;
-      contentDiv.innerHTML = html;
-    }
-
-    function handleQuizAnswer(cIdx, oIdx) {
-      const chId = parseInt(document.getElementById('kb-modal-ch').innerText);
-      const concept = window.DM_KURSBUCH.find(c => c.id === chId).concepts[cIdx];
-      const qIdx = activeChapterQuizzes[cIdx];
-      const q = concept.quizzes[qIdx];
-      const chosenText = document.getElementById(`btn-${cIdx}-${oIdx}`).innerText;
-
-      const fb = document.getElementById(`quiz-feedback-${cIdx}`);
-      fb.classList.remove('hidden');
-
-      if (chosenText === q.a) {
-        soundSuccess(); addXP(10);
-        fb.className = 'mt-4 p-3.5 rounded-xl text-sm font-semibold bg-emerald-900/40 border border-emerald-500/50 text-emerald-300';
-        fb.innerHTML = `<strong>Richtig! (+10 XP)</strong> ${q.exp}`;
-        setTimeout(() => {
-          activeChapterQuizzes[cIdx]++;
-          renderQuizQuestion(cIdx, concept);
-        }, 1500);
-      } else {
-        soundError();
-        fb.className = 'mt-4 p-3.5 rounded-xl text-sm font-semibold bg-rose-900/40 border border-rose-500/50 text-rose-300';
-        fb.innerHTML = `<strong>Falsch!</strong> ${q.exp}`;
-      }
-    }
-
-    function closeKursbuchModal() {
-      document.getElementById('kursbuch-modal').classList.add('hidden');
-      window.speechSynthesis && window.speechSynthesis.cancel();
-    }
-
-    // 2. ATLAS
-    function initAtlasView() {
-      if (!window.DM_ATLAS || !window.DM_ATLAS.modules) return;
-      const container = document.getElementById('atlas-container');
-      if(!container) return;
+    function renderPlayerInputs(count) {
+      const container = document.getElementById('player-names-container');
       container.innerHTML = '';
-      window.DM_ATLAS.modules.forEach(m => {
-        const card = document.createElement('div');
-        card.className = 'glass-card p-5 rounded-2xl space-y-3 cursor-pointer group';
-        card.onclick = (e) => { if (!e.target.closest('button')) openModuleDetail(m.id); };
-        card.innerHTML = `
-          <div class="flex items-center justify-between">
-            <span class="text-xs px-2.5 py-0.5 rounded-full font-mono font-bold bg-brand-500/20 text-brand-300 border border-brand-500/30">Modul ${m.id}</span>
-            <span class="text-xs text-slate-400 font-mono">${m.category}</span>
+      for (let i = 0; i < count; i++) {
+        const row = document.createElement('div');
+        row.className = "flex items-center space-x-2 bg-slate-950 p-2 rounded-xl border border-slate-800";
+        row.innerHTML = `
+          <span class="text-base">${AVATARS[i % AVATARS.length]}</span>
+          <span class="text-[10px] font-bold text-slate-500 w-10">P${i + 1}</span>
+          <input type="text" id="p-input-${i}" value="${DEFAULT_NAMES[i] || 'Player ' + (i + 1)}" maxlength="14"
+            class="flex-1 bg-transparent border-0 text-xs font-bold text-white focus:outline-none focus:text-amber-300"
+            placeholder="Name">
+        `;
+        container.appendChild(row);
+      }
+    }
+
+    // --- START TOURNAMENT ---
+    function startTournament() {
+      sounds.playVictory();
+      state.players = [];
+      for (let i = 0; i < state.playerCount; i++) {
+        const inputVal = document.getElementById(`p-input-${i}`)?.value.trim();
+        state.players.push({
+          id: `player_${i}`,
+          name: inputVal || `Player ${i + 1}`,
+          avatar: AVATARS[i % AVATARS.length],
+          totalScore: 0,
+          lastRoundScore: 0,
+          roundsPlayed: 0,
+          eliminated: false,
+          cards: [],
+          cardGroups: [[]],
+          firstTurnPlayed: false,
+          hasPureLife: false
+        });
+      }
+
+      state.roundNumber = 1;
+      document.getElementById('lobby-screen').classList.add('hidden');
+      document.getElementById('game-screen').classList.remove('hidden');
+
+      dealNewRound();
+    }
+
+    // --- DEAL NEW ROUND ---
+    function dealNewRound() {
+      document.getElementById('round-badge').textContent = `Round ${state.roundNumber}`;
+
+      // 2 standard decks (108 cards)
+      const deck = [];
+      let uid = 1;
+      for (let d = 0; d < 2; d++) {
+        for (const s of SUITS) {
+          for (const r of RANKS) {
+            deck.push({
+              id: `c_${d}_${s.id}_${r}_${uid++}`,
+              suit: s.id,
+              rank: r,
+              value: RANK_VALUES[r],
+              isPrintedJoker: false
+            });
+          }
+        }
+        // 2 Printed Jokers
+        deck.push({ id: `pj_${d}_1_${uid++}`, suit: 'PJ', rank: 'JOKER', value: 0, isPrintedJoker: true });
+        deck.push({ id: `pj_${d}_2_${uid++}`, suit: 'PJ', rank: 'JOKER', value: 0, isPrintedJoker: true });
+      }
+
+      // Shuffle
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+
+      // Cut 1 Wild Joker
+      state.wildJokerCard = deck.pop();
+
+      // Deal 13 cards to each active non-eliminated player
+      state.players.forEach(p => {
+        if (!p.eliminated) {
+          p.cards = deck.splice(0, 13);
+          p.cardGroups = autoGroupCards(p.cards, state.wildJokerCard);
+          p.firstTurnPlayed = false;
+          p.hasPureLife = false;
+        } else {
+          p.cards = [];
+          p.cardGroups = [[]];
+        }
+      });
+
+      // 1 open card for discard
+      state.openDeck = [deck.pop()];
+      state.closedDeck = deck;
+
+      // Active player: first non-eliminated player
+      const firstActive = state.players.findIndex(p => !p.eliminated);
+      state.activePlayerIndex = firstActive !== -1 ? firstActive : 0;
+      state.turnPhase = 'draw';
+      state.hasDrawnThisTurn = false;
+      state.selectedCardIds.clear();
+
+      renderTable();
+      showToast(`🎯 Round ${state.roundNumber} Started — ${getCurrentPlayer().name}'s Turn!`, 'info');
+    }
+
+    function getCurrentPlayer() {
+      return state.players[state.activePlayerIndex];
+    }
+
+    function isWildJoker(card, wildCutCard) {
+      if (!card) return false;
+      if (card.isPrintedJoker || card.suit === 'PJ' || card.rank === 'JOKER') return true;
+      if (wildCutCard) {
+        const targetRank = (wildCutCard.isPrintedJoker || wildCutCard.suit === 'PJ') ? 'A' : wildCutCard.rank;
+        return card.rank === targetRank;
+      }
+      return false;
+    }
+
+    // --- AUTO GROUPING HELPER ---
+    function autoGroupCards(cards, wildCutCard) {
+      const suitsMap = { 'S': [], 'H': [], 'C': [], 'D': [], 'PJ': [] };
+      const jokers = [];
+
+      cards.forEach(c => {
+        if (c.isPrintedJoker || c.suit === 'PJ') {
+          jokers.push(c);
+        } else {
+          suitsMap[c.suit].push(c);
+        }
+      });
+
+      const groups = [];
+      ['S', 'H', 'C', 'D'].forEach(sId => {
+        if (suitsMap[sId].length > 0) {
+          suitsMap[sId].sort((a, b) => a.value - b.value);
+          groups.push(suitsMap[sId]);
+        }
+      });
+      if (jokers.length > 0) groups.push(jokers);
+
+      return groups.length > 0 ? groups : [cards];
+    }
+
+    // --- EVALUATION RULES ENGINE ---
+    function isPureSequence(cards) {
+      if (!cards || cards.length < 3) return false;
+      if (cards.some(c => c.isPrintedJoker || c.suit === 'PJ')) return false;
+
+      const suit = cards[0].suit;
+      if (!cards.every(c => c.suit === suit)) return false;
+
+      const values = cards.map(c => RANK_VALUES[c.rank]).sort((a, b) => a - b);
+      if (isConsecutive(values)) return true;
+
+      // Check Ace-High (10, J, Q, K, A)
+      if (values.includes(1)) {
+        const aceHigh = values.map(v => v === 1 ? 14 : v).sort((a, b) => a - b);
+        if (isConsecutive(aceHigh)) return true;
+      }
+      return false;
+    }
+
+    function isConsecutive(arr) {
+      for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i + 1] !== arr[i] + 1) return false;
+      }
+      return true;
+    }
+
+    function isImpureSequence(cards, wildCut) {
+      if (!cards || cards.length < 3) return false;
+      const naturals = [];
+      let jokers = 0;
+
+      cards.forEach(c => {
+        if (isWildJoker(c, wildCut)) jokers++;
+        else naturals.push(c);
+      });
+
+      if (naturals.length === 0) return false;
+      const targetSuit = naturals[0].suit;
+      if (!naturals.every(c => c.suit === targetSuit)) return false;
+
+      const vals = naturals.map(c => RANK_VALUES[c.rank]).sort((a, b) => a - b);
+      if (canFormWithJokers(vals, jokers)) return true;
+
+      if (naturals.some(c => c.rank === 'A')) {
+        const aceHigh = naturals.map(c => c.rank === 'A' ? 14 : RANK_VALUES[c.rank]).sort((a, b) => a - b);
+        if (canFormWithJokers(aceHigh, jokers)) return true;
+      }
+      return false;
+    }
+
+    function canFormWithJokers(sortedVals, jokers) {
+      let needed = 0;
+      for (let i = 0; i < sortedVals.length - 1; i++) {
+        const gap = sortedVals[i + 1] - sortedVals[i];
+        if (gap === 0) return false; // Duplicate natural card in same sequence is invalid
+        needed += (gap - 1);
+      }
+      return jokers >= needed;
+    }
+
+    function isValidSet(cards, wildCut) {
+      if (!cards || cards.length < 3 || cards.length > 4) return false;
+      const naturals = [];
+      cards.forEach(c => {
+        if (!isWildJoker(c, wildCut)) naturals.push(c);
+      });
+      if (naturals.length === 0) return true;
+
+      const rank = naturals[0].rank;
+      if (!naturals.every(c => c.rank === rank)) return false;
+
+      // Unique suits for naturals
+      const suitSet = new Set(naturals.map(c => c.suit));
+      return suitSet.size === naturals.length;
+    }
+
+    function evaluateGroup(group, wildCut) {
+      if (!group || group.length < 3) {
+        return { type: 'invalid', label: 'Incomplete (<3)', valid: false };
+      }
+      if (isPureSequence(group)) {
+        return { type: 'pure', label: 'Pure Sequence ✓', valid: true };
+      }
+      if (isImpureSequence(group, wildCut)) {
+        return { type: 'impure', label: 'Impure Sequence ✓', valid: true };
+      }
+      if (isValidSet(group, wildCut)) {
+        return { type: 'set', label: 'Valid Set ✓', valid: true };
+      }
+      return { type: 'invalid', label: 'Invalid Group ✗', valid: false };
+    }
+
+    // Calculate deadwood score for a player's hand
+    function calculateHandDeadwood(groups, wildCut) {
+      let pureCount = 0;
+      let totalSeq = 0;
+
+      const evals = groups.map(g => {
+        const res = evaluateGroup(g, wildCut);
+        if (res.type === 'pure') {
+          pureCount++;
+          totalSeq++;
+        } else if (res.type === 'impure') {
+          totalSeq++;
+        }
+        return { group: g, ...res };
+      });
+
+      // No Pure Sequence = pay for all cards (capped at 80)
+      if (pureCount === 0) {
+        const total = groups.flat().reduce((sum, c) => {
+          if (isWildJoker(c, wildCut)) return sum;
+          return sum + (RUMMY_CARD_POINTS[c.rank] || 0);
+        }, 0);
+        return Math.min(80, total);
+      }
+
+      // Has 1 Pure but no second sequence: first pure is protected, pay for rest
+      if (totalSeq < 2) {
+        let firstPureProtected = false;
+        let penalty = 0;
+        evals.forEach(e => {
+          if (e.type === 'pure' && !firstPureProtected) {
+            firstPureProtected = true;
+          } else {
+            penalty += e.group.reduce((s, c) => isWildJoker(c, wildCut) ? s : s + (RUMMY_CARD_POINTS[c.rank] || 0), 0);
+          }
+        });
+        return Math.min(80, penalty);
+      }
+
+      // Has at least 2 sequences (1 pure): only pay for invalid groups
+      let penalty = 0;
+      evals.forEach(e => {
+        if (!e.valid) {
+          penalty += e.group.reduce((s, c) => isWildJoker(c, wildCut) ? s : s + (RUMMY_CARD_POINTS[c.rank] || 0), 0);
+        }
+      });
+      return Math.min(80, penalty);
+    }
+
+    // --- TABLE RENDERING ---
+    function renderTable() {
+      const player = getCurrentPlayer();
+      if (!player) return;
+
+      // 1. Render Top Roster of Players
+      const rosterContainer = document.getElementById('players-roster');
+      rosterContainer.innerHTML = '';
+      state.players.forEach((p, idx) => {
+        const isActive = idx === state.activePlayerIndex;
+        const pill = document.createElement('div');
+        pill.className = `flex items-center space-x-1.5 px-2.5 py-1 rounded-xl text-xs font-bold transition-all shrink-0 ${
+          p.eliminated 
+            ? 'bg-rose-950/40 border border-rose-900/40 text-rose-400 line-through opacity-60'
+            : isActive
+            ? 'bg-amber-400 text-slate-950 ring-2 ring-amber-300 shadow-lg scale-105'
+            : 'bg-slate-950/70 text-slate-300 border border-emerald-700/40'
+        }`;
+        pill.innerHTML = `
+          <span>${p.avatar}</span>
+          <span>${p.name}</span>
+          <span class="text-[10px] px-1 rounded ${isActive ? 'bg-slate-950 text-amber-300' : 'bg-slate-800 text-slate-400'}">${p.totalScore}</span>
+        `;
+        rosterContainer.appendChild(pill);
+      });
+
+      // 2. Check if current player has Pure Life (First Life)
+      const hasPure = player.cardGroups.some(g => isPureSequence(g));
+      if (hasPure && !player.hasPureLife) {
+        player.hasPureLife = true;
+        sounds.playUnlock();
+        showToast(`🔓 Pure Life Unlocked! Joker Revealed for ${player.name}!`, 'success');
+      }
+
+      // 3. Render Center Closed Joker Vault
+      const vaultEl = document.getElementById('joker-vault-card');
+      if (player.hasPureLife) {
+        // Unlocked! Show the cut Wild Joker
+        const wCard = state.wildJokerCard;
+        const sObj = SUITS.find(s => s.id === wCard.suit);
+        const isRed = sObj ? sObj.isRed : false;
+        vaultEl.className = "w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 border-amber-400 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1 relative";
+        vaultEl.innerHTML = `
+          <div class="flex items-center justify-between leading-none text-xs font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${wCard.isPrintedJoker ? '🃏' : wCard.rank}</span>
+            <span>${sObj ? sObj.symbol : ''}</span>
           </div>
-          <h3 class="text-base font-bold text-white group-hover:text-brand-300 transition flex items-center justify-between">
-            <span>${m.title}</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-1 transition"></i>
-          </h3>
-          <p class="text-xs text-slate-300 leading-relaxed line-clamp-2"><strong class="text-brand-300">Regel:</strong> ${m.rule}</p>
-          <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 text-xs text-amber-300 font-mono flex items-center justify-between">
-            <span class="truncate pr-2">${m.example}</span>
-            <button onclick="speakGerman('${m.example.replace(/\|/g, ',')}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-amber-300 flex-shrink-0 transition">
-              <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+          <div class="text-center font-black text-2xl ${isRed ? 'text-red-600' : 'text-slate-900'}">
+            ${sObj ? sObj.symbol : '🃏'}
+          </div>
+          <div class="bg-amber-400 text-slate-950 text-[8px] font-black uppercase text-center rounded py-0.2">
+            WILD JOKER
+          </div>
+        `;
+      } else {
+        // Locked! Vault with padlock
+        vaultEl.className = "w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 border-amber-500/50 bg-gradient-to-b from-amber-950 to-slate-950 text-amber-300 shadow-xl flex flex-col items-center justify-center p-1 text-center";
+        vaultEl.innerHTML = `
+          <span class="text-xl">🔒</span>
+          <span class="text-[8px] font-black uppercase tracking-wider text-amber-400 mt-1 leading-tight">
+            Pure Life<br>Locked
+          </span>
+        `;
+      }
+
+      // 4. Render Open Discard Pile
+      const discardContainer = document.getElementById('open-discard-card');
+      const topDiscard = state.openDeck[state.openDeck.length - 1];
+      if (topDiscard) {
+        const sObj = SUITS.find(s => s.id === topDiscard.suit);
+        const isRed = sObj ? sObj.isRed : false;
+        discardContainer.className = "rummy-card cursor-pointer w-14 sm:w-16 h-20 sm:h-22 rounded-lg border border-slate-300 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1";
+        discardContainer.innerHTML = `
+          <div class="flex items-center justify-between leading-none text-xs font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${topDiscard.isPrintedJoker ? '🃏' : topDiscard.rank}</span>
+            <span>${sObj ? sObj.symbol : ''}</span>
+          </div>
+          <div class="text-center font-black text-2xl leading-none ${isRed ? 'text-red-600' : 'text-slate-900'}">
+            ${sObj ? sObj.symbol : '🃏'}
+          </div>
+          <div class="flex items-center justify-between leading-none text-xs font-black rotate-180 ${isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${topDiscard.isPrintedJoker ? '🃏' : topDiscard.rank}</span>
+            <span>${sObj ? sObj.symbol : ''}</span>
+          </div>
+        `;
+      } else {
+        discardContainer.className = "w-14 sm:w-16 h-20 sm:h-22 rounded-lg border-2 border-dashed border-emerald-500/40 flex items-center justify-center text-[10px] text-emerald-300";
+        discardContainer.innerHTML = "Empty";
+      }
+
+      // Closed deck count
+      document.getElementById('closed-count').textContent = state.closedDeck.length;
+
+      // 5. Update Turn Action Prompt & Drop Button Label
+      const promptEl = document.getElementById('turn-action-prompt');
+      const dropBtn = document.getElementById('drop-turn-btn');
+
+      if (state.turnPhase === 'draw') {
+        promptEl.textContent = `👉 ${player.name}: Draw 1 card from Closed Deck or Open Discard`;
+        dropBtn.disabled = false;
+        dropBtn.className = "px-2 py-1 rounded bg-rose-900/60 hover:bg-rose-800 text-rose-200 border border-rose-500/40 font-bold text-[10px] sm:text-[11px] shadow transition cursor-pointer";
+        const dropPoints = player.firstTurnPlayed ? 40 : 20;
+        dropBtn.textContent = `Drop (${dropPoints})`;
+      } else {
+        promptEl.textContent = `👉 ${player.name}: Discard 1 card (Click any card to discard) or Click Finish Slot`;
+        dropBtn.disabled = true;
+        dropBtn.className = "px-2 py-1 rounded bg-slate-800 text-slate-500 border border-slate-700 font-bold text-[10px] sm:text-[11px] opacity-40 cursor-not-allowed";
+        dropBtn.textContent = `Drop`;
+      }
+
+      // 6. Update Hand Status Indicators
+      let pureSeqCount = 0;
+      let totalSeqCount = 0;
+      player.cardGroups.forEach(g => {
+        const ev = evaluateGroup(g, player.hasPureLife ? state.wildJokerCard : null);
+        if (ev.type === 'pure') {
+          pureSeqCount++;
+          totalSeqCount++;
+        } else if (ev.type === 'impure') {
+          totalSeqCount++;
+        }
+      });
+
+      const firstLifeBadge = document.getElementById('first-life-badge');
+      if (pureSeqCount >= 1) {
+        firstLifeBadge.className = "px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-emerald-950 text-emerald-300 border border-emerald-500/50";
+        document.getElementById('first-life-icon').textContent = "✓";
+      } else {
+        firstLifeBadge.className = "px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-rose-950 text-rose-300 border border-rose-700/50";
+        document.getElementById('first-life-icon').textContent = "✕";
+      }
+
+      const secondLifeBadge = document.getElementById('second-life-badge');
+      if (totalSeqCount >= 2) {
+        secondLifeBadge.className = "px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-emerald-950 text-emerald-300 border border-emerald-500/50";
+        document.getElementById('second-life-icon').textContent = "✓";
+      } else {
+        secondLifeBadge.className = "px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-slate-900 text-slate-400 border border-slate-800";
+        document.getElementById('second-life-icon').textContent = "✕";
+      }
+
+      // Hand Points
+      const deadwood = calculateHandDeadwood(player.cardGroups, player.hasPureLife ? state.wildJokerCard : null);
+      document.getElementById('hand-points-count').textContent = deadwood;
+      document.getElementById('selected-count').textContent = state.selectedCardIds.size;
+
+      // 7. Render Card Groups Tray
+      renderHandTray(player);
+    }
+
+    // --- RENDER PLAYER CARDS TRAY ---
+    function renderHandTray(player) {
+      const tray = document.getElementById('hand-groups-tray');
+      tray.innerHTML = '';
+
+      if (state.cardsHidden) {
+        tray.innerHTML = `
+          <div class="w-full py-4 flex flex-col items-center justify-center text-center bg-black/40 rounded-xl border border-dashed border-amber-500/40">
+            <span class="text-xl mb-0.5">🙈</span>
+            <span class="text-xs font-bold text-amber-300">Cards are concealed</span>
+            <button onclick="toggleCardPrivacy()" class="mt-1 px-3 py-1 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg text-xs shadow">
+              Tap to Reveal
             </button>
           </div>
         `;
-        container.appendChild(card);
-      });
-      lucide.createIcons();
-    }
-
-    function filterAtlas() {
-      const q = document.getElementById('atlas-search').value.toLowerCase();
-      if (!window.DM_ATLAS) return;
-      const cards = document.querySelectorAll('#atlas-container > div');
-      window.DM_ATLAS.modules.forEach((m, idx) => {
-        const matches = m.title.toLowerCase().includes(q) || m.rule.toLowerCase().includes(q) || m.example.toLowerCase().includes(q);
-        if (cards[idx]) cards[idx].style.display = matches ? 'block' : 'none';
-      });
-    }
-
-    function openModuleDetail(modId) {
-      if (!window.DM_ATLAS) return;
-      const mod = window.DM_ATLAS.modules.find(m => m.id === modId);
-      if (!mod) return;
-      document.getElementById('mod-modal-badge').innerText = `Modul ${mod.id}`;
-      document.getElementById('mod-modal-title').innerText = mod.title;
-      document.getElementById('mod-modal-category').innerText = `Kategorie: ${mod.category}`;
-      document.getElementById('mod-modal-rule').innerText = mod.rule;
-      document.getElementById('mod-modal-example').innerText = mod.example;
-      document.getElementById('mod-modal-notes').innerText = mod.notes;
-      document.getElementById('mod-modal-audio-btn').onclick = () => { speakGerman(mod.example.replace(/\|/g, ',')); };
-      document.getElementById('module-modal').classList.remove('hidden');
-      lucide.createIcons();
-    }
-
-    function closeModuleModal() {
-      document.getElementById('module-modal').classList.add('hidden');
-      window.speechSynthesis && window.speechSynthesis.cancel();
-    }
-
-    function initTablesView() {
-      if (!window.DM_ATLAS || !window.DM_ATLAS.tables) return;
-      const tc = document.getElementById('tables-container');
-      if(tc) tc.innerHTML = window.DM_ATLAS.tablesHtml || '';
-      lucide.createIcons();
-    }
-
-    // 3. ARENA
-    let currentDrillCategory = 'konjugation';
-    let currentDrillIndex = 0;
-
-    function setArenaInputMode(mode) {
-      player.arenaMode = mode;
-      document.getElementById('arena-btn-mc').className = mode === 'mc' ? 'px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition' : 'px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
-      document.getElementById('arena-btn-text').className = mode === 'text' ? 'px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white transition' : 'px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
-      renderCurrentDrillQuestion();
-    }
-
-    function initArenaView() {
-      if (!window.DM_DRILLS) return;
-      const pillsContainer = document.getElementById('arena-category-pills');
-      if(!pillsContainer) return;
-      pillsContainer.innerHTML = '';
-      Object.keys(window.DM_DRILLS).forEach(catKey => {
-        if (catKey === 'sentenceBuilder') return;
-        const cat = window.DM_DRILLS[catKey];
-        const btn = document.createElement('button');
-        btn.className = `px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${catKey === currentDrillCategory ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'}`;
-        btn.innerText = cat.name;
-        btn.onclick = () => { currentDrillCategory = catKey; currentDrillIndex = 0; initArenaView(); };
-        pillsContainer.appendChild(btn);
-      });
-      renderCurrentDrillQuestion();
-    }
-
-    function renderCurrentDrillQuestion() {
-      if (!window.DM_DRILLS) return;
-      const stage = document.getElementById('arena-stage');
-      if(!stage) return;
-      const cat = window.DM_DRILLS[currentDrillCategory];
-      if (!cat || !cat.questions || cat.questions.length === 0) return;
-      const q = cat.questions[currentDrillIndex % cat.questions.length];
-      const isTextInput = player.arenaMode === 'text';
-
-      stage.innerHTML = `
-        <div class="max-w-lg w-full text-center space-y-6">
-          <div class="flex items-center justify-between text-xs text-slate-400 font-mono">
-            <span>Kategorie: <strong class="text-brand-300 font-sans">${cat.name}</strong></span>
-            <span>Aufgabe ${(currentDrillIndex % cat.questions.length) + 1} / ${cat.questions.length}</span>
-          </div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800 shadow-inner">
-            <h3 class="text-2xl font-bold text-white leading-relaxed">${q.prompt}</h3>
-          </div>
-          ${isTextInput ? `
-            <div class="space-y-3">
-              <div class="flex gap-2">
-                <input type="text" id="arena-typing-input" placeholder="Antwort eintippen..." class="flex-1 bg-slate-900 border border-slate-700 text-white px-4 py-3 rounded-xl text-center text-lg font-bold focus:outline-none focus:border-brand-500" onkeydown="if(event.key==='Enter') submitTypingAnswer()">
-                <button onclick="submitTypingAnswer()" class="px-5 py-3 bg-brand-600 text-white rounded-xl font-bold text-sm">Prüfen</button>
-              </div>
-            </div>
-          ` : `
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              ${q.options.map((opt, idx) => `<button onclick="submitMCAnswer(${idx})" class="py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-brand-600 border border-slate-700 text-white font-bold text-sm transition">${opt}</button>`).join('')}
-            </div>
-          `}
-          <div id="arena-drill-feedback" class="h-8 text-sm font-semibold flex items-center justify-center"></div>
-        </div>
-      `;
-    }
-
-    function submitMCAnswer(optIndex) {
-      const cat = window.DM_DRILLS[currentDrillCategory];
-      const q = cat.questions[currentDrillIndex % cat.questions.length];
-      const chosen = q.options[optIndex];
-      const fb = document.getElementById('arena-drill-feedback');
-      if (chosen.trim().toLowerCase() === q.answer.trim().toLowerCase()) {
-        soundSuccess(); addXP(15);
-        fb.innerHTML = `<span class="text-emerald-400 font-bold">Richtig! ${q.explanation}</span>`;
-        setTimeout(() => { currentDrillIndex++; renderCurrentDrillQuestion(); }, 850);
-      } else {
-        soundError();
-        fb.innerHTML = `<span class="text-rose-400 font-bold">Falsch! ${q.explanation}</span>`;
-      }
-    }
-
-    function submitTypingAnswer() {
-      const cat = window.DM_DRILLS[currentDrillCategory];
-      const q = cat.questions[currentDrillIndex % cat.questions.length];
-      const val = document.getElementById('arena-typing-input')?.value.trim().toLowerCase() || '';
-      const fb = document.getElementById('arena-drill-feedback');
-      if (val === q.answer.trim().toLowerCase()) {
-        soundSuccess(); addXP(25);
-        fb.innerHTML = `<span class="text-emerald-400 font-bold">Exakt! (+25 XP)</span>`;
-        setTimeout(() => { currentDrillIndex++; renderCurrentDrillQuestion(); }, 900);
-      } else {
-        soundError();
-        fb.innerHTML = `<span class="text-rose-400 font-bold">Falsch (Erwartet: "${q.answer}").</span>`;
-      }
-    }
-
-    // 4. SATZBAU
-    let currentBuilderIndex = 0;
-    let builderSelectedTokens = [];
-
-    function initBuilderView() {
-      if (!window.DM_DRILLS || !window.DM_DRILLS.sentenceBuilder) return;
-      const list = window.DM_DRILLS.sentenceBuilder;
-      const cur = list[currentBuilderIndex % list.length];
-      builderSelectedTokens = [];
-      const rb = document.getElementById('builder-rule-badge');
-      if(rb) rb.innerText = cur.rule;
-      const bp = document.getElementById('builder-progress');
-      if(bp) bp.innerText = `${(currentBuilderIndex % list.length) + 1} / ${list.length}`;
-      const bm = document.getElementById('builder-meaning');
-      if(bm) bm.innerText = `"${cur.meaning}"`;
-      const fb = document.getElementById('builder-feedback');
-      if(fb) fb.className = 'hidden';
-      const bbc = document.getElementById('builder-btn-check');
-      if(bbc) bbc.classList.remove('hidden');
-      const bbn = document.getElementById('builder-btn-next');
-      if(bbn) bbn.classList.add('hidden');
-
-      renderBuilderDropzone();
-      const pool = document.getElementById('builder-pool');
-      if(!pool) return;
-      pool.innerHTML = '';
-      const shuffled = [...cur.tokens].sort(() => Math.random() - 0.5);
-      shuffled.forEach(tok => {
-        const btn = document.createElement('button');
-        btn.className = 'px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-sm transition';
-        btn.innerText = tok;
-        btn.onclick = () => { builderSelectedTokens.push(tok); btn.remove(); renderBuilderDropzone(); };
-        pool.appendChild(btn);
-      });
-    }
-
-    function renderBuilderDropzone() {
-      const dz = document.getElementById('builder-dropzone');
-      if(!dz) return;
-      dz.innerHTML = '';
-      if (builderSelectedTokens.length === 0) {
-        dz.innerHTML = '<span class="text-xs text-slate-500 italic">Klicke Kacheln aus dem Pool unten an...</span>';
         return;
       }
-      builderSelectedTokens.forEach((tok, i) => {
-        const chip = document.createElement('button');
-        chip.className = 'px-3 py-1.5 rounded-lg bg-cyan-600/30 border border-cyan-500/50 text-cyan-200 text-sm font-semibold flex items-center gap-1.5';
-        chip.innerHTML = `${tok}`;
-        chip.onclick = () => {
-          builderSelectedTokens.splice(i, 1);
-          renderBuilderDropzone();
-          const btn = document.createElement('button');
-          btn.className = 'px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-sm transition';
-          btn.innerText = tok;
-          btn.onclick = () => { builderSelectedTokens.push(tok); btn.remove(); renderBuilderDropzone(); };
-          const pool = document.getElementById('builder-pool');
-          if(pool) pool.appendChild(btn);
-        };
-        dz.appendChild(chip);
+
+      player.cardGroups.forEach((group, gIdx) => {
+        const ev = evaluateGroup(group, player.hasPureLife ? state.wildJokerCard : null);
+        const groupCol = document.createElement('div');
+        groupCol.className = "flex flex-col items-center shrink-0 bg-slate-900/60 p-1 rounded-xl border border-slate-800";
+
+        // Group Evaluation Tag
+        const tag = document.createElement('div');
+        tag.className = `text-[9px] font-black uppercase px-2 py-0.5 rounded-full mb-1 tracking-tighter ${
+          ev.type === 'pure' 
+            ? 'bg-emerald-950 text-emerald-300 border border-emerald-500/50' 
+            : ev.type === 'impure'
+            ? 'bg-blue-950 text-blue-300 border border-blue-500/50'
+            : ev.type === 'set'
+            ? 'bg-purple-950 text-purple-300 border border-purple-500/50'
+            : 'bg-rose-950/60 text-rose-300 border border-rose-800/40'
+        }`;
+        tag.textContent = ev.label;
+        groupCol.appendChild(tag);
+
+        // Card Cluster
+        const cluster = document.createElement('div');
+        cluster.className = "card-cluster";
+
+        group.forEach(card => {
+          const isSelected = state.selectedCardIds.has(card.id);
+          const sObj = SUITS.find(s => s.id === card.suit);
+          const isRed = sObj ? sObj.isRed : false;
+          const actsAsJoker = player.hasPureLife && isWildJoker(card, state.wildJokerCard);
+
+          const cardEl = document.createElement('div');
+          cardEl.className = `rummy-card cursor-pointer w-12 sm:w-14 h-18 sm:h-20 rounded-lg border shadow-md flex flex-col justify-between p-1 bg-white select-none ${
+            isSelected ? 'selected' : 'border-slate-300'
+          }`;
+
+          cardEl.innerHTML = `
+            <div class="flex items-center justify-between leading-none text-[11px] font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
+              <span>${card.isPrintedJoker ? '🃏' : card.rank}</span>
+              <span class="text-[10px]">${sObj ? sObj.symbol : ''}</span>
+            </div>
+            <div class="text-center font-black text-xl leading-none ${isRed ? 'text-red-600' : 'text-slate-900'}">
+              ${sObj ? sObj.symbol : '🃏'}
+            </div>
+            <div class="flex items-center justify-between leading-none text-[11px] font-black rotate-180 ${isRed ? 'text-red-600' : 'text-slate-900'}">
+              <span>${card.isPrintedJoker ? '🃏' : card.rank}</span>
+              <span class="text-[10px]">${sObj ? sObj.symbol : ''}</span>
+            </div>
+          `;
+
+          if (actsAsJoker) {
+            const jBadge = document.createElement('div');
+            jBadge.className = "absolute -top-1 -right-1 bg-amber-400 text-slate-950 font-black text-[7px] px-1 rounded-full shadow border border-amber-200";
+            jBadge.textContent = "JOKER";
+            cardEl.appendChild(jBadge);
+          }
+
+          // Card Click Action: Discard if in discard phase, otherwise select
+          cardEl.onclick = () => handleCardClick(card);
+          cluster.appendChild(cardEl);
+        });
+
+        groupCol.appendChild(cluster);
+        tray.appendChild(groupCol);
       });
     }
 
-    function resetBuilder() { initBuilderView(); }
+    // --- GAME ACTIONS ---
+    function handleDrawCard(source) {
+      const player = getCurrentPlayer();
+      if (!player) return;
 
-    function checkBuilder() {
-      const cur = window.DM_DRILLS.sentenceBuilder[currentBuilderIndex % window.DM_DRILLS.sentenceBuilder.length];
-      const fb = document.getElementById('builder-feedback');
-      if(!fb) return;
-      fb.classList.remove('hidden');
+      if (state.turnPhase !== 'draw') {
+        showToast('You already drew a card! Please discard 1 card to end your turn.', 'info');
+        return;
+      }
 
-      if (builderSelectedTokens.join(' ') === cur.solution.join(' ')) {
-        soundSuccess(); addXP(35);
-        fb.className = 'p-4 rounded-xl text-sm bg-emerald-950/60 border border-emerald-500/50 text-emerald-200';
-        fb.innerHTML = `<strong>Syntaktisch perfekt!</strong>`;
-        const bbc = document.getElementById('builder-btn-check');
-        if(bbc) bbc.classList.add('hidden');
-        const bbn = document.getElementById('builder-btn-next');
-        if(bbn) bbn.classList.remove('hidden');
+      sounds.playCard();
+      let drawn = null;
+      if (source === 'discard') {
+        if (state.openDeck.length === 0) return;
+        drawn = state.openDeck.pop();
       } else {
-        soundError();
-        fb.className = 'p-4 rounded-xl text-sm bg-rose-950/60 border border-rose-500/50 text-rose-200';
-        fb.innerHTML = `<strong>Wortstellungsfehler:</strong> Prüfe die Reihenfolge!`;
+        if (state.closedDeck.length === 0) {
+          // Reshuffle open discard
+          if (state.openDeck.length > 1) {
+            const top = state.openDeck.pop();
+            state.closedDeck = state.openDeck.sort(() => Math.random() - 0.5);
+            state.openDeck = [top];
+            drawn = state.closedDeck.pop();
+          } else {
+            showToast('Decks are exhausted!', 'error');
+            return;
+          }
+        } else {
+          drawn = state.closedDeck.pop();
+        }
+      }
+
+      if (!drawn) return;
+
+      // Add drawn card to first group
+      if (!player.cardGroups[0]) player.cardGroups[0] = [];
+      player.cardGroups[0].push(drawn);
+      player.cards.push(drawn);
+
+      state.turnPhase = 'discard';
+      state.hasDrawnThisTurn = true;
+      player.firstTurnPlayed = true;
+
+      renderTable();
+      showToast(`${player.name} drew a card. Now discard 1 card!`, 'info');
+    }
+
+    function handleCardClick(card) {
+      const player = getCurrentPlayer();
+      if (!player) return;
+
+      // If in discard phase, clicking a card will discard it
+      if (state.turnPhase === 'discard') {
+        handleDiscardCard(card);
+        return;
+      }
+
+      // If in draw phase, toggle selection for grouping
+      sounds.playCard();
+      if (state.selectedCardIds.has(card.id)) {
+        state.selectedCardIds.delete(card.id);
+      } else {
+        state.selectedCardIds.add(card.id);
+      }
+      renderTable();
+    }
+
+    function handleDiscardCard(card) {
+      sounds.playCard();
+      const player = getCurrentPlayer();
+
+      // Remove from player's groups
+      player.cardGroups = player.cardGroups.map(group => group.filter(c => c.id !== card.id)).filter(g => g.length > 0);
+      player.cards = player.cards.filter(c => c.id !== card.id);
+
+      // Add to open discard
+      state.openDeck.push(card);
+      state.selectedCardIds.clear();
+
+      advanceToNextPlayer();
+    }
+
+    function advanceToNextPlayer() {
+      // Find next active non-eliminated player
+      let nextIndex = (state.activePlayerIndex + 1) % state.players.length;
+      let count = 0;
+      while (state.players[nextIndex].eliminated && count < state.players.length) {
+        nextIndex = (nextIndex + 1) % state.players.length;
+        count++;
+      }
+
+      state.activePlayerIndex = nextIndex;
+      state.turnPhase = 'draw';
+      state.hasDrawnThisTurn = false;
+      state.selectedCardIds.clear();
+
+      renderTable();
+      showToast(`👉 ${getCurrentPlayer().name}'s Turn!`, 'info');
+    }
+
+    // --- FINISH SLOT DECLARATION ---
+    function handleFinishSlotClick() {
+      const player = getCurrentPlayer();
+      if (!player) return;
+
+      if (state.turnPhase !== 'discard') {
+        showToast('Draw your 14th card first before declaring!', 'info');
+        return;
+      }
+
+      // Total cards must be 14 (13 cards grouped + 1 card for finish slot)
+      const totalCards = player.cardGroups.reduce((sum, g) => sum + g.length, 0);
+      if (totalCards !== 14) {
+        showToast(`You must hold 14 cards (13 to arrange + 1 to finish). Current cards: ${totalCards}`, 'error');
+        return;
+      }
+
+      // Require 1 card to be selected as finish card
+      if (state.selectedCardIds.size !== 1) {
+        showToast('Tap exactly 1 card to discard into the Finish Slot, then click Finish again!', 'info');
+        return;
+      }
+
+      const finishCardId = Array.from(state.selectedCardIds)[0];
+      const finishCard = player.cards.find(c => c.id === finishCardId);
+
+      // Remove finish card temporarily to test 13-card declaration
+      const remainingGroups = player.cardGroups.map(group => group.filter(c => c.id !== finishCardId)).filter(g => g.length > 0);
+
+      // Validate 13-card hand
+      const deadwood = calculateHandDeadwood(remainingGroups, state.wildJokerCard);
+      let pureSeqCount = 0;
+      let totalSeqCount = 0;
+      let allValid = true;
+
+      remainingGroups.forEach(g => {
+        const ev = evaluateGroup(g, state.wildJokerCard);
+        if (ev.type === 'pure') {
+          pureSeqCount++;
+          totalSeqCount++;
+        } else if (ev.type === 'impure') {
+          totalSeqCount++;
+        } else if (ev.type === 'set') {
+          // valid set
+        } else {
+          allValid = false;
+        }
+      });
+
+      if (pureSeqCount >= 1 && totalSeqCount >= 2 && allValid && deadwood === 0) {
+        // VALID DECLARATION!
+        sounds.playVictory();
+        player.cards = player.cards.filter(c => c.id !== finishCardId);
+        player.cardGroups = remainingGroups;
+        state.openDeck.push(finishCard);
+
+        endRoundWithWinner(player);
+      } else {
+        // WRONG DECLARATION: 80 Penalty Points!
+        sounds.playCard();
+        showToast(`Wrong Declaration! Invalid hand. +80 points penalty.`, 'error');
+
+        player.cards = player.cards.filter(c => c.id !== finishCardId);
+        player.cardGroups = remainingGroups;
+        state.openDeck.push(finishCard);
+
+        // Apply 80 points penalty and advance
+        player.lastRoundScore = 80;
+        player.totalScore += 80;
+        if (player.totalScore >= 201) {
+          player.eliminated = true;
+          showToast(`🚨 ${player.name} reached ${player.totalScore} and is Eliminated!`, 'error');
+        }
+
+        advanceToNextPlayer();
       }
     }
 
-    function nextBuilder() { currentBuilderIndex++; initBuilderView(); }
+    // --- DROP ACTION (First 20 / Mid 40) ---
+    function handlePlayerDrop() {
+      const player = getCurrentPlayer();
+      if (!player) return;
 
-    // 5. RPG
-    function initRPGView() {
-      if (!window.DM_SCENARIOS) return;
-      const grid = document.getElementById('rpg-grid');
-      if(!grid) return;
-      grid.innerHTML = '';
-      window.DM_SCENARIOS.forEach(sc => {
-        const isDone = player.completedQuests.includes(sc.id);
-        const card = document.createElement('div');
-        card.className = 'glass-card p-4 rounded-2xl flex flex-col justify-between space-y-3';
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-2xl">${sc.icon}</span>
-              <span class="text-[10px] px-2 py-0.5 rounded font-mono font-bold ${isDone ? 'bg-emerald-500/20 text-emerald-300' : 'bg-slate-800 text-slate-400'}">${isDone ? 'MEISTER' : 'OFFEN'}</span>
-            </div>
-            <h4 class="font-bold text-white text-sm mb-1">${sc.title}</h4>
-            <p class="text-[11px] text-slate-400">Rolle: ${sc.npcRole}</p>
-          </div>
-          <button onclick="alert('Quest System aktiv')" class="w-full py-2 rounded-xl text-xs font-bold transition bg-brand-600 hover:bg-brand-500 text-white">Starten</button>
+      if (state.turnPhase !== 'draw') {
+        showToast('You can only drop before drawing a card!', 'error');
+        return;
+      }
+
+      sounds.playCard();
+      const dropPenalty = player.firstTurnPlayed ? 40 : 20;
+      player.lastRoundScore = dropPenalty;
+      player.totalScore += dropPenalty;
+
+      showToast(`${player.name} Dropped (${dropPenalty} pts penalty).`, 'info');
+
+      if (player.totalScore >= 201) {
+        player.eliminated = true;
+        showToast(`🚨 ${player.name} reached ${player.totalScore} and is Eliminated!`, 'error');
+      }
+
+      // Check remaining active players in this tournament
+      const activeTournamentPlayers = state.players.filter(p => !p.eliminated);
+      if (activeTournamentPlayers.length <= 1) {
+        announceGrandChampion(activeTournamentPlayers[0] || player);
+        return;
+      }
+
+      advanceToNextPlayer();
+    }
+
+    // --- ROUND RESOLUTION & 201 ELIMINATION ---
+    function endRoundWithWinner(winner) {
+      winner.lastRoundScore = 0; // 0 points for winner
+
+      // Calculate penalties for other players
+      const breakdownEl = document.getElementById('round-score-breakdown');
+      breakdownEl.innerHTML = '';
+
+      state.players.forEach(p => {
+        if (!p.eliminated) {
+          if (p.id === winner.id) {
+            p.lastRoundScore = 0;
+          } else {
+            const lossPts = calculateHandDeadwood(p.cardGroups, p.hasPureLife ? state.wildJokerCard : null);
+            p.lastRoundScore = lossPts;
+            p.totalScore += lossPts;
+          }
+
+          if (p.totalScore >= 201) {
+            p.eliminated = true;
+          }
+
+          const row = document.createElement('div');
+          row.className = "flex items-center justify-between border-b border-slate-800 pb-1";
+          row.innerHTML = `
+            <span class="font-bold ${p.id === winner.id ? 'text-emerald-400' : 'text-slate-200'}">
+              ${p.avatar} ${p.name} ${p.id === winner.id ? '👑 (Winner)' : ''}
+            </span>
+            <span class="font-mono ${p.eliminated ? 'text-rose-400 font-black' : 'text-amber-300'}">
+              +${p.lastRoundScore} pts (Total: ${p.totalScore}) ${p.eliminated ? '• ELIMINATED' : ''}
+            </span>
+          `;
+          breakdownEl.appendChild(row);
+        }
+      });
+
+      document.getElementById('result-title').textContent = `Round ${state.roundNumber} Finished!`;
+      document.getElementById('result-desc').textContent = `${winner.name} declared with a 0-point Rummy hand!`;
+      document.getElementById('round-result-modal').classList.remove('hidden');
+    }
+
+    function proceedToNextRound() {
+      document.getElementById('round-result-modal').classList.add('hidden');
+
+      // Check if only 1 survivor remains
+      const survivors = state.players.filter(p => !p.eliminated);
+      if (survivors.length <= 1) {
+        announceGrandChampion(survivors[0] || state.players[0]);
+        return;
+      }
+
+      state.roundNumber++;
+      dealNewRound();
+    }
+
+    function announceGrandChampion(champion) {
+      sounds.playVictory();
+      document.getElementById('round-result-modal').classList.add('hidden');
+      document.getElementById('champion-name').textContent = `${champion.avatar} ${champion.name} (${champion.totalScore} pts)`;
+      document.getElementById('champion-modal').classList.remove('hidden');
+    }
+
+    function resetTournament() {
+      document.getElementById('champion-modal').classList.add('hidden');
+      document.getElementById('game-screen').classList.add('hidden');
+      document.getElementById('lobby-screen').classList.remove('hidden');
+    }
+
+    // --- GROUP & SORT ACTIONS ---
+    function groupSelectedCards() {
+      const player = getCurrentPlayer();
+      if (!player) return;
+
+      if (state.selectedCardIds.size < 2) {
+        showToast('Select at least 2 cards to form a group.', 'info');
+        return;
+      }
+
+      sounds.playCard();
+      const selected = [];
+      const newGroups = [];
+
+      player.cardGroups.forEach(group => {
+        const remaining = [];
+        group.forEach(card => {
+          if (state.selectedCardIds.has(card.id)) {
+            selected.push(card);
+          } else {
+            remaining.push(card);
+          }
+        });
+        if (remaining.length > 0) newGroups.push(remaining);
+      });
+
+      newGroups.push(selected);
+      player.cardGroups = newGroups;
+      state.selectedCardIds.clear();
+
+      renderTable();
+      showToast('Cards grouped!', 'success');
+    }
+
+    function autoSortHand() {
+      const player = getCurrentPlayer();
+      if (!player) return;
+      sounds.playCard();
+      player.cardGroups = autoGroupCards(player.cards, player.hasPureLife ? state.wildJokerCard : null);
+      state.selectedCardIds.clear();
+      renderTable();
+      showToast('Hand automatically organized by suit!', 'success');
+    }
+
+    function toggleCardPrivacy() {
+      state.cardsHidden = !state.cardsHidden;
+      document.getElementById('privacy-icon').textContent = state.cardsHidden ? '🙈' : '👁️';
+      document.getElementById('privacy-label').textContent = state.cardsHidden ? 'Show Cards' : 'Hide Cards';
+      renderTable();
+    }
+
+    // --- LEADERBOARD & MODALS ---
+    function openScoreModal() {
+      const tbody = document.getElementById('scores-table-body');
+      tbody.innerHTML = '';
+
+      const sorted = [...state.players].sort((a, b) => a.totalScore - b.totalScore);
+      sorted.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.className = "border-b border-slate-800 text-xs";
+        tr.innerHTML = `
+          <td class="py-2 px-2 font-bold flex items-center space-x-1.5">
+            <span>${p.avatar}</span>
+            <span class="${p.eliminated ? 'line-through text-slate-500' : 'text-slate-100'}">${p.name}</span>
+          </td>
+          <td class="py-2 px-2 text-center text-slate-400">${state.roundNumber}</td>
+          <td class="py-2 px-2 text-center font-mono text-amber-400">+${p.lastRoundScore}</td>
+          <td class="py-2 px-2 text-right font-black font-mono ${p.totalScore >= 180 ? 'text-rose-400' : 'text-emerald-400'}">${p.totalScore}</td>
+          <td class="py-2 px-2 text-right">
+            ${p.eliminated 
+              ? '<span class="bg-rose-950 text-rose-400 px-1.5 py-0.5 rounded text-[10px] font-bold">OUT (201+)</span>' 
+              : '<span class="bg-emerald-950 text-emerald-300 px-1.5 py-0.5 rounded text-[10px] font-bold">ACTIVE</span>'}
+          </td>
         `;
-        grid.appendChild(card);
+        tbody.appendChild(tr);
       });
-      const rdc = document.getElementById('rpg-done-counter');
-      if(rdc) rdc.innerText = player.completedQuests.length;
+
+      document.getElementById('score-modal').classList.remove('hidden');
+    }
+    function closeScoreModal() {
+      document.getElementById('score-modal').classList.add('hidden');
     }
 
-    // 6. VOCABULARY
-    function initVocabView() {
-      if (!window.DM_VOCAB) return;
-      const grid = document.getElementById('vocab-cards-grid');
-      if(!grid) return;
-      grid.innerHTML = '';
-      window.DM_VOCAB.slice(0, 40).forEach(item => {
-        const badgeClass = item.gender === 'der' ? 'badge-der' : item.gender === 'die' ? 'badge-die' : 'badge-das';
-        const card = document.createElement('div');
-        card.className = 'glass-card p-3.5 rounded-xl flex flex-col justify-between space-y-2';
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between mb-1.5">
-              <span class="text-[10px] px-2 py-0.5 rounded font-bold ${badgeClass}">${item.article || item.gender || 'Wort'}</span>
-              <button onclick="speakGerman('${item.de}')" class="p-1 text-slate-400 hover:text-cyan-300"><i data-lucide="volume-2" class="w-3.5 h-3.5"></i></button>
-            </div>
-            <h4 class="font-bold text-white text-sm">${item.de}</h4>
-            <p class="text-[11px] text-slate-400">${item.en}</p>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-      lucide.createIcons();
+    function openRulesModal() {
+      document.getElementById('rules-modal').classList.remove('hidden');
     }
-    function filterVocab() {}
-
-    // 7. EXAM
-    function initExamView() {
-      if (!window.DM_EXAM) return;
-      const container = document.getElementById('exam-questions-list');
-      if(!container) return;
-      container.innerHTML = '';
-      window.DM_EXAM.slice(0, 5).forEach((q, idx) => {
-        container.innerHTML += `<div class="glass-panel p-5 rounded-2xl space-y-3"><p class="text-sm font-semibold text-white">${q.question}</p></div>`;
-      });
+    function closeRulesModal() {
+      document.getElementById('rules-modal').classList.add('hidden');
     }
-    function resetExam() {}
-    function updateWordCount() {}
-    function submitExam() {}
 
-    // BOOTSTRAPPER
-    window.addEventListener('DOMContentLoaded', () => {
-      const sx = document.getElementById('stat-xp');
-      if(sx) sx.innerText = player.xp;
-      const ss = document.getElementById('stat-streak');
-      if(ss) ss.innerText = player.streak;
-      
-      checkLoadedModules();
-      initKursbuchView();
-      initAtlasView();
-      initTablesView();
-      initArenaView();
-      initBuilderView();
-      initRPGView();
-      initVocabView();
-      initExamView();
-      lucide.createIcons();
-    });
+    // --- TOAST HELPER ---
+    let toastTimeout = null;
+    function showToast(msg, type = 'info') {
+      const container = document.getElementById('toast-container');
+      const box = document.getElementById('toast-box');
+      const text = document.getElementById('toast-text');
+      const icon = document.getElementById('toast-icon');
+
+      text.textContent = msg;
+      icon.textContent = type === 'error' ? '⚠️' : type === 'success' ? '🎉' : '👉';
+
+      container.classList.remove('hidden');
+      box.classList.remove('toast-animate');
+      void box.offsetWidth; // Trigger reflow
+      box.classList.add('toast-animate');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        container.classList.add('hidden');
+      }, 2600);
+    }
   </script>
 </body>
 </html>
