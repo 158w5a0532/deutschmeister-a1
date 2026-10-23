@@ -6,7 +6,7 @@
   <title>201 Pool Indian Rummy with Friends</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- PeerJS (Free WebRTC P2P Broker) -->
+  <!-- PeerJS WebRTC P2P Broker -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
 
   <style>
@@ -26,16 +26,14 @@
       touch-action: manipulation;
     }
 
-    /* Luxury Felt Gradient */
     .table-felt {
       background: radial-gradient(circle at 50% 45%, #065f46 0%, #064e3b 50%, #022c22 88%, #011b15 100%);
       box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(251, 191, 36, 0.15);
     }
 
-    /* Natural Playing Card */
     .rummy-card {
       transition: transform 0.12s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.12s ease;
-      touch-action: none; /* Required for direct touch drag without screen scroll */
+      touch-action: none;
     }
     .rummy-card.raised {
       transform: translateY(-24px) !important;
@@ -48,7 +46,6 @@
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 0 0 3px #f59e0b !important;
     }
 
-    /* Fluid overlapping horizontal hand rack */
     .card-rack-slot:not(:first-child) {
       margin-left: -22px;
     }
@@ -63,14 +60,12 @@
       }
     }
 
-    /* Drag target highlights */
     .drop-zone-highlight {
       transform: scale(1.08) !important;
       box-shadow: 0 0 28px rgba(245, 158, 11, 0.9) !important;
       border-color: #fbbf24 !important;
     }
 
-    /* Floating emoji animation */
     @keyframes floatEmoji {
       0% { transform: translateY(0) scale(0.6); opacity: 0; }
       20% { transform: translateY(-12px) scale(1.3); opacity: 1; }
@@ -82,20 +77,13 @@
       pointer-events: none;
     }
 
-    /* Turn Progress Timer Bar */
-    @keyframes turnProgress {
-      from { width: 100%; }
-      to { width: 0%; }
-    }
-
-    /* Hide scrollbars */
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
 <body class="text-slate-100 flex flex-col h-full w-full">
 
-  <!-- ================= TOP COMPACT NAVBAR ================= -->
+  <!-- ================= TOP NAVBAR ================= -->
   <header class="h-11 sm:h-12 bg-slate-950/95 border-b border-amber-500/20 px-2 sm:px-3 flex items-center justify-between z-40 shrink-0">
     <div class="flex items-center space-x-2">
       <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-600 via-yellow-500 to-amber-300 flex items-center justify-center text-slate-950 font-black text-xs shadow">
@@ -106,7 +94,7 @@
           <h1 class="text-xs sm:text-sm font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-500 leading-tight">
             201 POOL RUMMY
           </h1>
-          <span id="room-code-tag" class="hidden text-[10px] bg-slate-900 border border-amber-400/30 text-amber-300 font-mono font-bold px-1.5 py-0.2 rounded">
+          <span id="room-code-tag" class="hidden text-[10px] bg-slate-900 border border-amber-400/30 text-amber-300 font-mono font-bold px-1.5 rounded">
             CODE
           </span>
         </div>
@@ -116,9 +104,7 @@
       </div>
     </div>
 
-    <!-- Center/Right Action Bar -->
     <div class="flex items-center space-x-1 sm:space-x-1.5">
-      <!-- Quick Table Reactions Bar -->
       <div id="emoji-reaction-bar" class="hidden sm:flex items-center space-x-1 bg-slate-900/90 border border-slate-800 rounded-lg px-1 py-0.5">
         <button onclick="sendEmojiReaction('😂')" class="hover:scale-125 transition text-xs">😂</button>
         <button onclick="sendEmojiReaction('🤦‍♂️')" class="hover:scale-125 transition text-xs">🤦‍♂️</button>
@@ -126,19 +112,16 @@
         <button onclick="sendEmojiReaction('💣')" class="hover:scale-125 transition text-xs">💣</button>
       </div>
 
-      <!-- Quick Drop Button (Visible in Draw phase) -->
       <button id="quick-drop-btn" onclick="triggerDrop()" class="px-2 py-1 rounded-lg bg-rose-950 hover:bg-rose-900 border border-rose-500/60 text-rose-200 font-black text-[11px] shadow transition hidden items-center space-x-1">
         <span>🏳️</span>
         <span id="quick-drop-label">Drop (20)</span>
       </button>
 
-      <!-- 201 Scoreboard Modal Trigger -->
       <button onclick="openScoreboardModal()" class="px-2 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-[11px] font-bold text-amber-300 flex items-center space-x-1 shadow">
         <span>🏆</span>
         <span>Scores</span>
       </button>
 
-      <!-- Rules Guide -->
       <button onclick="openRulesModal()" class="p-1 sm:px-2 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 text-xs font-semibold">
         📖
       </button>
@@ -153,7 +136,7 @@
     </div>
   </div>
 
-  <!-- ================= SCREEN 1: HOME & CREATE / JOIN ROOM ================= -->
+  <!-- ================= SCREEN 1: HOME (CREATE OR JOIN ROOM) ================= -->
   <section id="home-view" class="flex-1 flex flex-col items-center justify-center p-3 sm:p-4 overflow-y-auto z-20">
     <div class="w-full max-w-sm sm:max-w-md bg-slate-900/95 border border-amber-500/30 rounded-3xl p-5 sm:p-6 shadow-2xl backdrop-blur-md space-y-4">
       <div class="text-center">
@@ -171,16 +154,14 @@
         </p>
       </div>
 
-      <!-- Player Name Input -->
       <div>
         <label class="block text-xs font-bold text-amber-300 uppercase tracking-wider mb-1">
           Your Nickname
         </label>
-        <input type="text" id="user-nickname-input" maxlength="14" placeholder="Enter your name (e.g., Tim)" 
+        <input type="text" id="user-nickname-input" maxlength="14" placeholder="Enter your name (e.g. Bhavani)" 
           class="w-full bg-slate-950 border border-slate-700 focus:border-amber-400 rounded-xl px-3.5 py-2.5 text-sm text-amber-200 font-bold outline-none transition">
       </div>
 
-      <!-- Tab Buttons: Host vs Join -->
       <div class="grid grid-cols-2 gap-2 p-1 bg-slate-950 rounded-xl border border-slate-800">
         <button id="tab-btn-create" onclick="setEntryTab('create')" class="py-2 rounded-lg font-black text-xs transition bg-amber-500 text-slate-950 shadow">
           Create Room (Host)
@@ -190,7 +171,6 @@
         </button>
       </div>
 
-      <!-- Create Room Panel -->
       <div id="panel-create-room" class="space-y-3">
         <div>
           <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
@@ -211,7 +191,6 @@
         </button>
       </div>
 
-      <!-- Join Room Panel -->
       <div id="panel-join-room" class="space-y-3 hidden">
         <div>
           <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
@@ -226,7 +205,6 @@
         </button>
       </div>
 
-      <!-- Solo / Practice Mode Button for Offline Testing -->
       <div class="pt-2 border-t border-slate-800">
         <button onclick="startPracticeSoloMode()" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-amber-300/90 font-bold rounded-xl text-xs flex items-center justify-center space-x-1 transition">
           <span>🤖 Solo Practice vs Smart AI (Instant Test)</span>
@@ -239,19 +217,16 @@
   <section id="lobby-view" class="flex-1 flex flex-col items-center justify-center p-3 sm:p-4 overflow-y-auto z-20 hidden">
     <div class="w-full max-w-sm sm:max-w-md bg-slate-900/95 border border-amber-500/30 rounded-3xl p-5 sm:p-6 shadow-2xl backdrop-blur-md space-y-4">
       
-      <!-- Room Code Banner -->
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <div>
           <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Invite Friends With Code</span>
           <span id="lobby-display-code" class="font-mono text-2xl font-black text-amber-300 tracking-wider">----</span>
         </div>
         <div class="flex items-center space-x-2">
-          <!-- WhatsApp 1-tap share -->
           <button onclick="shareToWhatsApp()" class="px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center space-x-1 shadow">
             <span>📲</span>
             <span class="hidden sm:inline">WhatsApp</span>
           </button>
-          <!-- Copy Link -->
           <button onclick="copyLobbyLink()" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 font-bold text-xs border border-amber-500/30">
             <span>📋</span>
             <span id="copy-btn-text">Copy Link</span>
@@ -259,7 +234,6 @@
         </div>
       </div>
 
-      <!-- Connected Players Grid -->
       <div>
         <div class="flex justify-between items-center mb-2">
           <span class="text-xs font-bold uppercase text-slate-400">
@@ -271,24 +245,16 @@
           </span>
         </div>
 
-        <div id="lobby-roster-list" class="space-y-2 max-h-56 overflow-y-auto pr-1">
-          <!-- Injected via JS -->
-        </div>
+        <div id="lobby-roster-list" class="space-y-2 max-h-56 overflow-y-auto pr-1"></div>
       </div>
 
-      <!-- Action Footer -->
       <div id="lobby-host-controls" class="space-y-2 pt-2 border-t border-slate-800">
-        <!-- Force Start button exclusively for Host -->
         <button id="force-start-btn" onclick="hostStartMatch(true)" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-xl flex items-center justify-center space-x-2 transition transform active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed">
           <span>👑 Force Start Game Now</span>
           <span id="force-start-sub" class="text-xs font-semibold">(Requires ≥ 2 players)</span>
         </button>
-        <p class="text-[10px] text-center text-slate-400">
-          * Host can Force Start anytime once at least 2 friends are seated.
-        </p>
       </div>
 
-      <!-- Guest Waiting Notice -->
       <div id="lobby-guest-notice" class="hidden text-center py-3 bg-slate-950 rounded-xl border border-slate-800">
         <span class="text-amber-300 text-sm font-bold block animate-pulse">⏳ Waiting for Host to start the deal...</span>
         <span class="text-[11px] text-slate-400">Cards will be dealt automatically!</span>
@@ -300,57 +266,29 @@
     </div>
   </section>
 
-  <!-- ================= SCREEN 3: LATE JOINER BLOCKED SCREEN ================= -->
-  <section id="late-block-view" class="flex-1 flex flex-col items-center justify-center p-4 z-20 hidden">
-    <div class="w-full max-w-sm bg-slate-900 border-2 border-amber-500/50 rounded-3xl p-6 text-center space-y-4 shadow-2xl">
-      <div class="text-5xl">🔒</div>
-      <h2 class="text-xl font-black text-amber-300">Game in Progress</h2>
-      <p class="text-xs text-slate-300 leading-relaxed">
-        The host has already started this match with the players who were ready.
-      </p>
-      <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-[11px] text-amber-200">
-        Please ask your friends on WhatsApp to restart after this hand or wait for the next game!
-      </div>
-      <button onclick="leaveLobbyAndReset()" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-amber-300 font-bold rounded-xl text-xs">
-        Return to Home
-      </button>
-    </div>
-  </section>
-
-  <!-- ================= SCREEN 4: CASINO TABLE & NATURAL HAND RACK ================= -->
+  <!-- ================= SCREEN 3: GAME TABLE ================= -->
   <section id="game-view" class="flex-1 flex flex-col h-full w-full relative hidden overflow-hidden">
-    
-    <!-- LUXURY FELT BOARD -->
     <div class="flex-1 flex flex-col justify-between m-1 sm:m-2 rounded-2xl table-felt border-4 sm:border-[6px] border-[#3e1e0d] relative overflow-hidden shadow-2xl p-1.5 sm:p-2.5">
       
-      <!-- TOP: ACTIVE SEATED OPPONENTS STRIP -->
-      <div id="table-players-strip" class="flex items-center justify-center space-x-1.5 sm:space-x-2 overflow-x-auto no-scrollbar py-0.5 shrink-0 z-10">
-        <!-- Rendered dynamically -->
-      </div>
+      <div id="table-players-strip" class="flex items-center justify-center space-x-1.5 sm:space-x-2 overflow-x-auto no-scrollbar py-0.5 shrink-0 z-10"></div>
 
-      <!-- CENTER: CLEAN TABLE FELT (DECKS, JOKER VAULT, DISCARD PILE, FINISH SLOT) -->
       <div class="flex flex-col items-center justify-center my-auto z-10 py-1">
-        
-        <!-- Turn Status Cue & 35s Timer Bar -->
         <div class="flex flex-col items-center mb-1.5 w-full max-w-xs">
           <div id="turn-cue-pill" class="px-3 py-0.5 rounded-full bg-slate-950/85 border border-amber-500/40 text-[11px] sm:text-xs font-bold text-amber-200 text-center shadow backdrop-blur flex items-center space-x-1.5">
             <span id="turn-cue-icon">👉</span>
             <span id="turn-cue-text">Waiting...</span>
             <span id="turn-timer-text" class="text-amber-400 font-mono font-black ml-1 text-xs">35s</span>
           </div>
-          <!-- 35s Progress Bar -->
           <div class="w-44 h-1 bg-slate-900 rounded-full mt-1 overflow-hidden border border-slate-700">
             <div id="turn-timer-bar" class="h-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-1000" style="width: 100%;"></div>
           </div>
         </div>
 
-        <!-- Four Central Table Targets -->
         <div class="flex items-center justify-center space-x-2 sm:space-x-5 md:space-x-8">
-          
-          <!-- 1. CLOSED DRAW DECK -->
+          <!-- 1. Closed Draw Deck -->
           <div class="flex flex-col items-center">
             <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Closed Deck</span>
-            <div id="target-closed-deck" onclick="userDrawCard('closed')" class="rummy-card cursor-pointer w-13 w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-400/50 bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-900 shadow-xl flex flex-col items-center justify-center relative hover:scale-105">
+            <div id="target-closed-deck" onclick="userDrawCard('closed')" class="rummy-card cursor-pointer w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-400/50 bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-900 shadow-xl flex flex-col items-center justify-center relative hover:scale-105">
               <span class="text-base sm:text-xl">✨</span>
               <span class="text-[9px] font-black uppercase text-amber-300 mt-0.5">DRAW</span>
               <span id="closed-deck-count" class="absolute -top-1.5 -right-1.5 bg-amber-500 text-slate-950 font-black text-[9px] px-1.5 rounded-full shadow">
@@ -359,81 +297,64 @@
             </div>
           </div>
 
-          <!-- 2. CLOSED JOKER VAULT (Strictly unlocks ONLY when player forms Pure Life) -->
+          <!-- 2. Closed Joker Vault -->
           <div class="flex flex-col items-center">
             <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Wild Joker</span>
-            <div id="target-joker-vault" class="w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 flex flex-col items-center justify-center shadow-xl relative transition-all">
-              <!-- Rendered via JS based on player Pure Life -->
-            </div>
+            <div id="target-joker-vault" class="w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 flex flex-col items-center justify-center shadow-xl relative transition-all"></div>
           </div>
 
-          <!-- 3. OPEN DISCARD PILE (Accepts finger drag drop or tap) -->
+          <!-- 3. Discard Pile -->
           <div class="flex flex-col items-center relative">
             <div class="flex items-center space-x-1 mb-0.5">
               <span class="text-[9px] font-black uppercase tracking-wider text-amber-300">Discard</span>
-              <button onclick="toggleDiscardPeek()" class="text-[9px] text-amber-400 underline font-bold" title="Peek last 3 discards">Peek</button>
+              <button onclick="toggleDiscardPeek()" class="text-[9px] text-amber-400 underline font-bold">Peek</button>
             </div>
-            <div id="target-discard-pile" onclick="handleDiscardPileTap()" class="w-14 sm:w-16 h-20 sm:h-24 rounded-lg flex items-center justify-center cursor-pointer transition-all border-2 border-dashed border-emerald-500/50 relative">
-              <!-- Top discard rendered via JS -->
-            </div>
+            <div id="target-discard-pile" onclick="handleDiscardPileTap()" class="w-14 sm:w-16 h-20 sm:h-24 rounded-lg flex items-center justify-center cursor-pointer transition-all border-2 border-dashed border-emerald-500/50 relative"></div>
 
-            <!-- Discard Pile Peek Drawer (Last 3 discards) -->
-            <div id="discard-peek-drawer" class="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-slate-950/95 border border-amber-500/40 rounded-xl p-1.5 shadow-2xl flex items-center space-x-1.5 z-40 hidden">
-              <!-- Rendered via JS -->
-            </div>
+            <div id="discard-peek-drawer" class="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-slate-950/95 border border-amber-500/40 rounded-xl p-1.5 shadow-2xl flex items-center space-x-1.5 z-40 hidden"></div>
           </div>
 
-          <!-- 4. FINISH SLOT (Direct finger drag drop or tap to declare) -->
+          <!-- 4. Finish Slot -->
           <div class="flex flex-col items-center">
             <span class="text-[9px] font-black uppercase tracking-wider text-amber-300 mb-0.5">Finish Slot</span>
             <div id="target-finish-slot" onclick="handleFinishSlotTap()" class="w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-dashed border-amber-400/70 bg-amber-950/40 hover:bg-amber-950/70 transition cursor-pointer flex flex-col items-center justify-center p-1 text-center shadow group">
               <span class="text-amber-400 text-base group-hover:scale-110 transition-transform">⭐</span>
-              <span class="text-[9px] font-black uppercase text-amber-300 leading-tight mt-0.5">FINISH / SHOW</span>
+              <span class="text-[9px] font-black uppercase text-amber-300 leading-tight mt-0.5">FINISH</span>
             </div>
           </div>
-
         </div>
 
         <p id="table-touch-cue" class="text-[10px] sm:text-xs text-amber-300/80 mt-1.5 font-medium">
-          Drag card up to Discard Pile, or tap card to discard
+          Slide cards with finger to reorder • Drag up to Discard
         </p>
       </div>
 
-      <!-- BOTTOM: NATURAL HAND TRAY (CLEAN TOUCH FINGER DRAG RACK) -->
+      <!-- Natural Touch Hand Tray -->
       <div class="z-20 w-full flex flex-col bg-slate-950/90 border border-amber-500/30 rounded-2xl p-2 sm:p-2.5 backdrop-blur-md shadow-2xl shrink-0">
-        
-        <!-- Clean Status Bar -->
         <div class="flex items-center justify-between pb-1 text-[10px] sm:text-xs">
-          <!-- Pure Life Status Tag -->
           <div class="flex items-center space-x-1.5">
             <div id="hand-pure-indicator" class="px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-rose-950 text-rose-300 border border-rose-700/50">
               <span id="pure-icon">🔒</span>
               <span id="pure-text">Pure Life Locked</span>
             </div>
-            <!-- Auto Sort Button -->
             <button onclick="userAutoSortHand()" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-300 font-bold flex items-center space-x-1 shadow">
               <span>🃏</span>
               <span>Auto Sort</span>
             </button>
           </div>
 
-          <!-- Deadwood Penalty Points -->
           <div class="text-slate-300 font-bold">
             Penalty: <span id="hand-deadwood-points" class="text-amber-400 font-black">80</span> pts
           </div>
         </div>
 
-        <!-- The Fluid Touch Horizontal Hand Container -->
-        <div id="hand-cards-rack" class="flex items-end justify-center overflow-x-auto no-scrollbar pt-6 pb-2 min-h-[96px] sm:min-h-[110px] w-full relative">
-          <!-- Cards rendered and reordered smoothly via Touch/Pointer Events -->
-        </div>
-
+        <div id="hand-cards-rack" class="flex items-end justify-center overflow-x-auto no-scrollbar pt-6 pb-2 min-h-[96px] sm:min-h-[110px] w-full relative"></div>
       </div>
 
     </div>
   </section>
 
-  <!-- ================= MODAL: 201 POOL LEADERBOARD ================= -->
+  <!-- ================= MODAL: 201 SCOREBOARD ================= -->
   <div id="modal-scoreboard" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 hidden">
     <div class="w-full max-w-md bg-slate-900 border border-amber-500/40 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
       <div class="flex items-center justify-between border-b border-slate-800 pb-2">
@@ -457,9 +378,7 @@
               <th class="py-1.5 px-2 text-right">Status</th>
             </tr>
           </thead>
-          <tbody id="scoreboard-table-body">
-            <!-- Dynamic rows -->
-          </tbody>
+          <tbody id="scoreboard-table-body"></tbody>
         </table>
       </div>
 
@@ -469,48 +388,7 @@
     </div>
   </div>
 
-  <!-- ================= MODAL: ROUND RESULTS ================= -->
-  <div id="modal-round-summary" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 hidden">
-    <div class="w-full max-w-md bg-slate-900 border-2 border-amber-500 rounded-3xl p-5 shadow-2xl space-y-4 text-center">
-      <div class="text-3xl">🎉</div>
-      <h3 id="round-winner-heading" class="text-lg sm:text-xl font-black text-amber-300">Round Won!</h3>
-      <p id="round-winner-sub" class="text-xs text-slate-300">
-        Valid Rummy Declaration with 0 penalty points!
-      </p>
-
-      <div id="round-scores-list" class="bg-slate-950 rounded-2xl p-3 border border-slate-800 text-left text-xs max-h-48 overflow-y-auto space-y-1.5">
-        <!-- Filled via JS -->
-      </div>
-
-      <!-- Only Host can trigger Next Round -->
-      <button id="btn-next-round" onclick="hostNextRoundDeal()" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-lg">
-        Deal Next Round →
-      </button>
-      <div id="guest-next-round-wait" class="text-xs text-slate-400 hidden animate-pulse">
-        Waiting for host to deal next round...
-      </div>
-    </div>
-  </div>
-
-  <!-- ================= MODAL: GRAND CHAMPION ================= -->
-  <div id="modal-grand-champion" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
-    <div class="w-full max-w-sm bg-gradient-to-b from-amber-950/80 to-slate-950 border-2 border-amber-400 rounded-3xl p-6 text-center space-y-4 shadow-2xl">
-      <div class="text-5xl animate-bounce">👑</div>
-      <h2 class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-400">
-        GRAND CHAMPION!
-      </h2>
-      <p id="champion-player-text" class="text-xl font-black text-white">Tim</p>
-      <p class="text-xs text-slate-300">
-        All other players crossed 201 points and were eliminated!
-      </p>
-
-      <button onclick="leaveLobbyAndReset()" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-xl">
-        Return to Main Menu
-      </button>
-    </div>
-  </div>
-
-  <!-- ================= MODAL: RULES GUIDE ================= -->
+  <!-- ================= MODAL: RULES ================= -->
   <div id="modal-rules" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 hidden">
     <div class="w-full max-w-md bg-slate-900 border border-slate-700 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-3 text-xs">
       <div class="flex items-center justify-between border-b border-slate-800 pb-2">
@@ -519,11 +397,11 @@
       </div>
       <div class="space-y-2 text-slate-300 max-h-64 overflow-y-auto pr-1">
         <p><b class="text-amber-300">Pure Life (First Sequence):</b> At least one sequence of 3+ consecutive cards of the same suit <b>without jokers</b>.</p>
-        <p><b class="text-amber-300">Closed Wild Joker Vault:</b> The cut Wild Joker is locked in the Vault. It only unlocks and reveals itself when your hand forms a Pure Life!</p>
-        <p><b class="text-amber-300">Finger Drag Controls:</b> Slide cards left/right with your fingers to reorder them naturally. Drag a card upwards to the Discard Pile to discard, or tap a card to see its discard chip.</p>
-        <p><b class="text-amber-300">First Drop (20 pts):</b> Dropping before drawing on your first turn.</p>
-        <p><b class="text-amber-300">Middle Drop (40 pts):</b> Dropping before drawing on subsequent turns.</p>
-        <p><b class="text-amber-300">Wrong Show (80 pts):</b> Declaring without a valid Pure Sequence or invalid melds.</p>
+        <p><b class="text-amber-300">Closed Wild Joker Vault:</b> The cut Wild Joker is locked in the Vault. It only unlocks when your hand forms a Pure Life!</p>
+        <p><b class="text-amber-300">Finger Drag Controls:</b> Slide cards left/right with your fingers to reorder them naturally. Drag a card upwards to the Discard Pile to discard, or tap a card to discard.</p>
+        <p><b class="text-amber-300">First Drop:</b> 20 points (before drawing on your first turn).</p>
+        <p><b class="text-amber-300">Middle Drop:</b> 40 points (before drawing on subsequent turns).</p>
+        <p><b class="text-amber-300">Wrong Show:</b> 80 points penalty.</p>
         <p><b class="text-amber-300">201 Elimination:</b> Any player reaching or exceeding 201 cumulative points is eliminated.</p>
       </div>
       <button onclick="closeRulesModal()" class="w-full py-2 bg-slate-800 text-slate-200 font-bold rounded-lg text-xs">
@@ -532,104 +410,19 @@
     </div>
   </div>
 
-  <!-- ================= APPLICATION ENGINE ================= -->
+  <!-- ================= APPLICATION SCRIPT ================= -->
   <script>
-    // --- SUITS & CARDS DEFINITION ---
     const SUITS = [
-      { id: 'S', symbol: '♠', color: 'text-slate-900', isRed: false, order: 0 },
-      { id: 'H', symbol: '♥', color: 'text-red-600', isRed: true, order: 1 },
-      { id: 'C', symbol: '♣', color: 'text-emerald-900', isRed: false, order: 2 },
-      { id: 'D', symbol: '♦', color: 'text-rose-500', isRed: true, order: 3 }
+      { id: 'S', symbol: '♠', isRed: false },
+      { id: 'H', symbol: '♥', isRed: true },
+      { id: 'C', symbol: '♣', isRed: false },
+      { id: 'D', symbol: '♦', isRed: true }
     ];
     const RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     const RANK_VALUES = { 'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 11, 'Q': 12, 'K': 13 };
     const CARD_POINTS = { 'A': 10, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10, 'JOKER': 0 };
     const AVATARS = ['🦊', '🐯', '🦅', '🦁', '🐼', '🦄', '🐬'];
 
-    // --- AUDIO SYNTHESIZER (Web Audio API) ---
-    class AudioEngine {
-      constructor() { this.ctx = null; }
-      init() {
-        if (!this.ctx) {
-          const AudioContext = window.AudioContext || window.webkitAudioContext;
-          if (AudioContext) this.ctx = new AudioContext();
-        }
-        if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
-      }
-      playCard() {
-        try {
-          this.init();
-          if (!this.ctx) return;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(360, this.ctx.currentTime);
-          osc.frequency.exponentialRampToValueAtTime(110, this.ctx.currentTime + 0.07);
-          gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.07);
-          osc.connect(gain);
-          gain.connect(this.ctx.destination);
-          osc.start();
-          osc.stop(this.ctx.currentTime + 0.07);
-        } catch(e){}
-      }
-      playUnlock() {
-        try {
-          this.init();
-          if (!this.ctx) return;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(523.25, this.ctx.currentTime);
-          osc.frequency.setValueAtTime(783.99, this.ctx.currentTime + 0.14);
-          gain.gain.setValueAtTime(0.22, this.ctx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.35);
-          osc.connect(gain);
-          gain.connect(this.ctx.destination);
-          osc.start();
-          osc.stop(this.ctx.currentTime + 0.35);
-        } catch(e){}
-      }
-      playTurnNotification() {
-        try {
-          this.init();
-          if (!this.ctx) return;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(440, this.ctx.currentTime);
-          osc.frequency.setValueAtTime(880, this.ctx.currentTime + 0.1);
-          gain.gain.setValueAtTime(0.15, this.ctx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.25);
-          osc.connect(gain);
-          gain.connect(this.ctx.destination);
-          osc.start();
-          osc.stop(this.ctx.currentTime + 0.25);
-          if (navigator.vibrate) navigator.vibrate([60, 50, 60]);
-        } catch(e){}
-      }
-      playVictory() {
-        try {
-          this.init();
-          if (!this.ctx) return;
-          [349.23, 440, 523.25, 698.46].forEach((f, i) => {
-            const osc = this.ctx.createOscillator();
-            const gain = this.ctx.createGain();
-            osc.frequency.setValueAtTime(f, this.ctx.currentTime + i * 0.1);
-            gain.gain.setValueAtTime(0.18, this.ctx.currentTime + i * 0.1);
-            gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + i * 0.1 + 0.4);
-            osc.connect(gain);
-            gain.connect(this.ctx.destination);
-            osc.start(this.ctx.currentTime + i * 0.1);
-            osc.stop(this.ctx.currentTime + i * 0.1 + 0.4);
-          });
-          if (navigator.vibrate) navigator.vibrate([100, 50, 150]);
-        } catch(e){}
-      }
-    }
-    const audio = new AudioEngine();
-
-    // --- APPLICATION STATE ---
     let app = {
       isHost: false,
       isSolo: false,
@@ -640,29 +433,25 @@
       maxPlayers: 4,
       peer: null,
       hostConn: null,
-      peersMap: new Map(), // For host: Map<playerId, conn>
-      status: 'home', // 'home' | 'lobby' | 'playing' | 'round_over' | 'tournament_over'
+      peersMap: new Map(),
+      status: 'home',
 
-      // Master Tournament / Round State
       tournament: {
         roundNumber: 1,
-        players: [], // { id, peerId, name, avatar, totalScore, lastRoundScore, eliminated, isHost, hasPureLife, firstTurnPlayed, isBot }
+        players: [],
         activePlayerIndex: 0,
-        turnPhase: 'draw', // 'draw' | 'discard'
+        turnPhase: 'draw',
         turnTimeLeft: 35,
         wildJokerCard: null,
         closedDeck: [],
-        openDeck: [], // Discard pile
-        winner: null
+        openDeck: []
       },
 
-      // Local Player Hand State
       localHand: [],
       selectedCardId: null,
       hasPureLife: false
     };
 
-    // Drag-and-drop tracking
     let touchDrag = {
       active: false,
       cardId: null,
@@ -675,16 +464,13 @@
 
     let turnTimerInterval = null;
 
-    // --- INITIALIZATION ---
     window.addEventListener('DOMContentLoaded', () => {
-      // Check query parameter ?room=CODE
       const params = new URLSearchParams(window.location.search);
       const urlRoom = params.get('room');
       if (urlRoom) {
         setEntryTab('join');
         document.getElementById('join-code-input').value = urlRoom.toUpperCase().trim();
       }
-
       setupPointerListeners();
     });
 
@@ -711,15 +497,12 @@
       app.maxPlayers = count;
       document.querySelectorAll('.mp-btn').forEach(btn => {
         const c = parseInt(btn.getAttribute('data-c'), 10);
-        if (c === count) {
-          btn.className = "mp-btn py-2 rounded-xl border border-amber-500 bg-amber-500/20 text-amber-300 font-bold text-xs";
-        } else {
-          btn.className = "mp-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs";
-        }
+        btn.className = (c === count) 
+          ? "mp-btn py-2 rounded-xl border border-amber-500 bg-amber-500/20 text-amber-300 font-bold text-xs" 
+          : "mp-btn py-2 rounded-xl border border-slate-700 bg-slate-950 font-bold text-xs";
       });
     }
 
-    // --- P2P NETWORKING (PEERJS) ---
     function generateCleanRoomCode() {
       const chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
       let code = '';
@@ -737,7 +520,6 @@
 
       showToast('Creating P2P room...', 'info');
 
-      // The Peer ID acts as the room identifier
       const peerId = `rumy-${app.roomCode.toLowerCase()}-broker`;
       app.peer = new Peer(peerId, { debug: 1 });
 
@@ -757,18 +539,12 @@
           isBot: false,
           hand: []
         }];
-
         switchToLobbyView();
       });
 
-      app.peer.on('connection', (conn) => {
-        handleIncomingPeerConnection(conn);
-      });
-
+      app.peer.on('connection', (conn) => handleIncomingPeerConnection(conn));
       app.peer.on('error', (err) => {
-        console.error('Peer error:', err);
         if (err.type === 'unavailable-id') {
-          // Retry with new code
           app.roomCode = generateCleanRoomCode();
           initHostRoom();
         } else {
@@ -793,7 +569,6 @@
       app.myPlayerId = 'p_guest_' + Math.random().toString(36).substr(2, 6);
 
       showToast(`Connecting to room ${code}...`, 'info');
-
       app.peer = new Peer(null, { debug: 1 });
 
       app.peer.on('open', (myId) => {
@@ -803,7 +578,6 @@
 
         conn.on('open', () => {
           app.hostConn = conn;
-          // Send handshake
           conn.send({
             type: 'JOIN_REQUEST',
             playerId: app.myPlayerId,
@@ -812,39 +586,17 @@
           });
         });
 
-        conn.on('data', (data) => {
-          handleClientReceivedMessage(data);
-        });
-
-        conn.on('close', () => {
-          showToast('Disconnected from host room.', 'error');
-        });
-      });
-
-      app.peer.on('error', (err) => {
-        console.error('Join error:', err);
-        showToast('Could not find room with code ' + code, 'error');
+        conn.on('data', (data) => handleClientReceivedMessage(data));
       });
     }
 
-    // Host handles incoming connections
     function handleIncomingPeerConnection(conn) {
       conn.on('data', (data) => {
         if (data.type === 'JOIN_REQUEST') {
-          // Late joiner check: If game is in progress, reject cleanly!
-          if (app.status === 'playing' || app.status === 'round_over') {
+          if (app.status === 'playing') {
             conn.send({ type: 'REJECT_IN_PROGRESS' });
-            setTimeout(() => conn.close(), 1000);
             return;
           }
-
-          if (app.tournament.players.length >= app.maxPlayers) {
-            conn.send({ type: 'REJECT_ROOM_FULL' });
-            setTimeout(() => conn.close(), 1000);
-            return;
-          }
-
-          // Accept player
           const newPlayer = {
             id: data.playerId,
             peerId: conn.peer,
@@ -859,30 +611,13 @@
             isBot: false,
             hand: []
           };
-
           app.tournament.players.push(newPlayer);
           app.peersMap.set(data.playerId, conn);
-
-          showToast(`${newPlayer.name} joined the lobby!`, 'info');
-          audio.playCard();
-
+          showToast(`${newPlayer.name} joined!`, 'info');
           broadcastLobbyState();
           renderLobbyView();
         } else {
-          // Handle in-game messages from clients
           handleHostReceivedClientAction(data);
-        }
-      });
-
-      conn.on('close', () => {
-        // Player disconnected
-        const idx = app.tournament.players.findIndex(p => p.peerId === conn.peer);
-        if (idx !== -1) {
-          const removed = app.tournament.players.splice(idx, 1)[0];
-          app.peersMap.delete(removed.id);
-          showToast(`${removed.name} left the room.`, 'info');
-          broadcastLobbyState();
-          renderLobbyView();
         }
       });
     }
@@ -902,35 +637,17 @@
       app.peersMap.forEach(conn => conn.send(payload));
     }
 
-    // Guest receives message from host
     function handleClientReceivedMessage(data) {
-      if (data.type === 'REJECT_IN_PROGRESS') {
-        document.getElementById('home-view').classList.add('hidden');
-        document.getElementById('lobby-view').classList.add('hidden');
-        document.getElementById('game-view').classList.add('hidden');
-        document.getElementById('late-block-view').classList.remove('hidden');
-        return;
-      }
-      if (data.type === 'REJECT_ROOM_FULL') {
-        showToast('Room is full (max players reached)!', 'error');
-        leaveLobbyAndReset();
-        return;
-      }
       if (data.type === 'LOBBY_UPDATE') {
         app.roomCode = data.roomCode;
         app.maxPlayers = data.maxPlayers;
         app.tournament.players = data.players;
         switchToLobbyView();
-      }
-      if (data.type === 'GAME_SYNC') {
+      } else if (data.type === 'GAME_SYNC') {
         syncClientGameState(data);
-      }
-      if (data.type === 'EMOJI_REACTION') {
-        showFloatingEmoji(data.senderPlayerId, data.emoji);
       }
     }
 
-    // --- SOLO / PRACTICE MODE FOR INSTANT TESTING ---
     function startPracticeSoloMode() {
       const name = document.getElementById('user-nickname-input').value.trim() || 'You';
       app.myNickname = name;
@@ -942,22 +659,19 @@
 
       app.tournament.players = [
         { id: app.myPlayerId, name: name, avatar: '👑', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: true, hasPureLife: false, firstTurnPlayed: false, isBot: false, hand: [] },
-        { id: 'bot_1', name: 'AceBluff', avatar: '🤖', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] },
-        { id: 'bot_2', name: 'CardShark', avatar: '🦊', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] },
-        { id: 'bot_3', name: 'DeepRummy', avatar: '🐯', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] }
+        { id: 'bot_1', name: 'Rahul', avatar: '🤖', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] },
+        { id: 'bot_2', name: 'Amit', avatar: '🦊', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] },
+        { id: 'bot_3', name: 'Priya', avatar: '🐯', totalScore: 0, lastRoundScore: 0, eliminated: false, isHost: false, hasPureLife: false, firstTurnPlayed: false, isBot: true, hand: [] }
       ];
 
       hostStartMatch(true);
     }
 
-    // --- LOBBY VIEW CONTROLS ---
     function switchToLobbyView() {
       app.status = 'lobby';
       document.getElementById('home-view').classList.add('hidden');
       document.getElementById('game-view').classList.add('hidden');
-      document.getElementById('late-block-view').classList.add('hidden');
       document.getElementById('lobby-view').classList.remove('hidden');
-
       renderLobbyView();
     }
 
@@ -988,7 +702,6 @@
         roster.appendChild(item);
       });
 
-      // Show/Hide Host Force Start button
       const hostCtrl = document.getElementById('lobby-host-controls');
       const guestNotice = document.getElementById('lobby-guest-notice');
       const forceBtn = document.getElementById('force-start-btn');
@@ -997,13 +710,8 @@
       if (app.isHost) {
         hostCtrl.classList.remove('hidden');
         guestNotice.classList.add('hidden');
-        if (app.tournament.players.length >= 2) {
-          forceBtn.disabled = false;
-          forceSub.textContent = `(${app.tournament.players.length} Players Ready)`;
-        } else {
-          forceBtn.disabled = true;
-          forceSub.textContent = `(Requires ≥ 2 players)`;
-        }
+        forceBtn.disabled = app.tournament.players.length < 2;
+        forceSub.textContent = `(${app.tournament.players.length} Players Ready)`;
       } else {
         hostCtrl.classList.add('hidden');
         guestNotice.classList.remove('hidden');
@@ -1027,30 +735,21 @@
 
     function leaveLobbyAndReset() {
       if (app.peer) app.peer.destroy();
-      window.location.href = window.location.pathname; // Clean reload
+      window.location.href = window.location.pathname;
     }
 
-    // --- GAME ENGINE: DEALING & AUTHENTIC 13-CARD RUMMY ---
     function generateTwoDecks() {
       const deck = [];
       let uid = 1;
       for (let d = 0; d < 2; d++) {
         for (const s of SUITS) {
           for (const r of RANKS) {
-            deck.push({
-              id: `c_${d}_${s.id}_${r}_${uid++}`,
-              suit: s.id,
-              rank: r,
-              value: RANK_VALUES[r],
-              isPrintedJoker: false
-            });
+            deck.push({ id: `c_${d}_${s.id}_${r}_${uid++}`, suit: s.id, rank: r, value: RANK_VALUES[r], isPrintedJoker: false });
           }
         }
         deck.push({ id: `pj_${d}_1_${uid++}`, suit: 'PJ', rank: 'JOKER', value: 0, isPrintedJoker: true });
         deck.push({ id: `pj_${d}_2_${uid++}`, suit: 'PJ', rank: 'JOKER', value: 0, isPrintedJoker: true });
       }
-
-      // Shuffle
       for (let i = deck.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [deck[i], deck[j]] = [deck[j], deck[i]];
@@ -1058,40 +757,25 @@
       return deck;
     }
 
-    function hostStartMatch(isForceStart = false) {
-      if (!app.isHost) return;
-
-      audio.playVictory();
+    function hostStartMatch() {
       app.status = 'playing';
-
       const fullDeck = generateTwoDecks();
-
-      // Cut 1 Wild Joker
       app.tournament.wildJokerCard = fullDeck.pop();
 
-      // Deal 13 cards to all active players
       app.tournament.players.forEach(p => {
         if (!p.eliminated) {
-          const rawCards = fullDeck.splice(0, 13);
-          p.hand = autoSortCardObjects(rawCards);
+          p.hand = autoSortCardObjects(fullDeck.splice(0, 13));
           p.hasPureLife = checkPureLifeInHand(p.hand);
           p.firstTurnPlayed = false;
-        } else {
-          p.hand = [];
         }
       });
 
-      // 1 open card for discard pile
       app.tournament.openDeck = [fullDeck.pop()];
       app.tournament.closedDeck = fullDeck;
-
-      // First active non-eliminated player starts
-      const firstActive = app.tournament.players.findIndex(p => !p.eliminated);
-      app.tournament.activePlayerIndex = firstActive !== -1 ? firstActive : 0;
+      app.tournament.activePlayerIndex = 0;
       app.tournament.turnPhase = 'draw';
       app.tournament.turnTimeLeft = 35;
 
-      // Assign local hand if host is a player
       const me = app.tournament.players.find(p => p.id === app.myPlayerId);
       if (me) {
         app.localHand = [...me.hand];
@@ -1101,13 +785,10 @@
       broadcastGameSync();
       renderActiveTable();
       startTurnTimer();
-
-      showToast(`🎯 Round ${app.tournament.roundNumber} Started!`, 'info');
     }
 
     function broadcastGameSync() {
       if (!app.isHost) return;
-
       const publicPlayers = app.tournament.players.map(p => ({
         id: p.id,
         name: p.name,
@@ -1115,16 +796,11 @@
         totalScore: p.totalScore,
         lastRoundScore: p.lastRoundScore,
         eliminated: p.eliminated,
-        hasPureLife: p.hasPureLife,
-        cardCount: p.hand ? p.hand.length : 13
+        hasPureLife: p.hasPureLife
       }));
 
-      // Send to each connected peer ONLY their hand to maintain fairness
       app.peersMap.forEach((conn, playerId) => {
         const player = app.tournament.players.find(p => p.id === playerId);
-        const myCards = player ? player.hand : [];
-        const hasPure = player ? player.hasPureLife : false;
-
         conn.send({
           type: 'GAME_SYNC',
           tournament: {
@@ -1136,156 +812,87 @@
             closedDeckCount: app.tournament.closedDeck.length,
             topDiscard: app.tournament.openDeck[app.tournament.openDeck.length - 1] || null,
             recentDiscards: app.tournament.openDeck.slice(-3),
-            wildJokerCard: hasPure ? app.tournament.wildJokerCard : null // Secret vault lock!
+            wildJokerCard: player && player.hasPureLife ? app.tournament.wildJokerCard : null
           },
-          myHand: myCards,
-          hasPureLife: hasPure
+          myHand: player ? player.hand : [],
+          hasPureLife: player ? player.hasPureLife : false
         });
       });
     }
 
     function syncClientGameState(data) {
       app.status = 'playing';
-      app.tournament.roundNumber = data.tournament.roundNumber;
-      app.tournament.players = data.tournament.players;
-      app.tournament.activePlayerIndex = data.tournament.activePlayerIndex;
-      app.tournament.turnPhase = data.tournament.turnPhase;
-      app.tournament.turnTimeLeft = data.tournament.turnTimeLeft;
-      app.tournament.closedDeckCount = data.tournament.closedDeckCount;
-      app.tournament.openDeck = data.tournament.recentDiscards;
-      app.tournament.wildJokerCard = data.tournament.wildJokerCard;
-
+      app.tournament = Object.assign(app.tournament, data.tournament);
       app.localHand = data.myHand;
       app.hasPureLife = data.hasPureLife;
-
       renderActiveTable();
-
-      // Check if it just became this client's turn
-      const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-      if (activeP && activeP.id === app.myPlayerId && app.tournament.turnPhase === 'draw') {
-        audio.playTurnNotification();
-      }
     }
 
-    // --- TURN COUNTDOWN TIMER (35s) & BOT ACTIONS ---
     function startTurnTimer() {
       clearInterval(turnTimerInterval);
       app.tournament.turnTimeLeft = 35;
-
       turnTimerInterval = setInterval(() => {
         if (app.status !== 'playing') {
           clearInterval(turnTimerInterval);
           return;
         }
-
         app.tournament.turnTimeLeft--;
-        updateTimerBarDisplay(app.tournament.turnTimeLeft);
+        const bar = document.getElementById('turn-timer-bar');
+        const text = document.getElementById('turn-timer-text');
+        if (bar) bar.style.width = `${Math.max(0, (app.tournament.turnTimeLeft / 35) * 100)}%`;
+        if (text) text.textContent = `${app.tournament.turnTimeLeft}s`;
 
-        if (app.tournament.turnTimeLeft <= 0) {
-          // Time expired! Auto-play turn to prevent hanging
+        if (app.tournament.turnTimeLeft <= 0 && app.isHost) {
           handleTurnTimeout();
         }
       }, 1000);
 
-      // Check if active player is a bot
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
       if (activeP && activeP.isBot && app.isHost) {
-        setTimeout(() => runBotTurn(activeP), 1400);
+        setTimeout(() => runBotTurn(activeP), 1200);
       }
-    }
-
-    function updateTimerBarDisplay(timeLeft) {
-      const bar = document.getElementById('turn-timer-bar');
-      const text = document.getElementById('turn-timer-text');
-      if (bar) bar.style.width = `${Math.max(0, (timeLeft / 35) * 100)}%`;
-      if (text) text.textContent = `${timeLeft}s`;
     }
 
     function handleTurnTimeout() {
-      if (!app.isHost) return;
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-      showToast(`${activeP.name} timed out!`, 'info');
-
-      // If in draw phase, auto draw from closed deck, then auto discard
-      if (app.tournament.turnPhase === 'draw') {
-        if (app.tournament.closedDeck.length > 0) {
-          const drawn = app.tournament.closedDeck.pop();
-          activeP.hand.push(drawn);
-        }
+      if (app.tournament.turnPhase === 'draw' && app.tournament.closedDeck.length > 0) {
+        activeP.hand.push(app.tournament.closedDeck.pop());
       }
-      // Auto discard highest deadwood card
       if (activeP.hand.length > 0) {
-        const discarded = activeP.hand.pop();
-        app.tournament.openDeck.push(discarded);
+        app.tournament.openDeck.push(activeP.hand.pop());
       }
-
       advanceTurnToNextPlayer();
     }
 
-    // AI Bot logic for Practice Solo Mode
     function runBotTurn(bot) {
-      if (app.tournament.turnPhase === 'draw') {
-        // Draw from closed deck
-        if (app.tournament.closedDeck.length > 0) {
-          const drawn = app.tournament.closedDeck.pop();
-          bot.hand.push(drawn);
-        }
-        app.tournament.turnPhase = 'discard';
-        bot.firstTurnPlayed = true;
-        renderActiveTable();
-        broadcastGameSync();
-
-        setTimeout(() => {
-          // Discard highest point non-joker card
-          let discardIdx = 0;
-          let maxPts = -1;
-          bot.hand.forEach((c, idx) => {
-            const pts = CARD_POINTS[c.rank] || 0;
-            if (pts > maxPts) {
-              maxPts = pts;
-              discardIdx = idx;
-            }
-          });
-          const discarded = bot.hand.splice(discardIdx, 1)[0];
-          app.tournament.openDeck.push(discarded);
-          audio.playCard();
-
-          advanceTurnToNextPlayer();
-        }, 1200);
+      if (app.tournament.closedDeck.length > 0) {
+        bot.hand.push(app.tournament.closedDeck.pop());
       }
+      bot.firstTurnPlayed = true;
+      setTimeout(() => {
+        const discarded = bot.hand.pop();
+        app.tournament.openDeck.push(discarded);
+        advanceTurnToNextPlayer();
+      }, 1000);
     }
 
-    // --- PURE LIFE & HAND EVALUATION ENGINE ---
     function checkPureLifeInHand(cards) {
       const bySuit = { 'S': [], 'H': [], 'C': [], 'D': [] };
       cards.forEach(c => {
-        if (!c.isPrintedJoker && bySuit[c.suit]) {
-          bySuit[c.suit].push(c.value);
-        }
+        if (!c.isPrintedJoker && bySuit[c.suit]) bySuit[c.suit].push(c.value);
       });
-
       for (const s in bySuit) {
-        const uniqueSorted = Array.from(new Set(bySuit[s])).sort((a, b) => a - b);
-        if (uniqueSorted.length >= 3) {
-          if (hasConsecutiveCards(uniqueSorted, 3)) return true;
-          // Ace-high check: 10, J, Q, K, A
-          if (uniqueSorted.includes(1)) {
-            const aceHigh = uniqueSorted.map(v => v === 1 ? 14 : v).sort((a, b) => a - b);
-            if (hasConsecutiveCards(aceHigh, 3)) return true;
+        const unique = Array.from(new Set(bySuit[s])).sort((a, b) => a - b);
+        if (unique.length >= 3) {
+          let run = 1;
+          for (let i = 0; i < unique.length - 1; i++) {
+            if (unique[i + 1] === unique[i] + 1) {
+              run++;
+              if (run >= 3) return true;
+            } else {
+              run = 1;
+            }
           }
-        }
-      }
-      return false;
-    }
-
-    function hasConsecutiveCards(arr, requiredLen) {
-      let run = 1;
-      for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i + 1] === arr[i] + 1) {
-          run++;
-          if (run >= requiredLen) return true;
-        } else {
-          run = 1;
         }
       }
       return false;
@@ -1306,7 +913,6 @@
         const total = cards.reduce((acc, c) => isWildJokerCard(c, wildCut) ? acc : acc + (CARD_POINTS[c.rank] || 0), 0);
         return Math.min(80, total);
       }
-      // With Pure Life, calculate remaining unmelded
       let sum = 0;
       cards.forEach(c => {
         if (!isWildJokerCard(c, wildCut)) sum += (CARD_POINTS[c.rank] || 0);
@@ -1322,7 +928,6 @@
       });
     }
 
-    // --- RENDER CASINO TABLE ---
     function renderActiveTable() {
       document.getElementById('home-view').classList.add('hidden');
       document.getElementById('lobby-view').classList.add('hidden');
@@ -1331,13 +936,10 @@
       const activePlayer = app.tournament.players[app.tournament.activePlayerIndex];
       const isMyTurn = activePlayer && activePlayer.id === app.myPlayerId;
 
-      // 1. Check if user just unlocked Pure Life
       const hasPureNow = checkPureLifeInHand(app.localHand);
       if (hasPureNow && !app.hasPureLife) {
         app.hasPureLife = true;
-        audio.playUnlock();
-        showToast('🔓 Pure Life Achieved! Wild Joker Vault Unlocked!', 'success');
-
+        showToast('🔓 Pure Life Achieved! Joker Vault Unlocked!', 'success');
         if (app.isHost) {
           const me = app.tournament.players.find(p => p.id === app.myPlayerId);
           if (me) me.hasPureLife = true;
@@ -1347,87 +949,51 @@
         }
       }
 
-      // 2. Render Active Seated Opponents Strip
       const topStrip = document.getElementById('table-players-strip');
       topStrip.innerHTML = '';
       app.tournament.players.forEach((p, idx) => {
         const isCurrent = idx === app.tournament.activePlayerIndex;
         const isMe = p.id === app.myPlayerId;
-
         const pill = document.createElement('div');
-        pill.id = `seat-pill-${p.id}`;
-        pill.className = `relative flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold transition-all shrink-0 ${
-          p.eliminated 
-            ? 'bg-rose-950/40 border border-rose-900/40 text-rose-400 line-through opacity-60'
-            : isCurrent
-            ? 'bg-amber-400 text-slate-950 ring-2 ring-amber-300 shadow scale-105'
-            : 'bg-slate-950/80 text-slate-300 border border-emerald-700/40'
+        pill.className = `flex items-center space-x-1 px-2.5 py-0.5 rounded-full text-xs font-bold ${
+          isCurrent ? 'bg-amber-400 text-slate-950 ring-2 ring-amber-300' : 'bg-slate-950/80 text-slate-300 border border-emerald-700/40'
         }`;
-
-        pill.innerHTML = `
-          <span>${p.avatar}</span>
-          <span>${isMe ? 'You' : p.name}</span>
-          ${p.hasPureLife ? '<span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-1 rounded border border-emerald-400/40">✨ Pure</span>' : ''}
-          <span class="text-[10px] px-1 rounded ${isCurrent ? 'bg-slate-950 text-amber-300' : 'bg-slate-800 text-slate-400'}">${p.totalScore}</span>
-        `;
+        pill.innerHTML = `<span>${p.avatar}</span><span>${isMe ? 'You' : p.name}</span><span class="text-[10px] bg-slate-800 text-amber-300 px-1 rounded">${p.totalScore}</span>`;
         topStrip.appendChild(pill);
       });
 
-      // 3. Render Center Targets
-      // Closed Deck
       const closedCount = app.isHost ? app.tournament.closedDeck.length : (app.tournament.closedDeckCount || 48);
       document.getElementById('closed-deck-count').textContent = closedCount;
 
-      // Closed Joker Vault
       const vault = document.getElementById('target-joker-vault');
       if (app.hasPureLife && app.tournament.wildJokerCard) {
         const wCard = app.tournament.wildJokerCard;
         const sObj = SUITS.find(s => s.id === wCard.suit);
-        const isRed = sObj ? sObj.isRed : false;
-        vault.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-400 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1 relative";
+        vault.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-400 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1";
         vault.innerHTML = `
-          <div class="flex items-center justify-between leading-none text-xs font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            <span>${wCard.isPrintedJoker ? '🃏' : wCard.rank}</span>
-            <span>${sObj ? sObj.symbol : ''}</span>
+          <div class="flex items-center justify-between text-xs font-black ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${wCard.rank}</span><span>${sObj ? sObj.symbol : ''}</span>
           </div>
-          <div class="text-center font-black text-2xl ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            ${sObj ? sObj.symbol : '🃏'}
-          </div>
-          <div class="bg-amber-400 text-slate-950 text-[8px] font-black uppercase text-center rounded py-0.2">
-            WILD JOKER
-          </div>
+          <div class="text-center font-black text-2xl ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">${sObj ? sObj.symbol : '🃏'}</div>
+          <div class="bg-amber-400 text-slate-950 text-[8px] font-black uppercase text-center rounded py-0.2">WILD JOKER</div>
         `;
       } else {
-        vault.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-500/50 bg-gradient-to-b from-amber-950 via-slate-950 to-slate-950 text-amber-300 shadow-xl flex flex-col items-center justify-center p-1 text-center";
-        vault.innerHTML = `
-          <span class="text-xl">🔒</span>
-          <span class="text-[8px] font-black uppercase tracking-wider text-amber-400 mt-1 leading-tight">
-            Secret Vault<br>(Pure Life)
-          </span>
-        `;
+        vault.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border-2 border-amber-500/50 bg-gradient-to-b from-amber-950 to-slate-950 text-amber-300 flex flex-col items-center justify-center p-1 text-center";
+        vault.innerHTML = `<span class="text-xl">🔒</span><span class="text-[8px] font-black uppercase text-amber-400 mt-1 leading-tight">Secret Vault<br>(Pure Life)</span>`;
       }
 
-      // Discard Pile
       const discardTarget = document.getElementById('target-discard-pile');
-      const topDiscard = app.isHost 
-        ? app.tournament.openDeck[app.tournament.openDeck.length - 1]
-        : (app.tournament.openDeck ? app.tournament.openDeck[app.tournament.openDeck.length - 1] : null);
-
+      const topDiscard = app.tournament.openDeck[app.tournament.openDeck.length - 1];
       if (topDiscard) {
         const sObj = SUITS.find(s => s.id === topDiscard.suit);
-        const isRed = sObj ? sObj.isRed : false;
-        discardTarget.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border border-slate-300 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1 cursor-pointer transition-all relative";
+        discardTarget.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border border-slate-300 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1 cursor-pointer";
         discardTarget.innerHTML = `
-          <div class="flex items-center justify-between leading-none text-xs font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            <span>${topDiscard.isPrintedJoker ? '🃏' : topDiscard.rank}</span>
-            <span>${sObj ? sObj.symbol : ''}</span>
+          <div class="flex items-center justify-between text-xs font-black ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${topDiscard.rank}</span><span>${sObj ? sObj.symbol : ''}</span>
           </div>
-          <div class="text-center font-black text-2xl leading-none ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            ${sObj ? sObj.symbol : '🃏'}
-          </div>
-          <div class="flex items-center justify-between leading-none text-xs font-black rotate-180 ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            <span>${topDiscard.isPrintedJoker ? '🃏' : topDiscard.rank}</span>
-            <span>${sObj ? sObj.symbol : ''}</span>
+          <div class="text-center font-black text-2xl ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">${sObj ? sObj.symbol : '🃏'}</div>
+          <div class="flex items-center justify-between text-xs font-black rotate-180 ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${topDiscard.rank}</span><span>${sObj ? sObj.symbol : ''}</span>
           </div>
         `;
       } else {
@@ -1435,34 +1001,24 @@
         discardTarget.innerHTML = "Empty";
       }
 
-      // 4. Status Bar & Turn Cues
-      const cueIcon = document.getElementById('turn-cue-icon');
       const cueText = document.getElementById('turn-cue-text');
-      const touchCue = document.getElementById('table-touch-cue');
       const dropBtn = document.getElementById('quick-drop-btn');
       const dropLabel = document.getElementById('quick-drop-label');
 
       if (isMyTurn) {
-        cueIcon.textContent = "👉";
         if (app.tournament.turnPhase === 'draw') {
-          cueText.textContent = "Your Turn: Tap Closed Deck or Discard to Draw";
-          touchCue.textContent = "Tap Closed Deck to draw, or tap Discard Pile";
+          cueText.textContent = "Your Turn: Draw 1 Card";
           dropBtn.classList.remove('hidden');
-          const isFirst = !activePlayer.firstTurnPlayed;
-          dropLabel.textContent = `Drop (${isFirst ? '20' : '40'})`;
+          dropLabel.textContent = `Drop (${!activePlayer.firstTurnPlayed ? '20' : '40'})`;
         } else {
-          cueText.textContent = "Your Turn: Drag card up to Discard, or tap card";
-          touchCue.textContent = "Drag card up to Discard Pile, or tap card to discard";
+          cueText.textContent = "Your Turn: Drag Card to Discard";
           dropBtn.classList.add('hidden');
         }
       } else {
-        cueIcon.textContent = "⏳";
         cueText.textContent = `${activePlayer ? activePlayer.name : 'Opponent'}'s Turn`;
-        touchCue.textContent = "Slide cards with your finger to organize your hand";
         dropBtn.classList.add('hidden');
       }
 
-      // 5. Hand Pure Life & Deadwood
       const pureInd = document.getElementById('hand-pure-indicator');
       const pureIcon = document.getElementById('pure-icon');
       const pureText = document.getElementById('pure-text');
@@ -1473,69 +1029,55 @@
       } else {
         pureInd.className = "px-2 py-0.5 rounded font-black flex items-center space-x-1 bg-rose-950 text-rose-300 border border-rose-700/50";
         pureIcon.textContent = "🔒";
-        pureText.textContent = "1st Life Locked";
+        pureText.textContent = "Pure Life Locked";
       }
 
-      const deadwood = computeDeadwoodScore(app.localHand, app.hasPureLife, app.tournament.wildJokerCard);
-      document.getElementById('hand-deadwood-points').textContent = deadwood;
-
-      // 6. Render Fluid Touch Card Rack
+      document.getElementById('hand-deadwood-points').textContent = computeDeadwoodScore(app.localHand, app.hasPureLife, app.tournament.wildJokerCard);
       renderHandRack();
     }
 
-    // --- NATURAL TOUCH & DRAG CARD RACK ---
     function renderHandRack() {
       const rack = document.getElementById('hand-cards-rack');
       rack.innerHTML = '';
-
       const activePlayer = app.tournament.players[app.tournament.activePlayerIndex];
       const isMyTurn = activePlayer && activePlayer.id === app.myPlayerId;
 
       app.localHand.forEach((card, index) => {
         const isSelected = app.selectedCardId === card.id;
         const sObj = SUITS.find(s => s.id === card.suit);
-        const isRed = sObj ? sObj.isRed : false;
         const actsAsJoker = app.hasPureLife && isWildJokerCard(card, app.tournament.wildJokerCard);
 
         const slot = document.createElement('div');
-        slot.className = `card-rack-slot relative shrink-0 transition-transform ${isSelected ? 'z-30' : 'z-10'}`;
+        slot.className = `card-rack-slot relative shrink-0 ${isSelected ? 'z-30' : 'z-10'}`;
 
         const cardEl = document.createElement('div');
-        cardEl.id = `rack-card-${card.id}`;
         cardEl.className = `rummy-card cursor-pointer w-12 sm:w-14 md:w-16 h-18 sm:h-22 md:h-24 rounded-lg border shadow-md flex flex-col justify-between p-1 bg-white select-none ${
           isSelected ? 'raised' : 'border-slate-300'
         }`;
-        cardEl.setAttribute('data-card-id', card.id);
         cardEl.setAttribute('data-card-index', index);
 
         cardEl.innerHTML = `
-          <div class="flex items-center justify-between leading-none text-[11px] sm:text-xs font-black ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            <span>${card.isPrintedJoker ? '🃏' : card.rank}</span>
-            <span class="text-[10px] sm:text-xs">${sObj ? sObj.symbol : ''}</span>
+          <div class="flex items-center justify-between text-[11px] sm:text-xs font-black ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${card.rank}</span><span>${sObj ? sObj.symbol : ''}</span>
           </div>
-          <div class="text-center font-black text-xl sm:text-2xl leading-none ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            ${sObj ? sObj.symbol : '🃏'}
-          </div>
-          <div class="flex items-center justify-between leading-none text-[11px] sm:text-xs font-black rotate-180 ${isRed ? 'text-red-600' : 'text-slate-900'}">
-            <span>${card.isPrintedJoker ? '🃏' : card.rank}</span>
-            <span class="text-[10px] sm:text-xs">${sObj ? sObj.symbol : ''}</span>
+          <div class="text-center font-black text-xl sm:text-2xl ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">${sObj ? sObj.symbol : '🃏'}</div>
+          <div class="flex items-center justify-between text-[11px] sm:text-xs font-black rotate-180 ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}">
+            <span>${card.rank}</span><span>${sObj ? sObj.symbol : ''}</span>
           </div>
         `;
 
         if (actsAsJoker) {
           const jBadge = document.createElement('div');
-          jBadge.className = "absolute -top-1 -right-1 bg-amber-400 text-slate-950 font-black text-[7px] px-1 rounded-full shadow border border-amber-200";
+          jBadge.className = "absolute -top-1 -right-1 bg-amber-400 text-slate-950 font-black text-[7px] px-1 rounded-full shadow";
           jBadge.textContent = "JOKER";
           cardEl.appendChild(jBadge);
         }
 
-        // Pointer event for instant touch dragging
         cardEl.onpointerdown = (e) => startCardTouchDrag(e, card.id, index, cardEl);
 
-        // Fallback quick discard button when selected in discard turn
         if (isSelected && isMyTurn && app.tournament.turnPhase === 'discard') {
           const quickDiscard = document.createElement('button');
-          quickDiscard.className = "absolute -top-7 left-1/2 transform -translate-x-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full shadow-lg flex items-center space-x-1 animate-bounce z-40";
+          quickDiscard.className = "absolute -top-7 left-1/2 transform -translate-x-1/2 bg-amber-500 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full shadow-lg flex items-center space-x-1 animate-bounce z-40";
           quickDiscard.innerHTML = `<span>Discard</span><span>✕</span>`;
           quickDiscard.onclick = (e) => {
             e.stopPropagation();
@@ -1549,7 +1091,6 @@
       });
     }
 
-    // --- SMOOTH FINGER DRAG-AND-DROP (HORIZONTAL REORDER & UPWARD DISCARD) ---
     function setupPointerListeners() {
       window.addEventListener('pointermove', onPointerMoveHandler);
       window.addEventListener('pointerup', onPointerUpHandler);
@@ -1557,7 +1098,7 @@
     }
 
     function startCardTouchDrag(e, cardId, cardIndex, element) {
-      if (e.button !== 0 && e.pointerType === 'mouse') return; // Left mouse click or touch
+      if (e.button !== 0 && e.pointerType === 'mouse') return;
       touchDrag.active = true;
       touchDrag.cardId = cardId;
       touchDrag.startIndex = cardIndex;
@@ -1565,13 +1106,11 @@
       touchDrag.startY = e.clientY;
       touchDrag.element = element;
       touchDrag.hasMoved = false;
-
       element.setPointerCapture(e.pointerId);
     }
 
     function onPointerMoveHandler(e) {
       if (!touchDrag.active || !touchDrag.element) return;
-
       const deltaX = Math.abs(e.clientX - touchDrag.startX);
       const deltaY = Math.abs(e.clientY - touchDrag.startY);
 
@@ -1582,34 +1121,22 @@
 
       if (!touchDrag.hasMoved) return;
 
-      // 1. Check if dragging upward near Discard Pile or Finish Slot
       const discardRect = document.getElementById('target-discard-pile')?.getBoundingClientRect();
-      const finishRect = document.getElementById('target-finish-slot')?.getBoundingClientRect();
-
       if (discardRect && isInsideTarget(e.clientX, e.clientY, discardRect)) {
         document.getElementById('target-discard-pile')?.classList.add('drop-zone-highlight');
       } else {
         document.getElementById('target-discard-pile')?.classList.remove('drop-zone-highlight');
       }
 
-      if (finishRect && isInsideTarget(e.clientX, e.clientY, finishRect)) {
-        document.getElementById('target-finish-slot')?.classList.add('drop-zone-highlight');
-      } else {
-        document.getElementById('target-finish-slot')?.classList.remove('drop-zone-highlight');
-      }
-
-      // 2. Smooth live card reordering within the rack
       const rackCards = document.querySelectorAll('.card-rack-slot .rummy-card');
       rackCards.forEach(el => {
         const r = el.getBoundingClientRect();
         if (e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top - 20 && e.clientY <= r.bottom + 20) {
           const targetIndex = parseInt(el.getAttribute('data-card-index'), 10);
           if (targetIndex !== touchDrag.startIndex && targetIndex >= 0 && targetIndex < app.localHand.length) {
-            // Live swap card positions
             const card = app.localHand.splice(touchDrag.startIndex, 1)[0];
             app.localHand.splice(targetIndex, 0, card);
             touchDrag.startIndex = targetIndex;
-            audio.playCard();
             renderHandRack();
           }
         }
@@ -1618,49 +1145,23 @@
 
     function onPointerUpHandler(e) {
       if (!touchDrag.active) return;
-
       const discardTarget = document.getElementById('target-discard-pile');
-      const finishTarget = document.getElementById('target-finish-slot');
       const discardRect = discardTarget?.getBoundingClientRect();
-      const finishRect = finishTarget?.getBoundingClientRect();
-
       discardTarget?.classList.remove('drop-zone-highlight');
-      finishTarget?.classList.remove('drop-zone-highlight');
 
       const card = app.localHand.find(c => c.id === touchDrag.cardId);
 
-      // A. DIRECT DRAG UPWARD TO DISCARD PILE
       if (touchDrag.hasMoved && discardRect && isInsideTarget(e.clientX, e.clientY, discardRect)) {
         const activeP = app.tournament.players[app.tournament.activePlayerIndex];
         if (activeP && activeP.id === app.myPlayerId && app.tournament.turnPhase === 'discard' && card) {
           userDiscardCard(card);
           cleanupTouchDrag();
           return;
-        } else {
-          showToast('Draw a card before discarding!', 'info');
         }
       }
 
-      // B. DIRECT DRAG TO FINISH SLOT
-      if (touchDrag.hasMoved && finishRect && isInsideTarget(e.clientX, e.clientY, finishRect)) {
-        const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-        if (activeP && activeP.id === app.myPlayerId && app.tournament.turnPhase === 'discard' && card) {
-          userDeclareShow(card);
-          cleanupTouchDrag();
-          return;
-        } else {
-          showToast('Draw your 14th card before declaring!', 'info');
-        }
-      }
-
-      // C. SIMPLE TAP (If not dragged)
       if (!touchDrag.hasMoved && card) {
-        audio.playCard();
-        if (app.selectedCardId === card.id) {
-          app.selectedCardId = null; // Deselect
-        } else {
-          app.selectedCardId = card.id; // Lift card up
-        }
+        app.selectedCardId = app.selectedCardId === card.id ? null : card.id;
         renderHandRack();
       }
 
@@ -1679,19 +1180,9 @@
       return x >= rect.left - 15 && x <= rect.right + 15 && y >= rect.top - 15 && y <= rect.bottom + 15;
     }
 
-    // --- GAME ACTIONS: DRAW, DISCARD, DECLARE, DROP ---
     function userDrawCard(source) {
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-      if (!activeP || activeP.id !== app.myPlayerId) {
-        showToast('Wait for your turn!', 'error');
-        return;
-      }
-      if (app.tournament.turnPhase !== 'draw') {
-        showToast('You already drew! Now discard 1 card.', 'info');
-        return;
-      }
-
-      audio.playCard();
+      if (!activeP || activeP.id !== app.myPlayerId || app.tournament.turnPhase !== 'draw') return;
 
       if (app.isHost) {
         hostProcessDraw(app.myPlayerId, source);
@@ -1713,9 +1204,7 @@
     }
 
     function userDiscardCard(card) {
-      audio.playCard();
       app.selectedCardId = null;
-
       if (app.isHost) {
         hostProcessDiscard(app.myPlayerId, card.id);
       } else {
@@ -1723,40 +1212,10 @@
       }
     }
 
-    function handleFinishSlotTap() {
-      const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-      if (!activeP || activeP.id !== app.myPlayerId) return;
-
-      if (app.tournament.turnPhase !== 'discard') {
-        showToast('Draw your 14th card before finishing!', 'info');
-        return;
-      }
-      if (!app.selectedCardId) {
-        showToast('Tap a card to select it as your Finish card, then tap Finish Slot!', 'info');
-        return;
-      }
-
-      const card = app.localHand.find(c => c.id === app.selectedCardId);
-      if (card) userDeclareShow(card);
-    }
-
-    function userDeclareShow(finishCard) {
-      audio.playCard();
-      if (app.isHost) {
-        hostProcessDeclaration(app.myPlayerId, finishCard.id);
-      } else {
-        app.hostConn?.send({ type: 'DECLARE_ACTION', playerId: app.myPlayerId, finishCardId: finishCard.id });
-      }
-    }
-
     function triggerDrop() {
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
-      if (!activeP || activeP.id !== app.myPlayerId || app.tournament.turnPhase !== 'draw') {
-        showToast('You can only drop before drawing on your turn!', 'error');
-        return;
-      }
+      if (!activeP || activeP.id !== app.myPlayerId || app.tournament.turnPhase !== 'draw') return;
 
-      audio.playCard();
       if (app.isHost) {
         hostProcessDrop(app.myPlayerId);
       } else {
@@ -1765,28 +1224,16 @@
     }
 
     function userAutoSortHand() {
-      audio.playCard();
       app.localHand = autoSortCardObjects(app.localHand);
       app.selectedCardId = null;
       renderHandRack();
-      showToast('Hand sorted neatly by suit and rank!', 'info');
     }
 
-    // --- HOST-AUTHORITATIVE LOGIC (RULES & ARBITRATION) ---
     function handleHostReceivedClientAction(data) {
-      if (!app.isHost) return;
-
-      if (data.type === 'DRAW_ACTION') {
-        hostProcessDraw(data.playerId, data.source);
-      } else if (data.type === 'DISCARD_ACTION') {
-        hostProcessDiscard(data.playerId, data.cardId);
-      } else if (data.type === 'DECLARE_ACTION') {
-        hostProcessDeclaration(data.playerId, data.finishCardId);
-      } else if (data.type === 'DROP_ACTION') {
-        hostProcessDrop(data.playerId);
-      } else if (data.type === 'EMOJI_ACTION') {
-        broadcastEmoji(data.playerId, data.emoji);
-      } else if (data.type === 'PURE_LIFE_UNLOCKED') {
+      if (data.type === 'DRAW_ACTION') hostProcessDraw(data.playerId, data.source);
+      else if (data.type === 'DISCARD_ACTION') hostProcessDiscard(data.playerId, data.cardId);
+      else if (data.type === 'DROP_ACTION') hostProcessDrop(data.playerId);
+      else if (data.type === 'PURE_LIFE_UNLOCKED') {
         const p = app.tournament.players.find(x => x.id === data.playerId);
         if (p) p.hasPureLife = true;
         broadcastGameSync();
@@ -1798,24 +1245,11 @@
       const player = app.tournament.players.find(p => p.id === playerId);
       if (!player) return;
 
-      let drawn = null;
-      if (source === 'open') {
-        if (app.tournament.openDeck.length > 0) drawn = app.tournament.openDeck.pop();
-      } else {
-        if (app.tournament.closedDeck.length === 0) {
-          if (app.tournament.openDeck.length > 1) {
-            const top = app.tournament.openDeck.pop();
-            app.tournament.closedDeck = app.tournament.openDeck.sort(() => Math.random() - 0.5);
-            app.tournament.openDeck = [top];
-            drawn = app.tournament.closedDeck.pop();
-          }
-        } else {
-          drawn = app.tournament.closedDeck.pop();
-        }
-      }
+      let drawn = (source === 'open' && app.tournament.openDeck.length > 0)
+        ? app.tournament.openDeck.pop()
+        : app.tournament.closedDeck.pop();
 
       if (!drawn) return;
-
       player.hand.push(drawn);
       player.firstTurnPlayed = true;
       app.tournament.turnPhase = 'discard';
@@ -1835,47 +1269,12 @@
 
       const cardIdx = player.hand.findIndex(c => c.id === cardId);
       if (cardIdx !== -1) {
-        const discarded = player.hand.splice(cardIdx, 1)[0];
-        app.tournament.openDeck.push(discarded);
+        app.tournament.openDeck.push(player.hand.splice(cardIdx, 1)[0]);
       }
-
       if (playerId === app.myPlayerId) {
         app.localHand = [...player.hand];
       }
-
       advanceTurnToNextPlayer();
-    }
-
-    function hostProcessDeclaration(playerId, finishCardId) {
-      const player = app.tournament.players.find(p => p.id === playerId);
-      if (!player) return;
-
-      const cardIdx = player.hand.findIndex(c => c.id === finishCardId);
-      if (cardIdx !== -1) {
-        const finishCard = player.hand.splice(cardIdx, 1)[0];
-        app.tournament.openDeck.push(finishCard);
-      }
-
-      // Check Pure Life in remaining 13 cards
-      const hasPure = checkPureLifeInHand(player.hand);
-
-      if (hasPure) {
-        // VALID DECLARATION
-        audio.playVictory();
-        resolveRoundEnd(player);
-      } else {
-        // WRONG DECLARATION -> 80 Penalty Points!
-        showToast(`${player.name} made a Wrong Show! +80 penalty points.`, 'error');
-        player.lastRoundScore = 80;
-        player.totalScore += 80;
-
-        if (player.totalScore >= 201) {
-          player.eliminated = true;
-          showToast(`🚨 ${player.name} crossed 201 points and is Eliminated!`, 'error');
-        }
-
-        advanceTurnToNextPlayer();
-      }
     }
 
     function hostProcessDrop(playerId) {
@@ -1885,20 +1284,9 @@
       const penalty = player.firstTurnPlayed ? 40 : 20;
       player.lastRoundScore = penalty;
       player.totalScore += penalty;
+      if (player.totalScore >= 201) player.eliminated = true;
 
       showToast(`${player.name} Dropped (${penalty} pts).`, 'info');
-
-      if (player.totalScore >= 201) {
-        player.eliminated = true;
-        showToast(`🚨 ${player.name} crossed 201 points and is Eliminated!`, 'error');
-      }
-
-      const activeSurvivors = app.tournament.players.filter(p => !p.eliminated);
-      if (activeSurvivors.length <= 1) {
-        triggerGrandChampion(activeSurvivors[0] || player);
-        return;
-      }
-
       advanceTurnToNextPlayer();
     }
 
@@ -1917,142 +1305,8 @@
       broadcastGameSync();
       renderActiveTable();
       startTurnTimer();
-
-      const nextP = app.tournament.players[nextIdx];
-      if (nextP && nextP.id === app.myPlayerId) {
-        audio.playTurnNotification();
-        showToast("👉 It's your turn!", 'info');
-      }
     }
 
-    // --- ROUND RESOLUTION & 201 ELIMINATION ---
-    function resolveRoundEnd(winner) {
-      clearInterval(turnTimerInterval);
-      app.status = 'round_over';
-
-      winner.lastRoundScore = 0;
-      const scoresList = document.getElementById('round-scores-list');
-      scoresList.innerHTML = '';
-
-      app.tournament.players.forEach(p => {
-        if (!p.eliminated) {
-          if (p.id === winner.id) {
-            p.lastRoundScore = 0;
-          } else {
-            const lossPts = computeDeadwoodScore(p.hand, p.hasPureLife, app.tournament.wildJokerCard);
-            p.lastRoundScore = lossPts;
-            p.totalScore += lossPts;
-          }
-
-          if (p.totalScore >= 201) p.eliminated = true;
-
-          const row = document.createElement('div');
-          row.className = "flex items-center justify-between border-b border-slate-800 pb-1";
-          row.innerHTML = `
-            <span class="font-bold ${p.id === winner.id ? 'text-emerald-400' : 'text-slate-200'}">
-              ${p.avatar} ${p.name} ${p.id === winner.id ? '👑 (Winner)' : ''}
-            </span>
-            <span class="font-mono ${p.eliminated ? 'text-rose-400 font-black' : 'text-amber-300'}">
-              +${p.lastRoundScore} pts (Total: ${p.totalScore}) ${p.eliminated ? '• ELIMINATED (201+)' : ''}
-            </span>
-          `;
-          scoresList.appendChild(row);
-        }
-      });
-
-      document.getElementById('round-winner-heading').textContent = `Round ${app.tournament.roundNumber} Won by ${winner.name}!`;
-
-      const btnNext = document.getElementById('btn-next-round');
-      const waitNotice = document.getElementById('guest-next-round-wait');
-      if (app.isHost) {
-        btnNext.classList.remove('hidden');
-        waitNotice.classList.add('hidden');
-      } else {
-        btnNext.classList.add('hidden');
-        waitNotice.classList.remove('hidden');
-      }
-
-      document.getElementById('modal-round-summary').classList.remove('hidden');
-
-      broadcastGameSync();
-    }
-
-    function hostNextRoundDeal() {
-      document.getElementById('modal-round-summary').classList.add('hidden');
-      const survivors = app.tournament.players.filter(p => !p.eliminated);
-      if (survivors.length <= 1) {
-        triggerGrandChampion(survivors[0] || app.tournament.players[0]);
-        return;
-      }
-      app.tournament.roundNumber++;
-      hostStartMatch(false);
-    }
-
-    function triggerGrandChampion(champ) {
-      audio.playVictory();
-      document.getElementById('modal-round-summary').classList.add('hidden');
-      document.getElementById('champion-player-text').textContent = `${champ.avatar} ${champ.name} (${champ.totalScore} pts)`;
-      document.getElementById('modal-grand-champion').classList.remove('hidden');
-    }
-
-    // --- DISCARD PEEK (LAST 3 DISCARDS) ---
-    function toggleDiscardPeek() {
-      const drawer = document.getElementById('discard-peek-drawer');
-      if (!drawer.classList.contains('hidden')) {
-        drawer.classList.add('hidden');
-        return;
-      }
-
-      const recents = app.tournament.openDeck.slice(-3);
-      drawer.innerHTML = '';
-      if (recents.length === 0) {
-        drawer.innerHTML = '<span class="text-[10px] text-slate-400">No discards yet</span>';
-      } else {
-        recents.forEach(c => {
-          const sObj = SUITS.find(s => s.id === c.suit);
-          const isRed = sObj ? sObj.isRed : false;
-          const chip = document.createElement('div');
-          chip.className = `w-9 h-13 rounded border bg-white shadow p-0.5 text-center flex flex-col justify-between ${isRed ? 'text-red-600' : 'text-slate-900'}`;
-          chip.innerHTML = `
-            <span class="text-[9px] font-black leading-none">${c.rank}</span>
-            <span class="text-xs font-black leading-none">${sObj ? sObj.symbol : ''}</span>
-          `;
-          drawer.appendChild(chip);
-        });
-      }
-      drawer.classList.remove('hidden');
-      setTimeout(() => drawer.classList.add('hidden'), 3500);
-    }
-
-    // --- TABLE EMOJI REACTIONS ---
-    function sendEmojiReaction(emoji) {
-      showFloatingEmoji(app.myPlayerId, emoji);
-      if (app.isHost) {
-        broadcastEmoji(app.myPlayerId, emoji);
-      } else {
-        app.hostConn?.send({ type: 'EMOJI_ACTION', playerId: app.myPlayerId, emoji: emoji });
-      }
-    }
-
-    function broadcastEmoji(senderId, emoji) {
-      showFloatingEmoji(senderId, emoji);
-      const payload = { type: 'EMOJI_REACTION', senderPlayerId: senderId, emoji: emoji };
-      app.peersMap.forEach(conn => conn.send(payload));
-    }
-
-    function showFloatingEmoji(senderId, emoji) {
-      const targetPill = document.getElementById(`seat-pill-${senderId}`);
-      if (!targetPill) return;
-
-      const bubble = document.createElement('div');
-      bubble.className = "floating-reaction absolute -top-4 left-1/2 transform -translate-x-1/2 text-2xl z-50";
-      bubble.textContent = emoji;
-      targetPill.appendChild(bubble);
-
-      setTimeout(() => bubble.remove(), 2200);
-    }
-
-    // --- MODALS & NOTIFICATIONS ---
     function openScoreboardModal() {
       const tbody = document.getElementById('scoreboard-table-body');
       tbody.innerHTML = '';
@@ -2061,17 +1315,10 @@
         const tr = document.createElement('tr');
         tr.className = "border-b border-slate-800";
         tr.innerHTML = `
-          <td class="py-1.5 px-2 font-bold flex items-center space-x-1.5">
-            <span>${p.avatar}</span>
-            <span class="${p.eliminated ? 'line-through text-slate-500' : 'text-slate-100'}">${p.name}</span>
-          </td>
-          <td class="py-1.5 px-2 text-center font-mono text-amber-400">+${p.lastRoundScore}</td>
-          <td class="py-1.5 px-2 text-right font-black font-mono ${p.totalScore >= 180 ? 'text-rose-400' : 'text-emerald-400'}">${p.totalScore}</td>
-          <td class="py-1.5 px-2 text-right">
-            ${p.eliminated 
-              ? '<span class="bg-rose-950 text-rose-400 px-1 py-0.5 rounded text-[9px] font-bold">OUT (201+)</span>' 
-              : '<span class="bg-emerald-950 text-emerald-300 px-1 py-0.5 rounded text-[9px] font-bold">ACTIVE</span>'}
-          </td>
+          <td class="py-1.5 px-2 font-bold">${p.avatar} ${p.name}</td>
+          <td class="py-1.5 px-2 text-center text-amber-400">+${p.lastRoundScore}</td>
+          <td class="py-1.5 px-2 text-right font-black">${p.totalScore}</td>
+          <td class="py-1.5 px-2 text-right">${p.eliminated ? '<span class="text-rose-400">OUT (201+)</span>' : '<span class="text-emerald-300">ACTIVE</span>'}</td>
         `;
         tbody.appendChild(tr);
       });
@@ -2090,7 +1337,6 @@
 
       text.textContent = msg;
       icon.textContent = type === 'error' ? '⚠️' : (type === 'success' ? '🎉' : '👉');
-
       wrapper.classList.remove('opacity-0', '-translate-y-2');
       wrapper.classList.add('opacity-100', 'translate-y-0');
 
