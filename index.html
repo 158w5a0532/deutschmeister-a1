@@ -388,6 +388,44 @@
     </div>
   </div>
 
+  <!-- ================= MODAL: ROUND SUMMARY ================= -->
+  <div id="modal-round-summary" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 hidden">
+    <div class="w-full max-w-md bg-slate-900 border-2 border-amber-500 rounded-3xl p-5 shadow-2xl space-y-4 text-center">
+      <div class="text-3xl">🎉</div>
+      <h3 id="round-winner-heading" class="text-lg sm:text-xl font-black text-amber-300">Round Won!</h3>
+      <p id="round-winner-sub" class="text-xs text-slate-300">
+        Valid Rummy Declaration with 0 penalty points!
+      </p>
+
+      <div id="round-scores-list" class="bg-slate-950 rounded-2xl p-3 border border-slate-800 text-left text-xs max-h-48 overflow-y-auto space-y-1.5"></div>
+
+      <button id="btn-next-round" onclick="hostNextRoundDeal()" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-lg">
+        Deal Next Round →
+      </button>
+      <div id="guest-next-round-wait" class="text-xs text-slate-400 hidden animate-pulse">
+        Waiting for host to deal next round...
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: GRAND CHAMPION ================= -->
+  <div id="modal-grand-champion" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="w-full max-w-sm bg-gradient-to-b from-amber-950/80 to-slate-950 border-2 border-amber-400 rounded-3xl p-6 text-center space-y-4 shadow-2xl">
+      <div class="text-5xl animate-bounce">👑</div>
+      <h2 class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-400">
+        GRAND CHAMPION!
+      </h2>
+      <p id="champion-player-text" class="text-xl font-black text-white">Player</p>
+      <p class="text-xs text-slate-300">
+        All other players crossed 201 points and were eliminated!
+      </p>
+
+      <button onclick="leaveLobbyAndReset()" class="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black rounded-xl text-sm shadow-xl">
+        Return to Main Menu
+      </button>
+    </div>
+  </div>
+
   <!-- ================= MODAL: RULES ================= -->
   <div id="modal-rules" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 hidden">
     <div class="w-full max-w-md bg-slate-900 border border-slate-700 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-3 text-xs">
@@ -422,6 +460,88 @@
     const RANK_VALUES = { 'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 11, 'Q': 12, 'K': 13 };
     const CARD_POINTS = { 'A': 10, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10, 'JOKER': 0 };
     const AVATARS = ['🦊', '🐯', '🦅', '🦁', '🐼', '🦄', '🐬'];
+
+    class AudioEngine {
+      constructor() { this.ctx = null; }
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) this.ctx = new AudioContext();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
+      }
+      playCard() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(360, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(110, this.ctx.currentTime + 0.07);
+          gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.07);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.07);
+        } catch(e){}
+      }
+      playUnlock() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(523.25, this.ctx.currentTime);
+          osc.frequency.setValueAtTime(783.99, this.ctx.currentTime + 0.14);
+          gain.gain.setValueAtTime(0.22, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.35);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.35);
+        } catch(e){}
+      }
+      playTurnNotification() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(440, this.ctx.currentTime);
+          osc.frequency.setValueAtTime(880, this.ctx.currentTime + 0.1);
+          gain.gain.setValueAtTime(0.15, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.25);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.25);
+          if (navigator.vibrate) navigator.vibrate([60, 50, 60]);
+        } catch(e){}
+      }
+      playVictory() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          [349.23, 440, 523.25, 698.46].forEach((f, i) => {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.frequency.setValueAtTime(f, this.ctx.currentTime + i * 0.1);
+            gain.gain.setValueAtTime(0.18, this.ctx.currentTime + i * 0.1);
+            gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + i * 0.1 + 0.4);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(this.ctx.currentTime + i * 0.1);
+            osc.stop(this.ctx.currentTime + i * 0.1 + 0.4);
+          });
+          if (navigator.vibrate) navigator.vibrate([100, 50, 150]);
+        } catch(e){}
+      }
+    }
+    const audio = new AudioEngine();
 
     let app = {
       isHost: false,
@@ -614,6 +734,7 @@
           app.tournament.players.push(newPlayer);
           app.peersMap.set(data.playerId, conn);
           showToast(`${newPlayer.name} joined!`, 'info');
+          audio.playCard();
           broadcastLobbyState();
           renderLobbyView();
         } else {
@@ -645,6 +766,12 @@
         switchToLobbyView();
       } else if (data.type === 'GAME_SYNC') {
         syncClientGameState(data);
+      } else if (data.type === 'EMOJI_REACTION') {
+        showFloatingEmoji(data.senderPlayerId, data.emoji);
+      } else if (data.type === 'ROUND_END') {
+        displayRoundEndModal(data.winnerName, data.playersSummary);
+      } else if (data.type === 'GRAND_CHAMPION') {
+        displayChampionModal(data.champ);
       }
     }
 
@@ -757,8 +884,10 @@
       return deck;
     }
 
-    function hostStartMatch() {
+    function hostStartMatch(resetRounds = true) {
       app.status = 'playing';
+      if (resetRounds) app.tournament.roundNumber = 1;
+
       const fullDeck = generateTwoDecks();
       app.tournament.wildJokerCard = fullDeck.pop();
 
@@ -772,7 +901,8 @@
 
       app.tournament.openDeck = [fullDeck.pop()];
       app.tournament.closedDeck = fullDeck;
-      app.tournament.activePlayerIndex = 0;
+      const firstActive = app.tournament.players.findIndex(p => !p.eliminated);
+      app.tournament.activePlayerIndex = firstActive !== -1 ? firstActive : 0;
       app.tournament.turnPhase = 'draw';
       app.tournament.turnTimeLeft = 35;
 
@@ -826,6 +956,11 @@
       app.localHand = data.myHand;
       app.hasPureLife = data.hasPureLife;
       renderActiveTable();
+
+      const activeP = app.tournament.players[app.tournament.activePlayerIndex];
+      if (activeP && activeP.id === app.myPlayerId && app.tournament.turnPhase === 'draw') {
+        audio.playTurnNotification();
+      }
     }
 
     function startTurnTimer() {
@@ -893,6 +1028,18 @@
               run = 1;
             }
           }
+          if (unique.includes(1)) {
+            const aceHigh = unique.map(v => v === 1 ? 14 : v).sort((a, b) => a - b);
+            let runHigh = 1;
+            for (let i = 0; i < aceHigh.length - 1; i++) {
+              if (aceHigh[i + 1] === aceHigh[i] + 1) {
+                runHigh++;
+                if (runHigh >= 3) return true;
+              } else {
+                runHigh = 1;
+              }
+            }
+          }
         }
       }
       return false;
@@ -939,6 +1086,7 @@
       const hasPureNow = checkPureLifeInHand(app.localHand);
       if (hasPureNow && !app.hasPureLife) {
         app.hasPureLife = true;
+        audio.playUnlock();
         showToast('🔓 Pure Life Achieved! Joker Vault Unlocked!', 'success');
         if (app.isHost) {
           const me = app.tournament.players.find(p => p.id === app.myPlayerId);
@@ -955,7 +1103,8 @@
         const isCurrent = idx === app.tournament.activePlayerIndex;
         const isMe = p.id === app.myPlayerId;
         const pill = document.createElement('div');
-        pill.className = `flex items-center space-x-1 px-2.5 py-0.5 rounded-full text-xs font-bold ${
+        pill.id = `seat-pill-${p.id}`;
+        pill.className = `relative flex items-center space-x-1 px-2.5 py-0.5 rounded-full text-xs font-bold ${
           isCurrent ? 'bg-amber-400 text-slate-950 ring-2 ring-amber-300' : 'bg-slate-950/80 text-slate-300 border border-emerald-700/40'
         }`;
         pill.innerHTML = `<span>${p.avatar}</span><span>${isMe ? 'You' : p.name}</span><span class="text-[10px] bg-slate-800 text-amber-300 px-1 rounded">${p.totalScore}</span>`;
@@ -983,7 +1132,7 @@
       }
 
       const discardTarget = document.getElementById('target-discard-pile');
-      const topDiscard = app.tournament.openDeck[app.tournament.openDeck.length - 1];
+      const topDiscard = app.isHost ? app.tournament.openDeck[app.tournament.openDeck.length - 1] : (app.tournament.openDeck ? app.tournament.openDeck[app.tournament.openDeck.length - 1] : null);
       if (topDiscard) {
         const sObj = SUITS.find(s => s.id === topDiscard.suit);
         discardTarget.className = "w-14 sm:w-16 h-20 sm:h-24 rounded-lg border border-slate-300 bg-white text-slate-950 shadow-xl flex flex-col justify-between p-1 cursor-pointer";
@@ -1122,10 +1271,18 @@
       if (!touchDrag.hasMoved) return;
 
       const discardRect = document.getElementById('target-discard-pile')?.getBoundingClientRect();
+      const finishRect = document.getElementById('target-finish-slot')?.getBoundingClientRect();
+
       if (discardRect && isInsideTarget(e.clientX, e.clientY, discardRect)) {
         document.getElementById('target-discard-pile')?.classList.add('drop-zone-highlight');
       } else {
         document.getElementById('target-discard-pile')?.classList.remove('drop-zone-highlight');
+      }
+
+      if (finishRect && isInsideTarget(e.clientX, e.clientY, finishRect)) {
+        document.getElementById('target-finish-slot')?.classList.add('drop-zone-highlight');
+      } else {
+        document.getElementById('target-finish-slot')?.classList.remove('drop-zone-highlight');
       }
 
       const rackCards = document.querySelectorAll('.card-rack-slot .rummy-card');
@@ -1137,6 +1294,7 @@
             const card = app.localHand.splice(touchDrag.startIndex, 1)[0];
             app.localHand.splice(targetIndex, 0, card);
             touchDrag.startIndex = targetIndex;
+            audio.playCard();
             renderHandRack();
           }
         }
@@ -1146,10 +1304,23 @@
     function onPointerUpHandler(e) {
       if (!touchDrag.active) return;
       const discardTarget = document.getElementById('target-discard-pile');
+      const finishTarget = document.getElementById('target-finish-slot');
       const discardRect = discardTarget?.getBoundingClientRect();
+      const finishRect = finishTarget?.getBoundingClientRect();
+
       discardTarget?.classList.remove('drop-zone-highlight');
+      finishTarget?.classList.remove('drop-zone-highlight');
 
       const card = app.localHand.find(c => c.id === touchDrag.cardId);
+
+      if (touchDrag.hasMoved && finishRect && isInsideTarget(e.clientX, e.clientY, finishRect)) {
+        const activeP = app.tournament.players[app.tournament.activePlayerIndex];
+        if (activeP && activeP.id === app.myPlayerId && app.tournament.turnPhase === 'discard' && card) {
+          userDeclareShow(card);
+          cleanupTouchDrag();
+          return;
+        }
+      }
 
       if (touchDrag.hasMoved && discardRect && isInsideTarget(e.clientX, e.clientY, discardRect)) {
         const activeP = app.tournament.players[app.tournament.activePlayerIndex];
@@ -1161,6 +1332,7 @@
       }
 
       if (!touchDrag.hasMoved && card) {
+        audio.playCard();
         app.selectedCardId = app.selectedCardId === card.id ? null : card.id;
         renderHandRack();
       }
@@ -1184,6 +1356,7 @@
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
       if (!activeP || activeP.id !== app.myPlayerId || app.tournament.turnPhase !== 'draw') return;
 
+      audio.playCard();
       if (app.isHost) {
         hostProcessDraw(app.myPlayerId, source);
       } else {
@@ -1204,6 +1377,7 @@
     }
 
     function userDiscardCard(card) {
+      audio.playCard();
       app.selectedCardId = null;
       if (app.isHost) {
         hostProcessDiscard(app.myPlayerId, card.id);
@@ -1212,10 +1386,37 @@
       }
     }
 
+    function handleFinishSlotTap() {
+      const activeP = app.tournament.players[app.tournament.activePlayerIndex];
+      if (!activeP || activeP.id !== app.myPlayerId) return;
+
+      if (app.tournament.turnPhase !== 'discard') {
+        showToast('Draw your 14th card before declaring!', 'info');
+        return;
+      }
+      if (!app.selectedCardId) {
+        showToast('Tap a card to select it for Finish, then tap Finish Slot!', 'info');
+        return;
+      }
+      const card = app.localHand.find(c => c.id === app.selectedCardId);
+      if (card) userDeclareShow(card);
+    }
+
+    function userDeclareShow(card) {
+      audio.playCard();
+      app.selectedCardId = null;
+      if (app.isHost) {
+        hostProcessDeclaration(app.myPlayerId, card.id);
+      } else {
+        app.hostConn?.send({ type: 'DECLARE_ACTION', playerId: app.myPlayerId, finishCardId: card.id });
+      }
+    }
+
     function triggerDrop() {
       const activeP = app.tournament.players[app.tournament.activePlayerIndex];
       if (!activeP || activeP.id !== app.myPlayerId || app.tournament.turnPhase !== 'draw') return;
 
+      audio.playCard();
       if (app.isHost) {
         hostProcessDrop(app.myPlayerId);
       } else {
@@ -1224,15 +1425,19 @@
     }
 
     function userAutoSortHand() {
+      audio.playCard();
       app.localHand = autoSortCardObjects(app.localHand);
       app.selectedCardId = null;
       renderHandRack();
+      showToast('Hand sorted by suit and rank!', 'info');
     }
 
     function handleHostReceivedClientAction(data) {
       if (data.type === 'DRAW_ACTION') hostProcessDraw(data.playerId, data.source);
       else if (data.type === 'DISCARD_ACTION') hostProcessDiscard(data.playerId, data.cardId);
+      else if (data.type === 'DECLARE_ACTION') hostProcessDeclaration(data.playerId, data.finishCardId);
       else if (data.type === 'DROP_ACTION') hostProcessDrop(data.playerId);
+      else if (data.type === 'EMOJI_ACTION') broadcastEmoji(data.playerId, data.emoji);
       else if (data.type === 'PURE_LIFE_UNLOCKED') {
         const p = app.tournament.players.find(x => x.id === data.playerId);
         if (p) p.hasPureLife = true;
@@ -1277,6 +1482,28 @@
       advanceTurnToNextPlayer();
     }
 
+    function hostProcessDeclaration(playerId, finishCardId) {
+      const player = app.tournament.players.find(p => p.id === playerId);
+      if (!player) return;
+
+      const cardIdx = player.hand.findIndex(c => c.id === finishCardId);
+      if (cardIdx !== -1) {
+        app.tournament.openDeck.push(player.hand.splice(cardIdx, 1)[0]);
+      }
+
+      const hasPure = checkPureLifeInHand(player.hand);
+      if (hasPure) {
+        audio.playVictory();
+        resolveRoundEnd(player);
+      } else {
+        showToast(`${player.name} made a Wrong Show! +80 penalty.`, 'error');
+        player.lastRoundScore = 80;
+        player.totalScore += 80;
+        if (player.totalScore >= 201) player.eliminated = true;
+        advanceTurnToNextPlayer();
+      }
+    }
+
     function hostProcessDrop(playerId) {
       const player = app.tournament.players.find(p => p.id === playerId);
       if (!player) return;
@@ -1287,6 +1514,13 @@
       if (player.totalScore >= 201) player.eliminated = true;
 
       showToast(`${player.name} Dropped (${penalty} pts).`, 'info');
+
+      const activeSurvivors = app.tournament.players.filter(p => !p.eliminated);
+      if (activeSurvivors.length <= 1) {
+        triggerGrandChampion(activeSurvivors[0] || player);
+        return;
+      }
+
       advanceTurnToNextPlayer();
     }
 
@@ -1305,6 +1539,129 @@
       broadcastGameSync();
       renderActiveTable();
       startTurnTimer();
+    }
+
+    function resolveRoundEnd(winner) {
+      clearInterval(turnTimerInterval);
+      app.status = 'round_over';
+      winner.lastRoundScore = 0;
+
+      const summary = [];
+      app.tournament.players.forEach(p => {
+        if (!p.eliminated) {
+          if (p.id === winner.id) {
+            p.lastRoundScore = 0;
+          } else {
+            const loss = computeDeadwoodScore(p.hand, p.hasPureLife, app.tournament.wildJokerCard);
+            p.lastRoundScore = loss;
+            p.totalScore += loss;
+          }
+          if (p.totalScore >= 201) p.eliminated = true;
+          summary.push({ name: p.name, avatar: p.avatar, score: p.lastRoundScore, total: p.totalScore, eliminated: p.eliminated });
+        }
+      });
+
+      displayRoundEndModal(winner.name, summary);
+      app.peersMap.forEach(conn => conn.send({ type: 'ROUND_END', winnerName: winner.name, playersSummary: summary }));
+    }
+
+    function displayRoundEndModal(winnerName, summary) {
+      document.getElementById('round-winner-heading').textContent = `Round Won by ${winnerName}!`;
+      const list = document.getElementById('round-scores-list');
+      list.innerHTML = '';
+      summary.forEach(p => {
+        const div = document.createElement('div');
+        div.className = "flex justify-between items-center py-1 border-b border-slate-800";
+        div.innerHTML = `
+          <span>${p.avatar} ${p.name}</span>
+          <span class="font-mono ${p.eliminated ? 'text-rose-400 font-black' : 'text-amber-300'}">
+            +${p.score} pts (${p.total}/201) ${p.eliminated ? '• OUT' : ''}
+          </span>
+        `;
+        list.appendChild(div);
+      });
+
+      const btnNext = document.getElementById('btn-next-round');
+      const waitNotice = document.getElementById('guest-next-round-wait');
+      if (app.isHost) {
+        btnNext.classList.remove('hidden');
+        waitNotice.classList.add('hidden');
+      } else {
+        btnNext.classList.add('hidden');
+        waitNotice.classList.remove('hidden');
+      }
+
+      document.getElementById('modal-round-summary').classList.remove('hidden');
+    }
+
+    function hostNextRoundDeal() {
+      document.getElementById('modal-round-summary').classList.add('hidden');
+      const survivors = app.tournament.players.filter(p => !p.eliminated);
+      if (survivors.length <= 1) {
+        triggerGrandChampion(survivors[0] || app.tournament.players[0]);
+        return;
+      }
+      app.tournament.roundNumber++;
+      hostStartMatch(false);
+    }
+
+    function triggerGrandChampion(champ) {
+      audio.playVictory();
+      displayChampionModal(champ);
+      app.peersMap.forEach(conn => conn.send({ type: 'GRAND_CHAMPION', champ: champ }));
+    }
+
+    function displayChampionModal(champ) {
+      document.getElementById('modal-round-summary').classList.add('hidden');
+      document.getElementById('champion-player-text').textContent = `${champ.avatar} ${champ.name} (${champ.totalScore} pts)`;
+      document.getElementById('modal-grand-champion').classList.remove('hidden');
+    }
+
+    function toggleDiscardPeek() {
+      const drawer = document.getElementById('discard-peek-drawer');
+      if (!drawer.classList.contains('hidden')) {
+        drawer.classList.add('hidden');
+        return;
+      }
+      const recents = app.tournament.openDeck.slice(-3);
+      drawer.innerHTML = '';
+      if (recents.length === 0) {
+        drawer.innerHTML = '<span class="text-[10px] text-slate-400">No discards yet</span>';
+      } else {
+        recents.forEach(c => {
+          const sObj = SUITS.find(s => s.id === c.suit);
+          const chip = document.createElement('div');
+          chip.className = `w-8 h-12 rounded border bg-white shadow p-0.5 text-center flex flex-col justify-between ${sObj && sObj.isRed ? 'text-red-600' : 'text-slate-900'}`;
+          chip.innerHTML = `<span class="text-[9px] font-black leading-none">${c.rank}</span><span class="text-xs">${sObj ? sObj.symbol : ''}</span>`;
+          drawer.appendChild(chip);
+        });
+      }
+      drawer.classList.remove('hidden');
+      setTimeout(() => drawer.classList.add('hidden'), 3500);
+    }
+
+    function sendEmojiReaction(emoji) {
+      showFloatingEmoji(app.myPlayerId, emoji);
+      if (app.isHost) {
+        broadcastEmoji(app.myPlayerId, emoji);
+      } else {
+        app.hostConn?.send({ type: 'EMOJI_ACTION', playerId: app.myPlayerId, emoji: emoji });
+      }
+    }
+
+    function broadcastEmoji(senderId, emoji) {
+      showFloatingEmoji(senderId, emoji);
+      app.peersMap.forEach(conn => conn.send({ type: 'EMOJI_REACTION', senderPlayerId: senderId, emoji: emoji }));
+    }
+
+    function showFloatingEmoji(senderId, emoji) {
+      const targetPill = document.getElementById(`seat-pill-${senderId}`);
+      if (!targetPill) return;
+      const bubble = document.createElement('div');
+      bubble.className = "floating-reaction absolute -top-4 left-1/2 transform -translate-x-1/2 text-2xl z-50";
+      bubble.textContent = emoji;
+      targetPill.appendChild(bubble);
+      setTimeout(() => bubble.remove(), 2200);
     }
 
     function openScoreboardModal() {
